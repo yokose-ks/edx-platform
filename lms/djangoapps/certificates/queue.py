@@ -168,7 +168,6 @@ class XQueueCertInterface(object):
                 course = courses.get_course_by_id(course_id)
             profile = UserProfile.objects.get(user=student)
             profile_name = profile.name
-            profile_title = title
 
             # Needed
             self.request.user = student
@@ -220,13 +219,12 @@ class XQueueCertInterface(object):
                     key = make_hashkey(random.random())
                     cert.key = key
                     contents = {
-                        'action':       'create',
-                        'username':     student.username,
-                        'course_id':    course_id,
-                        'name':         profile_name,
-                        'grade':        grade['grade'],
+                        'action': 'create',
+                        'username': student.username,
+                        'course_id': course_id,
+                        'name': profile_name,
+                        'grade': grade['grade'],
                         'template_pdf': template_pdf,
-                        'designation':  profile_title,
                     }
                     new_status = status.generating
                     cert.status = new_status

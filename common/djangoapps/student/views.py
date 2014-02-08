@@ -271,11 +271,11 @@ def _cert_info(user, course, cert_status):
     """
     # simplify the status for the template using this lookup table
     template_state = {
-        CertificateStatuses.generating:   'generating',
+        CertificateStatuses.generating: 'generating',
         CertificateStatuses.regenerating: 'generating',
         CertificateStatuses.downloadable: 'ready',
-        CertificateStatuses.notpassing:   'notpassing',
-        CertificateStatuses.restricted:   'restricted',
+        CertificateStatuses.notpassing: 'notpassing',
+        CertificateStatuses.restricted: 'restricted',
     }
 
     default_status = 'processing'
