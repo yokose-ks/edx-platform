@@ -122,6 +122,21 @@ var accessible_modal = function(trigger, closeButtonId, modalId, mainPageId) {
   });
 };
 
+var accessible_confirm = function(message, callback) {
+    $("#accessibile-confirm-modal .cancel-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+    });
+    $("#accessibile-confirm-modal .ok-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+        callback();
+    });
+
+    accessible_modal("#accessibile-confirm-modal #confirm_open_button", "#accessibile-confirm-modal .close-modal", "#accessibile-confirm-modal", ".content-wrapper");
+    $("#accessibile-confirm-modal #confirm_open_button").click();
+    $("#accessibile-confirm-modal .message-title").html(message);
+    // SR.readText(message);
+};
+
 // NOTE: This is a gross hack to make the skip links work for Webkit browsers
 // see http://stackoverflow.com/questions/6280399/skip-links-not-working-in-chrome/12720183#12720183
 
