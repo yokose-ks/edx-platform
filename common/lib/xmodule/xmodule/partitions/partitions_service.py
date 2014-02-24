@@ -59,7 +59,7 @@ def get_user_group_for_partition(runtime, user_partition_id):
             "in course {1}".format(user_partition_id, runtime.course_id))
 
     group_id = _get_group(runtime, user_partition)
-    
+
     return group_id
 
 
@@ -97,14 +97,14 @@ def _get_group(runtime, user_partition):
 
     group_id = runtime.user_service.get_tag(scope, key)
 
-    if group_id != None:
+    if group_id is not None:
         # TODO: check whether this id is valid.  If not, create a new one.
         return group_id
 
     # TODO: what's the atomicity of the get above and the save here?  If it's not in a
     # single transaction, we could get a situation where the user sees one state in one
     # thread, but then that decision gets overwritten--low probability, but still bad.
-    
+
     # (If it is truly atomic, we should be fine--if one process is in the
     # process of finding no group and making one, the other should block till it
     # appears.  HOWEVER, if we allow reads by the second one while the first

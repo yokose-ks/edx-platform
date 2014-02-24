@@ -139,29 +139,35 @@ class UserServiceInterface(object):
     def __init__(self, runtime):
         self.runtime = runtime
 
-
-    def _get_current_user_id(self):
+    def _get_current_user(self):
         real_user = self.runtime.get_real_user(self.runtime.anonymous_student_id)
-        return real_user.id
-
+        return real_user
 
     def get_tag(self, scope, key):
         """
+        Get a user tag for the current course and the current user for a given key
+
+            scope: the current scope of the runtime
+            key: the key for the value we want
         """
         if scope != self.COURSE:
             raise ValueError("unexpected scope {0}".format(scope))
 
-        return user_service.get_course_tag(self._get_current_user_id(),
+        return user_service.get_course_tag(self._get_current_user(),
                                            self.runtime.course_id, key)
-
 
     def set_tag(self, scope, key, value):
         """
+        Set the user tag for the current course and the current user for a given key
+
+            scope: the current scope of the runtime
+            key: the key that to the value to be set
+            value: the value to set
         """
         if scope != self.COURSE:
             raise ValueError("unexpected scope {0}".format(scope))
 
-        return user_service.set_course_tag(self._get_current_user_id(),
+        return user_service.set_course_tag(self._get_current_user(),
                                            self.runtime.course_id, key, value)
 
 

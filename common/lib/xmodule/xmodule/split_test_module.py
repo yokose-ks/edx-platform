@@ -1,7 +1,9 @@
-import logging
-import random
+"""
+Module for running content split tests
+"""
 
-from xmodule.partitions.partitions import UserPartition, Group
+import logging
+
 from xmodule.partitions.partitions_service import get_user_group_for_partition
 from xmodule.progress import Progress
 from xmodule.seq_module import SequenceDescriptor
@@ -9,7 +11,7 @@ from xmodule.x_module import XModule
 
 from lxml import etree
 
-from xblock.fields import Scope, Integer, Dict, List
+from xblock.fields import Scope, Integer, Dict
 from xblock.fragment import Fragment
 
 log = logging.getLogger('edx.' + __name__)
@@ -17,7 +19,7 @@ log = logging.getLogger('edx.' + __name__)
 
 class SplitTestFields(object):
     user_partition_id = Integer(help="Which user partition is used for this test",
-                                   scope=Scope.content)
+                                scope=Scope.content)
 
     # group_id is an int
     # child is a serialized UsageId (aka Location).  This child
@@ -31,7 +33,6 @@ class SplitTestFields(object):
     group_id_to_child = Dict(help="Which child module students in a particular "
                              "group_id should see",
                              scope=Scope.content)
-
 
 
 class SplitTestModule(SplitTestFields, XModule):
@@ -49,7 +50,8 @@ class SplitTestModule(SplitTestFields, XModule):
         modules.
 """
     def __init__(self, *args, **kwargs):
-        super(SplitTestFields, self).__init__(*args, **kwargs)
+
+        super(SplitTestModule, self).__init__(*args, **kwargs)
 
         group_id = get_user_group_for_partition(self.runtime, self.user_partition_id)
 
@@ -60,8 +62,7 @@ class SplitTestModule(SplitTestFields, XModule):
             self.child_descriptor = self.get_child_descriptor_by_location(child_location)
         else:
             # Oops.  Config error.
-            # TODO: better error message
-            log.debug("split test config error: invalid group_id.  Showing error")
+            log.debug("configuration error in split test module: invalid group_id.  Showing error")
             self.child_descriptor = None
 
         if self.child_descriptor is not None:
@@ -70,10 +71,8 @@ class SplitTestModule(SplitTestFields, XModule):
             # xmodule for the child
             self.child = self.get_children()[0]
         else:
-            # TODO: better error message
-            log.debug("split test config error: no such child")
+            log.debug("configuration error in split test module: no such child")
             self.child = None
-
 
     def get_child_descriptor_by_location(self, location):
         """
@@ -91,7 +90,6 @@ class SplitTestModule(SplitTestFields, XModule):
 
         return None
 
-
     def get_child_descriptors(self):
         """
         For grading--return just the chosen child.
@@ -100,7 +98,6 @@ class SplitTestModule(SplitTestFields, XModule):
             return []
 
         return [self.child_descriptor]
-
 
     def _actually_get_all_children(self):
         """
@@ -117,7 +114,6 @@ class SplitTestModule(SplitTestFields, XModule):
         # x_module.py:get_children())
         return [self.system.get_module(descriptor)
                 for descriptor in self.descriptor.get_children()]
-
 
     def _get_experiment_definition():
         """
@@ -145,15 +141,14 @@ class SplitTestModule(SplitTestFields, XModule):
             contents.append({
                 'id': child.id,
                 'content': rendered_child.content
-                })
+            })
 
         # Use the existing vertical template for now.
         # TODO: replace this with a dropdown, defaulting to user's condition
         fragment.add_content(self.system.render_template('vert_module.html', {
             'items': contents
-            }))
+        }))
         return fragment
-
 
     def student_view(self, context):
         """
@@ -169,17 +164,14 @@ class SplitTestModule(SplitTestFields, XModule):
         else:
             return self.child.render('student_view', context)
 
-
     def get_icon_class(self):
         return self.child.get_icon_class() if self.child else 'other'
-
 
     def get_progress(self):
         children = self.get_children()
         progresses = [child.get_progress() for child in children]
         progress = reduce(Progress.add_counts, progresses, None)
         return progress
-
 
 
 class SplitTestDescriptor(SplitTestFields, SequenceDescriptor):
@@ -196,7 +188,6 @@ class SplitTestDescriptor(SplitTestFields, SequenceDescriptor):
             xml_object.append(
                 etree.fromstring(child.export_to_xml(resource_fs)))
         return xml_object
-
 
     def has_dynamic_children(self):
         """
