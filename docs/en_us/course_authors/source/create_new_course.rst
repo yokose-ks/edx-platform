@@ -308,7 +308,7 @@ In the Files & Uploads page, each file has has an **Embed URL** and an **Externa
 
 * You use the **Embed URL** to link to the file or image from a component, a course update, or a course handout. 
 
-* You use the **External URL** to reference the file or image from outside of your course. The external URL does not work if you lock the file.
+* You use the **External URL** to reference the file or image from outside of your course. The external URL does not work if you lock the file unless the person accessing the URL is enrolled in the course.
 
   .. warning:: You cannot use the External URL as the reference to a file or image from within your course.
 
