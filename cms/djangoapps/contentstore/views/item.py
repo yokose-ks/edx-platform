@@ -202,42 +202,12 @@ def xblock_view_handler(request, package_id, view_name, tag=None, branch=None, v
                 log.debug("unable to render studio_view for %r", component, exc_info=True)
                 fragment = Fragment(render_to_string('html_error.html', {'message': str(exc)}))
 
-            store.save_xmodule(component)
-        elif view_name == 'student_view' and component.has_children:
-            # For non-leaf xblocks on the unit page, show the special rendering
-            # which links to the new container page.
-            course_location = loc_mapper().translate_locator_to_location(locator, True)
-            course = store.get_item(course_location)
-            html = render_to_string('unit_container_xblock_component.html', {
-                'course': course,
-                'xblock': component,
-                'locator': locator
-            })
-            return JsonResponse({
-                'html': html,
-                'resources': [],
-            })
-        elif view_name in ('student_view', 'container_preview'):
-            is_container_view = (view_name == 'container_preview')
-
-            # Only show the new style HTML for the container view, i.e. for non-verticals
-            # Note: this special case logic can be removed once the unit page is replaced
-            # with the new container view.
-            is_read_only_view = is_container_view
-            context = {
-                'container_view': is_container_view,
-                'read_only': is_read_only_view,
-                'root_xblock': component
-            }
-
-            fragment = get_preview_fragment(request, component, context)
-            # For old-style pages (such as unit and static pages), wrap the preview with
-            # the component div. Note that the container view recursively adds headers
-            # into the preview fragment, so we don't want to add another header here.
-            if not is_container_view:
-                fragment.content = render_to_string('component.html', {
-                    'preview': fragment.content,
-                    'label': component.display_name or component.scope_ids.block_type,
+            # change not authored by requestor but by xblocks. should not convert to draft if not
+            # already draft
+            if getattr(component, 'is_draft', False):
+                modulestore('draft').update_item(component, None)
+            else:
+                modulestore('direct').update_item(component, None)
 
                     # Native XBlocks are responsible for persisting their own data,
                     # so they are also responsible for providing save/cancel buttons.

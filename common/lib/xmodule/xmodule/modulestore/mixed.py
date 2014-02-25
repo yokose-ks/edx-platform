@@ -11,8 +11,7 @@ from . import ModuleStoreWriteBase
 from xmodule.modulestore.django import create_modulestore_instance, loc_mapper
 from xmodule.modulestore import Location, SPLIT_MONGO_MODULESTORE_TYPE
 from xmodule.modulestore.locator import CourseLocator
-from xmodule.modulestore.exceptions import InsufficientSpecificationError, ItemNotFoundError, \
-    InvalidLocationError
+from xmodule.modulestore.exceptions import ItemNotFoundError, InvalidLocationError
 from uuid import uuid4
 from xmodule.modulestore.mongo.base import MongoModuleStore
 from xmodule.modulestore.split_mongo.split import SplitMongoModuleStore
@@ -37,7 +36,7 @@ class MixedModuleStore(ModuleStoreWriteBase):
         if 'default' not in stores:
             raise Exception('Missing a default modulestore in the MixedModuleStore __init__ method.')
 
-        for key, store in stores.items():
+        for key, store in stores.iteritems():
             is_xml = 'XMLModuleStore' in store['ENGINE']
             if is_xml:
                 # restrict xml to only load courses in mapping
@@ -52,6 +51,10 @@ class MixedModuleStore(ModuleStoreWriteBase):
                 store.get('DOC_STORE_CONFIG', {}),
                 store['OPTIONS']
             )
+            # If and when locations can identify their course, we won't need
+            # these loc maps. They're needed for figuring out which store owns these locations.
+            if is_xml:
+                self.ensure_loc_maps_exist(key)
 
     def _get_modulestore_for_courseid(self, course_id):
         """
@@ -132,19 +135,23 @@ class MixedModuleStore(ModuleStoreWriteBase):
             store_courses = store.get_courses()
             # filter out ones which were fetched from earlier stores but locations may not be ==
             for course in store_courses:
-                if course.location not in courses:
+                course_location = unicode(course.location)
+                if course_location not in courses:
                     if has_locators and isinstance(course.location, Location):
                         try:
                             # if there's no existing mapping, then the course can't have been in split
                             course_locator = loc_mapper().translate_location(
                                 course.location.course_id, course.location, add_entry_if_missing=False
                             )
-                            if course_locator not in courses:
-                                courses[course.location] = course
+                            if unicode(course_locator) not in courses:
+                                courses[course_location] = course
                         except ItemNotFoundError:
-                            courses[course.location] = course
-                    elif not has_locators:
-                        has_locators = isinstance(course.location, CourseLocator)
+                            courses[course_location] = course
+                    elif isinstance(course.location, CourseLocator):
+                        has_locators = True
+                        courses[course_location] = course
+                    else:
+                        courses[course_location] = course
 
         return courses.values()
 
@@ -204,8 +211,11 @@ class MixedModuleStore(ModuleStoreWriteBase):
         """
         Get the course_id from the block or from asking its store. Expensive.
         """
-        if block.course_id is not None:
-            return block.course_id
+        try:
+            if block.course_id is not None:
+                return block.course_id
+        except AssertionError:  # will occur if no xmodule set
+            pass
         try:
             course = store._get_course_for_item(block.scope_ids.usage_id)
             if course:
@@ -258,8 +268,11 @@ class MixedModuleStore(ModuleStoreWriteBase):
                     blocks = store.get_items(location)
                     if len(blocks) == 1:
                         block = blocks[0]
-                        if block.course_id is not None:
-                            return block.course_id
+                        try:
+                            if block.course_id is not None:
+                                return block.course_id
+                        except AssertionError:
+                            pass
                 except ItemNotFoundError:
                     pass
         # if we get here, it must be in a Locator based store, but we won't be able to find
@@ -282,10 +295,14 @@ class MixedModuleStore(ModuleStoreWriteBase):
         """
         store = self.modulestores[store_name]
         if not hasattr(store, 'create_course'):
-            raise NotImplementedError(u"Cannot create a course on store %s", store_name)
+            raise NotImplementedError(u"Cannot create a course on store %s" % store_name)
         if store.get_modulestore_type(course_location.course_id) == SPLIT_MONGO_MODULESTORE_TYPE:
             org = kwargs.pop('org', course_location.org)
             pretty_id = kwargs.pop('pretty_id', None)
+            fields = kwargs.get('fields', {})
+            fields.update(kwargs.pop('metadata', {}))
+            fields.update(kwargs.pop('definition_data', {}))
+            kwargs['fields'] = fields
             # TODO rename id_root to package_id for consistency. It's too confusing
             id_root = kwargs.pop('id_root', u"{0.org}.{0.course}.{0.name}".format(course_location))
             course = store.create_course(
@@ -358,7 +375,7 @@ class MixedModuleStore(ModuleStoreWriteBase):
                 )
                 old_course_id = old_course_loc.course_id
             else:
-                raise ValueError(u"Cannot create a child of %s in split. Wrong repr.", course_or_parent_loc)
+                raise ValueError(u"Cannot create a child of {} in split. Wrong repr.".format(course_or_parent_loc))
 
             # split handles all the fields in one dict not separated by scope
             fields = kwargs.get('fields', {})
@@ -377,7 +394,7 @@ class MixedModuleStore(ModuleStoreWriteBase):
                 old_course_id, location, passed_block_id=xblock.location.block_id
             )
         else:
-            raise NotImplementedError(u"Cannot create an item on store %s", store)
+            raise NotImplementedError(u"Cannot create an item on store %s" % store)
 
         return xblock
 
@@ -388,7 +405,7 @@ class MixedModuleStore(ModuleStoreWriteBase):
         """
         course_id = self._infer_course_id_try(xblock.scope_ids.usage_id)
         if course_id is None:
-            raise ItemNotFoundError(u"Cannot find modulestore for %s", xblock.scope_ids.usage_id)
+            raise ItemNotFoundError(u"Cannot find modulestore for %s" % xblock.scope_ids.usage_id)
         store = self._get_modulestore_for_courseid(course_id)
         return store.update_item(xblock, user_id)
 
@@ -398,7 +415,7 @@ class MixedModuleStore(ModuleStoreWriteBase):
         """
         course_id = self._infer_course_id_try(location)
         if course_id is None:
-            raise ItemNotFoundError(u"Cannot find modulestore for %s", location)
+            raise ItemNotFoundError(u"Cannot find modulestore for %s" % location)
         store = self._get_modulestore_for_courseid(course_id)
         return store.delete_item(location, user_id=user_id)
 
@@ -412,3 +429,17 @@ class MixedModuleStore(ModuleStoreWriteBase):
             elif hasattr(mstore, 'db'):
                 mstore.db.connection.close()
 
+    def ensure_loc_maps_exist(self, store_name):
+        """
+        Ensure location maps exist for every course in the modulestore whose
+        name is the given name (mostly used for 'xml'). It creates maps for any
+        missing ones.
+
+        NOTE: will only work if the given store is Location based. If it's not,
+        it raises NotImplementedError
+        """
+        store = self.modulestores[store_name]
+        if store.reference_type != Location:
+            raise NotImplementedError(u"Cannot create maps from %s" % store.reference_type)
+        for course in store.get_courses():
+            loc_mapper().translate_location(course.location.course_id, course.location)
