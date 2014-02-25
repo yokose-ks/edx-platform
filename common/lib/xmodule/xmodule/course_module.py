@@ -9,7 +9,6 @@ import dateutil.parser
 from lazy import lazy
 
 from xmodule.modulestore import Location
-from xmodule.modulestore.django import loc_mapper
 from xmodule.seq_module import SequenceDescriptor, SequenceModule
 from xmodule.graders import grader_from_conf
 import json
@@ -422,9 +421,8 @@ class CourseDescriptor(CourseFields, SequenceDescriptor):
             if isinstance(self.location, Location):
                 self.wiki_slug = self.location.course
             elif isinstance(self.location, CourseLocator):
-                location = loc_mapper().translate_locator_to_location(CourseLocator, get_course=True)
-                if location is not None:
-                    self.wiki_slug = location.course
+                # Do not try to change the wiki_slug.
+                pass
 
         if self.due_date_display_format is None and self.show_timezone is False:
             # For existing courses with show_timezone set to False (and no due_date_display_format specified),
@@ -956,7 +954,6 @@ class CourseDescriptor(CourseFields, SequenceDescriptor):
 
         # If self.use_unique_wiki_id is True use CourseLocator.package_id (org.course_number.run).
         if isinstance(self.location, Location):
-            locator = loc_mapper().translate_location(self.location.course_id, self.location)
-            return locator.package_id
+            return '{0}.{1}.{2}'.format(self.location.org, self.location.course, self.location.name)
         elif isinstance(self.location, CourseLocator):
             return self.location.package_id
