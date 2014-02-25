@@ -53,6 +53,7 @@ require(
 function (
     Initialize,
     FocusGrabber,
+    VideoAccessibleMenu,
     VideoControl,
     VideoQualityControl,
     VideoProgressSlider,
@@ -88,6 +89,7 @@ function (
 
         state.modules = [
             FocusGrabber,
+            VideoAccessibleMenu,
             VideoControl,
             VideoQualityControl,
             VideoProgressSlider,

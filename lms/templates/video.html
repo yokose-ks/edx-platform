@@ -114,13 +114,13 @@
         <li class="video-tracks">
             ${('<a href="%s">' + _('Download transcript') + '</a>') % track}
             <div class="menu-container">
-                <a href="#" title="${_('.srt')}" role="button" aria-disabled="false">.str</a>
+                <a class="menu-button" href="#" title="${_('.srt')}" role="button" aria-disabled="false">${_('.srt')}</a>
                 <ol class="menu" role="menu">
-                    <li>
-                        <a class="speed_link" href="#">Text (.txt) File</a>
+                    <li class="menu-item">
+                        <a class="menu-item-link" href="#" title="${_('Text (.txt) File')}" role="menuitem" aria-disabled="false">${_('Text (.txt) File')}</a>
                     </li>
-                    <li>
-                        <a class="speed_link" href="#">SubRip (.srt) File</a>
+                    <li class="menu-item" >
+                        <a class="menu-item-link" href="#" title="${_('SubRip (.srt) File')}" role="menuitem" aria-disabled="false">${_('SubRip (.srt) File')}</a>
                     </li>
                 </ol>
             </div>

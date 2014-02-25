@@ -38,12 +38,10 @@ function () {
     //     these functions will get the 'state' object as a context.
     function _makeFunctionsPublic(state) {
         var methodsDict = {
-            changeVideoSpeed: changeVideoSpeed,
-            reRender: reRender,
-            setSpeed: setSpeed
+            changeFileType: changeFileType
         };
 
-        state.bindTo(methodsDict, state.videoSpeedControl, state);
+        state.bindTo(methodsDict, state.videoAccessibleMenu, state);
     }
 
     // function _renderElements(state)
@@ -54,15 +52,17 @@ function () {
     //     have to do repeated jQuery element selects.
     function _renderElements(state) {
 
-        var container = state.el.find('li.video-tracks>div.menu-container');
-            button = container.children('a'),
+        var container = state.el.find('li.video-tracks>div.menu-container'),
+            button = container.children('a.menu-button'),
             menu = container.children('ol.menu'),
-            menuItems = menu.children('li>a');
+            menuItems = menu.children('li.menu-item'),
+            menuItemsLinks = menuItems.children('a.menu-item-link');
 
         state.videoAccessibleMenu.container = container;
         state.videoAccessibleMenu.button = button;
         state.videoAccessibleMenu.menu = menu;
         state.videoAccessibleMenu.menuItems = menuItems;
+        state.videoAccessibleMenu.menuItemsLinks = menuItemsLinks;
     }
 
     // Hide accessible menu.
@@ -72,34 +72,36 @@ function () {
 
     // Get previous element in array or cyles back to the last if it is the
     // first.
-    function _previousMenuItem(menuItems, index) {
-        return $(menuItems.eq(index < 1 ? menuItems.length - 1 : index - 1));
+    function _previousMenuItemLink(links, index) {
+        return $(links.eq(index < 1 ? links.length - 1 : index - 1));
     }
 
     // Get next element in array or cyles back to the first if it is the last.
-    function _nextMenuItem(menuItems, index) {
-        return $(menuItems.eq(index >= menuItems.length - 1 ? 0 : index + 1));
+    function _nextMenuItemLink(links, index) {
+        return $(links.eq(index >= links.length - 1 ? 0 : index + 1));
     }
 
-    function _menuItemsFocused(state) {
-        var menuItemsLinks = state.videoAccessibleMenu.menuItems
-                                 .find('a.speed_link');
-        return menuItemsLinks.is(':focus');
+    function _menuItemsLinksFocused(state) {
+        return state.videoAccessibleMenu.menuItemsLinks.is(':focus');
     }
 
     function _openMenu(state) {
-        // When speed entries have focus, the menu stays open on
+        // When menu items have focus, the menu stays open on
         // mouseleave. A clickHandler is added to the window
         // element to have clicks close the menu when they happen
         // outside of it.
+        /* TO DO
         $(window).on('click.speedMenu', _clickHandler.bind(state));
         state.videoAccessibleMenu.container.addClass('open');
+        */
     }
 
     function _closeMenu(state) {
         // Remove the previously added clickHandler from window element.
+        /* TO DO
         $(window).off('click.speedMenu');
         state.videoAccessibleMenu.container.removeClass('open');
+        */
     }
 
     // Various event handlers. They all return false to stop propagation and
@@ -108,7 +110,7 @@ function () {
         var target = $(event.currentTarget);
 
         this.videoAccessibleMenu.container.removeClass('open');
-        if (target.is('a.speed_link')) {
+        if (target.is('a.menu-item-link')) {
             this.videoAccessibleMenu.changeFileType.call(this, event);
         }
 
@@ -125,8 +127,8 @@ function () {
     }
 
     function _mouseLeaveHandler(event) {
-        // Only close the menu is no speed entry has focus.
-        if (!_menuItemsFocused(this)) {
+        // Only close the menu if no menu item link has focus.
+        if (!_menuItemsLinksFocused(this)) {
             this.videoAccessibleMenu.container.removeClass('open');
         }
                 
@@ -138,27 +140,27 @@ function () {
             keyCode = event.keyCode,
             target = $(event.currentTarget),
             button = state.videoAccessibleMenu.button,
-            menuItems = state.videoAccessibleMenu.menuItems,
+            menuItemsLinks = state.videoAccessibleMenu.menuItemsLinks,
             index;
 
-        if (target.is('a.speed_link')) {
+        if (target.is('a.menu-item-link')) {
 
             index = target.parent().index();
 
             switch (keyCode) {
                 // Scroll up menu, wrapping at the top. Keep menu open.
                 case KEY.UP:
-                    _previousMenuItem(menuItems, index).focus();
+                    _previousMenuItemLink(menuItemsLinks, index).focus();
                     break;
                 // Scroll down  menu, wrapping at the bottom. Keep menu
                 // open.
                 case KEY.DOWN:
-                    _nextMenuItem(menuItems, index).focus();
+                    _nextMenuItemLink(menuItemsLinks, index).focus();
                     break;
                 // Close menu.
                 case KEY.TAB:
                     _closeMenu(this);
-                    /* DO THIS LATER ON
+                    /* TO DO
                     // Set focus to previous menu button in menu bar
                     // (Play/Pause button)
                     if (event.shiftKey) {
@@ -177,7 +179,7 @@ function () {
                 case KEY.SPACE:
                     _closeMenu(this);
                     button.focus();
-                    this.videoSpeedControl.changeVideoSpeed.call(this, event);
+                    this.videoAccessibleMenu.changeFileType.call(this, event);
                     break;
                 // Close menu and give focus to speed control.
                 case KEY.ESCAPE:
@@ -194,7 +196,7 @@ function () {
                 case KEY.SPACE:
                 case KEY.UP:
                     _openMenu(this);
-                    speedLinks.last().focus();
+                    menuItemsLinks.last().focus();
                     break;
                 // Close menu.
                 case KEY.ESCAPE:
@@ -223,21 +225,20 @@ function () {
      * @returns {undefined}
      */
     function _bindHandlers(state) {
-        var button = state.videoAccessibleMenu.button,
-            menuItems = state.videoAccessibleMenu.menuItems,
+        var container = state.videoAccessibleMenu.container,
+            menuItems = state.videoAccessibleMenu.menuItems;
 
-        // Attach various events handlers to the speed menu button.
-        button.on({
+        // Attach various events handlers to menu container.
+        container.on({
             'mouseenter': _mouseEnterHandler.bind(state),
             'mouseleave': _mouseLeaveHandler.bind(state),
             'click': _clickHandler.bind(state),
             'keydown': _keyDownHandler.bind(state)
         });
 
-        // Attach click and keydown event handlers to the individual speed
-        // entries.
-        menuItems.on('click', 'a.speed_link', _clickHandler.bind(state))
-                 .on('keydown', 'a.speed_link', _keyDownHandler.bind(state));
+        // Attach click and keydown event handlers to individual menu items.
+        menuItems.on('click', 'a.menu-item-link', _clickHandler.bind(state))
+                 .on('keydown', 'a.menu-item-link', _keyDownHandler.bind(state));
     }
 
     // ***************************************************************
@@ -247,15 +248,8 @@ function () {
     // them available and sets up their context is makeFunctionsPublic().
     // ***************************************************************
 
-    function setSpeed(speed) {
-        this.videoSpeedControl.videoSpeedsEl.find('li').removeClass('active');
-        this.videoSpeedControl.videoSpeedsEl
-            .find("li[data-speed='" + speed + "']")
-            .addClass('active');
-        this.videoSpeedControl.el.find('p.active').html('' + speed + 'x');
-    }
-
-    function changeVideoSpeed(event) {
+    function changeFileType(event) {
+        /*TO DO
         var parentEl = $(event.target).parent();
 
         event.preventDefault();
@@ -275,32 +269,7 @@ function () {
                 this.videoSpeedControl.currentSpeed
             );
         }
-    }
-
-    function reRender(params) {
-        var _this = this;
-
-        this.videoSpeedControl.videoSpeedsEl.empty();
-        this.videoSpeedControl.videoSpeedsEl.find('li').removeClass('active');
-        this.videoSpeedControl.speeds = params.newSpeeds;
-
-        $.each(this.videoSpeedControl.speeds, function (index, speed) {
-            var link, listItem;
-
-            link = '<a class="speed_link" href="#" role="menuitem">' + speed + 'x</a>';
-
-            listItem = $('<li data-speed="' + speed + '" role="presentation">' + link + '</li>');
-
-            if (speed === params.currentSpeed) {
-                listItem.addClass('active');
-            }
-
-            _this.videoSpeedControl.videoSpeedsEl.prepend(listItem);
-        });
-
-        // Re-attach all events with their appropriate callbacks to the
-        // newly generated elements.
-        _bindHandlers(this);
+        */
     }
 
 });
