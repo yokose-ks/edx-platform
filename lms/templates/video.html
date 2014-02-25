@@ -112,7 +112,18 @@
     % endif
     % if track:
         <li class="video-tracks">
-            ${('<a href="%s">' + _('Download timed transcript') + '</a>') % track}
+            ${('<a href="%s">' + _('Download transcript') + '</a>') % track}
+            <div class="menu-container">
+                <a href="#" title="${_('.srt')}" role="button" aria-disabled="false">.str</a>
+                <ol class="menu" role="menu">
+                    <li>
+                        <a class="speed_link" href="#">Text (.txt) File</a>
+                    </li>
+                    <li>
+                        <a class="speed_link" href="#">SubRip (.srt) File</a>
+                    </li>
+                </ol>
+            </div>
         </li>
     % endif
   </ul>

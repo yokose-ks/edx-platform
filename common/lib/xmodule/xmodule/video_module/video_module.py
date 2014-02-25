@@ -194,6 +194,7 @@ class VideoModule(VideoFields, XModule):
             resource_string(module, 'js/src/video/025_focus_grabber.js'),
             resource_string(module, 'js/src/video/02_html5_video.js'),
             resource_string(module, 'js/src/video/03_video_player.js'),
+            resource_string(module, 'js/src/video/035_video_accessible_menu.js'),
             resource_string(module, 'js/src/video/04_video_control.js'),
             resource_string(module, 'js/src/video/05_video_quality_control.js'),
             resource_string(module, 'js/src/video/06_video_progress_slider.js'),
