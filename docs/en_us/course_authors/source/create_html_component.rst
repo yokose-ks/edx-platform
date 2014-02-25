@@ -194,12 +194,15 @@ Add a Link to a File
 
 You can add a link in an HTML component to any file you've uploaded for the course. For more information about uploading files, see :ref:`Add Files to a Course`.
 
-#. On the **Files & Uploads** page, copy the URL of the file.
+#. On the **Files & Uploads** page, copy the **Embed URL** of the file.
 
-   .. image:: Images/HTML_Link_File.gif
-    :alt: Image of Files and Uploads page with the URL field circled
+  .. image:: Images/HTML_Link_File.png
+   :alt: Image of Files and Uploads page with the URL field circled 
+  
+  
+  .. note:: You must use the **Embed URL** to link to the file, not the **External URL**.
 
-#. Select the text that you want to make into the link.
+2. Select the text that you want to make into the link.
 
 #. Click the link icon in the toolbar.
 
@@ -232,13 +235,18 @@ You can add any image that you have uploaded for the course to an HTML component
 
 To add an image, you'll need the URL of the image that you uploaded to the course. You'll then create a link to the image in the HTML component.
 
-#. On the **Files & Uploads** page, copy the URL of the image that you want.
+#. On the **Files & Uploads** page, copy the **Embed URL** of the image that you want.
 
-#. In the HTML component, switch to HTML view.
+  .. image:: Images/image_link.png
+   :alt: Image of the Files & Upload page with the Embed URL for the image circled
+
+  .. note:: You must use the **Embed URL** to add the image, not the **External URL**.
+
+2. In the HTML component, switch to HTML view.
 
 #. In the location where you want to add the image, enter an image tag that uses the following syntax.
 
-   ``<p><img src="[URL of file]" alt="[description]"/></p>``
+   ``<p><img src="[Embed URL of file]" alt="[description]"/></p>``
 
    For example, your image tag may resemble the following.
 

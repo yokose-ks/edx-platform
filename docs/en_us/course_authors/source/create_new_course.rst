@@ -278,7 +278,7 @@ Add Files to a Course
 **********************
 
 You can add files that you want students to access in the course. After you add a file,
-you must link to it from a course component, update, or in the course handouts. A file 
+you must link to it from a component, a course update, or in the course handouts. A file 
 is only visible to students if you create a link to it.
  
 .. note:: Because the file name becomes part of the URL, students can see the name of the file when they open it. Avoid using file names such as AnswerKey.pdf.
@@ -295,6 +295,24 @@ To add a file:
 #. To close the dialog box, click the **x** in the top right corner. 
 
 When you close the dialog box, the new files appear on the **Files & Uploads** page.
+
+==================
+File URLs
+==================
+
+In the Files & Uploads page, each file has has an **Embed URL** and an **External URL**:
+
+
+.. image:: Images/files_uploads_urls.png
+ :alt: Image of the Files and Uploads page, with Embed URL and External URL columns circled
+
+* You use the **Embed URL** to link to the file or image from a component, a course update, or a course handout. 
+
+* You use the **External URL** to reference the file or image from outside of your course. The external URL does not work if you lock the file.
+
+  .. warning:: You cannot use the External URL as the reference to a file or image from within your course.
+
+You can double click a value in the **Embed URL** or **External URL** column to select the value, then copy it.
 
 
 ==================
@@ -332,14 +350,6 @@ You can navigate through the pages listing files in two ways:
     :alt: Pagination in the Files & Uploads page
 
   
-==================
-Get the File URL
-==================
-To link to the file from a course component, update, or the course handout list, you must get the file URL.
-
-In the **Files & Uploads** page, locate the file. The **URL** column shows the value to use in links.
-
-You can double click a value in the **URL** column to select the value, then copy it.
  
 ==================
 Lock a file
@@ -347,6 +357,8 @@ Lock a file
 By default, anyone can access a file you upload if they know the URL, even people not enrolled in your class.
 
 To ensure that those not in your class cannot view the file, click the lock icon.
+
+.. note:: The external URL does not work if you lock the file.
  
 ==================
 Delete a file
