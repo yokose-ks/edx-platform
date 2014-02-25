@@ -86,11 +86,11 @@
 
           &.action-visible .toggle-checkbox ~ .action-button {
             .icon-eye-open {
-              display: none;
+              display: inline-block;
             }
 
             .icon-eye-close {
-              display: inline-block;
+              display: none;
             }
           }
 
@@ -99,11 +99,11 @@
             color: $white;
 
             .icon-eye-open {
-              display: inline-block;
+              display: none;
             }
 
             .icon-eye-close {
-              display: none;
+              display: inline-block;
             }
           }
         }
@@ -273,6 +273,20 @@
         }
       }
     }
+  }
+
+  // locked pages - basic course nav items
+  .component.locked {
+    background-color: $gray-l6;
+
+    .xblock-student_view {
+      background-color: transparent;
+    }
+
+    .drag-handle {
+      visibility: hidden;
+    }
+
   }
 
   .component.editing {
