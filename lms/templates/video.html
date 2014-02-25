@@ -125,6 +125,20 @@
                 </ol>
             </div>
         </li>
+        ${transcript_format}
+        ${ajax_url}
+
+        ## When the user will change file format, just send to the server the following
+        ## ajax request:
+        ## $.ajax({
+        ##    url: ${ajax_url},
+        ##    type: 'POST',
+        ##    dataType: 'json',
+        ##    data: {
+        ##      'transcript_format': JSON.stringify('txt')
+        ##    },
+        ## });
+
     % endif
   </ul>
 </div>
