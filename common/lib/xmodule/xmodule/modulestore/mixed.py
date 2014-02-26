@@ -23,7 +23,7 @@ class MixedModuleStore(ModuleStoreWriteBase):
     """
     ModuleStore knows how to route requests to the right persistence ms
     """
-    def __init__(self, mappings, stores, **kwargs):
+    def __init__(self, mappings, stores, i18n_service=None, **kwargs):
         """
         Initialize a MixedModuleStore. Here we look into our passed in kwargs which should be a
         collection of other modulestore configuration informations
@@ -49,7 +49,8 @@ class MixedModuleStore(ModuleStoreWriteBase):
                 store['ENGINE'],
                 # XMLModuleStore's don't have doc store configs
                 store.get('DOC_STORE_CONFIG', {}),
-                store['OPTIONS']
+                store['OPTIONS'],
+                i18n_service=i18n_service,
             )
             # If and when locations can identify their course, we won't need
             # these loc maps. They're needed for figuring out which store owns these locations.
