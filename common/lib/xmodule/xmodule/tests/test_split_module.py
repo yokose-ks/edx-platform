@@ -3,8 +3,9 @@ Tests for the Split Testing Module
 """
 
 from xmodule.tests.xml import factories as xml
-from xmodule.split_test_module import SplitTestModule
 from xmodule.tests.xml import XModuleXmlImportTest
+from xmodule.split_test_module import SplitTestModule
+from xmodule.tests import get_test_system
 
 
 class SplitTestModuleFactory(xml.XmlImportFactory):
@@ -38,7 +39,7 @@ class SplitTestModuleTest(XModuleXmlImportTest):
         self.course = self.process_xml(course)
         course_seq = self.course.get_children()[0]
         self.split_test_descriptor = course_seq.get_children()[0]
+        self.split_test_descriptor.bind_for_student(get_test_system(), {})
 
-    def test_creation(self):
-        print type(self.split_test_descriptor)
-        self.assertTrue(type(self.split_test_descriptor) is SplitTestModule)
+    def test_child(self):
+        self.split_test_descriptor.get_child_descriptor()
