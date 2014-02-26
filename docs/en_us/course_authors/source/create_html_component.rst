@@ -257,7 +257,7 @@ To add an image, you'll need the URL of the image that you uploaded to the cours
 
 4. Enter alternative text in the Image Description field. See :ref:`Best Practices for Describing Images` for more information.
 
-#. As needed, in the **Insert/Edit Image** dialog box, the customize the image alignment, dimensions, border, and vertical and horizontal space.
+#. As needed, in the **Insert/Edit Image** dialog box, customize the image alignment, dimensions, border, and vertical and horizontal space.
 
 #. Click **Insert**.
 
