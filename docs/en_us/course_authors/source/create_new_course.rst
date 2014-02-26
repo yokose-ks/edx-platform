@@ -267,7 +267,7 @@ Set Course Requirements
 The estimated Effort per Week appears on the Course Summary page that students see.
 
 #. From the **Settings** menu, select **Schedule & Details**.
-#. Scroll down to the **Requirments** section.
+#. Scroll down to the **Requirements** section.
 #. In the **Hours of Effort per Week** field, enter the number of hours you expect students to work on this course each week.
 #. View your course summary page to test how the video will appear to students.
 
@@ -285,13 +285,13 @@ is only visible to students if you create a link to it.
   
 .. warning:: If you upload a file with the same name as an existing course file, the original file is overwritten without warning.
 
-To add a file:
+To add files:
  
 #. From the **Content** menu, select **Files & Uploads**.
 #. Click **Upload New File**.
 #. In the **Upload New File** dialog box, click **Choose File**.
-#. In the **Open** dialog box, locate the file that you want, and then click **Open**.
-#. To add another file, click **Load Another File**. 
+#. In the **Open** dialog box, select one more files that you want to upload, then click **Open**.
+#. To add more file, click **Load Another File** and repeat the previous step.
 #. To close the dialog box, click the **x** in the top right corner. 
 
 When you close the dialog box, the new files appear on the **Files & Uploads** page.
