@@ -218,7 +218,8 @@ class VideoModule(VideoFields, XModule):
 
     def handle_ajax(self, dispatch, data):
         accepted_keys = [
-            'speed', 'saved_video_position', 'transcript_format',
+            'speed', 'saved_video_position', 'transcript_language',
+            'transcript_format',
         ]
 
         conversions = {
