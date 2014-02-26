@@ -106,7 +106,8 @@ class TestUserServiceInterface(TestCase):
             render_template=Mock(),
             replace_urls=str,
             course_id=self.course_id,
-            get_real_user=mock_get_real_user
+            get_real_user=mock_get_real_user,
+            descriptor_runtime=Mock()
         )
         self.scope = 'course'
         self.key = 'key1'
