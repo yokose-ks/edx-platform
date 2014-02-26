@@ -134,3 +134,8 @@ class ProblemFactory(XmlImportFactory):
     """Factory for <problem> nodes"""
     tag = 'problem'
     text = '<h1>Empty Problem!</h1>'
+
+
+class HtmlFactory(XmlImportFactory):
+    """Factory for <problem> nodes"""
+    tag = 'html'
