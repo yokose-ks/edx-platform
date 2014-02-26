@@ -95,6 +95,10 @@ class XmlImportFactory(Factory):
         kwargs['xml_node'].text = kwargs.pop('text', None)
 
         kwargs['xml_node'].attrib.update(kwargs.pop('attribs', {}))
+
+        # Make sure that the xml_module doesn't try and open a file to find the contents
+        # of this node.
+        kwargs['xml_node'].set('not_a_pointer', 'true')
         for key in kwargs.keys():
             if key not in XML_IMPORT_ARGS:
                 kwargs['xml_node'].set(key, kwargs.pop(key))
