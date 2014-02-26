@@ -10,7 +10,7 @@ Conventions to keep in mind:
 
 * EdX uses MySQL 5.1 relational database system with InnoDb storage engine.
 * All strings are stored as UTF-8.
-* All datetimes are stored as UTC.
+* All datetimes are stored as UTC (Coordinated Universal Time).
 
 .. note::
      EdX also uses the Django Python Web framework. Tables that are built into the Django Web framework are not documented here unless we use them in unconventional ways.
@@ -175,7 +175,7 @@ id
 ----------
 username
 ----------
-  The unique username for a user in our system. It can contain alphanumeric, _, @, +, . and - characters. The username is the only information that the students give about themselves that we currently expose to other students. We have never allowed people to change their usernames so far, but that's not something we guarantee going forward.
+  The unique username for a user in our system. It can contain alphanumerics and the special characters shown within the brackets: [ _ @ + - . ]. The username is the only information that the students give about themselves that we currently expose to other students. We have never allowed people to change their usernames so far, but that's not something we guarantee going forward.
 
 ------------
 first_name
@@ -511,38 +511,21 @@ A sample of the heading row and a data row in the ``student_courseenrollment`` t
 
 The ``student_courseenrollment`` table has the following columns:
 
-.. list-table::
-    :widths: 15 15 15 15
-    :header-rows: 1
-
-    * - Column
-      - Type
-      - Null
-      - Key
-    * - id
-      - int(11)
-      - 
-      - PRI
-    * - user_id
-      - int(11)
-      - 
-      -
-    * - course_id
-      - varchar(255)
-      - 
-      -
-    * - created
-      - datetime
-      - 
-      -
-    * - is_active
-      - tinyint(1)
-      - 
-      -
-    * - mode
-      - 
-      - 
-      -
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++===========+==============+======+=====+=========+================+
+| id        | int(11)      | NO   | PRI | NULL    | auto_increment |
++-----------+--------------+------+-----+---------+----------------+
+| user_id   | int(11)      | NO   | MUL | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+| course_id | varchar(255) | NO   | MUL | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+| created   | datetime     | YES  | MUL | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+| is_active | tinyint(1)   | NO   |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
+| mode      | varchar(100) | NO   |     | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
 
 ----
 id
@@ -557,7 +540,7 @@ user_id
 -----------
 course_id
 -----------
-  The ID of the course run they user is enrolling in (for example, MITx/6.002x/2012_Fall). You can get this from the URL when you view the courseware on your browser.
+  The ID of the course run that the user is enrolling in (for example, MITx/6.002x/2012_Fall). You can get this from the URL when you view the courseware on your browser.
 
 ---------
 created
@@ -593,7 +576,6 @@ A sample of the heading row and a data row in the ``user_id_map`` table follow.
     hash_id id  username
 
     e9989f2cca1d699d88e14fd43ccb5b5f  NNNNNNN AAAAAAAA
-
 
 The ``student_courseenrollment`` table has the following columns: 
 
@@ -671,34 +653,31 @@ Every student has a separate row for every piece of content in the course, makin
 
 The ``courseware_studentmodule`` table has the following columns:
 
-  +-------------+--------------+------+-----+---------------+
-  | Column      | Type         | Null | Key | Comment       |
-  +=============+==============+======+=====+===============+
-  | id          | int(11)      | NO   | PRI |               |
-  +-------------+--------------+------+-----+---------------+
-  | module_type | varchar(32)  | NO   | MUL |               |
-  +-------------+--------------+------+-----+---------------+
-  | module_id   | varchar(255) | NO   | MUL |               |
-  +-------------+--------------+------+-----+---------------+
-  | student_id  | int(11)      | NO   | MUL |               |
-  +-------------+--------------+------+-----+---------------+
-  | state       | longtext     | YES  |     |               |
-  +-------------+--------------+------+-----+---------------+
-  | grade       | double       | YES  | MUL | # see note    |
-  +-------------+--------------+------+-----+---------------+
-  | created     | datetime     | NO   | MUL |               |
-  +-------------+--------------+------+-----+---------------+
-  | modified    | datetime     | NO   | MUL |               |
-  +-------------+--------------+------+-----+---------------+
-  | max_grade   | double       | YES  |     | # see note    |
-  +-------------+--------------+------+-----+---------------+
-  | done        | varchar(8)   | NO   | MUL | # ignore this |
-  +-------------+--------------+------+-----+---------------+
-  | course_id   | varchar(255) | NO   | MUL |               |
-  +-------------+--------------+------+-----+---------------+
-
-.. note:: 
-   Only the problem, selfassessment, and combinedopenended module types use these columns.
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++=============+==============+======+=====+=========+================+
+| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
++-------------+--------------+------+-----+---------+----------------+
+| module_type | varchar(32)  | NO   | MUL | problem |                |
++-------------+--------------+------+-----+---------+----------------+
+| module_id   | varchar(255) | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| student_id  | int(11)      | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| state       | longtext     | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| grade       | double       | YES  | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| created     | datetime     | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| modified    | datetime     | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| max_grade   | double       | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| done        | varchar(8)   | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+| course_id   | varchar(255) | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
 
 ----
 id
@@ -724,9 +703,9 @@ module_type
      * - course
        - The top level course module of which all course content is descended.
      * - crowdsource_hinter
-       - 
+       - Not currently used. **History**: This module-type was included on a test basis in a single course. 
      * - lti
-       - Learning Tools Interoperability component that adds an external learning application to either display content or display content and require a student response. (**is this correct?**)
+       - Learning Tools Interoperability component that adds an external learning application to display content, or to display content and also require a student response. (**is this correct?**)
      * - peergrading
        - Indicates a problem that is graded by other students. (**is this correct?**)
      * - poll_question
@@ -738,7 +717,7 @@ module_type
      * - randomize
        - Specifies that specified values in a problem changes each time the problem is accessed. (**is this correct?**)
      * - selfassessment
-       - Self assessment problems. An early test of the open ended grading system that is not in widespread use. Recently deprecated in favor of ``combinedopenended``.
+       - Self assessment problems. Used in a single course in Fall 2012 as an early test of the open ended grading system. Deprecated in favor of ``combinedopenended``. 
      * - sequential
        - A collection of videos, problems, and other materials, rendered as a horizontal icon bar in the courseware.
      * - timelimit
@@ -746,7 +725,7 @@ module_type
      * - video
        - A component that makes a video file available for students to play. (**is this correct?**)
      * - videoalpha
-       - 
+       - Not currently used. **History**: During the implementation of a change to the ``video`` module_type, both video and videoalpha were stored. 
      * - videosequence
        - A collection of videos, exercise problems, and other materials, rendered as a horizontal icon bar in the courseware. Use is inconsistent, and some courses use a ``sequential`` instead.
      * - word_cloud
@@ -810,7 +789,9 @@ state
 
   ``combinedopenended``
 
-.. TODO: More details to come.
+    The JSON document includes attributes that identify the student's ``answer``, a ``rubric_xml`` that includes the complete XML syntax for teh rubric, the ``score`` earned and the ``max_score``, and the ``grader_id`` (the ``auth_user.id``) of each student who assessed the answer. 
+
+.. is a complete list of all possible attributes needed? 26 Feb 14  
 
   ``conditional``
 
@@ -820,18 +801,18 @@ state
 
     There are many kinds of problems supported by the system, and they all have different state requirements. Note that a single problem can have many different response fields. If a problem generates a random circuit and asks five questions about it, then all of that is stored in one row in ``courseware_studentmodule``.
 
-.. Write out different problem types and their state.
+.. Include the different problem types and info about the state.
 
   ``selfassessment``
 
-.. TODO: More details to come.
+   In the course that used this module type, the JSON document included attributes for the ``student_answers``, the ``scores`` earned and ``max_score``, and any ``hints`` provided.
 
 -------
 grade
 -------
   Floating point value indicating the total unweighted grade for this problem that the student has scored. Basically how many responses they got right within the problem.
 
-  Only ``problem`` and ``selfassessment`` types use this column. All other modules set this to NULL. Due to a quirk in how rendering is done, ``grade`` can also be NULL for a tenth of a second or so the first time that a user loads a problem. The initial load will trigger two writes, the first of which sets the ``grade`` to NULL, and the second of which sets it to 0.
+  Only ``problem`` and ``selfassessment`` types use this column. All other modules set this to NULL. Due to a quirk in how rendering is done, ``grade`` can also be NULL for a tenth of a second or so the first time that a user loads a problem. The initial load triggers two writes, the first of which sets the ``grade`` to NULL, and the second of which sets it to 0.
 
 ---------
 created
@@ -890,39 +871,39 @@ A sample of the heading row and two data rows in the ``certificates_generatedcer
 
 The ``certificates_generatedcertificate`` table has the following columns:
 
-  +---------------+--------------+------+-----+---------+----------------+
-  | Column        | Type         | Null | Key | Default | Extra          |
-  +===============+==============+======+=====+=========+================+
-  | id            | int(11)      | NO   | PRI | NULL    | auto_increment |
-  +---------------+--------------+------+-----+---------+----------------+
-  | user_id       | int(11)      | NO   | MUL | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | download_url  | varchar(128) | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | grade         | varchar(5)   | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | course_id     | varchar(255) | NO   | MUL | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | key           | varchar(32)  | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | distinction   | tinyint(1)   | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | status        | varchar(32)  | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | verify_uuid   | varchar(32)  | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | download_uuid | varchar(32)  | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | name          | varchar(255) | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | created_date  | datetime     | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | modified_date | datetime     | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | error_reason  | varchar(512) | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
-  | mode          | TBD          | NO   |     | NULL    |                |
-  +---------------+--------------+------+-----+---------+----------------+
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| id            | int(11)      | NO   | PRI | NULL    | auto_increment |
++---------------+--------------+------+-----+---------+----------------+
+| user_id       | int(11)      | NO   | MUL | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| download_url  | varchar(128) | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| grade         | varchar(5)   | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| course_id     | varchar(255) | NO   | MUL | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| key           | varchar(32)  | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| distinction   | tinyint(1)   | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| status        | varchar(32)  | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| verify_uuid   | varchar(32)  | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| download_uuid | varchar(32)  | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| name          | varchar(255) | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| created_date  | datetime     | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| modified_date | datetime     | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| error_reason  | varchar(512) | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+| mode          | varchar(32)  | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
 
 ---------
 id
@@ -972,7 +953,7 @@ status
        * - deleting 
          - A request has been made to delete a certificate.
        * - downloadable 
-         - The student passed the course and a  certificate is available for download.
+         - The student passed the course and a certificate is available for download.
        * - error 
          - An error ocurred during certificate generation.
        * - generating 
