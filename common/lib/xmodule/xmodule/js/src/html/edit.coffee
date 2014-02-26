@@ -80,6 +80,16 @@ class @HTMLEditingDescriptor
     )
 
     @visualEditor = ed
+    
+    ed.onExecCommand.add(@onExecCommandHandler)
+
+  # Intended to run after the "image" plugin is used so that static urls are set
+  # correctly in the Visual editor immediately after command use.
+  onExecCommandHandler: (ed, cmd, ui, val) =>
+      if cmd == 'mceInsertContent' and val.match(/^<img/)
+        content = rewriteStaticLinks(ed.getContent(), '/static/', @base_asset_url)
+        ed.setContent(content)
+        ed.startContent = content
 
   onSwitchEditor: (e) =>
     e.preventDefault();
