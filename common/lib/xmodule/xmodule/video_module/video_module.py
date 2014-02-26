@@ -10,7 +10,6 @@ in-browser HTML5 video method (when in HTML5 mode).
 in XML.
 """
 
-import os
 import json
 import logging
 from operator import itemgetter
@@ -219,17 +218,24 @@ class VideoModule(VideoFields, XModule):
 
     def handle_ajax(self, dispatch, data):
         accepted_keys = [
-            'speed', 'saved_video_position', 'transcript_language',
-            'transcript_format',
+            'speed', 'saved_video_position', 'transcript_format',
         ]
+
+        conversions = {
+            'speed': json.loads,
+            'saved_video_position': lambda v: RelativeTime.isotime_to_timedelta(v),
+        }
+
         if dispatch == 'save_user_state':
             for key in data:
                 if hasattr(self, key) and key in accepted_keys:
-                    if key == 'saved_video_position':
-                        relative_position = RelativeTime.isotime_to_timedelta(data[key])
-                        self.saved_video_position = relative_position
+                    if key in conversions:
+                        value = conversions[key](data[key])
                     else:
-                        setattr(self, key, json.loads(data[key]))
+                        value = data[key]
+
+                    setattr(self, key, value)
+
                     if key == 'speed':
                         self.global_speed = self.speed
 
@@ -277,6 +283,9 @@ class VideoModule(VideoFields, XModule):
         # OrderedDict for easy testing of rendered context in tests
         transcript_languages = OrderedDict(sorted(languages.items(), key=itemgetter(1)))
 
+        transcript_formats_list = self.descriptor.fields['transcript_format'].values
+        transcript_formats = {i['display_name']: i['value'] for i in transcript_formats_list}
+
         return self.system.render_template('video.html', {
             'ajax_url': self.system.ajax_url + '/save_user_state',
             'autoplay': settings.FEATURES.get('AUTOPLAY_VIDEOS', False),
@@ -300,6 +309,7 @@ class VideoModule(VideoFields, XModule):
             'yt_test_timeout': 1500,
             'yt_test_url': settings.YOUTUBE_TEST_URL,
             'transcript_format': self.transcript_format,
+            'transcript_formats_list': transcript_formats,
             'transcript_language': transcript_language,
             'transcript_languages': json.dumps(transcript_languages),
             'transcript_translation_url': self.runtime.handler_url(self, 'transcript').rstrip('/?') + '/translation',
@@ -387,7 +397,7 @@ class VideoModule(VideoFields, XModule):
                 try:
                     asset(self.location, self.sub, 'en')
                 except NotFoundError:
-                    passs
+                    pass
                 else:
                     available_translations = ['en']
             for lang in self.transcripts:
