@@ -118,11 +118,6 @@ class SplitTestModule(SplitTestFields, XModule):
         return [self.system.get_module(descriptor)
                 for descriptor in self.descriptor.get_children()]
 
-    def _get_experiment_definition():
-        """
-        TODO: what interface should this actually use?
-        """
-
     def _staff_view(self, context):
         """
         Render the staff view for a split test module.
