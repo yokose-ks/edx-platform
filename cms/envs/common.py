@@ -200,8 +200,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-# This can be overridden if one does not want LMS/CMS to be embeddable in
-# an iframe
+# Clickjacking protection can be enabled by setting this to 'DENY'
 X_FRAME_OPTIONS = 'ALLOW'
 
 ############# XBlock Configuration ##########
