@@ -757,7 +757,7 @@ function () {
             });
         }
 
-        if (this.resizer && !this.isFullScreen) {
+        if (this.resizer) {
             this.resizer.alignByWidthOnly();
         }
 
@@ -775,14 +775,9 @@ function () {
         var paddingTop;
 
         if (this.isFullScreen) {
-            paddingTop = parseInt(
-                this.videoCaption.subtitlesEl.css('padding-top'), 10
-            );
-
             return $(window).height() -
                 this.videoControl.el.height() -
-                0.5 * this.videoControl.sliderEl.height() -
-                2 * paddingTop;
+                0.5 * this.videoControl.sliderEl.height();
         } else {
             return this.container.height();
         }

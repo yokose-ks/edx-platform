@@ -235,11 +235,7 @@ function () {
             fullScreenClassNameEl.removeClass('video-fullscreen');
             text = gettext('Fill browser');
 
-            this.resizer
-                .setParams({
-                    container: this.videoEl.parent()
-                })
-                .setMode('width');
+            this.resizer.setMode('width');
 
             win.scrollTop(this.scrollPos);
         } else {
@@ -249,11 +245,7 @@ function () {
             fullScreenClassNameEl.addClass('video-fullscreen');
             text = gettext('Exit full browser');
 
-            this.resizer
-                .setParams({
-                    container: window
-                })
-                .setMode('both');
+            this.resizer.setMode('both');
 
         }
 

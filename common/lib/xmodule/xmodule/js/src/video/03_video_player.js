@@ -222,7 +222,7 @@ function (HTML5Video, Resizer) {
         state.resizer = new Resizer({
                 element: state.videoEl,
                 elementRatio: videoWidth/videoHeight,
-                container: state.videoEl.parent()
+                container: state.container
             })
             .callbacks.once(function() {
                 state.trigger('videoCaption.resize', null);
