@@ -1,6 +1,7 @@
 """
 Tests for the Split Testing Module
 """
+import ddt
 from mock import Mock
 
 from xmodule.tests.xml import factories as xml
@@ -16,6 +17,7 @@ class SplitTestModuleFactory(xml.XmlImportFactory):
     tag = 'split_test'
 
 
+@ddt.ddt
 class SplitTestModuleTest(XModuleXmlImportTest):
     """
     Test the split test module
@@ -52,5 +54,9 @@ class SplitTestModuleTest(XModuleXmlImportTest):
             self.split_test_descriptor._field_data
         )
 
-    def test_child(self):
-        self.split_test_descriptor.child_descriptor
+    @ddt.data(('0', 'split_test_cond0'), ('1', 'split_test_cond1'))
+    @ddt.unpack
+    def test_child(self, user_tag, child_url_name):
+        self.module_system.user_service.get_tag.return_value = user_tag
+
+        self.assertEquals(self.split_test_descriptor.child_descriptor.url_name, child_url_name)
