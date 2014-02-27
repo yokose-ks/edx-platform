@@ -44,7 +44,8 @@ class SplitTestModuleTest(XModuleXmlImportTest):
             UserPartition(0, 'first_partition', 'First Partition', [Group("0", 'alpha'), Group("1", 'beta')]),
             UserPartition(1, 'second_partition', 'Second Partition', [Group("0", 'abel'), Group("1", 'baker'), Group("2", 'charlie')])
         ]
-        self.module_system.user_service = Mock()
+        self.module_system.user_service = Mock(name='user_service')
+        self.module_system.user_service.get_tag.return_value='1'
         self.split_test_descriptor = course_seq.get_children()[0]
         self.split_test_descriptor.bind_for_student(
             self.module_system,
@@ -52,4 +53,4 @@ class SplitTestModuleTest(XModuleXmlImportTest):
         )
 
     def test_child(self):
-        self.split_test_descriptor.child_descriptor()
+        self.split_test_descriptor.child_descriptor
