@@ -110,6 +110,7 @@ class LmsHandlerUrls(object):
             'uri': uri,
         })
 
+
 class LmsUserPartitions(object):
     """
     Another runtime mixin that provides access to the student partitions defined on the

@@ -7,7 +7,7 @@ import logging
 from xmodule.partitions.partitions_service import get_user_group_for_partition
 from xmodule.progress import Progress
 from xmodule.seq_module import SequenceDescriptor
-from xmodule.x_module import XModule
+from xmodule.x_module import XModule, module_attr
 
 from lxml import etree
 
@@ -62,7 +62,7 @@ class SplitTestModule(SplitTestFields, XModule):
             self.child_descriptor = self.get_child_descriptor_by_location(child_location)
         else:
             # Oops.  Config error.
-            log.debug("configuration error in split test module: invalid group_id.  Showing error")
+            log.debug("configuration error in split test module: invalid group_id %r (not one of %r).  Showing error", str_group_id, self.group_id_to_child.keys())
             self.child_descriptor = None
 
         if self.child_descriptor is not None:
@@ -182,6 +182,8 @@ class SplitTestDescriptor(SplitTestFields, SequenceDescriptor):
     module_class = SplitTestModule
 
     filename_extension = "xml"
+
+    child_descriptor = module_attr('child_descriptor')
 
     def definition_to_xml(self, resource_fs):
 

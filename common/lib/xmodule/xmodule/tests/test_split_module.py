@@ -1,12 +1,13 @@
 """
 Tests for the Split Testing Module
 """
+from mock import Mock
 
 from xmodule.tests.xml import factories as xml
 from xmodule.tests.xml import XModuleXmlImportTest
 from xmodule.split_test_module import SplitTestModule
 from xmodule.tests import get_test_system
-
+from xmodule.partitions.partitions import Group, UserPartition
 
 class SplitTestModuleFactory(xml.XmlImportFactory):
     """
@@ -38,8 +39,17 @@ class SplitTestModuleTest(XModuleXmlImportTest):
 
         self.course = self.process_xml(course)
         course_seq = self.course.get_children()[0]
+        self.module_system = get_test_system()
+        self.module_system.user_partitions = [
+            UserPartition(0, 'first_partition', 'First Partition', [Group("0", 'alpha'), Group("1", 'beta')]),
+            UserPartition(1, 'second_partition', 'Second Partition', [Group("0", 'abel'), Group("1", 'baker'), Group("2", 'charlie')])
+        ]
+        self.module_system.user_service = Mock()
         self.split_test_descriptor = course_seq.get_children()[0]
-        self.split_test_descriptor.bind_for_student(get_test_system(), {})
+        self.split_test_descriptor.bind_for_student(
+            self.module_system,
+            self.split_test_descriptor._field_data
+        )
 
     def test_child(self):
-        self.split_test_descriptor.get_child_descriptor()
+        self.split_test_descriptor.child_descriptor()
