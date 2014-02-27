@@ -4,38 +4,103 @@
    contain the root `toctree` directive.
 
 
+
+##########
 Contents
-========
+##########
 
 .. toctree::
-   :numbered:
-   :maxdepth: 5
+   :maxdepth: 1
+
+
+****************
+Get Started
+****************
+
+
+.. toctree::
+   :maxdepth: 1
 
    read_me
    change_log
    accounts
    get_started
+
+****************
+Build a Course
+****************
+
+
+.. toctree::
+   :maxdepth: 1
+
    create_new_course
    establish_grading_policy
    organizing_course
+   export_import_course
+   appendices/a
+   appendices/b
+   glossary
+
+********************************
+Create Course Content
+********************************
+
+
+.. toctree::
+   :maxdepth: 1
+
+   accessibility
    create_html_component
    create_video
    create_discussion
+
+********************************
+Build Problems
+********************************
+
+
+.. toctree::
+   :maxdepth: 1
+
    create_problem_component
    common_problems
    advanced_problems
    specialized_problems
    external_graders
    open_response_assessment
+   ora_students
+   appendices/f
+   appendices/g
+
+********************************
+Add Tools to Your Course
+********************************
+
+
+.. toctree::
+   :maxdepth: 1
+
    google_hangouts
    tools
    additional_tools
    set_content_releasedates
    view_course_content
-   export_import_course
-   accessibility
-   checking_student_progress
-   ora_students
+
+
+
+
+   
+
+
+********************************
+Run Your Course
+********************************
+
+
+.. toctree::
+   :maxdepth: 1
+
    discussions
    discussion_guidance_moderators
    course_data
@@ -44,15 +109,6 @@ Contents
    beta_testing
    course_student
    course_grades
-   glossary
+   checking_student_progress
+   appendices/c
 
-
-
-Appendices
-==========
-
-.. toctree::
-   :maxdepth: 3
-   :glob:
-
-   appendices/*
