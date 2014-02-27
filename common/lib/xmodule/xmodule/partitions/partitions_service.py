@@ -123,13 +123,17 @@ def _get_group(runtime, user_partition):
     group = local_random().choice(user_partition.groups)
     runtime.user_service.set_tag(scope, key, group.id)
 
-    # emit event for analytics:
-    # TODO: is this all the needed info?
-    event_info = {'group_id': group.id,
-             'group_name': group.name,
-             'partition_id': user_partition.id,
-             'partition_name': user_partition.name}
-    runtime.track_function('assigned_user_to_partition', event_info)
+    # emit event for analytics
+    # FYI - context is always user ID that is logged in, NOT the user id that is
+    # being operated on. If instructor can move user explicitly, then we should
+    # put in event_info the user id that is being operated on.
+    event_info = {
+        'group_id': group.id,
+        'group_name': group.name,
+        'partition_id': user_partition.id,
+        'partition_name': user_partition.name
+    }
+    runtime.track_function('edx.split_test.assigned_user_to_partition', event_info)
 
     return group.id
 
