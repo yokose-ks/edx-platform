@@ -112,9 +112,9 @@
     % endif
     % if track:
         <li class="video-tracks">
-            ${('<a href="%s">' + _('Download transcript') + '</a>') % track}
-            <div class="menu-container">
-                <a class="menu-button" href="#" title="${_('.srt')}" role="button" aria-disabled="false">${_('.srt')}</a>
+            ${('<a href="%s">' + _('Download transcript') + '</a>') % track
+            }<div class="menu-container">
+                <a class="menu-button" href="#" title="${'.' + transcript_format}" role="button" aria-disabled="false">${'.' + transcript_format}</a>
                 <ol class="menu" role="menu">
                 % for key, value in transcript_formats_list.items():
                   % if value == transcript_format:
@@ -122,28 +122,14 @@
                   % else:
                   <li class="menu-item">
                   % endif
-                      <a class="menu-item-link" href="#${value}" title="${_('Text ({file_format}) File'.format(file_format=key))}" data-value="${value}" role="menuitem" aria-disabled="false">
-                        ${_('Text ({file_format}) File'.format(file_format=key))}
+                      <a class="menu-item-link" href="#${value}" title="${_('{file_format}'.format(file_format=key))}" data-value="${value}" role="menuitem" aria-disabled="false">
+                        ${_('{file_format}'.format(file_format=key))}
                       </a>
                   </li>
                 % endfor
                 </ol>
             </div>
         </li>
-
-        ${ajax_url}
-
-        ## When the user will change file format, just send to the server the following
-        ## ajax request:
-        ## $.ajax({
-        ##    url: ${ajax_url},
-        ##    type: 'POST',
-        ##    dataType: 'json',
-        ##    data: {
-        ##      'transcript_format': 'txt'
-        ##    },
-        ## });
-
     % endif
   </ul>
 </div>

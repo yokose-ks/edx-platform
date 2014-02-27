@@ -249,6 +249,10 @@ function () {
     // ***************************************************************
 
     function changeFileType(event) {
+        this.saveState(true, {
+            'transcript_format': $(event.currentTarget).data('value')
+        });
+
         /*TO DO
         var parentEl = $(event.target).parent();
 

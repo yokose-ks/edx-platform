@@ -160,8 +160,8 @@ class VideoFields(object):
         help="Transcript file format to download by user.",
         scope=Scope.preferences,
         values=[
-            {"display_name": ".srt", "value": "srt"},
-            {"display_name": ".txt", "value": "txt"}
+            {"display_name": "SubRip (.srt) file", "value": "srt"},
+            {"display_name": "Text (.srt) file", "value": "txt"}
         ],
         default='srt',
     )
@@ -213,7 +213,10 @@ class VideoModule(VideoFields, XModule):
             resource_string(module, 'js/src/video/10_main.js')
         ]
     }
-    css = {'scss': [resource_string(module, 'css/video/display.scss')]}
+    css = {'scss': [
+        resource_string(module, 'css/video/display.scss'),
+        resource_string(module, 'css/video/accessible_menu.scss'),
+    ]}
     js_module_name = "Video"
 
     def handle_ajax(self, dispatch, data):
