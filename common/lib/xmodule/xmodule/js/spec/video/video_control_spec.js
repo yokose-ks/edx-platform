@@ -104,6 +104,38 @@
             });
         });
 
+        describe('constructor with start-time', function () {
+            beforeEach(function () {
+                state = jasmine.initializePlayer({
+                    start: 10
+                });
+            });
+
+            it('the timer slider and VCR are set to start-time', function () {
+                var duration;
+
+                waitsFor(function () {
+                    duration = state.videoPlayer.duration();
+
+                    return isFinite(duration) && duration > 0;
+                }, 'duration is set', 5000);
+
+                runs(function () {
+                    if (duration === 60) {
+                        expect($('.video-controls').find('.vidtime'))
+                            .toHaveText('0:10 / 1:00');
+                    } else if (duration === 61) {
+                        expect($('.video-controls').find('.vidtime'))
+                            .toHaveText('0:10 / 1:01');
+                    } else {
+                        expect(duration).toBe(60);
+                    }
+
+                    expect(state.videoProgressSlider.slider.slider('option', 'value')).toBe(10);
+                });
+            });
+        });
+
         describe('play', function () {
             beforeEach(function () {
                 state = jasmine.initializePlayer();
