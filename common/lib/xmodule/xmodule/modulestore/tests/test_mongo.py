@@ -14,12 +14,12 @@ from xblock.exceptions import InvalidScopeError
 
 from xmodule.tests import DATA_DIR
 from xmodule.modulestore import Location, MONGO_MODULESTORE_TYPE
-from xmodule.modulestore.django import loc_mapper
 from xmodule.modulestore.mongo import MongoModuleStore, MongoKeyValueStore
 from xmodule.modulestore.draft import DraftModuleStore
 from xmodule.modulestore.xml_importer import import_from_xml, perform_xlint
 from xmodule.contentstore.mongo import MongoContentStore
 
+from xmodule.modulestore.tests.django_utils import loc_mapper
 from xmodule.modulestore.tests.test_modulestore import check_path_to_location
 from IPython.testing.nose_assert_methods import assert_in
 from xmodule.exceptions import NotFoundError

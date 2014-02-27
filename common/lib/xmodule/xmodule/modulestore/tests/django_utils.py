@@ -2,11 +2,14 @@
 Modulestore configuration for test cases.
 """
 
+from mock import Mock
 from uuid import uuid4
 from django.test import TestCase
 from xmodule.modulestore.django import (
     editable_modulestore, clear_existing_modulestores, loc_mapper)
 from xmodule.contentstore.django import contentstore
+from xmodule.modulestore.loc_mapper_store import LocMapperStore
+from xmodule.modulestore.tests.test_location_mapper import TrivialCache
 
 
 def mixed_store_config(data_dir, mappings):
@@ -274,3 +277,15 @@ class ModuleStoreTestCase(TestCase):
 
         # Call superclass implementation
         super(ModuleStoreTestCase, self)._post_teardown()
+
+
+def loc_mapper():
+    modulestore_options = {
+            'host': 'localhost',
+            'db': 'test_xmodule',
+            'collection': 'modulestore{0}'.format(uuid4().hex[:5]),
+    }
+
+    cache = TrivialCache()
+    instrumented_cache = Mock(spec=cache, wraps=cache)
+    return LocMapperStore(instrumented_cache, **modulestore_options)
