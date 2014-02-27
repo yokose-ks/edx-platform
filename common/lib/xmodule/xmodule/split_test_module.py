@@ -74,7 +74,7 @@ class SplitTestModule(SplitTestFields, XModule):
             log.debug("configuration error in split test module: no such child")
             self.child = None
 
-    def get_child_descriptor_by_location(self, relative_location):
+    def get_child_descriptor_by_location(self, location):
         """
         Look through the children and look for one with the given location.
         Returns the descriptor.
@@ -84,11 +84,8 @@ class SplitTestModule(SplitTestFields, XModule):
         # it calls get_child_descriptors() internally, but that doesn't work until
         # we've picked a choice.  Use self.descriptor.get_children() instead.
 
-        course_url = u"{0.tag}://{0.org}/{0.course}/".format(self.descriptor.location)
         for child in self.descriptor.get_children():
-            location_url = "{course}{relative_location}".format(course=course_url,
-                                                                relative_location=relative_location)
-            if child.location.url() == location_url:
+            if child.location.url() == location:
                 return child
 
         return None

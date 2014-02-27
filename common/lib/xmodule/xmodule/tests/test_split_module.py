@@ -6,9 +6,9 @@ from mock import Mock
 
 from xmodule.tests.xml import factories as xml
 from xmodule.tests.xml import XModuleXmlImportTest
-from xmodule.split_test_module import SplitTestModule
 from xmodule.tests import get_test_system
 from xmodule.partitions.partitions import Group, UserPartition
+
 
 class SplitTestModuleFactory(xml.XmlImportFactory):
     """
@@ -26,14 +26,13 @@ class SplitTestModuleTest(XModuleXmlImportTest):
     def setUp(self):
         self.course_id = 'test_org/test_course_number/test_run'
         # construct module
-
         course = xml.CourseFactory.build()
         sequence = xml.SequenceFactory.build(parent=course)
         split_test = SplitTestModuleFactory(
             parent=sequence,
             attribs={
                 'user_partition_id': '0',
-                'group_id_to_child': '{"0": "html/split_test_cond0", "1": "html/split_test_cond1"}'
+                'group_id_to_child': '{"0": "i4x://edX/xml_test_course/html/split_test_cond0", "1": "i4x://edX/xml_test_course/html/split_test_cond1"}'
             }
         )
         xml.HtmlFactory(parent=split_test, url_name='split_test_cond0')
