@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Usage: manage.py {lms|cms} [--settings env] ...
+hoge-Usage: manage.py {lms|cms} [--settings env] ...
 
 Run django management commands. Because edx-platform contains multiple django projects,
 the first argument specifies which project to run (cms [Studio] or lms [Learning Management System]).
