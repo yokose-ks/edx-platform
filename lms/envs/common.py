@@ -838,6 +838,12 @@ PIPELINE_CSS = {
         ],
         'output_filename': 'css/lms-style-course.css',
     },
+    'style-gacco': {
+        'source_filenames': [
+            'sass/gacco/gacco.css',
+        ],
+        'output_filename': 'css/lms-style-gacco.css'
+    },
 }
 
 
