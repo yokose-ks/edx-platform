@@ -28,7 +28,7 @@ msgstr "退会確認メールが送信されました"
 
 #: lms/templates/dashboard.html
 msgid "An email has been sent to {email}. Follow the link in the email to resign."
-msgstr "まだ退会手続きは完了していません。「{email}」宛に確認メールが送信されます。メール文中にある退会確認用のリンクをクリックをすることで、退会処理をすることができます。別途メールを確認いただき、メール文中の案内をご覧ください。"
+msgstr "まだ退会手続きは完了していません。「{email}」宛に確認メールが送信されます。メール文中にある退会確認用のリンクをクリックをすることで、退会処理をすることができます。別途メールを確認いただき、メール文中の案内をご覧ください。<br /></br /><span style=\"color: red;\">なお、同じメールアドレスでの新規登録はできませんのでご注意ください。</span>"
 
 #: lms/templates/registration/resign_subject.txt
 msgid "Resignation from %(site_name)s"
@@ -156,10 +156,43 @@ msgstr ""
 msgid "The following errors occurred while processing your password reset: "
 msgstr "パスワード変更処理をする際にエラーが発生しました："
 
-# common/djangoapps/student/forms.py
+#: common/djangoapps/student/forms.py
 msgid "New password is required."
 msgstr "新パスワードは必須です。"
 
-# common/djangoapps/student/forms.py
+#: common/djangoapps/student/forms.py
 msgid "New password confirmation is required."
 msgstr "新パスワード(再入力)は必須です。"
+
+#: Temporary Transifex only has {CERT_SHORT_NAME} version
+#: lms/templates/dashboard.py
+msgid "Enter your desired full name, as it will appear on the {platform} certificates:"
+msgstr "新しい氏名を入力してください。{platform}の修了書で表示されます："
+
+#: lms/djangoapps/open_ended_grading/views.py
+msgid "Problems you have submitted"
+msgstr "あなたが投稿した問題"
+
+#: lms/djangoapps/open_ended_grading/views.py
+msgid "Flagged Submission"
+msgstr "フラグされた投稿"
+
+#: Temporary Show Answer(s) has been deleted
+msgid "Show Answer(s)"
+msgstr "答えを見る"
+
+#: lms/templates/video.html
+msgid "Download timed transcript"
+msgstr "字幕をダウンロード"
+
+#: lms/templates/discussion/_user_profile.html
+msgid "User Role:"
+msgstr "ユーザー種別:"
+
+#: lms/templates/discussion/_user_profile.html
+msgid "Posted Discussion:"
+msgstr "投稿状況:"
+
+#: lms/templates/discussion/_user_profile.html
+msgid "Posted Comments:"
+msgstr "コメント状況:"
