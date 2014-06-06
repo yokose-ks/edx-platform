@@ -73,4 +73,5 @@
 @import "xmodule/descriptors/css/module-styles.scss";
 
 // discussion
+@import "discussion";
 @import "course/discussion/form-wmd-toolbar";
