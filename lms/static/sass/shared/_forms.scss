@@ -40,21 +40,21 @@ textarea {
   height: 60px;
 }
 
-input[type="submit"],
-input[type="button"],
-button,.button {
-  border-radius: 3px;
-  @include button(shiny, $button-color);
-  font: normal 1.2rem/1.6rem $sans-serif;
-  letter-spacing: 1px;
-  padding: 4px 20px;
-  text-transform: uppercase;
-  vertical-align: top;
-  -webkit-font-smoothing: antialiased;
-
-  &:disabled, &.is-disabled, &.disabled {
-    pointer-events: none;
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-}
+//input[type="submit"],
+//input[type="button"],
+//button,.button {
+//  border-radius: 3px;
+//  @include button(shiny, $button-color);
+//  font: normal 1.2rem/1.6rem $sans-serif;
+//  letter-spacing: 1px;
+//  padding: 4px 20px;
+//  text-transform: uppercase;
+//  vertical-align: top;
+//  -webkit-font-smoothing: antialiased;
+//
+//  &:disabled, &.is-disabled, &.disabled {
+//    pointer-events: none;
+//    opacity: 0.5;
+//    cursor: not-allowed;
+//  }
+//}

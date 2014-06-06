@@ -1,3 +1,4 @@
+@charset "utf-8";
 // forums - main styling
 // ====================
 
@@ -69,7 +70,8 @@
   border: 1px solid #aaa;
   border-radius: 3px 3px 0 0;
   background: $white;
-  font-family: 'Monaco', monospace;
+  //font-family: 'Monaco', monospace;
+  font-family:  "Meiryo", "Hiragino Kaku Gothic ProN", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.6;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
@@ -161,7 +163,7 @@ body.discussion {
 
     .inner-wrapper {
       max-width: 1180px;
-      min-width: 760px;
+      min-width: 0px;
       margin: auto;
     }
 
@@ -472,7 +474,7 @@ body.discussion {
 
 
   .wmd-panel {
-    min-width: 500px;
+    min-width: 0px;
     width: 100%;
   }
 
@@ -489,7 +491,8 @@ body.discussion {
     background-color: #e9e9e9;
     font-style: normal;
     font-size: 0.8em;
-    font-family: Monaco, 'Lucida Console', monospace;
+    //font-family: Monaco, 'Lucida Console', monospace;
+    font-family:  "Meiryo", "Hiragino Kaku Gothic ProN", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif;
     line-height: 1.6em;
 
     &::-webkit-input-placeholder {
@@ -563,7 +566,8 @@ body.discussion {
 
     > div {
       font-size: 0.8em;
-      font-family: arial, helvetica, sans-serif;
+      //font-family: arial, helvetica, sans-serif;
+      font-family:  "Meiryo", "Hiragino Kaku Gothic ProN", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif;
     }
 
     b {
@@ -866,7 +870,8 @@ body.discussion {
       border-radius: 30px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset, 0 1px 0 rgba(255, 255, 255, .5);
       background: url(../images/search-icon.png) no-repeat 7px center #fff;
-      font-family: 'Open Sans', sans-serif;
+      //font-family: 'Open Sans', sans-serif;
+      font-family: "Meiryo","Hiragino Kaku Gothic ProN","MS P Gothic",Verdana,Arial,Helvetica,sans-serif;
       font-weight: 400;
       font-size: 13px;
       line-height: 20px;
@@ -1165,7 +1170,7 @@ body.discussion {
     @include box-sizing(border-box);
     width: 68%;
     max-width: 800px;
-    min-height: 500px;
+    min-height: 0px;
     border: 1px solid #aaa;
     border-radius: 3px;
     background: $white;
@@ -1209,7 +1214,8 @@ body.discussion {
 
       .label-area {
         display: inline-block;
-        min-width: $baseline*5;
+        //min-width: $baseline*5;
+        min-width: 0px;
         width: 25%;
         vertical-align: middle;
 
@@ -2078,7 +2084,7 @@ body.discussion {
 
     .inner-wrapper {
       max-width: 1180px;
-      min-width: 760px;
+      min-width: 0px;
       margin: auto;
     }
 
@@ -2108,7 +2114,8 @@ body.discussion {
         border: 1px solid #333;
         border-radius: 3px 3px 0 0;
         background: $white;
-        font-family: 'Monaco', monospace;
+        //font-family: 'Monaco', monospace;
+        font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif ;
         font-size: 13px;
         line-height: 1.6;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset;
@@ -2135,7 +2142,8 @@ body.discussion {
         border: 1px solid #333;
         font-size: 16px;
         font-weight: 700;
-        font-family: 'Open Sans', sans-serif;
+        //font-family: 'Open Sans', sans-serif;
+        font-family: "Meiryo","Hiragino Kaku Gothic ProN","MS P Gothic",Verdana,Arial,Helvetica,sans-serif;
         color: #333;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) inset;
       }
@@ -2239,7 +2247,7 @@ body.discussion {
   .new-post-body {
     .wmd-panel {
       width: 100%;
-      min-width: 500px;
+      min-width: 0px;
     }
 
     .wmd-button-bar  {
@@ -2251,7 +2259,8 @@ body.discussion {
       width: 100%;
       background-color: #e9e9e9;
       border: 1px solid #c8c8c8;
-      font-family: Monaco, 'Lucida Console', monospace;
+      //font-family: Monaco, 'Lucida Console', monospace;
+      font-family:  "Meiryo", "Hiragino Kaku Gothic ProN", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif;
       font-style: normal;
       font-size: 0.8em;
       line-height: 1.6em;
@@ -2328,8 +2337,9 @@ body.discussion {
 
       > div {
         font-size: 0.8em;
-        font-family: arial, helvetica, sans-serif;
-      }
+//        font-family: arial, helvetica, sans-serif;
+        font-family:  "Meiryo", "Hiragino Kaku Gothic ProN", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif;
+    }
 
       b {
         font-size: 16px;

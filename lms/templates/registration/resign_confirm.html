@@ -15,6 +15,7 @@
   {% compressed_css 'style-app' %}
   {% compressed_css 'style-app-extend1' %}
   {% compressed_css 'style-app-extend2' %}
+  {% compressed_css 'style-gacco' %}
 
   {% block main_vendor_js %}
   {% compressed_js 'main_vendor' %}
@@ -120,8 +121,8 @@
         </fieldset>
 
         <div class="form-actions">
-          <button name="submit" type="submit" id="submit" class="action-primary">{% trans "Resign Now" %}</button>
-          <a href="/dashboard" class="action-secondary action-cancel">{% trans "Cancel" %}</a>
+          <button name="submit" type="submit" id="submit" class="f_button small radius alert ">{% trans "Resign Now" %}</button>
+          <a href="/dashboard" class="f_button small radius secondary">{% trans "Cancel" %}</a>
         </div>
       </form>
 

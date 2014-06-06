@@ -47,8 +47,9 @@ nav.sequence-nav {
     z-index: 9999;
     width: 20px;
     height: 46px;
-    @include linear-gradient(left, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
-    background-color: transparent;
+//    @include linear-gradient(left, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
+//    background-color: transparent;
+    background-color: #fafafa;
     pointer-events: none;
   }
 
@@ -59,19 +60,20 @@ nav.sequence-nav {
     z-index: 9999;
     width: 20px;
     height: 46px;
-    @include linear-gradient(right, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
-    background-color: transparent;
+//    @include linear-gradient(right, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
+//    background-color: transparent;
+    background-color: #fafafa;
     pointer-events: none;
   }
 
   .sequence-list-wrapper {
     position: relative;
     z-index: 99;
-    border: 1px solid #ccc;
+//    border: 1px solid #ccc;
     height: 44px;
     margin: 0 30px;
-    @include linear-gradient(top, #ddd, #eee);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset;
+    @include linear-gradient(top, #fafafa, #fafafa);
+//    box-shadow: 0 1px 3px rgba(0, 0, 0, .1) inset;
   }
 
   ol {
@@ -99,7 +101,7 @@ nav.sequence-nav {
         margin: 0;
         background-position: center 14px;
         background-repeat: no-repeat;
-        border: 1px solid transparent;
+//        border: 1px solid transparent;
         cursor: pointer;
         display: block;
         padding: 0;
@@ -111,13 +113,13 @@ nav.sequence-nav {
         }
 */
         &:hover, &:focus {
-          background-color: #fff;
+          background-color: #eee;
           background-repeat: no-repeat;
           background-position: center 14px;
         }
 
         &.active {
-          background-color: #fff;
+          background-color: #eee;
           z-index: 9;
 
           // &:after {
@@ -132,7 +134,7 @@ nav.sequence-nav {
           // }
 
           &:hover, &:focus {
-            background-color: #fff;
+            background-color: #eee;
             background-repeat: no-repeat;
             background-position: center 14px;
           }
@@ -206,7 +208,7 @@ nav.sequence-nav {
           padding: 6px;
           position: absolute;
           top: 48px;
-          text-shadow: 0 -1px 0 #000;
+//          text-shadow: 0 -1px 0 #000;
           @include transition(all .1s $ease-in-out-quart 0s);
           white-space: pre;
           z-index: 99;
@@ -262,9 +264,10 @@ nav.sequence-nav {
       margin-bottom: 0;
       height: 44px;
       width: 70px;
-      border: 1px solid #ccc;
-      @include linear-gradient(top, #eee, #ddd);
-      box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset;
+//      border: 1px solid #ccc;
+//      @include linear-gradient(top, #eee, #ddd);
+      @include linear-gradient(top, #ccc, #ccc);
+//      box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset;
       z-index: 1;
 
       &.prev, &.next {
@@ -337,9 +340,17 @@ nav.sequence-bottom {
       float: left;
       width: 50px;
       height: 44px;
-      border: 1px solid #ccc;
-      @include linear-gradient(top, #eee, #ddd);
-      box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset;
+//      border: 1px solid #ccc;
+//      @include linear-gradient(top, #eee, #ddd);
+      @include linear-gradient(top, #ccc, #ccc);
+//      box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset;
+
+      // add by wat ____
+      &.center-menu{
+      @include linear-gradient(top, #eee, #eee);
+      @include transition(all .2s $ease-in-out-quad 0s);
+      }
+      // that's all ^^^^
 
       &.prev, &.next {
         margin-bottom: 0;
