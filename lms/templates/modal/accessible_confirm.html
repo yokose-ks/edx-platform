@@ -1,21 +1,22 @@
 <%! from django.utils.translation import ugettext as _ %>
-<div id="accessibile-confirm-modal" class="modal" aria-hidden="true">
-  <div class="inner-wrapper" role="dialog" aria-labelledby="accessibile-confirm-title">
-    <button class="close-modal">
-      <i class="icon-remove"></i>
-      <span class="sr">
-        ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
-        ${_('Close')}
-      </span>
-    </button>
+<div id="accessibile-confirm-modal" class="modal reveal-modal medium" aria-hidden="true">
+<a class="close-reveal-modal">X</a>
+##  <div class="inner-wrapper" role="dialog" aria-labelledby="accessibile-confirm-title">
+##    <button class="close-modal">
+##      <i class="icon-remove"></i>
+##      <span class="sr">
+##        ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
+##        ${_('Close')}
+##      </span>
+##    </button>
 
     <header>
       <h2 id="accessibile-confirm-title">
           ${_('Confirm')}
-        <span class="sr">,
-          ## Translators: this text gives status on if the modal interface (a menu or piece of UI that takes the full focus of the screen) is open or not
-          ${_("modal open")}
-        </span>
+##        <span class="sr">,
+##          ## Translators: this text gives status on if the modal interface (a menu or piece of UI that takes the full focus of the screen) is open or not
+##          ${_("modal open")}
+##        </span>
       </h2>
     </header>
     <div role="dialogalert" class="status message" tabindex="-1">
@@ -26,7 +27,7 @@
         <button class="dismiss ok-button">${'OK'}</button>
         <button class="dismiss cancel-button" data-dismiss="leanModal">${'Cancel'}</button>
     </div>
-  </div>
+##  </div>
   <a href="#accessibile-confirm-modal" rel="leanModal" id="confirm_open_button" style="display:none">open</a>
 </div>
 

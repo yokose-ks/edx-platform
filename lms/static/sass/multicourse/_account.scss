@@ -49,7 +49,8 @@
     margin: 0 0 $baseline 0;
     font-weight: 300;
     color: $base-font-color;
-    font-family: 'Open Sans', sans-serif;
+//    font-family: 'Open Sans', sans-serif;
+    font-family: "Meiryo","Hiragino Kaku Gothic ProN","MS P Gothic",Verdana,Arial,Helvetica,sans-serif;
     line-height: lh(1.1);
   }
 
@@ -422,12 +423,12 @@
     @include clearfix();
 
     button[type="submit"] {
-      @extend %m-btn-primary;
-
-      &:disabled, &.is-disabled {
-        opacity: 0.3;
-        cursor: default !important;
-      }
+//      @extend %m-btn-primary;
+//
+//      &:disabled, &.is-disabled {
+//        opacity: 0.3;
+//        cursor: default !important;
+//      }
     }
 
     .action-primary {
@@ -609,14 +610,14 @@
   .form-actions {
 
     .action-primary {
-      width: flex-grid(3,8);
+//      width: flex-grid(3,8);
     }
 
     .action-cancel {
-      @extend %m-btn-secondary;
-      width: flex-grid(3,8);
-      line-height: lh(1);
-      margin: 0;
+//      @extend %m-btn-secondary;
+//      width: flex-grid(3,8);
+//      line-height: lh(1);
+//      margin: 0;
     }
   }
 }
@@ -681,12 +682,12 @@
       }
 
       .form-actions {
-        padding: 0 !important;
+//        padding: 0 !important;
 
         .action-primary {
-          float: none;
-          display: block !important;
-          width: 100%;
+//          float: none;
+//          display: block !important;
+//          width: 100%;
         }
       }
     }

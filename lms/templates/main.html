@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <meta property="fb:app_id" content="${settings.FB_APPID}"/>
     <meta property="og:site_name" content="${settings.FB_SITE}"/>
     <meta property="og:title" content="${settings.FB_TITLE}"/>
@@ -61,11 +62,13 @@
 
   <link rel="icon" type="image/x-icon" href="${static.url(microsite.get_value('favicon_path', settings.FAVICON_PATH))}" />
 
-  <%static:css group='style-vendor'/>
-  <%static:css group='style-app'/>
-  <%static:css group='style-app-extend1'/>
-  <%static:css group='style-app-extend2'/>
   <%static:css group='style-gacco'/>
+  <%static:css group='style-vendor'/>
+  <%static:css group='style-course'/>
+
+##  <%static:css group='style-app'/>
+##  <%static:css group='style-app-extend1'/>
+##  <%static:css group='style-app-extend2'/>
 
   <%static:js group='main_vendor'/>
 
@@ -98,7 +101,7 @@
   <![endif]-->
 
   <meta name="path_prefix" content="${EDX_ROOT_URL}">
-  <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY" />
+##  <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY" />
 
   % if not course:
     <%include file="${google_analytics_file}" />
@@ -114,7 +117,13 @@
 </head>
 
 <body class="<%block name='bodyclass'/> lang_${LANGUAGE_CODE}">
-  <a class="nav-skip" href="<%block name="nav_skip">#content</%block>">${_("Skip to this view's content")}</a>
+  <a class="nav-skip hide" href="<%block name="nav_skip">#content</%block>">${_("Skip to this view's content")}</a>
+
+## Offcanvas START  --------------
+<div class="off-canvas-wrap docs-wrap" data-offcanvas>
+<div class="inner-wrap">
+## ------------------------------
+
 
   <div id="fb-root"></div>
 
@@ -124,7 +133,7 @@
   <%include file="${header_file}" />
 %endif
 
-  <div class="content-wrapper" id="content">
+  <div class="content-wrapper_" id="content">
     ${self.body()}
     <%block name="bodyextra"/>
   </div>
@@ -133,11 +142,27 @@
   <%include file="${footer_file}" />
 % endif
 
+## -----------------------------
+<a class="exit-off-canvas"></a>
+</div>
+</div>
+## Offcanvas END  --------------
+
+
+
+
   <script>window.baseUrl = "${settings.STATIC_URL}";</script>
   <%static:js group='application'/>
   <%static:js group='module-js'/>
 
   <%block name="js_extra"/>
+
+  <%static:js group='foundation'/>
+
+<script>
+  $(document).foundation();
+</script>
+
 </body>
 </html>
 

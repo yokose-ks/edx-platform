@@ -600,20 +600,20 @@ div.problem {
     margin-top: $baseline;
 
     .save, .check, .show, .reset {
-      height: ($baseline*2);
-      vertical-align: middle;
-      font-weight: 600;
+//      height: ($baseline*2);
+//      vertical-align: middle;
+//      font-weight: 600;
     }
 
     .save {
-      @extend .blue-button !optional;
+//      @extend .blue-button !optional;
     }
 
     .show {
 
       .show-label {
-        font-weight: 600;
-        font-size: 1.0em;
+//        font-weight: 600;
+//        font-size: 1.0em;
       }
     }
 

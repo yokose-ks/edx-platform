@@ -1,3 +1,4 @@
+@charset "utf-8";
 // Foundation by ZURB
 // foundation.zurb.com
 // Licensed under MIT Open Source
@@ -167,7 +168,8 @@ $base-line-height: 150% !default;
 // We use these to control various global styles
 $body-bg: #fff !default;
 $body-font-color: #222 !default;
-$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-family: "Meiryo", "Hiragino Kaku Gothic ProN", "MS P Gothic", Verdana, Arial, Helvetica, sans-serif !default;
+//$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $body-font-weight: normal !default;
 $body-font-style: normal !default;
 
