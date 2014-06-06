@@ -9,13 +9,16 @@ if Backbone?
         (event) -> DiscussionUtil.activateOnSpace(event, @toggleNewPost)
       "click .new-post-cancel": "hideNewPost"
       "click .discussion-paginator a": "navigateToPage"
-
+      "click .reload-discussion" : "reloadDiscussion"
+  
     paginationTemplate: -> DiscussionUtil.getTemplate("_pagination")
     page_re: /\?discussion_page=(\d+)/
     initialize: ->
       @toggleDiscussionBtn = @$(".discussion-show")
       # Set the page if it was set in the URL. This is used to allow deep linking to pages
       match = @page_re.exec(window.location.href)
+      ## necessary to render new-post-body area
+      @renderDiscussion
       if match
         @page = parseInt(match[1])
       else
@@ -52,7 +55,6 @@ if Backbone?
       else
         @toggleDiscussionBtn.addClass('shown')
         @toggleDiscussionBtn.find('.button-text').html(gettext("Hide Discussion"))
-
         if @retrieved
           @$("section.discussion").slideDown()
           @showed = true
@@ -67,6 +69,17 @@ if Backbone?
                 gettext("We had some trouble loading the discussion. Please try again.")
               )
           )
+
+    reloadDiscussion : () ->
+      $elem = @toggleDiscussionBtn
+      @loadPage(
+         $elem,
+         =>
+           DiscussionUtil.discussionAlert(
+             gettext("Sorry"),
+             gettext("We had some trouble loading the discussion. Please try again.")
+           )
+      )
 
     loadPage: ($elem, error) =>
       discussionId = @$el.data("discussion-id")
