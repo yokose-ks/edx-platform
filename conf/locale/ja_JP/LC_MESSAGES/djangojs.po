@@ -4,7 +4,8 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
-# わたカフェの店長, 2013-2014
+# watcafe, 2013-2014
+# kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
 # sunk <s.kim@nttks.co.jp>, 2014
 # Aoshi <support@225nou.com>, 2014
@@ -15,6 +16,7 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
+# kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
 # Aoshi <support@225nou.com>, 2014
 # わたカフェの店長, 2013
@@ -46,12 +48,11 @@ msgstr ""
 msgid "OK"
 msgstr "OK"
 
-#: cms/static/coffee/src/views/tabs.js cms/static/coffee/src/views/unit.js
-#: cms/static/js/base.js cms/static/js/views/asset.js
+#: cms/static/coffee/src/views/tabs.js cms/static/js/base.js
+#: cms/static/js/views/asset.js cms/static/js/views/baseview.js
 #: cms/static/js/views/course_info_update.js
 #: cms/static/js/views/show_textbook.js cms/static/js/views/validation.js
 #: cms/static/js/views/modals/base_modal.js
-#: cms/static/js/views/pages/container.js
 #: lms/static/admin/js/admin/DateTimeShortcuts.js
 #: lms/static/admin/js/admin/DateTimeShortcuts.js
 msgid "Cancel"
@@ -232,6 +233,58 @@ msgid ""
 msgstr ""
 "シーケンスエラー！このシーケンスモジュールでは「%(tab_name)s」タブを操作することが出来ません。コーススタッフに問い合わせください。"
 
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Volume"
+msgstr "ボリューム"
+
+#. Translators: Volume level equals 0%.
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Muted"
+msgstr "ミュート"
+
+#. Translators: Volume level in range ]0,20]%
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Very low"
+msgstr "とても小さい"
+
+#. Translators: Volume level in range ]20,40]%
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Low"
+msgstr "小さい"
+
+#. Translators: Volume level in range ]40,60]%
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Average"
+msgstr "普通"
+
+#. Translators: Volume level in range ]60,80]%
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Loud"
+msgstr "大きい"
+
+#. Translators: Volume level in range ]80,99]%
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Very loud"
+msgstr "とても大きい"
+
+#. Translators: Volume level equals 100%.
+#: common/lib/xmodule/xmodule/js/src/video/00_i18n.js
+msgid "Maximum"
+msgstr "最大"
+
+#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js
+msgid ""
+"VideoPlayer: Element corresponding to the given selector does not found."
+msgstr "ビデオプレイヤー：指定したセクターに対応するエレメントが見つかりません。"
+
+#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js
+msgid "This browser cannot play .mp4, .ogg, or .webm files."
+msgstr "このブラウザは.mp4, .ogg, .webmファイルを再生できません。"
+
+#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js
+msgid "Try using a different browser, such as Google Chrome."
+msgstr "違うブラウザを使用してください（例えばGoogle Chromeなど）。"
+
 #: common/lib/xmodule/xmodule/js/src/video/04_video_control.js
 msgid "Video slider"
 msgstr "ビデオ操作バー"
@@ -283,45 +336,6 @@ msgstr[0] "%(value)s 分"
 msgid "%(value)s second"
 msgid_plural "%(value)s seconds"
 msgstr[0] "%(value)s 秒"
-
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Volume"
-msgstr "ボリューム"
-
-#. Translators: Volume level equals 0%.
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Muted"
-msgstr "ミュート"
-
-#. Translators: Volume level in range (0,20]%
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Very low"
-msgstr "とても小さい"
-
-#. Translators: Volume level in range (20,40]%
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Low"
-msgstr "小さい"
-
-#. Translators: Volume level in range (40,60]%
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Average"
-msgstr "普通"
-
-#. Translators: Volume level in range (60,80]%
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Loud"
-msgstr "大きい"
-
-#. Translators: Volume level in range (80,100)%
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Very loud"
-msgstr "とても大きい"
-
-#. Translators: Volume level equals 100%.
-#: common/lib/xmodule/xmodule/js/src/video/07_video_volume_control.js
-msgid "Maximum"
-msgstr "最大"
 
 #: common/lib/xmodule/xmodule/js/src/video/09_video_caption.js
 msgid "Caption will be displayed when "
@@ -548,6 +562,26 @@ msgstr "コメントを削除する際に問題が発生しました。再試行
 #: common/static/coffee/src/discussion/views/thread_response_view.js
 msgid "Are you sure you want to delete this response?"
 msgstr "この回答を削除してもよろしいですか？"
+
+#: common/static/js/capa/drag_and_drop/base_image.js
+msgid "Drop target image"
+msgstr "目的の画像をドロップ"
+
+#: common/static/js/capa/drag_and_drop/draggable_events.js
+msgid "dragging out of slider"
+msgstr "スライダーの外にドラッグ"
+
+#: common/static/js/capa/drag_and_drop/draggable_events.js
+msgid "dragging"
+msgstr "ドラッグ"
+
+#: common/static/js/capa/drag_and_drop/draggable_events.js
+msgid "dropped in slider"
+msgstr "スライダーの中にドロップ"
+
+#: common/static/js/capa/drag_and_drop/draggable_events.js
+msgid "dropped on target"
+msgstr "目的の場所にドロップ"
 
 #: common/static/js/src/jquery.timeago.locale.js
 msgid "%s ago"
@@ -1017,11 +1051,9 @@ msgstr "受講者のメールアドレスかユーザー名を入力してくだ
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
-"Error getting student progress url for '<%= student_id %>'. Check that the "
-"student identifier is spelled correctly."
+"Error getting student progress url for '<%= student_id %>'. Make sure that "
+"the student identifier is spelled correctly."
 msgstr ""
-"受講者： '<%= student_id %>' "
-"の履修者進捗URLを取得する際にエラーが発生しました。受講者の識別子が正しく入力されていることを確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
@@ -1030,8 +1062,8 @@ msgstr ""
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
-msgid "Please enter a problem urlname."
-msgstr "問題のurl名を入力してください。"
+msgid "Please enter a problem location."
+msgstr "問題の場所を入力してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
@@ -1042,11 +1074,9 @@ msgstr "問題 '<%= problem_id %>' と受講者 '<%= student_id %>' に対する
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
 "Error resetting problem attempts for problem '<%= problem_id %>' and student"
-" '<%= student_id %>'. Check that the problem and student identifiers are "
-"spelled correctly."
+" '<%= student_id %>'. Make sure that the problem and student identifiers are"
+" complete and correct."
 msgstr ""
-"問題 '<%= problem_id %>' と受講者 '<%= student_id %>' "
-"に対する問題のリセットに失敗しました。問題と受講者の識別子が正しく入力されていることを確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
@@ -1056,10 +1086,9 @@ msgstr "受講者 '<%= student_id %>' の問題 '<%= problem_id %>' のステー
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
 "Error deleting student '<%= student_id %>'s state on problem '<%= problem_id"
-" %>'. Check that the problem and student identifiers are spelled correctly."
+" %>'. Make sure that the problem and student identifiers are complete and "
+"correct."
 msgstr ""
-"受講者 '<%= student_id %>' の問題 '<%= problem_id %>' "
-"のステータスを削除に失敗しました。問題と受講者の識別子が正しく入力されていることを確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Module state successfully deleted."
@@ -1077,20 +1106,16 @@ msgstr ""
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
 "Error starting a task to rescore problem '<%= problem_id %>' for student "
-"'<%= student_id %>'. Check that the problem and student identifiers are "
-"spelled correctly."
+"'<%= student_id %>'. Make sure that the the problem and student identifiers "
+"are complete and correct."
 msgstr ""
-"問題 '<%= problem_id %>' と受講者 '<%= student_id %>' "
-"の問題再採点タスクの開始に失敗しました。問題と受講者の識別子が正しく入力されていることを確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
 "Error getting task history for problem '<%= problem_id %>' and student '<%= "
-"student_id %>'. Check that the problem and student identifiers are spelled "
-"correctly."
+"student_id %>'. Make sure that the problem and student identifiers are "
+"complete and correct."
 msgstr ""
-"問題 '<%= problem_id %>' と受講者 '<%= student_id %>' "
-"のタスク履歴の取得に失敗しました。問題と受講者の識別子が正しく入力されていることを確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Reset attempts for all students on problem '<%= problem_id %>'?"
@@ -1108,10 +1133,9 @@ msgstr ""
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
 "Error starting a task to reset attempts for all students on problem '<%= "
-"problem_id %>'. Check that the problem identifier is spelled correctly."
+"problem_id %>'. Make sure that the problem identifier is complete and "
+"correct."
 msgstr ""
-"問題 '<%= problem_id %>' "
-"に対する試行のリセットのタスクの開始に失敗しました。問題の識別子が正しく入力されていることを確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Rescore problem '<%= problem_id %>' for all students?"
@@ -1128,10 +1152,9 @@ msgstr ""
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
-"Error starting a task to rescore problem '<%= problem_id %>'. Check that the"
-" problem identifier is spelled correctly."
+"Error starting a task to rescore problem '<%= problem_id %>'. Make sure that"
+" the problem identifier is complete and correct."
 msgstr ""
-"問題 '<%= problem_id %>' に対する再採点のタスクの開始に失敗しました。問題の識別子が正しく入力されていることを確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Error listing task history for this student and problem."
@@ -1428,24 +1451,19 @@ msgid "Saving&hellip;"
 msgstr "保存中&hellip;"
 
 #: cms/static/coffee/src/views/tabs.js
-msgid "Delete Component Confirmation"
-msgstr "コンポーネント削除の確認"
+msgid "Delete Page Confirmation"
+msgstr "ページ確認の削除"
 
 #: cms/static/coffee/src/views/tabs.js
 msgid ""
-"Are you sure you want to delete this component? This action cannot be "
-"undone."
-msgstr "このコンポーネントを削除してもよろしいですか？この動作は取り消すことが出来ません。"
+"Are you sure you want to delete this page? This action cannot be undone."
+msgstr "このページを消しても大丈夫ですか？このアクションは取り消しできません。"
 
 #: cms/static/coffee/src/views/tabs.js cms/static/coffee/src/views/unit.js
 #: cms/static/js/base.js cms/static/js/views/course_info_update.js
 #: cms/static/js/views/pages/container.js
 msgid "Deleting&hellip;"
 msgstr "削除中&hellip;"
-
-#: cms/static/coffee/src/views/unit.js
-msgid "Adding&hellip;"
-msgstr "追加中&hellip;"
 
 #: cms/static/coffee/src/views/unit.js cms/static/js/views/pages/container.js
 msgid "Duplicating&hellip;"
@@ -1599,6 +1617,22 @@ msgstr "名前"
 msgid "Date Added"
 msgstr "追加日"
 
+#: cms/static/js/views/assets.js
+msgid "Uploading…"
+msgstr "アップロードしています…"
+
+#: cms/static/js/views/assets.js
+msgid "Choose File"
+msgstr "ファイルを選択"
+
+#: cms/static/js/views/assets.js
+msgid "Upload New File"
+msgstr "新規ファイルをアップロード"
+
+#: cms/static/js/views/assets.js
+msgid "Load Another File"
+msgstr "他のファイルを読み込み"
+
 #: cms/static/js/views/course_info_update.js
 msgid "Are you sure you want to delete this update?"
 msgstr "この変更を削除してもよろしいですか?"
@@ -1747,6 +1781,10 @@ msgstr "エディタ"
 msgid "Settings"
 msgstr "設定"
 
+#: cms/static/js/views/components/add_xblock.js
+msgid "Adding&hellip;"
+msgstr "追加中&hellip;"
+
 #: cms/static/js/views/modals/base_modal.js
 msgid "Save"
 msgstr "一時保存"
@@ -1801,3 +1839,50 @@ msgstr "答えを見る"
 #: Temporary Hide Answer(s) has been deleted
 msgid "Hide Answer(s)"
 msgstr "答えを隠す"
+
+msgid "Unable to Load"
+msgstr "読み込みできません"
+
+msgid ""
+"This problem has already been released. Any changes will apply only to "
+"future assessments."
+msgstr "この問題は既にリリースされています。今後行う変更はこの先の投稿にのみ影響します"
+
+msgid "Status of Your Response"
+msgstr "あなたの解答のステータス"
+
+msgid "This response has not been saved."
+msgstr "この文章は一時保存されていません"
+
+msgid "Saving..."
+msgstr "一時保存中..."
+
+msgid "This response has been saved but not submitted."
+msgstr "この文章は一時保存されていますが投稿されていません"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "This section could not be loaded."
+msgstr "このセクションは読み込むことができませんでした"
+
+msgid "This response could not be submitted."
+msgstr "この文章を投稿することができませんでした"
+
+msgid "This response could not be saved."
+msgstr "この文章を一時保存することができませんした"
+
+msgid "This feedback could not be submitted."
+msgstr "このフィードバックを投稿することができませんでした"
+
+msgid "This assessment could not be submitted."
+msgstr "この評価を投稿することができませんでした"
+
+msgid "This problem could not be loaded."
+msgstr "この問題を読み込むことができませんでした"
+
+msgid "This problem could not be saved."
+msgstr "この問題を保存することができませんでした"
+
+msgid "The server could not be contacted."
+msgstr "サーバに接続することができませんでした"

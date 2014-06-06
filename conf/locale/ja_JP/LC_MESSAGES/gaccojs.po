@@ -25,3 +25,48 @@ msgstr "答えを見る"
 #: Temporary Hide Answer(s) has been deleted
 msgid "Hide Answer(s)"
 msgstr "答えを隠す"
+
+msgid "Unable to Load"
+msgstr "読み込みできません"
+
+msgid "This problem has already been released. Any changes will apply only to future assessments."
+msgstr "この問題は既にリリースされています。今後行う変更はこの先の投稿にのみ影響します"
+
+msgid "Status of Your Response"
+msgstr "あなたの解答のステータス"
+
+msgid "This response has not been saved."
+msgstr "この文章は一時保存されていません"
+
+msgid "Saving..."
+msgstr "一時保存中..."
+
+msgid "This response has been saved but not submitted."
+msgstr "この文章は一時保存されていますが投稿されていません"
+
+msgid "Error"
+msgstr "エラー"
+
+msgid "This section could not be loaded."
+msgstr "このセクションは読み込むことができませんでした"
+
+msgid "This response could not be submitted."
+msgstr "この文章を投稿することができませんでした"
+
+msgid "This response could not be saved."
+msgstr "この文章を一時保存することができませんした"
+
+msgid "This feedback could not be submitted."
+msgstr "このフィードバックを投稿することができませんでした"
+
+msgid "This assessment could not be submitted."
+msgstr "この評価を投稿することができませんでした"
+
+msgid "This problem could not be loaded."
+msgstr "この問題を読み込むことができませんでした"
+
+msgid "This problem could not be saved."
+msgstr "この問題を保存することができませんでした"
+
+msgid "The server could not be contacted."
+msgstr "サーバに接続することができませんでした"

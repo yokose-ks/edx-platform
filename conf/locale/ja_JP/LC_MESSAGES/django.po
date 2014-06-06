@@ -4,11 +4,13 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
-# わたカフェの店長, 2013-2014
+# watcafe, 2013-2014
+# Yuta_Michiyabu <bii01143190417@yahoo.co.jp>, 2014
+# kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
-# ushige <ushige@live.com>, 2014
-# ngi644 <ngi644@gmail.com>, 2014
-# ushige <ushige@live.com>, 2014
+# Shige Usui <ushige@live.com>, 2014
+# Takashi Nagai <ngi644@gmail.com>, 2014
+# Shige Usui <ushige@live.com>, 2014
 # わたカフェの店長, 2013
 # #-#-#-#-#  django-studio.po (edx-platform)  #-#-#-#-#
 # edX translation file.
@@ -16,9 +18,10 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
+# kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
-# ngi644 <ngi644@gmail.com>, 2014
-# ushige <ushige@live.com>, 2014
+# Takashi Nagai <ngi644@gmail.com>, 2014
+# Shige Usui <ushige@live.com>, 2014
 # わたカフェの店長, 2013
 # #-#-#-#-#  mako.po (edx-platform)  #-#-#-#-#
 # edX translation file
@@ -26,17 +29,18 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
-# わたカフェの店長, 2013-2014
-# yamamoto.daisuke <yamamoto.daisuke@nitech.ac.jp>, 2013
+# watcafe, 2013-2014
+# Daisuke Yamamoto <yamamoto.daisuke@nitech.ac.jp>, 2013
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
-# junskyblue <junya.inoue@nttps.co.jp>, 2013
-# ushige <ushige@live.com>, 2013-2014
+# 井上淳也 <junya.inoue@nttps.co.jp>, 2013
+# Osamu Takahashi, 2014
+# Shige Usui <ushige@live.com>, 2013-2014
 # Shoji Kajita <kajita.shoji.5z@kyoto-u.ac.jp>, 2013
 # sunk <s.kim@nttks.co.jp>, 2014
-# ngi644 <ngi644@gmail.com>, 2014
-# ushige <ushige@live.com>, 2013-2014
-# yamamoto.daisuke <yamamoto.daisuke@nitech.ac.jp>, 2013
-# junskyblue <junya.inoue@nttps.co.jp>, 2013
+# Takashi Nagai <ngi644@gmail.com>, 2014
+# Shige Usui <ushige@live.com>, 2013-2014
+# Daisuke Yamamoto <yamamoto.daisuke@nitech.ac.jp>, 2013
+# 井上淳也 <junya.inoue@nttps.co.jp>, 2013
 # わたカフェの店長, 2013
 # #-#-#-#-#  mako-studio.po (edx-platform)  #-#-#-#-#
 # edX translation file
@@ -44,14 +48,16 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
-# わたカフェの店長, 2014
+# watcafe, 2014
+# kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
-# junskyblue <junya.inoue@nttps.co.jp>, 2013
-# ushige <ushige@live.com>, 2014
+# 井上淳也 <junya.inoue@nttps.co.jp>, 2013
+# Osamu Takahashi, 2014
+# Shige Usui <ushige@live.com>, 2014
 # Shoji Kajita <kajita.shoji.5z@kyoto-u.ac.jp>, 2013
-# ngi644 <ngi644@gmail.com>, 2014
-# ushige <ushige@live.com>, 2013-2014
-# yamamoto.daisuke <yamamoto.daisuke@nitech.ac.jp>, 2013
+# Takashi Nagai <ngi644@gmail.com>, 2014
+# Shige Usui <ushige@live.com>, 2013-2014
+# Daisuke Yamamoto <yamamoto.daisuke@nitech.ac.jp>, 2013
 # わたカフェの店長, 2013
 # #-#-#-#-#  messages.po (edx-platform)  #-#-#-#-#
 # edX translation file
@@ -65,7 +71,7 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
-# わたカフェの店長, 2014
+# watcafe, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
 # #-#-#-#-#  gacco.po (edx-platform)  #-#-#-#-#
 # edX translation file
@@ -96,6 +102,27 @@ msgstr ""
 #: cms/djangoapps/contentstore/utils.py common/lib/xmodule/xmodule/tabs.py
 msgid "Open Ended Panel"
 msgstr "レポート管理"
+
+#. Translators: "Discussion" is the title of the course forum page
+#. Translators: 'Discussion' refers to the tab in the courseware that leads to
+#. the discussion forums
+#: cms/djangoapps/contentstore/views/component.py
+#: common/lib/xmodule/xmodule/tabs.py common/lib/xmodule/xmodule/tabs.py
+msgid "Discussion"
+msgstr "ディスカッション"
+
+#: cms/djangoapps/contentstore/views/component.py
+#: lms/djangoapps/class_dashboard/dashboard_data.py
+#: lms/templates/courseware/instructor_dashboard.html
+#: lms/templates/courseware/instructor_dashboard.html
+#: lms/templates/instructor/instructor_dashboard_2/analytics.html
+msgid "Problem"
+msgstr "問題"
+
+#: cms/djangoapps/contentstore/views/component.py
+#: common/lib/xmodule/xmodule/video_module/video_module.py
+msgid "Advanced"
+msgstr "詳細設定"
 
 #: common/djangoapps/course_modes/models.py
 msgid "Honor Code Certificate"
@@ -237,10 +264,10 @@ msgstr "このアカウントは過度のログイン失敗により、一時的
 #: common/djangoapps/student/views.py
 msgid ""
 "Your password has expired due to password policy on this account. You must "
-"reset your password before you can log in again. Please click the Forgot "
+"reset your password before you can log in again. Please click the \"Forgot "
 "Password\" link on this page to reset your password before logging in again."
 msgstr ""
-"あなたのパスワードはこのアカウントのパスワードポリシーによって期限が切れました。もう一度ログインする前にはパスワード変更が必要です。このページのパスワードを忘れた方はこちらのリンクをクリックしてログインする前にパスワードを変更してください。"
+"あなたのパスワードは期限切れです（アカウントのパスワードポリシーによる）。あなたはログインする前にパスワードを変更する必要があります。パスワードを忘れた方はこちらのリンクをクリックしてログインする前にパスワードを変更してください。"
 
 #: common/djangoapps/student/views.py
 msgid "Too many failed login attempts. Try again later."
@@ -849,11 +876,25 @@ msgstr "未回答"
 msgid "processing"
 msgstr "処理中"
 
+#. Translators: 'ChoiceGroup' is an input type and should not be translated.
+#: common/lib/capa/capa/inputtypes.py
+msgid "ChoiceGroup: unexpected tag {tag_name}"
+msgstr "ChoiceGroup：予期せぬタグ{tag_name}"
+
+#: common/lib/capa/capa/inputtypes.py
+msgid "Answer received."
+msgstr "回答の受け取り。"
+
+#. Translators: '<choice>' is a tag name and should not be translated.
+#: common/lib/capa/capa/inputtypes.py
+msgid "Expected a <choice> tag; got {given_tag} instead"
+msgstr "<choice>タグを予期；代わりに{given_tag}を入手"
+
 #: common/lib/capa/capa/inputtypes.py
 msgid ""
 "Your file(s) have been submitted. As soon as your submission is graded, this"
 " message will be replaced with the grader's feedback."
-msgstr "ファイルが投稿されました。投稿が評価され次第、このメッセージは評価者のフィードバックに変更されます。"
+msgstr "ファイル(s)が投稿されました。投稿が評価され次第、このメッセージは評価者のフィードバックに変更されます。"
 
 #: common/lib/capa/capa/inputtypes.py
 msgid ""
@@ -882,6 +923,10 @@ msgstr "(ソースコード行が利用できません)"
 #: common/lib/capa/capa/responsetypes.py
 msgid "See XML source line {sourcenum}."
 msgstr "XMLソースを確認してください　行番号： {sourcenum}"
+
+#: common/lib/capa/capa/responsetypes.py
+msgid "Execution of unsafe Javascript code is not allowed."
+msgstr "安全ではないJavascriptコードの実行は許可されていません。"
 
 #. Translators: 'unmask_name' is a method name and should not be translated.
 #: common/lib/capa/capa/responsetypes.py
@@ -943,18 +988,17 @@ msgstr "この問題に対してスタッフの回答に問題がありました
 msgid "error"
 msgstr "エラー"
 
+#. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
+#. Translators: Separator used in StringResponse to display multiple answers.
+#. Example: "Answer: Answer_1 or Answer_2 or Answer_3".
 #: common/lib/capa/capa/responsetypes.py
 #: common/templates/course_modes/choose.html
 msgid "or"
 msgstr "もしくは"
 
 #: common/lib/capa/capa/responsetypes.py
-msgid ""
-"[courseware.capa.responsetypes.customresponse] error getting student answer from {student_answers}\n"
-" idset = {idset}, error = {err}"
-msgstr ""
-"[courseware.capa.responsetypes.customresponse] error getting student answer from {student_answers}\n"
-" idset = {idset}, error = {err}"
+msgid "error getting student answer from {student_answers}"
+msgstr "{student_answers}から学生の答えを取ってくる際のエラー"
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "No answer entered!"
@@ -975,8 +1019,8 @@ msgid "No answer provided."
 msgstr "解答がありません。"
 
 #: common/lib/capa/capa/responsetypes.py
-msgid "Error checking problem: no external queueing server is configured."
-msgstr "問題の確認エラー：外部キューサーバーが設定されていません。"
+msgid "Error: No grader has been set up for this problem."
+msgstr "エラー：この問題に対する採点者が設定されていません。"
 
 #: common/lib/capa/capa/responsetypes.py
 msgid ""
@@ -1019,12 +1063,240 @@ msgid "Error in evaluating SchematicResponse. The error was: {error_msg}"
 msgstr "回路図の評価に問題があります。 エラー内容：{error_msg}"
 
 #: common/lib/capa/capa/responsetypes.py
+msgid "error grading {image_input_id} (input={user_input})"
+msgstr "採点エラー　{image_input_id} (input={user_input})"
+
+#. Translators: {sr_coords} are the coordinates of a rectangle
+#: common/lib/capa/capa/responsetypes.py
+msgid "Error in problem specification! Cannot parse rectangle in {sr_coords}"
+msgstr "問題の指定に関するエラー！{sr_coords}の四角形を解析できません。"
+
+#: common/lib/capa/capa/responsetypes.py
+msgid "Answer not provided for {input_type}"
+msgstr "{input_type}で提供されていない回答"
+
+#: common/lib/capa/capa/responsetypes.py
 msgid "The Staff answer could not be interpreted as a number."
 msgstr "スタッフの回答は数字で受け取ることは出来ません。"
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Could not interpret '{given_answer}' as a number."
 msgstr "'{given_answer}' を数字として受け取ることができません。"
+
+#: common/lib/xmodule/xmodule/annotatable_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "XML data for the annotation"
+msgstr "注釈（アノテーション）のためのXMLデータ"
+
+#: common/lib/xmodule/xmodule/annotatable_module.py
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/discussion_module.py
+#: common/lib/xmodule/xmodule/html_module.py
+#: common/lib/xmodule/xmodule/html_module.py
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/lti_module.py
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Display Name"
+msgstr "表示名"
+
+#: common/lib/xmodule/xmodule/annotatable_module.py
+#: common/lib/xmodule/xmodule/discussion_module.py
+#: common/lib/xmodule/xmodule/html_module.py
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Display name for this module"
+msgstr "このモジュール名を表示"
+
+#: common/lib/xmodule/xmodule/annotatable_module.py
+msgid "Annotation"
+msgstr "注釈"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+#: common/lib/xmodule/xmodule/html_module.py
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "This name appears in the horizontal navigation at the top of the page."
+msgstr "名前はページ上部のナビゲーションに表示されます。"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Number of attempts taken by the student on this problem"
+msgstr "受講者によるこの問題の試行回数"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Maximum Attempts"
+msgstr "試行回数の上限"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid ""
+"Defines the number of times a student can try to answer this problem. If the"
+" value is not set, infinite attempts are allowed."
+msgstr "受講者がこの問題に解答できる回数を定義してください。値がない場合は何回でも回答できることになります。"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Date that this problem is due by"
+msgstr "この問題の締切期日"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid ""
+"Date that this problem is due by for a particular student. This can be set "
+"by an instructor, and will override the global due date if it is set to a "
+"date that is later than the global due date."
+msgstr ""
+"この問題に関する特定の受講者用の締切日時。この日時は講師が設定します。また、この日時が、全体の締切日時より後の場合は、全体の締切日時は上書きされます。"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Amount of time after the due date that submissions will be accepted"
+msgstr "締切後に、課題提出を受け入れる時間"
+
+#: common/lib/xmodule/xmodule/capa_base.py lms/templates/problem.html
+msgid "Show Answer"
+msgstr "解答を見る"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid ""
+"Defines when to show the answer to the problem. A default value can be set "
+"in Advanced Settings."
+msgstr "問題の回答をいつ表示するか定義。デフォルト値はAdvanced Settingで設定できます。"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Always"
+msgstr "常時"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Answered"
+msgstr "回答済み"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Attempted"
+msgstr "以前取り組んだものです"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Closed"
+msgstr "締切"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Finished"
+msgstr "終了"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Past Due"
+msgstr "昔の締切"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Never"
+msgstr "無期限"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Whether to force the save button to appear on the page"
+msgstr "saveボタンをページに表示するよう強制するか否か"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Randomization"
+msgstr "ランダム化"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid ""
+"Defines how often inputs are randomized when a student loads the problem. "
+"This setting only applies to problems that can have randomly generated "
+"numeric values. A default value can be set in Advanced Settings."
+msgstr ""
+"受講者が問題をロードしたときに、どのくらいの頻度でランダム化するか定義してください。この設定は、ランダムに数値が設定される問題のみに適用されます。デフォルト値は詳細設定から設定できます。"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "On Reset"
+msgstr "リセット中"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Per Student"
+msgstr "学生ごと"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+#: common/lib/xmodule/xmodule/discussion_module.py
+msgid "XML data for the problem"
+msgstr "問題のXMLデータ"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Dictionary with the correctness of current student answers"
+msgstr "受講者の今の回答が正しいか確認する機能付きの辞書"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Dictionary for maintaining the state of inputtypes"
+msgstr "入力タイプの状態を管理するための辞書"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Dictionary with the current student responses"
+msgstr "受講者の今の回答付きの辞書"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Whether the student has answered the problem"
+msgstr "受講者がその問題に解答したか否か"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Random seed for this student"
+msgstr "この受講者用のランダムシード"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Last submission time"
+msgstr "最後に提出した日時"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "Timer Between Attempts"
+msgstr "回答中のタイマー"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid ""
+"Seconds a student must wait between submissions for a problem with multiple "
+"attempts."
+msgstr "複数回、試行したことによる提出の問題が起きている間に受講者が待機しなければならない秒数"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Problem Weight"
+msgstr "問題の重み付け"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid ""
+"Defines the number of points each problem is worth. If the value is not set,"
+" each response field in the problem is worth one point."
+msgstr "各問題が何点なのか定義してください。値が設定されていない場合、問題中の回答枠は１点になります。"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Markdown source of this module"
+msgstr "このモジュールのマークダウン・ソース"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid ""
+"Source code for LaTeX and Word problems. This feature is not well-supported."
+msgstr "LaTeXやWordの問題に対するソースコード。この機能の信頼性は低いです。"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+msgid "String customization substitutions for particular locations"
+msgstr "特定の場所で、文字列をカスタマイズするための代入"
+
+#: common/lib/xmodule/xmodule/capa_base.py
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "Enable LaTeX templates?"
+msgstr "LaTeXのテンプレートを使用可能にしますか？"
 
 #: common/lib/xmodule/xmodule/capa_base.py
 msgid "Check"
@@ -1132,6 +1404,358 @@ msgid ""
 "refresh your page."
 msgstr "問題の状態がページをした時点より変更されています。ページをリフレッシュしてください。"
 
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Open Response Assessment"
+msgstr "ORA"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Current task that the student is on."
+msgstr "受講者が現在とりくんでいるタスク"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid ""
+"A list of lists of state dictionaries for student states that are saved.This"
+" field is only populated if the instructor changes tasks afterthe module is "
+"created and students have attempted it (for example changes a self assessed "
+"problem to self and peer assessed."
+msgstr ""
+"受講者の状態を記録するための公式辞書のリストのリスト。モジュール作成後に講師がタスクを変更し、受講者が同様の試行をしたときのみこの枠が追加されます(例えば、自己採点の問題を変更した際など。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "List of state dictionaries of each task within this module."
+msgstr "このモジュール中にある各タスクの公式辞書のリスト"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Which step within the current task that the student is on."
+msgstr "受講生が現在取り組んでいるタスクの中で、どのステップにいるか。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+#: lms/templates/peer_grading/peer_grading.html
+msgid "Graded"
+msgstr "採点済み"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid ""
+"Defines whether the student gets credit for this problem. Credit is based on"
+" peer grades of this problem."
+msgstr "この問題のクレジットを受講者が入手するか定義。クレジットはこの問題の相互採点に基づく。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "If the problem is ready to be reset or not."
+msgstr "問題をリセットする準備ができているか否か。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "The number of times the student can try to answer this problem."
+msgstr "受講者がこの問題に回答できる回数"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Allow File Uploads"
+msgstr "ファイルのアップロードを許可"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Whether or not the student can submit files as a response."
+msgstr "受講者が回答としてファイルを提出できるか否か。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Disable Quality Filter"
+msgstr "品質フィルターを無効化"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid ""
+"If False, the Quality Filter is enabled and submissions with poor spelling, "
+"short length, or poor grammar will not be peer reviewed."
+msgstr "Falseの場合、品質フィルタが使用可能になり、スペルミスや、長さ不足、文法ミスがある課題提出が相互採点されなくなります。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Current version number"
+msgstr "現在のバージョン番号"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid ""
+"Defines the number of points each problem is worth. If the value is not set,"
+" each problem is worth one point."
+msgstr "各問題が何点なのか定義してください。値が設定されていない場合、問題中の回答枠は１点になります。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Minimum Peer Grading Calibrations"
+msgstr "相互採点の目線合わせの数の下限"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid ""
+"The minimum number of calibration essays each student will need to complete "
+"for peer grading."
+msgstr "受講者が相互採点を完了するのに必要なレポート採点の目線合わせの数の下限。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Maximum Peer Grading Calibrations"
+msgstr "相互採点の目線合わせの数の上限"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid ""
+"The maximum number of calibration essays each student will need to complete "
+"for peer grading."
+msgstr "受講者が相互採点を完了するのに必要なレポート採点の目線合わせの数の上限。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Peer Graders per Response"
+msgstr "回答ごとの相互採点者"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "The number of peers who will grade each submission."
+msgstr "各課題提出の採点をする相互採点者の数。"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Required Peer Grading"
+msgstr "必須の相互採点"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid ""
+"The number of other students each student making a submission will have to "
+"grade."
+msgstr "課題提出する受講者が採点する必要のある他の受講者の数"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid "Allow \"overgrading\" of peer submissions"
+msgstr "相互課題提出の\"overgrading\"を許可"
+
+#: common/lib/xmodule/xmodule/combined_open_ended_module.py
+msgid ""
+"EXPERIMENTAL FEATURE.  Allow students to peer grade submissions that already"
+" have the requisite number of graders, but ONLY WHEN all submissions they "
+"are eligible to grade already have enough graders.  This is intended for use"
+" when settings for `Required Peer Grading` > `Peer Graders per Response`"
+msgstr ""
+"実験的な機能。採点者の必要数を既に満たした提出課題を相互採点することを受講者に許可する。しかし、受講者に採点資格のある全ての提出課題に対して、既に十分な採点者がいる場合に限る。この機能は、「必須な相互採点」＞「回答ごとの相互採点者」を設定する際の使用を想定しています。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Getting Started With Studio"
+msgstr "Studioで作業開始"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Add Course Team Members"
+msgstr "コースチームのメンバーの追加"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Grant your collaborators permission to edit your course so you can work "
+"together."
+msgstr "協同で講座編集の作業をするために協同権限を許可してください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Edit Course Team"
+msgstr "コースチームの編集"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Set Important Dates for Your Course"
+msgstr "講座に関する重要な日時を設定"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Establish your course's student enrollment and launch dates on the Schedule "
+"and Details page."
+msgstr "受講者の登録を開設し、スケジュールの日時と詳細ページを設定してください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Edit Course Details &amp; Schedule"
+msgstr "講座詳細とスケジュールを編集"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Draft Your Course's Grading Policy"
+msgstr "講座の採点ポリシーを下書きする"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Set up your assignment types and grading policy even if you haven't created "
+"all your assignments."
+msgstr "全課題を作成していない場合でも、課題タイプと採点ポリシーを設定。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Edit Grading Settings"
+msgstr "採点設定の編集"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Explore the Other Studio Checklists"
+msgstr "他のStudioのチェックリストを検索"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Discover other available course authoring tools, and find help when you need"
+" it."
+msgstr "他の使用可能なオーサリングツールを探し、必要があればヘルプを参照してください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Draft a Rough Course Outline"
+msgstr "大まかな講座アウトラインを下書き"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Create Your First Section and Subsection"
+msgstr "最初のセクションとサブセクションの作成"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Use your course outline to build your first Section and Subsection."
+msgstr "最初のセクションとサブセクションを作成するために、講座アウトラインを利用してください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Edit Course Outline"
+msgstr "講座のアウトラインの編集"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Set Section Release Dates"
+msgstr "セクションの公開日時を設定"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Specify the release dates for each Section in your course. Sections become "
+"visible to students on their release dates."
+msgstr "講座中の各セクションの公開日を指定してください。公開日に、セクションが受講生から見えるようになります。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Designate a Subsection as Graded"
+msgstr "採点されたサブセクションを指定"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Set a Subsection to be graded as a specific assignment type. Assignments "
+"within graded Subsections count toward a student's final grade."
+msgstr "特定の課題タイプとして採点されたサブセクションを設定。受講者の最終成績向けにカウントされる。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Reordering Course Content"
+msgstr "講座コンテンツの並び替え"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Use drag and drop to reorder the content in your course."
+msgstr "講座中のコンテンツを並び替えるにはドラッグ＆ドロップしてください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Renaming Sections"
+msgstr "セクションの名前変更"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Rename Sections by clicking the Section name from the Course Outline."
+msgstr "講座アウトラインからセクション名をクリックすることによってセクションの名前を変更。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Deleting Course Content"
+msgstr "講座コンテンツを削除中"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Delete Sections, Subsections, or Units you don't need anymore. Be careful, "
+"as there is no Undo function."
+msgstr "不要なセクションや、サブセクション、ユニットを削除します。このアクションは取り消しできないので注意してください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Add an Instructor-Only Section to Your Outline"
+msgstr "講師専用のセクションをアウトラインに追加"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Some course authors find using a section for unsorted, in-progress work "
+"useful. To do this, create a section and set the release date to the distant"
+" future."
+msgstr "講座作成者はソートされていないセクションを使用します（作業中に便利）。そのためには、セクションを作成し、公開日を遅めに設定してください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Explore edX's Support Tools"
+msgstr "edXサポートツールの検索"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Explore the Studio Help Forum"
+msgstr "Studioヘルプフォーラムの検索"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Access the Studio Help forum from the menu that appears when you click your "
+"user name in the top right corner of Studio."
+msgstr "Studioの右上にあるあなたのユーザネームをクリックしたときに表示されるメニューから、Studioのヘルプにアクセスしてください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Visit Studio Help"
+msgstr "Studioヘルプを見る"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Enroll in edX 101"
+msgstr "edX101に登録"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Register for edX 101, edX's primer for course creation."
+msgstr "edX101（講座作成の入門書）に登録"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Register for edX 101"
+msgstr "edX101に登録"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Download the Studio Documentation"
+msgstr "Studioドキュメントのダウンロード"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Download the searchable Studio reference documentation in PDF form."
+msgstr "検索可能なStudio参照文書をPDF形式でダウンロード。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Download Documentation"
+msgstr "ドキュメントのダウンロード"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Draft Your Course About Page"
+msgstr "講座のAboutページを下書き"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Draft a Course Description"
+msgstr "講座の記述を下書き"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Courses on edX have an About page that includes a course video, description,"
+" and more. Draft the text students will read before deciding to enroll in "
+"your course."
+msgstr "edXの講座には、講座に関する記述やビデオを載せたAboutページがあります。講座の登録を決定する前に、テキストを下書きしてください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Edit Course Schedule &amp; Details"
+msgstr "講座スケジュールと詳細を編集"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Add Staff Bios"
+msgstr "スタッフのプロフィールを追加"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Showing prospective students who their instructor will be is helpful. "
+"Include staff bios on the course About page."
+msgstr "受講者になりそうな講師を表示するのは有用です。講座のAboutページにあるスタッフのプロフィールに含めてください。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Add Course FAQs"
+msgstr "講座のFAQを追加"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Include a short list of frequently asked questions about your course."
+msgstr "講座に関するFAQリストを含める。"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid "Add Course Prerequisites"
+msgstr "講座の必須条件を追加"
+
+#: common/lib/xmodule/xmodule/course_module.py
+msgid ""
+"Let students know what knowledge and/or skills they should have before they "
+"enroll in your course."
+msgstr "講座に登録する前に、どんな知識やスキルが必要か受講者に知らせてください。"
+
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "General"
 msgstr "一般"
@@ -1141,6 +1765,206 @@ msgstr "一般"
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "TBD"
 msgstr "未定"
+
+#: common/lib/xmodule/xmodule/discussion_module.py
+msgid "Category"
+msgstr "カテゴリ"
+
+#: common/lib/xmodule/xmodule/discussion_module.py
+msgid ""
+"A category name for the discussion. This name appears in the left pane of "
+"the discussion forum for the course."
+msgstr "ディスカッション用のカテゴリー名。カテゴリー名はディスカッションの左枠に表示されます。"
+
+#: common/lib/xmodule/xmodule/discussion_module.py
+msgid "Subcategory"
+msgstr "サブカテゴリ"
+
+#: common/lib/xmodule/xmodule/discussion_module.py
+msgid ""
+"A subcategory name for the discussion. This name appears in the left pane of"
+" the discussion forum for the course."
+msgstr "ディスカッション用のサブカテゴリー名。サブカテゴリー名はディスカッションの左枠に表示されます。"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "Text"
+msgstr "テキスト"
+
+#: common/lib/xmodule/xmodule/html_module.py
+#: common/lib/xmodule/xmodule/html_module.py
+#: common/lib/xmodule/xmodule/html_module.py
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Html contents to display for this module"
+msgstr "このモジュールを表示するHTMLコンテンツ"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "Source code for LaTeX documents. This feature is not well-supported."
+msgstr "LaTeX文書のソースコード。この機能の信頼性は低いです。"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid ""
+"Select Visual to enter content and have the editor automatically create the "
+"HTML. Select Raw to edit HTML directly. If you change this setting, you must"
+" save the component and then re-open it for editing."
+msgstr ""
+"コンテンツに入力し、エディターが自動的にHTMLを作成するために、ビジュアルを選択してください。生データを選択し、HTMLディレクトリを編集してください。この設定を変えたら、コンポーネントを保存し、エディターで再度開く必要があります。"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "Editor"
+msgstr "エディタ"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "Visual"
+msgstr "ビジュアル"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "Raw"
+msgstr "生"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "HTML for the additional pages"
+msgstr "追加ページのHTML"
+
+#: common/lib/xmodule/xmodule/html_module.py
+msgid "List of course update items"
+msgstr "講座更新アイテムのリスト"
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+msgid "Image Annotation"
+msgstr "画像の注釈"
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+msgid "Tags for Assignments"
+msgstr "課題に対するタグ"
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+msgid ""
+"Add tags that automatically highlight in a certain color using the comma-"
+"separated form, i.e. imagery:red,parallelism:blue"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Location of Annotation backend"
+msgstr "注釈のバックエンドの場所"
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Url for Annotation Storage"
+msgstr "注釈のストレージのURL"
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Secret string for annotation storage"
+msgstr "注釈のストレージに対する秘密の文字列"
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Secret Token String for Annotation"
+msgstr "注釈に対する秘密のトークン文字列"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Enter the name that students see for this component.  Analytics reports may "
+"also use the display name to identify this component."
+msgstr "このコンポーネント用の受講者から見える名前を入力してください。この名前は、分析レポート作成時にコンポーネントを識別するために使われます。"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "LTI ID"
+msgstr "LTI ID"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Enter the LTI ID for the external LTI provider.  This value must be the same"
+" LTI ID that you entered in the LTI Passports setting on the Advanced "
+"Settings page.<br />See "
+msgstr ""
+"外部のLTIプロバイダー用のLTI IDを入力してください。この値は詳細設定ページのLTIパスポートに入力されたものと同じである必要があります。<br "
+"/>See"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "LTI URL"
+msgstr "LTI URL"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Enter the URL of the external tool that this component launches. This "
+"setting is only used when Hide External Tool is set to False.<br />See "
+msgstr ""
+"このコンポーネントが起動する外部ツールのURLを入力してください。この設定は外部ツールを隠す設定をFalseにする時にのみ使われます。<br />See"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "Custom Parameters"
+msgstr "カスタムパラメータ"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Add the key/value pair for any custom parameters, such as the page your "
+"e-book should open to or the background color for this component.<br />See "
+msgstr ""
+"カスタムパラメータ用のキー／値のペアを追加してください。パラメータの例としては、e-bookで開くページや、このコンポーネントの背景色などがあります。<br"
+" />See"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "Open in New Page"
+msgstr "新しいページで開く"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Select True if you want students to click a link that opens the LTI tool in "
+"a new window. Select False if you want the LTI content to open in an IFrame "
+"in the current page. This setting is only used when Hide External Tool is "
+"set to False.  "
+msgstr ""
+"受講者にLTIツールを新しいウィンドウで開くためのリンクをクリックさせたい場合は、Trueを選択してください。LTIコンテンツを現在のページのIFrameで開かせたい場合はFalseを選択してください。この設定は外部ツールを隠す設定をFalseにする時にのみ使われます。"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "Scored"
+msgstr "採点された（採点済み）"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Select True if this component will receive a numerical score from the "
+"external LTI system."
+msgstr "このコンポーネントが外部のLTIシステムから数値を受け取る場合はTrueを選択してください。"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "Weight"
+msgstr "重み付け"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Enter the number of points possible for this component.  The default value "
+"is 1.0.  This setting is only used when Scored is set to True."
+msgstr "このコンポーネントが実行できるポイントの数を入力してください。デフォルト値は1.0です。この設定は、採点済がTrueの時にのみ使われます。"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"The score kept in the xblock KVS -- duplicate of the published score in "
+"django DB"
+msgstr "xblock KVSの得点 -- django DB中の公開得点の複製"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "Comment as returned from grader, LTI2.0 spec"
+msgstr "LTI2.0 specの採点者からのコメント"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid "Hide External Tool"
+msgstr "外部ツールを隠す"
+
+#: common/lib/xmodule/xmodule/lti_module.py
+msgid ""
+"Select True if you want to use this component as a placeholder for syncing "
+"with an external grading  system rather than launch an external tool.  This "
+"setting hides the Launch button and any IFrames for this component."
+msgstr ""
+"外部ツールを起動するのではなく、外部の採点システムと同期するための代用としてこのコンポーネントを使用したい場合、Trueを選択してください。この設定により、起動ボタンと、このコンポーネント用のIFrameは非表示になります。"
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid ""
@@ -1153,6 +1977,50 @@ msgid ""
 "Could not parse LTI passport: {lti_passport}. Should be \"id:key:secret\" "
 "string."
 msgstr "LTIパスポートを解析することができませんでした。\"id:key:secret\"の文字列である必要があります：{lti_passport}"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Show Single Problem"
+msgstr "１つの問題を見る"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid ""
+"When True, only the single problem specified by \"Link to Problem Location\""
+" is shown. When False, a panel is displayed with all problems available for "
+"peer grading."
+msgstr ""
+"Trueにした場合、「問題へのリンク」によって指定される問題のみが表示されます。Falseの場合、相互採点の全問題とともにパネルが表示されます。"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Link to Problem Location"
+msgstr "問題へのリンク"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid ""
+"The location of the problem being graded. Only used when \"Show Single "
+"Problem\" is True."
+msgstr "採点された問題の場所。「１つの問題を見る」がTrueのときのみ使用可能。"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid ""
+"Defines whether the student gets credit for grading this problem. Only used "
+"when \"Show Single Problem\" is True."
+msgstr "この問題を採点するためのクレジットを受講者が入手するか定義。「１つの問題を見る」がTrueのときのみ使用可能。"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Due date that should be displayed."
+msgstr "表示すべき締切日時"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Amount of grace to give on the due date."
+msgstr "締切日時に与える猶予期間"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Student data for a given peer grading problem."
+msgstr "指定された相互採点問題のための受講者データ"
+
+#: common/lib/xmodule/xmodule/peer_grading_module.py
+msgid "Peer Grading Interface"
+msgstr "相互採点のインターフェース"
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: 'Courseware' refers to the tab in the courseware that leads to
@@ -1181,13 +2049,6 @@ msgstr "成績"
 #: lms/templates/wiki/base.html
 msgid "Wiki"
 msgstr "Wiki"
-
-#. Translators: "Discussion" is the title of the course forum page
-#. Translators: 'Discussion' refers to the tab in the courseware that leads to
-#. the discussion forums
-#: common/lib/xmodule/xmodule/tabs.py common/lib/xmodule/xmodule/tabs.py
-msgid "Discussion"
-msgstr "ディスカッション"
 
 #: common/lib/xmodule/xmodule/tabs.py cms/templates/textbooks.html
 #: cms/templates/textbooks.html cms/templates/widgets/header.html
@@ -1223,6 +2084,92 @@ msgstr "シラバス"
 msgid "Instructor"
 msgstr "講師"
 
+#: common/lib/xmodule/xmodule/textannotation_module.py
+msgid "Text Annotation"
+msgstr "テキストの注釈"
+
+#: common/lib/xmodule/xmodule/textannotation_module.py
+msgid "Source/Citation"
+msgstr "ソース／引用"
+
+#: common/lib/xmodule/xmodule/textannotation_module.py
+msgid ""
+"Optional for citing source of any material used. Automatic citation can be "
+"done using <a href=\"http://easybib.com\">EasyBib</a>"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/textannotation_module.py
+msgid "Diacritic Marks"
+msgstr "付加記号"
+
+#: common/lib/xmodule/xmodule/textannotation_module.py
+msgid ""
+"Add diacritic marks to be added to a text using the comma-separated form, "
+"i.e. markname;urltomark;baseline,markname2;urltomark2;baseline2"
+msgstr ""
+"コンマで分けられたフォームを使用したテキストの追加のために、付加記号を追加してください。\n"
+"例えば、markname;urltomark;baseline,markname2;urltomark2;baseline2"
+
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Video Annotation"
+msgstr "ビデオの注釈"
+
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "The external source URL for the video."
+msgstr "ビデオに対する外部のソースURL"
+
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Source URL"
+msgstr "ソースURL"
+
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Poster Image URL"
+msgstr "ポスター画像URL"
+
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Poster URL"
+msgstr "ポスターURL"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Inputs"
+msgstr "入力"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Number of text boxes available for students to input words/sentences."
+msgstr "受講者が入力に利用可能なテキストボックスの数"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Maximum Words"
+msgstr "文字数の上限"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Maximum number of words to be displayed in generated word cloud."
+msgstr "作成されたワードクラウドに表示される文字数の上限。"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Show Percents"
+msgstr "パーセントの表示"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Statistics are shown for entered words near that word."
+msgstr "近くに入力された文字に関する統計データを表示。"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Whether this student has posted words to the cloud."
+msgstr "この受講者が文字をワードクラウドに投稿したか否か。"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Student answer."
+msgstr "受講者の回答。"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "All possible words from all students."
+msgstr "全ての受講者が入力した可能性のある全ての文字"
+
+#: common/lib/xmodule/xmodule/word_cloud_module.py
+msgid "Top num_top_words words for word cloud."
+msgstr "ワードクラウド用のトップワード"
+
 #. Translators: "Self" is used to denote an openended response that is self-
 #. graded
 #: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
@@ -1235,9 +2182,11 @@ msgstr "自己"
 msgid "AI"
 msgstr "機械"
 
+#. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: "Peer" is used to denote an openended response that is peer-
 #. graded
 #: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Peer"
 msgstr "相互"
 
@@ -1446,12 +2395,189 @@ msgid "{exception_message}: Can't find uploaded transcripts: {user_filename}"
 msgstr "{exception_message}：アップロードされた字幕が見つかりません： {user_filename}"
 
 #: common/lib/xmodule/xmodule/video_module/video_module.py
+msgid "Basic"
+msgstr "基本"
+
+#: common/lib/xmodule/xmodule/video_module/video_module.py
 msgid ""
 "The URL for your video. This can be a YouTube URL or a link to an .mp4, "
 ".ogg, or .webm video file hosted elsewhere on the Internet."
 msgstr ""
 "ビデオのURL。YouTubeのURL またはインターネットのどこかにホストされた.mp4, .ogg, .webm "
 "ビデオファイルへのリンクを指定します。"
+
+#: common/lib/xmodule/xmodule/video_module/video_module.py
+msgid "Default Video URL"
+msgstr "デフォルトのビデオURL"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"The name students see. This name appears in the course ribbon and as a "
+"header for the video."
+msgstr "受講者から見える名前。この名前は、コースリボンやビデオのヘッダーに表示される。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Component Display Name"
+msgstr "コンポーネントの表示名"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Current position in the video."
+msgstr "ビデオ再生の現在位置"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Optional, for older browsers: the YouTube ID for the normal speed video."
+msgstr "古いブラウザ用のオプション：ノーマルスピードのYouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "YouTube ID"
+msgstr "YouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Optional, for older browsers: the YouTube ID for the .75x speed video."
+msgstr "古いブラウザ用のオプション：0.75倍速のYouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "YouTube ID for .75x speed"
+msgstr "0.75倍速のYouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Optional, for older browsers: the YouTube ID for the 1.25x speed video."
+msgstr "古いブラウザ用のオプション：1.25倍速のYouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "YouTube ID for 1.25x speed"
+msgstr "1.25倍速のYouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Optional, for older browsers: the YouTube ID for the 1.5x speed video."
+msgstr "古いブラウザ用のオプション：1.5倍速のYouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "YouTube ID for 1.5x speed"
+msgstr "1.5倍速のYouTube ID"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Time you want the video to start if you don't want the entire video to play."
+" Formatted as HH:MM:SS. The maximum value is 23:59:59."
+msgstr "ビデオの全体を再生したくない場合の開始時間。HH:MM:SSの形式で指定する。上限値は23:59:59。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Video Start Time"
+msgstr "ビデオの開始時間"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Time you want the video to stop if you don't want the entire video to play. "
+"Formatted as HH:MM:SS. The maximum value is 23:59:59."
+msgstr "ビデオの全体を再生したくない場合の終了時間。HH:MM:SSの形式で指定する。上限値は23:59:59。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Video Stop Time"
+msgstr "ビデオの終了時間"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "The external URL to download the video."
+msgstr "ビデオをダウンロードするための外部URL。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Download Video"
+msgstr "ビデオをダウンロード"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Allow students to download versions of this video in different formats if "
+"they cannot use the edX video player or do not have access to YouTube. You "
+"must add at least one non-YouTube URL in the Video File URLs field."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Video Download Allowed"
+msgstr "ビデオのダウンロードを許可"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"The URL or URLs where you've posted non-YouTube versions of the video. Each "
+"URL must end in .mpeg, .mp4, .ogg, or .webm and cannot be a YouTube URL. "
+"(For browser compatibility, we strongly recommend .mp4 and .webm format.) "
+"Students will be able to view the first listed video that's compatible with "
+"the student's computer. To allow students to download these videos, set "
+"Video Download Allowed to True."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Video File URLs"
+msgstr "ビデオファイルのURL"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"By default, students can download an .srt or .txt transcript when you set "
+"Download Transcript Allowed to True. If you want to provide a downloadable "
+"transcript in a different format, we recommend that you upload a handout by "
+"using the Upload a Handout field. If this isn't possible, you can post a "
+"transcript file on the Files & Uploads page or on the Internet, and then add"
+" the URL for the transcript here. Students see a link to download that "
+"transcript below the video."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Downloadable Transcript URL"
+msgstr "ダウンロード可能な字幕のURL"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Allow students to download the timed transcript. A link to download the file"
+" appears below the video. By default, the transcript is an .srt or .txt "
+"file. If you want to provide the transcript for download in a different "
+"format, upload a file by using the Upload Handout field."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Download Transcript Allowed"
+msgstr "字幕のダウンロードを許可"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"The default transcript for the video, from the Default Timed Transcript "
+"field on the Basic tab. This transcript should be in English. You don't have"
+" to change this setting."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Default Timed Transcript"
+msgstr "デフォルト時刻の字幕"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Specify whether the transcripts appear with the video by default."
+msgstr "デフォルトで、ビデオと共に字幕を表示するか指定。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Show Transcript"
+msgstr "字幕を表示"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Add transcripts in different languages. Click below to specify a language "
+"and upload an .srt transcript file for that language."
+msgstr "字幕に違う言語を追加。以下をクリックして、言語を指定し、その言語の.strファイル（字幕ファイル）をアップロードしてください。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Transcript Languages"
+msgstr "字幕の言語"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Preferred language for transcript."
+msgstr "字幕の推奨言語。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Preferred language for transcript"
+msgstr "字幕の推奨言語"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Transcript file format to download by user."
+msgstr "ユーザによってダウンロードされる字幕ファイルフォーマット。"
 
 #. Translators: This is a type of file used for captioning in the video
 #. player.
@@ -1462,6 +2588,28 @@ msgstr "SubRip (.srt) ファイル"
 #: common/lib/xmodule/xmodule/video_module/video_xfields.py
 msgid "Text (.txt) file"
 msgstr "Text (.txt)ファイル"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "The last speed that the user specified for the video."
+msgstr "ユーザが前回に設定したビデオの速度。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "The default speed for the video."
+msgstr "ビデオのデフォルト速度。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Specify whether YouTube is available for the user."
+msgstr "ユーザがYouTubeを利用可能か指定してください。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid ""
+"Upload a handout to accompany this video. Students can download the handout "
+"by clicking Download Handout under the video."
+msgstr "ビデオに添付する資料をアップロードしてください。受講者は、ビデオの下の「資料をダウンロード」をクリックして、資料をダウンロードできます。"
+
+#: common/lib/xmodule/xmodule/video_module/video_xfields.py
+msgid "Upload Handout"
+msgstr "配布資料をアップロード"
 
 #: common/static/js/vendor/mathjax-MathJax-c9db6ac/docs/source/mjtheme/layout.html
 msgid "Navigation"
@@ -1539,19 +2687,12 @@ msgid "subsections"
 msgstr "節"
 
 #: lms/djangoapps/class_dashboard/dashboard_data.py
-#: lms/templates/courseware/instructor_dashboard.html
-#: lms/templates/courseware/instructor_dashboard.html
-#: lms/templates/instructor/instructor_dashboard_2/analytics.html
-msgid "Problem"
-msgstr "問題"
-
-#: lms/djangoapps/class_dashboard/dashboard_data.py
 msgid "Count of Students"
 msgstr "受講者の数"
 
 #: lms/djangoapps/class_dashboard/dashboard_data.py
-msgid "% of Students"
-msgstr "% oの受講者"
+msgid "Percent of Students"
+msgstr "受講者の割合"
 
 #: lms/djangoapps/class_dashboard/dashboard_data.py
 #: lms/templates/folditchallenge.html
@@ -1581,6 +2722,14 @@ msgid "Visit a course wiki to add an article."
 msgstr "記事を追加するには講座 Wikiへ進んでください。"
 
 #: lms/djangoapps/courseware/views.py
+msgid "Invalid course id."
+msgstr "無効な講座番号"
+
+#: lms/djangoapps/courseware/views.py
+msgid "Invalid location."
+msgstr "無効な場所"
+
+#: lms/djangoapps/courseware/views.py
 msgid "User {username} does not exist."
 msgstr "ユーザー {username} は存在しません。"
 
@@ -1588,7 +2737,7 @@ msgstr "ユーザー {username} は存在しません。"
 msgid "User {username} has never accessed problem {location}"
 msgstr "ユーザー {username} は問題 {location} をアクセスしたことがありません。 "
 
-#: lms/djangoapps/courseware/features/video.py lms/templates/video.html
+#: lms/djangoapps/courseware/features/video.py
 msgid "ERROR: No playable video sources found!"
 msgstr "エラー：動画が見つかりません"
 
@@ -1644,23 +2793,18 @@ msgid "Failed in authenticating {0}\n"
 msgstr "{0}の認証中に失敗しました。\n"
 
 #: lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "fixed password"
 msgstr "修正されたパスワード"
 
 #: lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "All ok!"
 msgstr "整備完了。"
 
 #: lms/djangoapps/dashboard/sysadmin.py lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "Must provide username"
 msgstr "ユーザー名は必須です。"
 
 #: lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "Must provide full name"
 msgstr "氏名は必須です。"
 
@@ -1721,13 +2865,11 @@ msgid "Courses loaded in the modulestore"
 msgstr "モジュールストアで講座が読み込まれました。"
 
 #: lms/djangoapps/dashboard/sysadmin.py lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 #: lms/templates/tracking_log.html
 msgid "username"
 msgstr "ユーザー名"
 
 #: lms/djangoapps/dashboard/sysadmin.py lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "email"
 msgstr "メールアドレス"
 
@@ -1822,7 +2964,6 @@ msgid "Deleted"
 msgstr "削除済み"
 
 #: lms/djangoapps/dashboard/sysadmin.py lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "course_id"
 msgstr "講座ID"
 
@@ -1843,12 +2984,10 @@ msgid "Enrollment information for all courses"
 msgstr "全講座の受講登録情報"
 
 #: lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "role"
 msgstr "権限"
 
 #: lms/djangoapps/dashboard/sysadmin.py
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
 msgid "full_name"
 msgstr "フルネーム"
 
@@ -1857,26 +2996,6 @@ msgid ""
 "Import the specified git repository and optional branch into the modulestore"
 " and optionally specified directory."
 msgstr "指定のgitレポジトリとオプション指定のブランチをモジュールストア、および指定のディレクトリにインポートする。"
-
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
-msgid "Cannot find user with email address"
-msgstr "メールアドレスではユーザーが見つかりません。"
-
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
-msgid "Cannot find user with username"
-msgstr "ユーザー名ではユーザーが見つかりません。"
-
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
-msgid "Failed in authenticating"
-msgstr "認証にて失敗。"
-
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
-msgid "Unable to clone or pull repository"
-msgstr "レポジトリのcloneもしくはpullに失敗。"
-
-#: lms/djangoapps/dashboard/tests/test_sysadmin.py
-msgid "Error - cannot get course with ID"
-msgstr "エラー：IDで講座を取得できません。"
 
 #: lms/djangoapps/django_comment_client/mustache_helpers.py
 msgid "Re-open thread"
@@ -1935,10 +3054,13 @@ msgid "Task is already running."
 msgstr "タスクは既に実行中です。"
 
 #: lms/djangoapps/instructor/views/api.py
+msgid "User ID"
+msgstr "ユーザID"
+
+#: lms/djangoapps/instructor/views/api.py
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 #: lms/templates/dashboard.html
 #: lms/templates/courseware/instructor_dashboard.html
-#: lms/templates/university_profile/edge.html
 msgid "Email"
 msgstr "メールアドレス"
 
@@ -1947,6 +3069,7 @@ msgid "Language"
 msgstr "言語"
 
 #: lms/djangoapps/instructor/views/api.py
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
 msgid "Location"
 msgstr "場所"
 
@@ -1983,10 +3106,12 @@ msgstr "得点を削除する際にエラーが発生しました。"
 
 #: lms/djangoapps/instructor/views/api.py
 #: lms/templates/verify_student/midcourse_reverify_dash.html
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_complete.html
 msgid "Complete"
 msgstr "完了"
 
 #: lms/djangoapps/instructor/views/api.py
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_closed.html
 msgid "Incomplete"
 msgstr "完了できず"
 
@@ -2047,16 +3172,16 @@ msgid "Couldn't find student with that email or username."
 msgstr "emalまたはusernameで学生を見つけることができませんでした．"
 
 #: lms/djangoapps/instructor/views/legacy.py
-msgid "List of students enrolled in {course_id}"
-msgstr "{course_id}を履修している受講生の一覧"
+msgid "List of students enrolled in {course_key}"
+msgstr "{course_key}に登録された受講者のリスト"
 
 #: lms/djangoapps/instructor/views/legacy.py
-msgid "Summary Grades of students enrolled in {course_id}"
-msgstr "{course_id}を履修している受講者の評価概要"
+msgid "Summary Grades of students enrolled in {course_key}"
+msgstr "{course_key}に登録されている受講者の採点サマリー"
 
 #: lms/djangoapps/instructor/views/legacy.py
-msgid "Raw Grades of students enrolled in {course_id}"
-msgstr "{course_id}の受講者の評価の値"
+msgid "Raw Grades of students enrolled in {course_key}"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/legacy.py
 msgid "Failed to create a background task for rescoring \"{problem_url}\"."
@@ -2085,6 +3210,12 @@ msgstr "\"{problem_url}\"の初期化バックグラウンドタスクの作成�
 #: lms/djangoapps/instructor/views/legacy.py
 msgid "Failed to create a background task for resetting \"{url}\": {message}."
 msgstr "\"{url}\"の初期化バックグラウンドタスクの作成に失敗しました:{message}"
+
+#: lms/djangoapps/instructor/views/legacy.py
+#: lms/djangoapps/instructor/views/legacy.py
+#: lms/djangoapps/instructor/views/legacy.py
+msgid "Could not find problem location \"{url}\"."
+msgstr "問題の場所の\"{url}\"を見つけることができませんでした。"
 
 #: lms/djangoapps/instructor/views/legacy.py
 msgid "Found module.  "
@@ -2258,8 +3389,8 @@ msgid "Added \"{username}\" to \"{course_id}\" forum role = \"{rolename}\""
 msgstr "\"{course_id}\"に\"{username}\"を追加　フォーラム権限 = \"{rolename}\""
 
 #: lms/djangoapps/instructor/views/legacy.py
-msgid "{title} in course {course_id}"
-msgstr "{title}の講座{course_id}"
+msgid "{title} in course {course_key}"
+msgstr "{course_key}講座中の{title}"
 
 #: lms/djangoapps/instructor/views/legacy.py
 msgid "ID"
@@ -2704,6 +3835,7 @@ msgid "Description"
 msgstr "記述"
 
 #: lms/djangoapps/shoppingcart/reports.py
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
 msgid "Comments"
 msgstr "コメント"
 
@@ -2797,12 +3929,10 @@ msgid "The course you requested does not exist."
 msgstr "この講座は存在しません。"
 
 #: lms/djangoapps/shoppingcart/views.py
-#: lms/djangoapps/shoppingcart/tests/test_views.py
 msgid "The course {0} is already in your cart."
 msgstr "講座「{0}」はカートに入っています"
 
 #: lms/djangoapps/shoppingcart/views.py
-#: lms/djangoapps/shoppingcart/tests/test_views.py
 msgid "You are already registered in course {0}."
 msgstr "既に course {0} には登録済です。"
 
@@ -3404,7 +4534,9 @@ msgstr "記事を削除する"
 
 #: lms/templates/wiki/delete.html
 #: lms/templates/wiki/plugins/attachments/index.html
-#: cms/templates/component.html cms/templates/studio_xblock_wrapper.html
+#: cms/templates/component.html cms/templates/container_xblock_component.html
+#: cms/templates/container_xblock_component.html
+#: cms/templates/studio_xblock_wrapper.html
 #: cms/templates/studio_xblock_wrapper.html
 #: lms/templates/discussion/_underscore_templates.html
 #: lms/templates/discussion/_underscore_templates.html
@@ -3442,6 +4574,7 @@ msgid "You are deleting an article. Please confirm."
 msgstr "記事を削除しようとしています。よろしいでしょうか？"
 
 #: lms/templates/wiki/edit.html cms/templates/component.html
+#: cms/templates/container.html cms/templates/container_xblock_component.html
 #: cms/templates/studio_xblock_wrapper.html
 #: lms/templates/discussion/_underscore_templates.html
 #: lms/templates/discussion/_underscore_templates.html
@@ -3492,13 +4625,8 @@ msgstr "Wikiプレビュー"
 #: lms/templates/dashboard.html lms/templates/dashboard.html
 #: lms/templates/dashboard.html
 #: lms/templates/modal/_modal-settings-language.html
-#, fuzzy
 msgid "window open"
-msgstr ""
-"#-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#\n"
-"ウィンドウ開\n"
-"#-#-#-#-#  mako.po (edx-platform)  #-#-#-#-#\n"
-"ウィンドウを開く"
+msgstr "ウィンドウを開く"
 
 #: lms/templates/wiki/edit.html
 msgid "Back to editor"
@@ -3891,20 +5019,24 @@ msgstr ""
 msgid "Upload completed"
 msgstr "アップロード完了"
 
+#: cms/djangoapps/contentstore/views/component.py
+msgid "HTML"
+msgstr "HTML"
+
+#: cms/djangoapps/contentstore/views/component.py
+msgid "Video"
+msgstr "ビデオ"
+
+#: cms/djangoapps/contentstore/views/component.py
+#: cms/djangoapps/contentstore/views/component.py
+msgid "Blank"
+msgstr "空白"
+
 #: cms/djangoapps/contentstore/views/course.py
 msgid ""
 "Special characters not allowed in organization, course number, and course "
 "run."
 msgstr "記号は組織、講座番号、コース開始では使用することができません。"
-
-#: cms/djangoapps/contentstore/views/course.py
-msgid ""
-"Unable to create course '{name}'.\n"
-"\n"
-"{err}"
-msgstr ""
-"講座名「'{name}」を生成に失敗しました。\n"
-"{err}"
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid ""
@@ -3915,18 +5047,18 @@ msgstr "既に同じ組織、同じ講座番号、同じ受講開始日が設定
 
 #: cms/djangoapps/contentstore/views/course.py
 #: cms/djangoapps/contentstore/views/course.py
-#: cms/djangoapps/contentstore/views/course.py
-#: cms/djangoapps/contentstore/views/course.py
 msgid ""
 "Please change either the organization or course number so that it is unique."
 msgstr "ユニークな情報とするため、組織もしくは講座番号を変更してください。"
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid ""
-"There is already a course defined with the same organization and course "
-"number. Please change at least one field to be unique."
+"Unable to create course '{name}'.\n"
+"\n"
+"{err}"
 msgstr ""
-"同様の組織、そして、講座番号で既に規定されている講座があります。少なくとも1つ以上のフィールドを変更することでユニークな情報としてください。"
+"講座名「'{name}」を生成に失敗しました。\n"
+"{err}"
 
 #: cms/djangoapps/contentstore/views/export_git.py
 msgid "Course successfully exported to git repository"
@@ -4036,13 +5168,6 @@ msgstr "ページが見つかりません"
 msgid "close"
 msgstr "閉じる"
 
-#: cms/templates/component.html cms/templates/container_xblock_component.html
-#: cms/templates/edit-tabs.html cms/templates/edit-tabs.html
-#: cms/templates/overview.html cms/templates/overview.html
-#: lms/templates/vert_module_studio_view.html
-msgid "Drag to reorder"
-msgstr "ドラッグして並び替え"
-
 #: cms/templates/container.html
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/courseware/instructor_dashboard.html
@@ -4052,6 +5177,7 @@ msgstr "読み込み中..."
 
 #. Translators: this is a verb describing the action of viewing more details
 #: cms/templates/container_xblock_component.html
+#: cms/templates/studio_xblock_wrapper.html
 #: lms/templates/wiki/includes/article_menu.html
 msgid "View"
 msgstr "見る"
@@ -4075,6 +5201,7 @@ msgstr "講座番号"
 #: lms/templates/discussion/mustache/_inline_discussion.mustache
 #: lms/templates/discussion/mustache/_inline_discussion_cohorted.mustache
 #: lms/templates/verify_student/face_upload.html
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/oa_edit.html
 msgid "Cancel"
 msgstr "キャンセル"
 
@@ -4095,7 +5222,6 @@ msgid "Pending"
 msgstr "ペンディング"
 
 #: cms/templates/login.html lms/templates/login.html
-#: lms/templates/university_profile/edge.html
 msgid "Forgot password?"
 msgstr "パスワードを忘れた方はこちら"
 
@@ -4104,7 +5230,6 @@ msgstr "パスワードを忘れた方はこちら"
 #: lms/templates/provider_login.html lms/templates/register.html
 #: lms/templates/register.html lms/templates/signup_modal.html
 #: lms/templates/sysadmin_dashboard.html
-#: lms/templates/university_profile/edge.html
 msgid "Password"
 msgstr "パスワード"
 
@@ -4126,6 +5251,7 @@ msgstr "管理者"
 #: lms/templates/combinedopenended/openended/open_ended.html
 #: lms/templates/combinedopenended/selfassessment/self_assessment_prompt.html
 #: lms/templates/verify_student/face_upload.html
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/oa_edit.html
 msgid "Save"
 msgstr "一時保存"
 
@@ -4171,8 +5297,9 @@ msgstr "利用規約"
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
 
-#: cms/templates/widgets/header.html lms/templates/help_modal.html
-#: lms/templates/navigation.html lms/templates/static_templates/help.html
+#: cms/templates/widgets/header.html cms/templates/widgets/header.html
+#: lms/templates/help_modal.html lms/templates/navigation.html
+#: lms/templates/static_templates/help.html
 #: lms/templates/static_templates/help.html wiki/plugins/help/wiki_plugin.py
 msgid "Help"
 msgstr "ヘルプ"
@@ -4324,8 +5451,8 @@ msgstr "無料コースを選択"
 msgid "{platform_name}-wide Summary"
 msgstr "{platform_name}-広域集約"
 
-#: lms/templates/annotatable.html lms/templates/textannotation.html
-#: lms/templates/videoannotation.html
+#: lms/templates/annotatable.html lms/templates/imageannotation.html
+#: lms/templates/textannotation.html lms/templates/videoannotation.html
 #: lms/templates/instructor/staff_grading.html
 #: lms/templates/open_ended_problems/combined_notifications.html
 #: lms/templates/open_ended_problems/open_ended_flagged_problems.html
@@ -4334,8 +5461,8 @@ msgstr "{platform_name}-広域集約"
 msgid "Instructions"
 msgstr "説明"
 
-#: lms/templates/annotatable.html lms/templates/textannotation.html
-#: lms/templates/videoannotation.html
+#: lms/templates/annotatable.html lms/templates/imageannotation.html
+#: lms/templates/textannotation.html lms/templates/videoannotation.html
 msgid "Collapse Instructions"
 msgstr "指示を削除"
 
@@ -4934,6 +6061,14 @@ msgstr " {link_start}メール{link_end}を送信してください。"
 msgid "Please try again later."
 msgstr "少し経ってからお試しください。"
 
+#. Translators: Notes below refer to annotations. They wil later be put under
+#. a
+#. "Notes" section.
+#: lms/templates/imageannotation.html lms/templates/notes.html
+#: lms/templates/textannotation.html lms/templates/videoannotation.html
+msgid "You do not have any notes."
+msgstr "ノートがありません"
+
 #: lms/templates/index.html
 msgid "Free courses from <strong>{university_name}</strong>"
 msgstr "<strong>{university_name}</strong>の無料講座"
@@ -5255,18 +6390,9 @@ msgstr ""
 "<strong>警告:</strong>お使いのブラウザはサポートされていません。{chrome_link_start}Chrome{chrome_link_end}"
 " もしくは {ff_link_start}Firefox{ff_link_end}を使うことを、強く推奨します。"
 
-#: lms/templates/notes.html lms/templates/textannotation.html
-#: lms/templates/videoannotation.html
-msgid "You do not have any notes."
-msgstr "ノートがありません"
-
 #: lms/templates/problem.html
 msgid "Reset"
 msgstr "リセット"
-
-#: lms/templates/problem.html
-msgid "Show Answer"
-msgstr "解答を見る"
 
 #: lms/templates/problem.html
 msgid "Reveal Answer"
@@ -5277,7 +6403,6 @@ msgid "You have used {num_used} of {num_total} submissions"
 msgstr "全{num_total}回中の{num_used}回の提出を既に実施"
 
 #: lms/templates/provider_login.html
-#: lms/templates/university_profile/edge.html
 msgid "Log In"
 msgstr "ログイン"
 
@@ -5331,7 +6456,7 @@ msgstr "表示名を入力："
 #: lms/templates/register-shib.html lms/templates/register.html
 #: lms/templates/register.html
 msgid "example: JaneDoe"
-msgstr "例：watcafe"
+msgstr "例：gacco"
 
 #: lms/templates/register-shib.html lms/templates/register.html
 #: lms/templates/register.html
@@ -5350,7 +6475,7 @@ msgstr "{link_start}利用規約{link_end}に同意する"
 #: lms/templates/register-shib.html lms/templates/register.html
 #: lms/templates/signup_modal.html
 msgid "I agree to the {link_start}Honor Code{link_end}"
-msgstr "{link_start}倫理規定{link_end}に同意する"
+msgstr "{link_start}プライバシーポリシー{link_end}に同意する"
 
 #: lms/templates/register-shib.html
 msgid "Update My Account"
@@ -5382,7 +6507,7 @@ msgstr ""
 
 #: lms/templates/register-sidebar.html
 msgid "Next Steps"
-msgstr "次のステップ"
+msgstr "次の手順"
 
 #: lms/templates/register-sidebar.html
 msgid ""
@@ -5414,7 +6539,8 @@ msgstr "よくある質問への回答を見る"
 msgid ""
 "Once registered, most questions can be answered in the course specific "
 "discussion forums or through the FAQs."
-msgstr "講座内容についての質問は各講座のディスカッションで回答されるものです。全般について質問は「よくある質問」をご確認ください。"
+msgstr ""
+"講座内容についての質問は、各講座内に設置されるディスカッションで講師・スタッフに問いかけましょう。サービス全般について質問は「よくある質問」をご確認ください。"
 
 #: lms/templates/register.html
 msgid "Register for {platform_name}"
@@ -5462,11 +6588,11 @@ msgstr "一度、登録すると変更できません"
 
 #: lms/templates/register.html lms/templates/verify_student/face_upload.html
 msgid "example: Jane Doe"
-msgstr "例：渡辺 学"
+msgstr "例：学校 太郎"
 
 #: lms/templates/register.html lms/templates/register.html
 msgid "Needed for any certificates you may earn"
-msgstr "修了証の発行の際に必要となります"
+msgstr "修了証に表示するために用いる情報です"
 
 #: lms/templates/register.html
 msgid "Welcome {username}"
@@ -5482,7 +6608,7 @@ msgstr "表示名"
 
 #: lms/templates/register.html lms/templates/register.html
 msgid "Extra Personal Information"
-msgstr "付随する個人情報"
+msgstr "プロフィール情報（入力は任意のアンケート項目）"
 
 #: lms/templates/register.html
 msgid "City"
@@ -5509,7 +6635,7 @@ msgstr "誕生年"
 msgid "Please share with us your reasons for registering with {platform_name}"
 msgstr "{platform_name}への登録理由"
 
-#: lms/templates/register.html lms/templates/university_profile/edge.html
+#: lms/templates/register.html
 msgid "Register"
 msgstr "登録"
 
@@ -5888,6 +7014,10 @@ msgid "Play video"
 msgstr "動画再生"
 
 #: lms/templates/video.html
+msgid "No playable video sources found."
+msgstr "再生可能な動画ソースが見つかりません。"
+
+#: lms/templates/video.html
 msgid "Video position"
 msgstr "ビデオの位置"
 
@@ -5906,6 +7036,12 @@ msgstr "スピード"
 #: lms/templates/video.html
 msgid "Volume"
 msgstr "ボリューム"
+
+#: lms/templates/video.html
+msgid ""
+"Click on this button to mute or unmute this video or press UP or DOWN "
+"buttons to increase or decrease volume level."
+msgstr "ボタンをクリックするとビデオがミュート／ミュート解除されます。上／下ボタンでボリュームを調節できます。"
 
 #: lms/templates/video.html
 msgid "Fill browser"
@@ -5972,7 +7108,7 @@ msgstr "新規課題提出"
 
 #: lms/templates/combinedopenended/combined_open_ended.html
 msgid "Next Step"
-msgstr "次のステップ"
+msgstr "次の手順"
 
 #: lms/templates/combinedopenended/combined_open_ended.html
 msgid ""
@@ -6271,6 +7407,10 @@ msgid "Course Navigation"
 msgstr "講座メニュー"
 
 #: lms/templates/courseware/courseware.html
+msgid "No content has been added to this course"
+msgstr "このコースにはまだコンテンツがありません"
+
+#: lms/templates/courseware/courseware.html
 msgid "Open Calculator"
 msgstr "計算機を開く"
 
@@ -6503,20 +7643,18 @@ msgstr "講座の評価調整"
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
-msgid "Specify a particular problem in the course here by its url:"
-msgstr "本講座における特定の設問をURLで指定："
+msgid "Specify a problem in the course here with its complete location:"
+msgstr "このコースでの特定の問題を完全なロケーションで指定："
 
+#. Translators: A location (string of text) follows this sentence.
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/courseware/instructor_dashboard.html
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid ""
-"You may use just the \"urlname\" if a problem, or \"modulename/urlname\" if "
-"not. (For example, if the location is "
-"<tt>i4x://university/course/problem/problemname</tt>, then just provide the "
-"<tt>problemname</tt>. If the location is "
-"<tt>i4x://university/course/notaproblem/someothername</tt>, then provide "
-"<tt>notaproblem/someothername</tt>.)"
-msgstr ""
-"単問であれば\"urlname\"、もし複数問であるのであれば\"modulename/urlname\"と使うのが良いでしょう。(例えば、場所が<tt>i4x://university/course/problem/problemname</tt>であれば、<tt>problemname</tt>と提示されます。もし場所が<tt>i4x://university/course/notaproblem/someothername</tt>であれば、<tt>notaproblem/someothername</tt>と提示されます。)"
+"You must provide the complete location of the problem. In the Staff Debug "
+"viewer, the location looks like this:"
+msgstr "問題の完全なロケーションを規定する必要があります。スタッフデバッグビューワではロケーションは次のように表示されます："
 
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/courseware/instructor_dashboard.html
@@ -6928,7 +8066,7 @@ msgstr "本講座はまもなく受講期間外（終了済）となります。
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Your final grade:"
-msgstr "最終評価："
+msgstr "課題全体の得点率："
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Grade required for a {cert_name_short}:"
@@ -7023,7 +8161,7 @@ msgstr "倫理規定受講者として登録されています。"
 #: lms/templates/static_templates/honor.html
 #: lms/templates/static_templates/honor.html
 msgid "Honor Code"
-msgstr "倫理規定"
+msgstr "プライバシーポリシー"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "You're auditing this course"
@@ -7076,7 +8214,7 @@ msgstr "本人認証付きコースにアップグレードする"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "View Archived Course"
-msgstr "講座画面へ（終了済/学習不可）"
+msgstr "講座画面へ（閉講済）"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "View Course"
@@ -7094,14 +8232,6 @@ msgid ""
 "Are you sure you want to unregister from the verified {cert_name_long} track"
 " of"
 msgstr "履修解除してよろしいですか？（認証済み {cert_name_long}発行予定）："
-
-#: lms/templates/dashboard/_dashboard_course_listing.html
-msgid ""
-"In order to request a refund for the amount you paid, you will need to send "
-"an email to {billing_email}.  Be sure to include your email and the course "
-"name."
-msgstr ""
-"支払った額の返金を要求するには {billing_email} にメールを送信してください。 メールアドレスと講座名を忘れずに記入ください。"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Email Settings"
@@ -7312,7 +8442,7 @@ msgstr "投稿を追加"
 
 #: lms/templates/discussion/_new_post.html
 msgid "Create new post about:"
-msgstr "投稿先領域を選択："
+msgstr "投稿カテゴリを選択："
 
 #: lms/templates/discussion/_new_post.html
 msgid "Filter List"
@@ -8454,34 +9584,34 @@ msgstr "それぞれのバーは節を開いた受講者の数を表します。
 msgid ""
 "You can click on any of the bars to list the students that opened the "
 "subsection."
-msgstr ""
+msgstr "節を開いた受講者の一覧を表示するためにバーをクリックしてください。"
 
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 msgid "You can also download this data as a CSV file."
-msgstr ""
+msgstr "このデータはCSVファイルでもダウンロードすることができます。"
 
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 msgid "Download Subsection Data for all Subsections as a CSV"
-msgstr ""
+msgstr "すべての節のデータをCSVでダウンロードする。"
 
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 msgid "Grade Distribution Data"
-msgstr ""
+msgstr "成績分布データ"
 
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 msgid "Each bar shows the grade distribution for that problem."
-msgstr ""
+msgstr "それぞれのバーはその問題の成績分布を表します。"
 
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 msgid ""
 "You can click on any of the bars to list the students that attempted the "
 "problem, along with the grades they received."
-msgstr ""
+msgstr "バーをクリックすることで取得した成績とともに問題を実施の一覧を取得することができます。"
 
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 msgid "Download Problem Data for all Problems as a CSV"
-msgstr ""
+msgstr "すべての問題のデータをCSVでダウンロードする"
 
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
 msgid "Download Student Opened as a CSV"
@@ -8567,18 +9697,9 @@ msgid "Student-specific grade adjustment"
 msgstr "個別評価調整"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
-msgid "Problem urlname"
-msgstr "問題URL"
-
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
-#: lms/templates/instructor/instructor_dashboard_2/student_admin.html
-msgid ""
-"You may use just the \"urlname\" if a problem, or \"modulename/urlname\" if "
-"not. (For example, if the location is {location1}, then just provide the "
-"{urlname1}. If the location is {location2}, then provide {urlname2}.)"
-msgstr ""
-"もし単問であれば、単に\"urlname\"と用いることができる。そうでないならば\"modulename/urlname\"となる。(例えば、場所が{location1}であれば、"
-" {urlname1}とすることができる。一方、場所が{location2}であれば、{urlname2}となる)"
+msgid "Problem location"
+msgstr "問題のロケーション"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Next, select an action to perform for the given user and problem:"
@@ -8762,14 +9883,11 @@ msgid "Due date"
 msgstr "締切日時"
 
 #: lms/templates/peer_grading/peer_grading.html
-msgid "Graded"
-msgstr "採点済み"
-
-#: lms/templates/peer_grading/peer_grading.html
 msgid "Available"
 msgstr "利用可能"
 
 #: lms/templates/peer_grading/peer_grading.html
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
 msgid "Required"
 msgstr "必須"
 
@@ -9276,23 +10394,6 @@ msgstr "しばらくしたら、このページをリロードしてください
 msgid "Currently the {platform_name} servers are overloaded"
 msgstr "現在、{platform_name}は高負荷になっています。"
 
-#: lms/templates/university_profile/edge.html
-#: lms/templates/university_profile/edge.html
-msgid "edX edge"
-msgstr "edX edge"
-
-#: lms/templates/university_profile/edge.html
-msgid "Log in to your courses"
-msgstr "講座にログイン"
-
-#: lms/templates/university_profile/edge.html
-msgid "Register for classes"
-msgstr "クラスに登録する"
-
-#: lms/templates/university_profile/edge.html
-msgid "Take free online courses from today's leading universities."
-msgstr "先進的な大学から無料コースを探す"
-
 #: lms/templates/verify_student/_modal_editname.html
 msgid "Edit Your Name"
 msgstr "名前を編集"
@@ -9396,12 +10497,12 @@ msgstr "技術的な要求事項"
 
 #: lms/templates/verify_student/_verification_support.html
 msgid ""
-"Please make sure your browser is updated to the <strong>{a_start}most recent"
-" version possible{a_end}</strong>. Also, please make sure your <strong>web "
-"cam is plugged in, turned on, and allowed to function in your web browser "
-"(commonly adjustable in your browser settings).</strong>"
+"Please make sure your browser is updated to the {a_start}most recent version"
+" possible{a_end}. Also, please make sure your <strong>web cam is plugged in,"
+" turned on, and allowed to function in your web browser (commonly adjustable"
+" in your browser settings).</strong>"
 msgstr ""
-"ブラウザが<strong>{a_start}最新バージョン{a_end}</strong>にアップデートされているかをご確認ください。また、<strong>ウェブカメラが接続され、電源が入れられ、そしてブラウザと連携動作するかどうか(一般的にはブラウザの設定画面に設定項目があります)</strong>をご確認ください"
+"ブラウザが{a_start}最新バージョン{a_end}にアップデートされているかをご確認ください。また、<strong>ウェブカメラが接続され、電源が入れられ、そしてブラウザと連携動作するかどうか(一般的にはブラウザの設定画面に設定項目があります)</strong>をご確認ください"
 
 #: lms/templates/verify_student/face_upload.html
 msgid "Edit Your Full Name"
@@ -9678,6 +10779,11 @@ msgstr "以下の講座において、再認証が必要となっています。
 #: lms/templates/verify_student/midcourse_reverify_dash.html
 msgid "Re-verify by {date}"
 msgstr "{date}にて再認証"
+
+#: lms/templates/verify_student/midcourse_reverify_dash.html
+#: lms/templates/verify_student/midcourse_reverify_dash.html
+msgid "Re-verify for {course_number}"
+msgstr "{course_number}で再認証する"
 
 #: lms/templates/verify_student/midcourse_reverify_dash.html
 msgid "You currently need to re-verify for the following course:"
@@ -10290,23 +11396,6 @@ msgstr "edXサポートに連絡する"
 msgid "Files &amp; Uploads"
 msgstr "ファイル &amp; アップロード"
 
-#: cms/templates/asset_index.html
-msgid "Uploading…"
-msgstr "アップロードしています…"
-
-#: cms/templates/asset_index.html cms/templates/asset_index.html
-msgid "Choose File"
-msgstr "ファイルを選択"
-
-#: cms/templates/asset_index.html cms/templates/asset_index.html
-#: cms/templates/asset_index.html
-msgid "Upload New File"
-msgstr "新規ファイルをアップロード"
-
-#: cms/templates/asset_index.html
-msgid "Load Another File"
-msgstr "他のファイルを読み込み"
-
 #: cms/templates/asset_index.html cms/templates/course_info.html
 #: cms/templates/edit-tabs.html cms/templates/overview.html
 #: cms/templates/textbooks.html cms/templates/widgets/header.html
@@ -10319,6 +11408,10 @@ msgstr "コンテンツ"
 #: cms/templates/overview.html cms/templates/textbooks.html
 msgid "Page Actions"
 msgstr "ページの動き"
+
+#: cms/templates/asset_index.html cms/templates/asset_index.html
+msgid "Upload New File"
+msgstr "新規ファイルをアップロード"
 
 #: cms/templates/asset_index.html
 msgid "Loading&hellip;"
@@ -10367,6 +11460,10 @@ msgstr ""
 "あなたは、新しいファイルまたはビューのアップロード／ダウンロードしたり、既存のファイルを削除することができます。あなたのコースに登録されていない人々は、そのファイルにアクセスできないように、ファイルをロックすることができます。"
 
 #: cms/templates/asset_index.html
+msgid "Choose File"
+msgstr "ファイルを選択"
+
+#: cms/templates/asset_index.html
 msgid "Your file has been deleted."
 msgstr "ファイルは削除されました．"
 
@@ -10374,15 +11471,15 @@ msgstr "ファイルは削除されました．"
 msgid "close alert"
 msgstr "警告を閉じる"
 
+#: cms/templates/checklists.html cms/templates/checklists.html
+msgid "Course Checklists"
+msgstr "開講チェックリスト"
+
 #: cms/templates/checklists.html cms/templates/export.html
 #: cms/templates/export_git.html cms/templates/import.html
 #: cms/templates/widgets/header.html
 msgid "Tools"
 msgstr "ツール"
-
-#: cms/templates/checklists.html
-msgid "Course Checklists"
-msgstr "開講チェックリスト"
 
 #: cms/templates/checklists.html
 msgid "Current Checklists"
@@ -10404,7 +11501,13 @@ msgid ""
 "immediately visible to other course team members."
 msgstr "あなたがこれらのチェックリストに加えた変更は自動的に保存され、他のコースチームのメンバーにすぐに表示されています。"
 
-#: cms/templates/component.html cms/templates/studio_xblock_wrapper.html
+#: cms/templates/checklists.html
+msgid "Studio checklists"
+msgstr "Studioチェックリスト"
+
+#: cms/templates/component.html cms/templates/container_xblock_component.html
+#: cms/templates/container_xblock_component.html
+#: cms/templates/studio_xblock_wrapper.html
 #: cms/templates/studio_xblock_wrapper.html
 msgid "Duplicate"
 msgstr "複製"
@@ -10416,6 +11519,13 @@ msgstr "このコンポーネントを複製"
 #: cms/templates/component.html
 msgid "Delete this component"
 msgstr "このコンポーネントを削除"
+
+#: cms/templates/component.html cms/templates/container_xblock_component.html
+#: cms/templates/edit-tabs.html cms/templates/edit-tabs.html
+#: cms/templates/overview.html cms/templates/overview.html
+#: cms/templates/studio_xblock_wrapper.html
+msgid "Drag to reorder"
+msgstr "ドラッグして並び替え"
 
 #: cms/templates/container.html
 msgid "Container"
@@ -10457,6 +11567,11 @@ msgid ""
 "existing content."
 msgstr ""
 "このページの他のコンポーネントを含む講座コンポーネントを表示することができます。実験ブロックの場合、実験グループが正しく設定されていることを確認することができ既存のコンテンツの変更ができます。"
+
+#: cms/templates/container_xblock_component.html
+#: cms/templates/studio_xblock_wrapper.html
+msgid "This block contains multiple components."
+msgstr "このブロックは複数のコンポーネントを含みます。"
 
 #: cms/templates/course_info.html cms/templates/course_info.html
 msgid "Course Updates"
@@ -10859,8 +11974,8 @@ msgstr "Welcome to"
 
 #: cms/templates/howitworks.html
 msgid ""
-"Studio helps manage your courses online, so you can focus on teaching them"
-msgstr "講師陣はとにかく講座運営に注力してください。講座制作については、Studioの各機能が支援いたします。"
+"Studio helps manage your online courses, so you can focus on teaching them"
+msgstr "Studioは、あなたのオンライン講座の管理に役立ちます。あなたは指導に集中できます。"
 
 #: cms/templates/howitworks.html
 msgid "Studio's Many Features"
@@ -10900,8 +12015,8 @@ msgstr "いつでも気持ちを切り替えられる"
 #: cms/templates/howitworks.html
 msgid ""
 "Draft your outline and build content anywhere. Simple drag and drop tools "
-"let your reorganize quickly."
-msgstr "どこでもアウトラインを下書きし、コンテンツを構成できます。シンプルなドラックアンドドロップツールが速やかに再構成することを支援します。"
+"let you reorganize quickly."
+msgstr "アウトラインを下書きし、コンテンツを作成してください。ドラッグ＆ドロップツールによって素早く編集できます。"
 
 #: cms/templates/howitworks.html
 msgid "Go A Week Or A Semester At A Time"
@@ -10921,11 +12036,9 @@ msgstr "単なる講義よりも、身に付けることは素晴らしい"
 #: cms/templates/howitworks.html
 msgid ""
 "Studio lets you weave your content together in a way that reinforces "
-"learning &mdash; short video lectures interleaved with exercises and more. "
-"Insert videos and author a wide variety of exercise types with just a few "
-"clicks."
+"learning. Insert videos, discussions, and a wide variety of exercises with "
+"just a few clicks."
 msgstr ""
-"Studioは―短い間に問題が配置された講義動画など―をある程度、織り込む機能を提供することで、学びを強化します。数クリックで幅広い種類の問題を動画に挿入し、編集できるのです。"
 
 #: cms/templates/howitworks.html
 msgid "Create Learning Pathways"
@@ -10933,9 +12046,9 @@ msgstr "学習経路を作る"
 
 #: cms/templates/howitworks.html
 msgid ""
-"Help your students understand a small interactive piece at a time with "
-"multimedia, HTML, and exercises."
-msgstr "マルチメディア、HTML、課題を同時に使って、受講者が小さなインタラクティブな要素を理解することを支援する"
+"Help your students understand one concept at a time with multimedia, HTML, "
+"and exercises."
+msgstr "マルチメディアや、HTML、エクササイズに関するコンセプトに対する受講者の理解を助ける。"
 
 #: cms/templates/howitworks.html
 msgid "Work Visually, Organize Quickly"
@@ -10953,9 +12066,9 @@ msgstr "問題種別ごとの幅広いライブラリ"
 
 #: cms/templates/howitworks.html
 msgid ""
-"It's more than just multiple choice. Studio has nearly a dozen types of "
-"problems to challenge your learners."
-msgstr "単に複数の選択肢があるだけじゃない。Studioには、およそ1ダースの受講者向け問題種別がある。"
+"It's more than just multiple choice. Studio supports more than a dozen types"
+" of problems to challenge your learners."
+msgstr "単に複数選択するだけではありません。Studioは12タイプ以上の問題に対応しています。"
 
 #: cms/templates/howitworks.html cms/templates/howitworks.html
 msgid ""
@@ -10981,9 +12094,9 @@ msgstr "簡潔な変更"
 
 #: cms/templates/howitworks.html
 msgid ""
-"Caught a bug? No problem. When you want, your changes to live when you hit "
-"Save."
-msgstr "バグに遭遇しましたか？問題ありません。お望みでれば、「保存」を押すことで変更点は活かすことができます。"
+"Caught a bug? No problem. When you want, your changes go live when you click"
+" Save."
+msgstr "バグを見つけましたか？問題ありません。好きなときに保存をクリックすれば、変更が適用されます。"
 
 #: cms/templates/howitworks.html
 msgid "Release-On Date Publishing"
@@ -11421,11 +12534,11 @@ msgstr "あなたのリクエストは現在、edXスタッフによりレビュ
 
 #: cms/templates/index.html
 msgid "New to edX Studio?"
-msgstr ""
+msgstr "edX Studioは初めてですか？"
 
 #: cms/templates/index.html
 msgid ""
-"Click Help in the upper-right corner to get more more information about the "
+"Click Help in the upper-right corner to get more information about the "
 "Studio page you are viewing. You can also use the links at the bottom of the"
 " page to access our continously updated documentation and other Studio "
 "resources."
@@ -11433,11 +12546,11 @@ msgstr ""
 
 #: cms/templates/index.html
 msgid "Getting Started with edX Studio"
-msgstr ""
+msgstr "edX Studioを始める"
 
 #: cms/templates/index.html cms/templates/widgets/sock.html
 msgid "Request help with edX Studio"
-msgstr ""
+msgstr "edX Studioのヘルプ"
 
 #: cms/templates/index.html cms/templates/index.html cms/templates/index.html
 msgid "Can I create courses in Studio?"
@@ -11948,13 +13061,8 @@ msgid ""
 "they are <strong>not the dates shown on your course summary page</strong>.  "
 "To provide the course start and registration dates as shown on your course "
 "summary page, follow the instructions provided by your <abbr title=\"Program"
-" Manager\">PM</abbr> or Conrad Warre <a rel=\"email\" class=\"action action-"
-"email\" href=\"mailto:conrad@edx.org\">(conrad@edx.org)</a>."
+" Manager\">PM</abbr>."
 msgstr ""
-"これらの日時は<strong>いつ講座が閲覧可能になるか</strong>についてのものであり、<strong>いつ講座概要ページが閲覧可能になるか</strong>についてのものではない。講座概要ページに表示されるコースの開始および受講登録開始日を提供するには、<abbr"
-" title=\"Program Manager\">PM</abbr> もしくはConrad Warre（edXのTechnical "
-"Marketing Manager） <a rel=\"email\" class=\"action action-email\" "
-"href=\"mailto:conrad@edx.org\">(conrad@edx.org)</a>の指示に従ってください。"
 
 #: cms/templates/settings.html
 msgid "Introducing Your Course"
@@ -12192,6 +13300,8 @@ msgstr "宿題、ラボ、クイズ、試験などの割り当てタイプを作
 
 #: cms/templates/studio_vertical_wrapper.html
 #: cms/templates/studio_vertical_wrapper.html
+#: cms/templates/studio_xblock_wrapper.html
+#: cms/templates/studio_xblock_wrapper.html
 msgid "Expand or Collapse"
 msgstr "広げるまたはたたむ"
 
@@ -12233,7 +13343,7 @@ msgstr "もし、テキストに独立した章が無い場合は、テキスト
 
 #: cms/templates/textbooks.html
 msgid "Learn More"
-msgstr ""
+msgstr "さらに詳しく"
 
 #: cms/templates/unit.html cms/templates/ux/reference/unit.html
 msgid "Individual Unit"
@@ -12250,18 +13360,6 @@ msgstr "この単元は「{date}」に公開されました。"
 #: cms/templates/unit.html
 msgid "View the Live Version"
 msgstr "現バージョンを見る"
-
-#: cms/templates/unit.html
-msgid "Add New Component"
-msgstr "新しく追加する"
-
-#: cms/templates/unit.html
-msgid "Common Problem Types"
-msgstr "一般的な問題種別"
-
-#: cms/templates/unit.html
-msgid "Advanced"
-msgstr "詳細設定"
 
 #: cms/templates/unit.html
 msgid "Unit Settings"
@@ -12426,9 +13524,9 @@ msgstr "エクスポート"
 msgid "Help &amp; Account Navigation"
 msgstr "ヘルプとアカウント"
 
-#: cms/templates/widgets/header.html
+#: cms/templates/widgets/header.html cms/templates/widgets/header.html
 msgid "Contextual Online Help"
-msgstr ""
+msgstr "コンテキストによるオンラインヘルプ"
 
 #: cms/templates/widgets/header.html
 msgid "Currently signed in as:"
@@ -12441,14 +13539,6 @@ msgstr "サインアウト"
 #: cms/templates/widgets/header.html
 msgid "You're not currently signed in"
 msgstr "サインインしていません"
-
-#: cms/templates/widgets/header.html
-msgid "How Studio Works"
-msgstr "Studioの仕組み"
-
-#: cms/templates/widgets/header.html
-msgid "Studio Help"
-msgstr "Studio ヘルプ"
 
 #: cms/templates/widgets/metadata-edit.html
 msgid "Launch Latex Source Compiler"
@@ -12503,11 +13593,11 @@ msgstr "ラベル"
 
 #: cms/templates/widgets/sock.html
 msgid "Looking for help with Studio?"
-msgstr ""
+msgstr "Studioの使い方でお困りですか？"
 
 #: cms/templates/widgets/sock.html cms/templates/widgets/sock.html
 msgid "edX Studio Documentation"
-msgstr ""
+msgstr "edX Studio関連文書"
 
 #: cms/templates/widgets/sock.html
 msgid ""
@@ -12516,14 +13606,15 @@ msgid ""
 "download the Building and Running an edX Course PDF file, to go to the edX "
 "Author Support site, or to enroll in edX101."
 msgstr ""
+"全てのページの右上部分に、あなたが今いるページに関する詳細情報を記載したHelpがあります。作成・管理しているedX講座PDFのダウンロード部分の下のリンクからは、edX製作サポートサイトへ移動したり、edX101への登録をしたりできます。"
 
 #: cms/templates/widgets/sock.html
 msgid "Building and Running an edX Course PDF"
-msgstr ""
+msgstr "edX講座PDFの作成と管理"
 
 #: cms/templates/widgets/sock.html cms/templates/widgets/sock.html
 msgid "edX Studio Author Support"
-msgstr ""
+msgstr "edX Studio設計者サポート"
 
 #: cms/templates/widgets/sock.html
 msgid "Enroll in edX101"
@@ -12531,11 +13622,11 @@ msgstr "edX101を受講する"
 
 #: cms/templates/widgets/sock.html
 msgid "How to use edX Studio to build your course"
-msgstr ""
+msgstr "edX Studioを使ってコースを設計するには"
 
 #: cms/templates/widgets/sock.html
 msgid "Have problems, questions, or suggestions about edX Studio?"
-msgstr ""
+msgstr "edX Studioに関する質問、要望はありますか？"
 
 #: cms/templates/widgets/tabs-aggregator.html
 msgid "name"
@@ -13386,3 +14477,429 @@ msgstr "gaccoの修了証を取得しました"
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Grade required for a certificate:"
 msgstr "修了証取得に必要な成績："
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/oa_base.html
+msgid "Skip to a specific step"
+msgstr "特定のステップをスキップする"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/oa_base.html
+msgid "Your grade for this problem"
+msgstr "あなたのこの問題に対する評価"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/oa_base.html
+msgid ""
+"This assignment has several steps. In the first step, you'll provide a "
+"response to the question. The other steps appear below the <strong>Your "
+"Response</strong> field."
+msgstr ""
+"この採点はいくつかのステップがあります。はじめに、問題に対して解答します。その後、次のステップが下に自動的に<strong>あなたの文章</strong>欄の下に表示されます。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/oa_base.html
+msgid "The prompt for this assignment"
+msgstr "入力の割り当て"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/oa_base.html
+msgid "Loading"
+msgstr "読み込み中"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_closed.html
+msgid "The Due Date for This Step Has Passed"
+msgstr "このステップの終了期限をすぎました"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_closed.html
+msgid ""
+"This step is now closed. You can no longer complete a self assessment or "
+"continue with this assignment, and you'll receive a grade of Incomplete."
+msgstr "このステップは終了して閉じられました。今後継続して他者の評価、自己評価を行うことはできません。あなたの結果は未完了となります。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_assessment.html
+msgid "Assess Your Response"
+msgstr "あなたの文章を評価する"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_assessment.html
+msgid "This step's status"
+msgstr "このステップのステータス"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_assessment.html
+msgid "We could not submit your assessment"
+msgstr "評価を投稿することができません"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_assessment.html
+msgid "Submit Your Assessment"
+msgstr "評価を投稿する"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_incomplete.html
+msgid "Your Grade"
+msgstr "あなたの得点"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_incomplete.html
+msgid "Not Completed"
+msgstr "未完了"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_not_started.html
+msgid "Not Started"
+msgstr "未開始"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_not_started.html
+msgid "You have not started this problem yet."
+msgstr "あなたは問題をまだ開始していません。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_waiting.html
+msgid "Waiting for Peer Assessment"
+msgstr "評価を待ち状態"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_waiting.html
+msgid ""
+"Your response is still undergoing peer assessment. After your peers have "
+"assessed your response, you'll see their comments and receive your final "
+"grade."
+msgstr "あなたの文章は現在評価中です。他者からの評価が完了しますと取得した得点やコメントが表示されます。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Overall Grade"
+msgstr "総得点"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Assessor"
+msgstr "評価者"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Peer's Assessment"
+msgstr "他者からの評価"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Grade Earned"
+msgstr "取得した得点"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "points"
+msgstr "点"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Your Self Assessment"
+msgstr "あなたの自己採点"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Your Assessment"
+msgstr "あなたの評価"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Additional Comments"
+msgstr "追加コメント"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Additional comments on your response"
+msgstr "あなたの文章への追加コメント"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Peer assessor"
+msgstr "評価者"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Peer's assessment"
+msgstr "他者の評価"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Provide Feedback on Peer Assessments"
+msgstr "他者評価へのフィードバック"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Submitting Feedback"
+msgstr "フィードバックの投稿"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Your Feedback Has Been Submitted"
+msgstr "フィードバックが投稿されました"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid ""
+"Your feedback has been submitted. Course staff will be able to see this "
+"feedback when they review course records."
+msgstr "フィードバックが投稿されました。講座スタッフは講座データを確認する際にこの内容を参照します。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid ""
+"Course staff will be able to see any feedback that you provide here when "
+"they review course records."
+msgstr "ここで投稿したフィードバックは講座スタッフが講座データを確認する際に参照します。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid ""
+"Select the statements below that best reflect your experience with peer "
+"assessments"
+msgstr "他者からの評価を受けたことに対して、以下の当てはまるものを選択してください"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "These assessments were useful."
+msgstr "評価は有用である"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "These assessments were not useful."
+msgstr "評価は有用でない"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "I disagree with one or more of the peer assessments of my response."
+msgstr "受けた評価のうち１つ以上に異論がある"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Some comments I received were inappropriate."
+msgstr "受けた評価は不適切なものがある"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid ""
+"Please provide any feedback on the grade or comments that you received from "
+"your peers."
+msgstr "あなたが他者から受けた評価やコメントに対してのフィードバックを記述してください"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "I feel the feedback I received was..."
+msgstr "私が他者から受けた評価は..."
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "We could not submit your feedback"
+msgstr "フィードバックを投稿することができません"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
+msgid "Submit Feedback on Peer Assessments"
+msgstr "相互採点へのフィードバックを投稿する"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_closed.html
+msgid "You have not completed all the steps of this problem."
+msgstr "あなたはこの問題の全てのステップを完了していません"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Course Staff Information"
+msgstr "講座スタッフ情報"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Response total"
+msgstr "評価の総数"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Where are your students currently in this problem"
+msgstr "この問題での受講者の状態"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Student Progress"
+msgstr "受講者の進捗"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Active Students in Step"
+msgstr "ステップでアクティブな受講者"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Dates"
+msgstr "日付"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Problem Step"
+msgstr "問題のステップ"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Release Date"
+msgstr "リリース日"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "Due Date"
+msgstr "期限"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/staff_debug.html
+msgid "N/A"
+msgstr "N/A"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response_submitted.html
+msgid "Your Response Has Been Submitted"
+msgstr "あなたの文章は投稿されました"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response_submitted.html
+msgid ""
+"You'll receive your grade after some of your peers have assessed your "
+"response and you complete the <a data-behavior=\"ui-scroll\" href"
+"=\"#openassessment__peer-assessment\">peer assessment</a> and <a data-"
+"behavior=\"ui-scroll\" href=\"#openassessment__self-assessment\">self "
+"assessment</a> steps"
+msgstr ""
+"あなたの得点は<a data-behavior=\"ui-scroll\" href=\"#openassessment__peer-"
+"assessment\">相互採点</a> と <a data-behavior=\"ui-scroll\" href"
+"=\"#openassessment__self-assessment\">自己採点</a> が終わり、数名からの評価を受け次第表示されます"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response_closed.html
+msgid ""
+"This step is now closed. You can no longer submit a response or continue "
+"with this problem, and you'll receive a grade of Incomplete. If you saved "
+"but did not submit a response, the response appears in the course records."
+msgstr ""
+"このステップは終了して閉じられました。今後継続して評価行うことはできません。あなたの結果は未完了となります。一時保存のみして、投稿されていない場合は講座レコードには解答が表示されます。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "Your Response"
+msgstr "あなたの文章"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid ""
+"You can save your progress and return to complete your response at any time "
+"before the due date"
+msgstr "期限内であれば記入途中の文章を一時保存して後から投稿することができます。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid ""
+"You can save your progress and return to complete your response at any time."
+msgstr "記入途中の文章を一時保存して後から投稿することができます。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "After you submit your response, you cannot edit it"
+msgstr "文章を投稿した後は編集することはできません"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "Enter your response to the question."
+msgstr "問題に対する文章を入力してください。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "You may continue to work on your response until you submit it."
+msgstr "投稿するまでは文章を編集することができます。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "We could not save your progress"
+msgstr "投稿を一時保存をすることができませんでした"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "Your Submission Status"
+msgstr "あなたの投稿のステータス"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "We could not submit your response"
+msgstr "文章を投稿することができませんでした"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/response/oa_response.html
+msgid "Submit your response and move to the next step"
+msgstr "次のステップに進むためには文章を投稿してください"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_unavailable.html
+msgid "Not Available"
+msgstr "実施不可"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_waiting.html
+msgid "Waiting for Peer Responses"
+msgstr "他者から評価待ち状態"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html
+msgid "I noticed that this response..."
+msgstr "この文章は..."
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_closed.html
+msgid ""
+"This step is now closed. You can no longer complete peer assessments or "
+"continue with this assignment, and you'll receive a grade of Incomplete."
+msgstr "このステップは終了して閉じられました。今後継続して評価行うことはできません。あなたの結果は未完了となります。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
+msgid "Assess Peers"
+msgstr "他者を評価"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
+msgid "available"
+msgstr "有効"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
+msgid "due"
+msgstr "期限"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
+msgid "In Progress"
+msgstr "実施中"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
+msgid "Read and assess the following response from one of your peers."
+msgstr "以下にある他者の文章を読んで評価をしてください。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
+msgid "Assessment #"
+msgstr "評価 #"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode_waiting.html
+msgid "Peer Assessments Complete"
+msgstr "相互採点完了"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode_waiting.html
+msgid ""
+"You have successfully completed all of the required peer assessments for "
+"this assignment. You may assess additional peer responses if you want to. "
+"Completing additional assessments will not affect your final grade."
+msgstr ""
+"この相互評価に必要な数の評価を完了しました。さらに他者の評価を実施することも可能です。この追加の評価は完了しなくても最終得点の取得には影響しません。"
+
+#: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode_waiting.html
+msgid ""
+"All submitted peer responses have been assessed. Check back later to see if "
+"more students have submitted responses."
+msgstr "現在投稿されている他者の投稿を全て評価しました。しばらくしてからこのページを開き、他の受講者の投稿がないか確認してください。"
+
+msgid ""
+"\n"
+"                         <span class=\"grade__value__earned\">%(points_earned)s</span>\n"
+"                         out of\n"
+"                         <span class=\"grade__value__potential\">%(points_possible)s</span>\n"
+"                         "
+msgstr ""
+"\n"
+"                         <span class=\"grade__value__earned\">%(points_earned)s</span>\n"
+"                         /\n"
+"                         <span class=\"grade__value__potential\">%(points_possible)s</span>\n"
+"                         "
+
+msgid ""
+"\n"
+"                                  <span class=\"question__score__value\">%(score)s</span>\n"
+"                                  <span class=\"label label--divider sr\">out of</span>\n"
+"                                  <span class=\"question__score__potential\">\n"
+"                                    %(total)s\n"
+"                                    <span class=\"unit\">Points</span>¥                                  </span>\n"
+"                                  "
+msgstr ""
+"\n"
+"                                  <span class=\"question__score__value\">%(score)s</span>\n"
+"                                  <span class=\"label label--divider sr\">/</span>\n"
+"                                  <span class=\"question__score__potential\">\n"
+"                                    %(total)s\n"
+"                                    <span class=\"unit\">点</span>¥                                  </span>\n"
+"                                  "
+
+msgid ""
+"\n"
+"                                                      Peer %(peer_num)s\n"
+"                                                      "
+msgstr ""
+"\n"
+"                                                      他者 %(peer_num)s\n"
+"                                                      "
+
+msgid "More information about %(name)s"
+msgstr "%(name)s についての追加情報"
+
+msgid "Peer %(peer_num)s"
+msgstr "他者 %(peer_num)s"
+
+msgid ""
+"All submitted peer responses have been assessed. Check back later to see if "
+"more students have submitted responses. You'll receive your grade after you "
+"complete the <a data-behavior=\"ui-scroll\" href=\"#openassessment__peer-"
+"assessment\">peer assessment</a> and <a data-behavior=\"ui-scroll\" href"
+"=\"#openassessment__self-assessment\">self assessment</a> steps, and after "
+"your peers have assessed your response."
+msgstr ""
+"すべての投稿された文章が評価されました。しばらくしてこのページを開き、他の受講者が投稿していないか確認してください。 あなたの得点は <a data-"
+"behavior=\"ui-scroll\" href=\"#openassessment__peer-assessment\">相互採点</a> と "
+"<a data-behavior=\"ui-scroll\" href=\"#openassessment__self-"
+"assessment\">自己採点</a> が終わり、数名からの評価を受け次第表示されます。"
+
+msgid "This response has not been saved."
+msgstr "この文章は一時保存されていません"
+
+msgid "This response has been saved but not submitted."
+msgstr "この文章は一時保存されていますが投稿されていません"
+
+msgid "Save Your Progress"
+msgstr "文章を一時保存"
+
+msgid "Submit your assessment & move to response #{}"
+msgstr "評価を投稿して次の文章へ進む #{}"

@@ -3,6 +3,7 @@
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
+# kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
 # Aoshi <support@225nou.com>, 2014
 # わたカフェの店長, 2013
@@ -10,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2014-05-19 08:16-0400\n"
-"PO-Revision-Date: 2014-05-12 08:00+0000\n"
-"Last-Translator: h_yoshida <h_yoshida@matsumo-sys.com>\n"
+"POT-Creation-Date: 2014-06-04 12:11-0400\n"
+"PO-Revision-Date: 2014-06-05 08:51+0000\n"
+"Last-Translator: kawa <h.kawasaki@nttks.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,54 +33,49 @@ msgstr "Studio は作業の保存に問題があります。"
 
 #: cms/static/coffee/src/views/tabs.js:56
 #: cms/static/coffee/src/views/tabs.js:89
-#: cms/static/coffee/src/views/unit.js:72
+#: cms/static/coffee/src/views/unit.js:73
 #: cms/static/coffee/src/xblock/cms.runtime.v1.js:39
 #: cms/static/js/models/section.js:28 cms/static/js/utils/drag_and_drop.js:282
-#: cms/static/js/views/asset.js:80 cms/static/js/views/container.js:28
+#: cms/static/js/views/asset.js:80 cms/static/js/views/container.js:32
 #: cms/static/js/views/course_info_handout.js:59
 #: cms/static/js/views/course_info_update.js:80
-#: cms/static/js/views/overview.js:75 cms/static/js/views/xblock_editor.js:98
+#: cms/static/js/views/overview.js:78 cms/static/js/views/xblock_editor.js:98
 msgid "Saving&hellip;"
 msgstr "保存中&hellip;"
 
 #: cms/static/coffee/src/views/tabs.js:129
-msgid "Delete Component Confirmation"
-msgstr "コンポーネント削除の確認"
+msgid "Delete Page Confirmation"
+msgstr "ページ確認の削除"
 
 #: cms/static/coffee/src/views/tabs.js:130
 msgid ""
-"Are you sure you want to delete this component? This action cannot be "
-"undone."
-msgstr "このコンポーネントを削除してもよろしいですか？この動作は取り消すことが出来ません。"
+"Are you sure you want to delete this page? This action cannot be undone."
+msgstr "このページを消しても大丈夫ですか？このアクションは取り消しできません。"
 
 #: cms/static/coffee/src/views/tabs.js:144
-#: cms/static/coffee/src/views/unit.js:206 cms/static/js/base.js:281
+#: cms/static/coffee/src/views/unit.js:170 cms/static/js/base.js:281
 #: cms/static/js/views/course_info_update.js:148
-#: cms/static/js/views/pages/container.js:130
+#: cms/static/js/views/pages/container.js:156
 msgid "Deleting&hellip;"
 msgstr "削除中&hellip;"
 
-#: cms/static/coffee/src/views/unit.js:152
-msgid "Adding&hellip;"
-msgstr "追加中&hellip;"
-
-#: cms/static/coffee/src/views/unit.js:168
-#: cms/static/js/views/pages/container.js:93
+#: cms/static/coffee/src/views/unit.js:130
+#: cms/static/js/views/pages/container.js:136
 msgid "Duplicating&hellip;"
 msgstr "複製中&hellip;"
 
-#: cms/static/coffee/src/views/unit.js:197
-#: cms/static/js/views/pages/container.js:122
+#: cms/static/coffee/src/views/unit.js:169
+#: cms/static/js/views/pages/container.js:152
 msgid "Delete this component?"
 msgstr "このコンポーネントを削除しますか？"
 
-#: cms/static/coffee/src/views/unit.js:198
-#: cms/static/js/views/pages/container.js:123
+#: cms/static/coffee/src/views/unit.js:169
+#: cms/static/js/views/pages/container.js:153
 msgid "Deleting this component is permanent and cannot be undone."
 msgstr "このコンポーネントの削除は恒久的で取り消すことができません。"
 
-#: cms/static/coffee/src/views/unit.js:201
-#: cms/static/js/views/pages/container.js:126
+#: cms/static/coffee/src/views/unit.js:169
+#: cms/static/js/views/pages/container.js:154
 msgid "Yes, delete this component"
 msgstr "はい、このコンポーネントを削除します"
 
@@ -206,13 +202,29 @@ msgstr "削除"
 msgid "Your file has been deleted."
 msgstr "ファイルは削除されました．"
 
-#: cms/static/js/views/assets.js:16
+#: cms/static/js/views/assets.js:18
 msgid "Name"
 msgstr "名前"
 
-#: cms/static/js/views/assets.js:17
+#: cms/static/js/views/assets.js:19
 msgid "Date Added"
 msgstr "追加日"
+
+#: cms/static/js/views/assets.js:153
+msgid "Uploading…"
+msgstr "アップロードしています…"
+
+#: cms/static/js/views/assets.js:169
+msgid "Choose File"
+msgstr "ファイルを選択"
+
+#: cms/static/js/views/assets.js:183
+msgid "Upload New File"
+msgstr "新規ファイルをアップロード"
+
+#: cms/static/js/views/assets.js:188
+msgid "Load Another File"
+msgstr "他のファイルを読み込み"
 
 #: cms/static/js/views/course_info_update.js:136
 msgid "Are you sure you want to delete this update?"
@@ -245,7 +257,7 @@ msgid ""
 "extension."
 msgstr "ファイル形式がサポートされていません．<code>tar.gz</code> 拡張子がついたファイルをアップロードして下さい．"
 
-#: cms/static/js/views/metadata.js:533
+#: cms/static/js/views/metadata.js:535
 msgid "Upload File"
 msgstr "ファイルをアップロード"
 
@@ -257,15 +269,15 @@ msgstr "すべてのセクションを折り畳む"
 msgid "Expand All Sections"
 msgstr "すべてのセクションを展開"
 
-#: cms/static/js/views/overview.js:99
+#: cms/static/js/views/overview.js:102
 msgid "Release date:"
 msgstr "リリース日："
 
-#: cms/static/js/views/overview.js:100
+#: cms/static/js/views/overview.js:103
 msgid "{month}/{day}/{year} at {hour}:{minute} UTC"
 msgstr "{year}年{month}月{day}日{hour}時{minute}分 UTC"
 
-#: cms/static/js/views/overview.js:103
+#: cms/static/js/views/overview.js:106
 msgid "Edit section release date"
 msgstr "章のリリース日を編集"
 
@@ -358,15 +370,19 @@ msgstr "エディタ"
 msgid "Settings"
 msgstr "設定"
 
+#: cms/static/js/views/components/add_xblock.js:63
+msgid "Adding&hellip;"
+msgstr "追加中&hellip;"
+
 #: cms/static/js/views/modals/base_modal.js:86
 msgid "Save"
 msgstr "一時保存"
 
-#: cms/static/js/views/modals/edit_xblock.js:119
+#: cms/static/js/views/modals/edit_xblock.js:116
 msgid "Component"
 msgstr "コンポーネント"
 
-#: cms/static/js/views/modals/edit_xblock.js:122
+#: cms/static/js/views/modals/edit_xblock.js:118
 msgid "Editing: %(title)s"
 msgstr "編集中: %(title)s"
 
@@ -401,6 +417,6 @@ msgid ""
 "check the format and try again."
 msgstr "申し訳ありません、アップロードされた字幕を処理する際にエラーが発生しました。フォーマットを確認して再試行してください。"
 
-#: cms/static/js/views/video/translations_editor.js:148
+#: cms/static/js/views/video/translations_editor.js:155
 msgid "Upload translation"
 msgstr "翻訳をアップロード"
