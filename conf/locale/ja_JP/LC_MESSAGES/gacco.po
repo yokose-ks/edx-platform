@@ -18,6 +18,46 @@ msgstr ""
 "Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: lms/templates/register.html lms/templates/login.html
+msgid "Welcome, {platform_name}!"
+msgstr "ようこそ！{platform_name}へ。"
+
+#: lms/templates/register.html
+msgid "{platform_name} is an educational Web Service. For everyone, for free."
+msgstr "{platform_name}は誰でも無料で受講できるウェブサービスです。"
+
+#: lms/templates/register.html
+msgid "If you're already registerd. Here to Login."
+msgstr "すでに登録済の方はログイン"
+
+#: lms/templates/register.html
+msgid "If you are under 20 years old, you have to get permission of your parents to regist this site."
+msgstr "※未成年の方がお申し込みをいただく場合は、親権者の同意が必要となります。"
+
+#: lms/templates/login.html
+msgid "Let's login and enjoy your courses!"
+msgstr "ログインして学習をはじめましょう。"
+
+#: lms/templates/login.html
+msgid "If you're not registerd. Here to Register."
+msgstr "会員登録はこちら"
+
+#: lms/templates/dashboard.html lms/templates/navigation.html
+msgid "My Page"
+msgstr "マイページ"
+
+#: lms/templates/navigation.html
+msgid "Navi Menu"
+msgstr "ナビメニュー"
+
+#: lms/templates/navigation.html
+msgid "Top Page"
+msgstr "トップページ"
+
+#: lms/templates/navigation.html
+msgid "Login"
+msgstr "ログイン"
+
 #: lms/templates/dashboard.html
 msgid "Resign"
 msgstr "退会手続き"
