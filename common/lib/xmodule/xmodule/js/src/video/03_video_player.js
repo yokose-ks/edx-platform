@@ -109,12 +109,15 @@ function (HTML5Video, Resizer) {
         }
 
         state.videoPlayer.currentTime = 0;
+        // for seeking log
+        state.videoPlayer.prevTime = 0;
 
         state.videoPlayer.goToStartTime = true;
         state.videoPlayer.stopAtEndTime = true;
 
         state.videoPlayer.playerVars = {
-            controls: 0,
+            controls: 1,
+            autohide: 1,
             wmode: 'transparent',
             rel: 0,
             showinfo: 0,
@@ -330,6 +333,19 @@ function (HTML5Video, Resizer) {
     function update(time) {
         this.videoPlayer.currentTime = time || this.videoPlayer.player.getCurrentTime();
 
+        // to output seek log
+        var dt = this.videoPlayer.currentTime - this.videoPlayer.prevTime;
+        if(dt < -0.001 || dt > 1){
+            this.videoPlayer.log(
+		'seek_video',
+		{
+                    old_time: this.videoPlayer.prevTime,
+                    new_time: this.videoPlayer.currentTime,
+		}
+            );
+        }
+        this.videoPlayer.prevTime = this.videoPlayer.currentTime;
+
         if (isFinite(this.videoPlayer.currentTime)) {
             this.videoPlayer.updatePlayTime(this.videoPlayer.currentTime);
 
@@ -507,6 +523,13 @@ function (HTML5Video, Resizer) {
 
     function onEnded() {
         var time = this.videoPlayer.duration();
+
+        // added end log
+        this.videoPlayer.log(
+            'end_video',
+            {
+            }
+        );
 
         this.trigger('videoControl.pause', null);
         this.trigger('videoProgressSlider.notifyThroughHandleEnd', {

@@ -1103,7 +1103,7 @@
             form.appendChild(input);
 
             // The choose file button if prompt type is 'image'
-
+/* disable image upload
             if (imageUploadHandler) {
               var chooseFile = doc.createElement("input");
               chooseFile.type = "file";
@@ -1115,7 +1115,7 @@
               form.appendChild(doc.createElement("br"));
               form.appendChild(chooseFile);
             }
-
+*/
 
             // The ok button
             var okButton = doc.createElement("input");

@@ -253,7 +253,12 @@ function (Sjson, AsyncProcess) {
                             self.updatePlayTime(state.videoPlayer.currentTime);
                         }
                     } else {
-                        if (state.isTouch) {
+/** state.isTouchにはandroidやiPhone/iPadデバイスかどうかを
+  * 判定するための変数。(PCの場合は空文字、iPadならiPad等の
+  * 文字列が入っている。
+  * 取り急ぎここをコメントアウトしたら動くようになった。
+  */
+/*                      if (state.isTouch) {
                             self.subtitlesEl.find('li').html(
                                 gettext(
                                     'Caption will be displayed when ' +
@@ -261,8 +266,9 @@ function (Sjson, AsyncProcess) {
                                 )
                             );
                         } else {
+*/
                             self.renderCaption(start, captions);
-                        }
+//                        }
 
                         self.bindHandlers();
                     }
