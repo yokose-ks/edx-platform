@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 This is the default template for our main set of AWS servers. This does NOT
 cover the content machines, which use content.py
@@ -403,6 +404,10 @@ ADVANCED_SECURITY_CONFIG = ENV_TOKENS.get('ADVANCED_SECURITY_CONFIG', {})
 ##### GOOGLE ANALYTICS IDS #####
 GOOGLE_ANALYTICS_ACCOUNT = AUTH_TOKENS.get('GOOGLE_ANALYTICS_ACCOUNT')
 GOOGLE_ANALYTICS_LINKEDIN = AUTH_TOKENS.get('GOOGLE_ANALYTICS_LINKEDIN')
+
+########################## CERTIFICATE NAME ########################
+CERT_NAME_SHORT = u"修了証"
+CERT_NAME_LONG = u"修了証"
 
 PDFGEN_BUCKENT_NAME = ENV_TOKENS.get('PDFGEN_BUCKENT_NAME')
 PDFGEN_ACCESS_KEY_ID = ENV_TOKENS.get('PDFGEN_ACCESS_KEY_ID')

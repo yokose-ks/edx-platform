@@ -90,14 +90,14 @@ site_status_msg = get_site_status_msg(course_id)
             <!-- here can be something to add offcanvas menu -->
             % else:
             ## for dashboard /login/register Offcanvas menu
-            <li><a href="${marketing_link('ROOT')}">Top Page</a></li>
+            <li><a href="${marketing_link('ROOT')}">${_('Top Page')}</a></li>
                 % if user.is_authenticated():
                 <li><a href="${reverse('dashboard')}" class="user-link">${_("Dashboard for:")} ${user.username}</a></li>
                 % else:
                 <li><a href="/register">${_('Register')}</a></li>
                 <li><a href="/dashboard">${_('Login')}</a></li>
                 % endif
-            <li><a href="${marketing_link('FAQ')}">${_('Help')}</a></li>
+            <li><a href="${marketing_link('FAQ')}">${_('FAQ')}</a></li>
                 % if user.is_authenticated():
                 <li><a href="${reverse('logout')}" role="menuitem">${_("Log Out")}</a></li>
                 % endif
@@ -161,7 +161,7 @@ site_status_msg = get_site_status_msg(course_id)
                         ##<a href="#" class="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr">${_("More options dropdown")}</span> &#9662;</a>
                         ##<ul class="dropdown-menu" aria-label="More Options" role="menu">
                         <%block name="navigation_dropdown_menu_links" >
-                        <li><a href="${marketing_link('FAQ')}">${_("Help")}</a></li>
+                        <li><a href="${marketing_link('FAQ')}">${_("FAQ")}</a></li>
                         </%block>
                         <li><a href="${reverse('logout')}" role="menuitem">${_("Log Out")}</a></li>
                         ##</ul>
@@ -187,7 +187,7 @@ site_status_msg = get_site_status_msg(course_id)
                         </a>
                     </li>
                     <li>
-                        <a href="${marketing_link('FAQ')}">${_("Help")}</a>
+                        <a href="${marketing_link('FAQ')}">${_("FAQ")}</a>
                     </li>
                     <li>
                         <a href="${reverse('logout')}" role="menuitem">${_("Log Out")}</a>
