@@ -1740,7 +1740,7 @@ msgstr "受講者になりそうな講師を表示するのは有用です。講
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Add Course FAQs"
-msgstr "講座のFAQを追加"
+msgstr "講座についてのよくある質問を追加"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Include a short list of frequently asked questions about your course."
@@ -3767,7 +3767,7 @@ msgstr "{mode} モードは {course_id} にはありません"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Certificate of Achievement, {mode_name} for course {course}"
-msgstr "「{course}」講座（{mode_name}）の修了証明書"
+msgstr "「{course}」講座（{mode_name}）の修了証"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
@@ -4345,7 +4345,7 @@ msgstr "選択された価格は正しい数字ではありません。"
 
 #: lms/djangoapps/verify_student/views.py
 msgid "This course doesn't support verified certificates"
-msgstr "本講座は修了証明書の発行に対応していません。"
+msgstr "本講座は修了証の発行に対応していません。"
 
 #: lms/djangoapps/verify_student/views.py
 msgid "No selected price or selected price is below minimum."
@@ -4735,11 +4735,11 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"この機能を利用するには <a href=\"%(login_url)s\">ログイン</a> もしくは <a href=\"%(signup_url)s\">新規登録</a> が必要です。"
+"この機能を利用するには <a href=\"%(login_url)s\">ログイン</a> もしくは <a href=\"%(signup_url)s\">会員登録</a> が必要です。"
 
 #: lms/templates/wiki/includes/anonymous_blocked.html
 msgid "You need to log in or sign up to use this function."
-msgstr "この機能を利用するにはログイン、もしくは新規登録が必要です。"
+msgstr "この機能を利用するにはログイン、もしくは会員登録が必要です。"
 
 #: lms/templates/wiki/includes/cheatsheet.html
 msgid "Wiki Cheatsheet"
@@ -5267,7 +5267,7 @@ msgstr "一時保存"
 #: cms/templates/register.html cms/templates/widgets/header.html
 #: lms/templates/index.html
 msgid "Sign Up"
-msgstr "新規登録"
+msgstr "会員登録"
 
 #: cms/templates/register.html lms/templates/register-shib.html
 #: lms/templates/register.html lms/templates/signup_modal.html
@@ -5331,7 +5331,7 @@ msgstr "コースを選ぶ："
 
 #: common/templates/course_modes/choose.html
 msgid "Certificate of Achievement (ID Verified)"
-msgstr "修了証明書(本人認証付き)"
+msgstr "修了証(本人認証付き)"
 
 #: common/templates/course_modes/choose.html
 msgid "Upgrade and work toward a verified Certificate of Achievement."
@@ -5339,7 +5339,7 @@ msgstr "アップグレードして、認証付きの修了書の取得にチャ
 
 #: common/templates/course_modes/choose.html
 msgid "Sign up and work toward a verified Certificate of Achievement."
-msgstr "認証付きの修了証明書を獲得すべく登録する。"
+msgstr "本人認証つきの修了証を獲得するため登録する。"
 
 #: common/templates/course_modes/choose.html
 msgid "Select your contribution for this course (min. $"
@@ -5430,7 +5430,7 @@ msgstr ""
 msgid ""
 "To register for a Verified Certificate of Achievement option, you will need "
 "a webcam, a credit or debit card, and an ID."
-msgstr "認証付き修了証明書オプションへ登録する場合、ウェブカメラ、クレジットカードもしくはデビットカード、そして本人認証IDが必要となります。"
+msgstr "本人認証つき修了証オプションへ登録する場合、ウェブカメラ、クレジットカードもしくはデビットカード、そして本人認証IDが必要となります。"
 
 #: common/templates/course_modes/choose.html
 msgid "What is an ID Verified Certificate?"
@@ -5490,7 +5490,7 @@ msgstr "ビジョン"
 
 #: lms/templates/contact.html
 msgid "Faq"
-msgstr "FAQ"
+msgstr "よくある質問"
 
 #: lms/templates/contact.html lms/templates/footer.html
 msgid "Press"
@@ -5653,7 +5653,7 @@ msgstr "講座を探す"
 
 #: lms/templates/dashboard.html
 msgid "Looks like you haven't been enrolled in any courses yet."
-msgstr "まだどの講座にも受講登録がされていないように見えます。"
+msgstr "まだどの講座にも受講登録がされていないようです。"
 
 #: lms/templates/dashboard.html
 msgid "Course-loading errors"
@@ -5712,7 +5712,7 @@ msgstr "氏名を変更"
 msgid ""
 "To uphold the credibility of your {platform} {cert_name_short}, all name "
 "changes will be logged and recorded."
-msgstr "{platform} {cert_name_short}の信頼性を保持するためにすべての名前の変更は記録されています。"
+msgstr "{platform}では{cert_name_short}の信頼性を確保するため、名前の変更についてはすべて記録、保存しています。"
 
 #. Translators: note that {platform} {cert_name_short} will look something
 #. like: "edX certificate". Please do not change the order of these
@@ -5859,7 +5859,7 @@ msgstr "ジョブ"
 #: lms/templates/footer.html lms/templates/static_templates/faq.html
 #: lms/templates/static_templates/faq.html
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "よくある質問"
 
 #: lms/templates/footer.html
 msgid "{platform_name} Logo"
@@ -6384,7 +6384,7 @@ msgstr "学校"
 
 #: lms/templates/navigation.html lms/templates/navigation.html
 msgid "Register Now"
-msgstr "新規登録"
+msgstr "会員登録"
 
 #: lms/templates/navigation.html lms/templates/navigation.html
 msgid "Log in"
@@ -6646,7 +6646,7 @@ msgstr "{platform_name}への登録理由"
 
 #: lms/templates/register.html
 msgid "Register"
-msgstr "登録"
+msgstr "会員登録"
 
 #: lms/templates/register.html lms/templates/signup_modal.html
 msgid "Create My Account"
@@ -6692,7 +6692,7 @@ msgstr "例：ユーザー名(フォーラムで表示されます)"
 
 #: lms/templates/signup_modal.html lms/templates/signup_modal.html
 msgid "e.g. Your Name (for certificates)"
-msgstr "例：氏名 (修了証明書に記載されます)"
+msgstr "例：氏名 (修了証に記載されます)"
 
 #: lms/templates/signup_modal.html
 msgid "<i>Welcome</i> {name}"
@@ -8944,7 +8944,7 @@ msgid ""
 "If you have billing questions, please read the FAQ ({faq_url}) or contact "
 "{billing_email}."
 msgstr ""
-"課金についての質問がございましたら、FAQ({faq_url})を読をお読みになるか {billing_email} に問い合わせてください。"
+"課金についての質問がございましたら、よくある質問({faq_url})をお読みになるか {billing_email} に問い合わせてください。"
 
 #: lms/templates/emails/order_confirmation_email.txt
 msgid "If you have billing questions, please contact {billing_email}."
@@ -9920,7 +9920,7 @@ msgstr "評価の練習"
 
 #: lms/templates/peer_grading/peer_grading_problem.html
 msgid "Please include some written feedback as well."
-msgstr "出来るだけフィードバックを記述してください"
+msgstr "できるだけフィードバックを記述してください"
 
 #: lms/templates/peer_grading/peer_grading_problem.html
 msgid ""
@@ -10020,7 +10020,7 @@ msgstr "アカウントは既に有効になっています"
 
 #: lms/templates/registration/activation_complete.html
 msgid "You can now {link_start}log in{link_end}."
-msgstr " {link_start}ログイン{link_end}出来るようになりました。"
+msgstr " {link_start}ログイン{link_end}できるようになりました。"
 
 #: lms/templates/registration/activation_invalid.html
 msgid "Activation Invalid"
@@ -10416,7 +10416,7 @@ msgstr "名前の編集中に次のエラーが発生しました："
 msgid ""
 "To uphold the credibility of {platform} certificates, all name changes will "
 "be logged and recorded."
-msgstr "{platform} では修了証明書の信頼性を確保するため、名前の変更についてはすべて記録、保存しています。"
+msgstr "{platform} では修了証の信頼性を確保するため、名前の変更についてはすべて記録、保存しています。"
 
 #: lms/templates/verify_student/_modal_editname.html
 msgid "Change my name"
@@ -10457,7 +10457,7 @@ msgstr "何か質問がありますか？"
 msgid ""
 "Please read {a_start}our FAQs to view common questions about our "
 "certificates{a_end}."
-msgstr "{a_start}私たちの修了証明書についてのよくある質問{a_end} をご一読ください。"
+msgstr "{a_start}修了証についてのよくある質問{a_end} をご一読ください。"
 
 #: lms/templates/verify_student/_verification_header.html
 msgid "You are upgrading your registration for"
@@ -12882,7 +12882,7 @@ msgstr "フォーム動作"
 
 #: cms/templates/register.html
 msgid "Sign Up for edX Studio"
-msgstr "edX Studioに新規登録"
+msgstr "edX Studioに会員登録"
 
 #: cms/templates/register.html
 msgid "Already have a Studio Account? Sign in"
@@ -12896,7 +12896,7 @@ msgstr "講座制作の準備はできましたか？ ユーザー登録をし�
 
 #: cms/templates/register.html
 msgid "Required Information to Sign Up for edX Studio"
-msgstr "edX Studioに新規登録するために必要な情報"
+msgstr "edX Studioに会員登録するために必要な情報"
 
 #: cms/templates/register.html
 msgid ""
@@ -13106,7 +13106,7 @@ msgstr "講座概要ページ"
 #: cms/templates/settings.html
 msgid ""
 "Introductions, prerequisites, FAQs that are used on %s (formatted in HTML)"
-msgstr "導入、必須条件、FAQ（よくある質問）は %s (formatted in HTML) 上で使われます。"
+msgstr "導入、必須条件、よくある質問は %s (formatted in HTML) 上で使われます。"
 
 #: cms/templates/settings.html cms/templates/settings.html
 #: cms/templates/settings.html
@@ -14272,6 +14272,48 @@ msgid ""
 "A new revision was created: Merge between Revision #%(r1)d and Revision "
 "#%(r2)d"
 msgstr "新しいリビジョンが作成されました：#%(r1)d と #%(r2)d のリビジョンをマージしました。"
+
+#: lms/templates/register.html lms/templates/login.html
+msgid "Welcome, {platform_name}!"
+msgstr "ようこそ！{platform_name}へ。"
+
+#: lms/templates/register.html
+msgid "{platform_name} is an educational Web Service. For everyone, for free."
+msgstr "{platform_name}は誰でも無料で受講できるウェブサービスです。"
+
+#: lms/templates/register.html
+msgid "If you're already registerd. Here to Login."
+msgstr "すでに登録済の方はログイン"
+
+#: lms/templates/register.html
+msgid ""
+"If you are under 20 years old, you have to get permission of your parents to"
+" regist this site."
+msgstr "※未成年の方がお申し込みをいただく場合は、親権者の同意が必要となります。"
+
+#: lms/templates/login.html
+msgid "Let's login and enjoy your courses!"
+msgstr "ログインして学習をはじめましょう。"
+
+#: lms/templates/login.html
+msgid "If you're not registerd. Here to Register."
+msgstr "会員登録はこちら"
+
+#: lms/templates/dashboard.html lms/templates/navigation.html
+msgid "My Page"
+msgstr "マイページ"
+
+#: lms/templates/navigation.html
+msgid "Navi Menu"
+msgstr "ナビメニュー"
+
+#: lms/templates/navigation.html
+msgid "Top Page"
+msgstr "トップページ"
+
+#: lms/templates/navigation.html
+msgid "Login"
+msgstr "ログイン"
 
 #: lms/templates/dashboard.html
 msgid "Resign"

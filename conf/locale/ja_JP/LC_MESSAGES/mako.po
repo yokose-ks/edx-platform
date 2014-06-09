@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2014-06-04 12:10-0400\n"
-"PO-Revision-Date: 2014-06-06 07:50+0000\n"
+"PO-Revision-Date: 2014-06-09 09:50+0000\n"
 "Last-Translator: watcafe\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -167,7 +167,7 @@ msgstr "一時保存"
 #: cms/templates/register.html:6 cms/templates/widgets/header.html:157
 #: lms/templates/index.html:40
 msgid "Sign Up"
-msgstr "新規登録"
+msgstr "会員登録"
 
 #: cms/templates/register.html:40 lms/templates/register-shib.html:123
 #: lms/templates/register.html:187 lms/templates/signup_modal.html:44
@@ -246,7 +246,7 @@ msgstr "コースを選ぶ："
 
 #: common/templates/course_modes/choose.html:69
 msgid "Certificate of Achievement (ID Verified)"
-msgstr "修了証明書(本人認証付き)"
+msgstr "修了証(本人認証付き)"
 
 #: common/templates/course_modes/choose.html:73
 msgid "Upgrade and work toward a verified Certificate of Achievement."
@@ -254,7 +254,7 @@ msgstr "アップグレードして、認証付きの修了書の取得にチャ
 
 #: common/templates/course_modes/choose.html:77
 msgid "Sign up and work toward a verified Certificate of Achievement."
-msgstr "認証付きの修了証明書を獲得すべく登録する。"
+msgstr "本人認証つきの修了証を獲得するため登録する。"
 
 #: common/templates/course_modes/choose.html:83
 msgid "Select your contribution for this course (min. $"
@@ -342,7 +342,7 @@ msgstr "本人認証付き修了書コースにアップグレードする場合
 msgid ""
 "To register for a Verified Certificate of Achievement option, you will need "
 "a webcam, a credit or debit card, and an ID."
-msgstr "認証付き修了証明書オプションへ登録する場合、ウェブカメラ、クレジットカードもしくはデビットカード、そして本人認証IDが必要となります。"
+msgstr "本人認証つき修了証オプションへ登録する場合、ウェブカメラ、クレジットカードもしくはデビットカード、そして本人認証IDが必要となります。"
 
 #: common/templates/course_modes/choose.html:158
 msgid "What is an ID Verified Certificate?"
@@ -405,7 +405,7 @@ msgstr "ビジョン"
 
 #: lms/templates/contact.html:10
 msgid "Faq"
-msgstr "FAQ"
+msgstr "よくある質問"
 
 #: lms/templates/contact.html:11 lms/templates/footer.html:24
 msgid "Press"
@@ -560,7 +560,7 @@ msgstr "講座を探す"
 
 #: lms/templates/dashboard.html:317
 msgid "Looks like you haven't been enrolled in any courses yet."
-msgstr "まだどの講座にも受講登録がされていないように見えます。"
+msgstr "まだどの講座にも受講登録がされていないようです。"
 
 #: lms/templates/dashboard.html:324
 msgid "Course-loading errors"
@@ -643,7 +643,7 @@ msgstr "氏名を変更"
 msgid ""
 "To uphold the credibility of your {platform} {cert_name_short}, all name "
 "changes will be logged and recorded."
-msgstr "{platform} {cert_name_short}の信頼性を保持するためにすべての名前の変更は記録されています。"
+msgstr "{platform}では{cert_name_short}の信頼性を確保するため、名前の変更についてはすべて記録、保存しています。"
 
 #. Translators: note that {platform} {cert_name_short} will look something
 #. like: "edX certificate". Please do not change the order of these
@@ -792,7 +792,7 @@ msgstr "ジョブ"
 #: lms/templates/footer.html:29 lms/templates/static_templates/faq.html:4
 #: lms/templates/static_templates/faq.html:7
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "よくある質問"
 
 #: lms/templates/footer.html:41
 msgid "{platform_name} Logo"
@@ -1311,7 +1311,7 @@ msgstr "学校"
 
 #: lms/templates/navigation.html:107 lms/templates/navigation.html:111
 msgid "Register Now"
-msgstr "新規登録"
+msgstr "会員登録"
 
 #: lms/templates/navigation.html:121 lms/templates/navigation.html:123
 msgid "Log in"
@@ -1588,7 +1588,7 @@ msgstr "{platform_name}への登録理由"
 
 #: lms/templates/register.html:362
 msgid "Register"
-msgstr "登録"
+msgstr "会員登録"
 
 #: lms/templates/register.html:362 lms/templates/signup_modal.html:146
 msgid "Create My Account"
@@ -1632,7 +1632,7 @@ msgstr "例：ユーザー名(フォーラムで表示されます)"
 
 #: lms/templates/signup_modal.html:48 lms/templates/signup_modal.html:64
 msgid "e.g. Your Name (for certificates)"
-msgstr "例：氏名 (修了証明書に記載されます)"
+msgstr "例：氏名 (修了証に記載されます)"
 
 #: lms/templates/signup_modal.html:50
 msgid "<i>Welcome</i> {name}"
@@ -3889,7 +3889,7 @@ msgstr "金額が会社名：{marchant_name}の下に表示されます。"
 msgid ""
 "If you have billing questions, please read the FAQ ({faq_url}) or contact "
 "{billing_email}."
-msgstr "課金についての質問がございましたら、FAQ({faq_url})を読をお読みになるか {billing_email} に問い合わせてください。"
+msgstr "課金についての質問がございましたら、よくある質問({faq_url})をお読みになるか {billing_email} に問い合わせてください。"
 
 #: lms/templates/emails/order_confirmation_email.txt:9
 msgid "If you have billing questions, please contact {billing_email}."
@@ -4864,7 +4864,7 @@ msgstr "評価の練習"
 
 #: lms/templates/peer_grading/peer_grading_problem.html:47
 msgid "Please include some written feedback as well."
-msgstr "出来るだけフィードバックを記述してください"
+msgstr "できるだけフィードバックを記述してください"
 
 #: lms/templates/peer_grading/peer_grading_problem.html:52
 msgid ""
@@ -4962,7 +4962,7 @@ msgstr "アカウントは既に有効になっています"
 
 #: lms/templates/registration/activation_complete.html:27
 msgid "You can now {link_start}log in{link_end}."
-msgstr " {link_start}ログイン{link_end}出来るようになりました。"
+msgstr " {link_start}ログイン{link_end}できるようになりました。"
 
 #: lms/templates/registration/activation_invalid.html:10
 msgid "Activation Invalid"
@@ -5377,7 +5377,7 @@ msgstr "名前の編集中に次のエラーが発生しました："
 msgid ""
 "To uphold the credibility of {platform} certificates, all name changes will "
 "be logged and recorded."
-msgstr "{platform} では修了証明書の信頼性を確保するため、名前の変更についてはすべて記録、保存しています。"
+msgstr "{platform} では修了証の信頼性を確保するため、名前の変更についてはすべて記録、保存しています。"
 
 #: lms/templates/verify_student/_modal_editname.html:26
 msgid "Change my name"
@@ -5416,7 +5416,7 @@ msgstr "何か質問がありますか？"
 msgid ""
 "Please read {a_start}our FAQs to view common questions about our "
 "certificates{a_end}."
-msgstr "{a_start}私たちの修了証明書についてのよくある質問{a_end} をご一読ください。"
+msgstr "{a_start}修了証についてのよくある質問{a_end} をご一読ください。"
 
 #: lms/templates/verify_student/_verification_header.html:6
 msgid "You are upgrading your registration for"
