@@ -1053,7 +1053,7 @@ msgstr "受講者のメールアドレスかユーザー名を入力してくだ
 msgid ""
 "Error getting student progress url for '<%= student_id %>'. Make sure that "
 "the student identifier is spelled correctly."
-msgstr ""
+msgstr "'<%= student_id %>'の受講者の進捗URLを取得する際のエラー。受講者の識別子のスペルが正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
@@ -1077,6 +1077,8 @@ msgid ""
 " '<%= student_id %>'. Make sure that the problem and student identifiers are"
 " complete and correct."
 msgstr ""
+"'<%= problem_id %>'の問題と'<%= student_id "
+"%>'の受講者に関する試行をリセットする再のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
@@ -1089,6 +1091,8 @@ msgid ""
 " %>'. Make sure that the problem and student identifiers are complete and "
 "correct."
 msgstr ""
+"'<%= problem_id %>'の問題についての、'<%= student_id "
+"%>'の受講者の状態を削除する再のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Module state successfully deleted."
@@ -1109,6 +1113,8 @@ msgid ""
 "'<%= student_id %>'. Make sure that the the problem and student identifiers "
 "are complete and correct."
 msgstr ""
+"'<%= student_id %>'の受講者についての'<%= problem_id "
+"%>'の問題を再採点するタスクを開始する際のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid ""
@@ -1116,6 +1122,8 @@ msgid ""
 "student_id %>'. Make sure that the problem and student identifiers are "
 "complete and correct."
 msgstr ""
+"'<%= problem_id %>'の問題と'<%= student_id "
+"%>'の受講者に関するタスクのヒストリーを取得する際のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Reset attempts for all students on problem '<%= problem_id %>'?"
@@ -1135,7 +1143,7 @@ msgid ""
 "Error starting a task to reset attempts for all students on problem '<%= "
 "problem_id %>'. Make sure that the problem identifier is complete and "
 "correct."
-msgstr ""
+msgstr "'<%= problem_id %>'の問題に関する試行をリセットするタスクを開始する際のエラー。問題の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Rescore problem '<%= problem_id %>' for all students?"
@@ -1154,7 +1162,7 @@ msgstr ""
 msgid ""
 "Error starting a task to rescore problem '<%= problem_id %>'. Make sure that"
 " the problem identifier is complete and correct."
-msgstr ""
+msgstr "'<%= problem_id %>'の問題を再採点するタスクを開始する際のエラー。問題の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js
 msgid "Error listing task history for this student and problem."

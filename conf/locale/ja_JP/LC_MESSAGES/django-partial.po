@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2014-06-04 12:10-0400\n"
-"PO-Revision-Date: 2014-06-06 08:21+0000\n"
+"PO-Revision-Date: 2014-06-09 03:10+0000\n"
 "Last-Translator: kawa <h.kawasaki@nttks.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -1808,7 +1808,7 @@ msgstr "課題に対するタグ"
 msgid ""
 "Add tags that automatically highlight in a certain color using the comma-"
 "separated form, i.e. imagery:red,parallelism:blue"
-msgstr ""
+msgstr "コンマで分けられたフォームを使用して、特定の色（例えば、imagery:red,parallelism:blue）で自動的にハイライトするタグを追加します。"
 
 #: common/lib/xmodule/xmodule/imageannotation_module.py:55
 #: common/lib/xmodule/xmodule/textannotation_module.py:51
@@ -2047,7 +2047,7 @@ msgstr "ソース／引用"
 msgid ""
 "Optional for citing source of any material used. Automatic citation can be "
 "done using <a href=\"http://easybib.com\">EasyBib</a>"
-msgstr ""
+msgstr "使用されている素材のソースの引用に関するオプション。自動引用は<a href=\"http://easybib.com\">EasyBib</a>を使って行われます。"
 
 #: common/lib/xmodule/xmodule/textannotation_module.py:63
 msgid "Diacritic Marks"
@@ -2438,7 +2438,7 @@ msgid ""
 "Allow students to download versions of this video in different formats if "
 "they cannot use the edX video player or do not have access to YouTube. You "
 "must add at least one non-YouTube URL in the Video File URLs field."
-msgstr ""
+msgstr "受講者がedXのビデオプレイヤーを使えない、またはYouTubeにアクセスできない場合、違うフォーマットのビデオのダウンロードを許可します。ビデオファイルURLの枠に、少なくとも１つ以上のYouTubeではないURLを追加する必要があります。"
 
 #: common/lib/xmodule/xmodule/video_module/video_xfields.py:78
 msgid "Video Download Allowed"
@@ -2452,7 +2452,7 @@ msgid ""
 "Students will be able to view the first listed video that's compatible with "
 "the student's computer. To allow students to download these videos, set "
 "Video Download Allowed to True."
-msgstr ""
+msgstr "YouTubeではないビデオを投稿したURL。URLの末尾は.mpeg, .mp4, .ogg, .webmにしなければならない(ブラウザの互換性の理由から、.mp4, .webmフォーマットを強く推奨します)。受講者はコンピュータで、リストの最初のビデオを閲覧できます。ビデオのダウンロードを許可するか否か設定してください。"
 
 #: common/lib/xmodule/xmodule/video_module/video_xfields.py:84
 msgid "Video File URLs"
@@ -2467,7 +2467,7 @@ msgid ""
 "transcript file on the Files & Uploads page or on the Internet, and then add"
 " the URL for the transcript here. Students see a link to download that "
 "transcript below the video."
-msgstr ""
+msgstr "字幕ダウンロードの許可をTrueに設定すると、.srtまたは.txtの字幕を受講者はダウンロードできます。字幕をその他の形式でダウンロード可能にしたい場合は、資料をアップロードすることを推奨します。それが無理な場合は、ファイル＆アップロードページまたはネット上に字幕ファイルを置き、そのURLを追加することもできます。受講者は、ビデオの下の字幕ダウンロードのリンクから字幕を見ることができます。"
 
 #: common/lib/xmodule/xmodule/video_module/video_xfields.py:89
 msgid "Downloadable Transcript URL"
@@ -2479,7 +2479,7 @@ msgid ""
 " appears below the video. By default, the transcript is an .srt or .txt "
 "file. If you want to provide the transcript for download in a different "
 "format, upload a file by using the Upload Handout field."
-msgstr ""
+msgstr "受講者に時刻付きの字幕ダウンロードを許可します。字幕ファイルをダウンロードするリンクはビデオの下に表示されます。デフォルトで字幕ファイルの拡張子は.srtか.txtになります。違う形式の字幕ダウンロードを提供したい場合は、資料をアップロードする枠を使用してアップロードしてください。"
 
 #: common/lib/xmodule/xmodule/video_module/video_xfields.py:95
 msgid "Download Transcript Allowed"
@@ -2490,7 +2490,7 @@ msgid ""
 "The default transcript for the video, from the Default Timed Transcript "
 "field on the Basic tab. This transcript should be in English. You don't have"
 " to change this setting."
-msgstr ""
+msgstr "基本タブの時刻付き字幕で設定された、デフォルトの字幕です。この字幕の言語は英語である必要があります。この設定を変える必要はありません。"
 
 #: common/lib/xmodule/xmodule/video_module/video_xfields.py:101
 msgid "Default Timed Transcript"
@@ -3127,7 +3127,7 @@ msgstr "{course_key}に登録されている受講者の採点サマリー"
 #: lms/djangoapps/instructor/views/legacy.py:242
 #, python-brace-format
 msgid "Raw Grades of students enrolled in {course_key}"
-msgstr ""
+msgstr "{course_key}に登録した受講者の生の採点"
 
 #: lms/djangoapps/instructor/views/legacy.py:271
 #, python-brace-format

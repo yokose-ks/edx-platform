@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2014-06-04 12:11-0400\n"
-"PO-Revision-Date: 2014-06-06 07:07+0000\n"
+"PO-Revision-Date: 2014-06-09 01:40+0000\n"
 "Last-Translator: kawa <h.kawasaki@nttks.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -1042,7 +1042,7 @@ msgstr "受講者のメールアドレスかユーザー名を入力してくだ
 msgid ""
 "Error getting student progress url for '<%= student_id %>'. Make sure that "
 "the student identifier is spelled correctly."
-msgstr ""
+msgstr "'<%= student_id %>'の受講者の進捗URLを取得する際のエラー。受講者の識別子のスペルが正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:93
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:130
@@ -1065,7 +1065,7 @@ msgid ""
 "Error resetting problem attempts for problem '<%= problem_id %>' and student"
 " '<%= student_id %>'. Make sure that the problem and student identifiers are"
 " complete and correct."
-msgstr ""
+msgstr "'<%= problem_id %>'の問題と'<%= student_id %>'の受講者に関する試行をリセットする再のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:132
 msgid ""
@@ -1077,7 +1077,7 @@ msgid ""
 "Error deleting student '<%= student_id %>'s state on problem '<%= problem_id"
 " %>'. Make sure that the problem and student identifiers are complete and "
 "correct."
-msgstr ""
+msgstr "'<%= problem_id %>'の問題についての、'<%= student_id %>'の受講者の状態を削除する再のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:153
 msgid "Module state successfully deleted."
@@ -1095,14 +1095,14 @@ msgid ""
 "Error starting a task to rescore problem '<%= problem_id %>' for student "
 "'<%= student_id %>'. Make sure that the the problem and student identifiers "
 "are complete and correct."
-msgstr ""
+msgstr "'<%= student_id %>'の受講者についての'<%= problem_id %>'の問題を再採点するタスクを開始する際のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:213
 msgid ""
 "Error getting task history for problem '<%= problem_id %>' and student '<%= "
 "student_id %>'. Make sure that the problem and student identifiers are "
 "complete and correct."
-msgstr ""
+msgstr "'<%= problem_id %>'の問題と'<%= student_id %>'の受講者に関するタスクのヒストリーを取得する際のエラー。問題と受講者の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:236
 msgid "Reset attempts for all students on problem '<%= problem_id %>'?"
@@ -1120,7 +1120,7 @@ msgid ""
 "Error starting a task to reset attempts for all students on problem '<%= "
 "problem_id %>'. Make sure that the problem identifier is complete and "
 "correct."
-msgstr ""
+msgstr "'<%= problem_id %>'の問題に関する試行をリセットするタスクを開始する際のエラー。問題の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:274
 msgid "Rescore problem '<%= problem_id %>' for all students?"
@@ -1137,7 +1137,7 @@ msgstr "問題 '<%= problem_id %>' に対する再採点のタスクを開始し
 msgid ""
 "Error starting a task to rescore problem '<%= problem_id %>'. Make sure that"
 " the problem identifier is complete and correct."
-msgstr ""
+msgstr "'<%= problem_id %>'の問題を再採点するタスクを開始する際のエラー。問題の識別子が正しいか確認してください。"
 
 #: lms/static/coffee/src/instructor_dashboard/student_admin.js:322
 msgid "Error listing task history for this student and problem."
