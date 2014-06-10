@@ -9,10 +9,16 @@
 <%! from microsite_configuration import microsite %>
 <%! platform_name = microsite.get_value("platform_name", settings.PLATFORM_NAME) %>
 
+##<%block name="header_extra">
+##  <%static:css group='style-app'/>
+##  <%static:css group='style-app-extend1'/>
+##  <%static:css group='style-app-extend2'/>
+##</%block>
+
 % if settings.FEATURES.get('ENABLE_FEEDBACK_SUBMISSION', False):
 
 <div class="help-tab">
-  <a href="#help-modal" rel="leanModal" role="button" data-reveal-id="help-modal">${_("Help")}</a>
+  <a href="#help-modal" rel="" role="button" data-reveal-id="help-modal">${_("Help")}</a>
 </div>
 
 <section id="help-modal" class="modal reveal-modal medium" aria-hidden="true" role="dialog" aria-label="${_("{platform_name} Help").format(platform_name=platform_name)}" data-reveal>
@@ -74,7 +80,7 @@
 
   </div>
 
-  <div class="inner-wrapper" id="feedback_form_wrapper"  style="background-color:transparent;">
+  <div class="inner-wrapper" id="feedback_form_wrapper" style="background-color:transparent;">
 ##    <button class="close-modal">
 ##      <i class="icon-remove"></i>
 ##      <span class="sr">
@@ -103,7 +109,7 @@
       <input name="course_id" type="hidden" value="${course.id | h}">
 % endif
       <div class="submit">
-        <input name="submit" type="submit" value="${_('Submit')}" id="feedback_submit">
+        <input name="submit" class="f_button small radius" type="submit" value="${_('Submit')}" id="feedback_submit">
       </div>
     </form>
   </div>
@@ -133,6 +139,7 @@
     %>
     <p style="color:#333;"><strong>${_('Do you have any questions?')}</strong>${_('See <a href="https://support.gacco.org/">${_(FAQ)}</a>.')}</p>
     <p>${_('If you have further questions, please send questions below.')}</p>
+<%doc>
     <p style="color:#333;">
     ${_(
         'Thank you for your inquiry or feedback.  We typically respond to a request '
@@ -146,6 +153,7 @@
         link_end='</a>'
     )}
     </p>
+</%doc>
   </div>
 </section>
 

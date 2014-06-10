@@ -198,7 +198,9 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
 
       // Menu toggle button on small devices
       .toggle-topbar {
-        position: absolute;
+        // hamburger ZURE fix by daishi-san
+        //position: absolute;
+        position: relative;
         #{$opposite-direction}: 0;
         top: 0;
 
