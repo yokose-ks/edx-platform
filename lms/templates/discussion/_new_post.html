@@ -46,9 +46,9 @@
 	  <div class="large-4 small-12 columns">
             <span class="topic-dropdown-label" id="topic-dropdown-label">${_("Create new post about:")}</span>
             <div class="form-topic-drop">
-              <a href="#" aria-labelledby="topic-dropdown-label" class="split f_button secondary topic_dropdown_button">
+              <a href="#" aria-labelledby="topic-dropdown-label" class="split button f_button secondary topic_dropdown_button">
 		<p style="margin-bottom:0;">${_("Show All Discussions")}</p>
-		<span class="browse-dropdown">▾</span></a>
+		<span class="browse-dropdown"></span></a>
               <div class="topic_menu_wrapper panel">
                 <div class="topic_menu_search" role="menu">
                   <label class="sr" for="browse-topic-newpost">${_("Filter List")}</label>
@@ -99,8 +99,8 @@
               %endif
             </div>
 	    <div class="button-area">
-              <input type="submit" id="new-post-submit" class="f_button small radius success right" value="${_("Add post")}">
-              <a href="#" class="right" onclick="$('a.close-reveal-modal').trigger('click');">${_("Cancel")}</a>
+              <input type="submit" id="new-post-submit" class="f_button tiny radius success right" value="${_("Add post")}">
+              <a href="#" class="f_button tiny radius alert right" onclick="$('a.close-reveal-modal').trigger('click');">${_("Cancel")}</a>
             </div>
           </div>
 	</div>
