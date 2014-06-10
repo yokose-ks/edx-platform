@@ -295,7 +295,7 @@ if Backbone?
         target.css({left:'0px'})
 ##        @$(".browse-topic-drop-menu-wrapper").show()
 ##        $(".browse-topic-drop-search-input").focus()
-##        $("body").bind "click", @toggleTopicDrop
+        $("body").bind "click", @toggleTopicDrop
         $("body").bind "click", {dst:target_name}, @toggleTopicDrop
         $("body").bind "keydown", @setActiveItem
       else
