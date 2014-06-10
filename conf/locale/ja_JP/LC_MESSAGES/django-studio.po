@@ -5,6 +5,7 @@
 # Translators:
 # kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
+# sunk <s.kim@nttks.co.jp>, 2014
 # Takashi Nagai <ngi644@gmail.com>, 2014
 # Shige Usui <ushige@live.com>, 2014
 # わたカフェの店長, 2013
@@ -12,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2014-06-04 12:10-0400\n"
-"PO-Revision-Date: 2014-06-05 08:41+0000\n"
-"Last-Translator: kawa <h.kawasaki@nttks.co.jp>\n"
+"POT-Creation-Date: 2014-06-09 14:22-0400\n"
+"PO-Revision-Date: 2014-06-10 02:20+0000\n"
+"Last-Translator: sunk <s.kim@nttks.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -113,16 +114,16 @@ msgstr "gitレポジトリにエクスポートする講座を選んでくださ
 msgid "Upload completed"
 msgstr "アップロード完了"
 
-#: cms/djangoapps/contentstore/views/component.py:295
+#: cms/djangoapps/contentstore/views/component.py:296
 msgid "HTML"
 msgstr "HTML"
 
-#: cms/djangoapps/contentstore/views/component.py:297
+#: cms/djangoapps/contentstore/views/component.py:298
 msgid "Video"
 msgstr "ビデオ"
 
-#: cms/djangoapps/contentstore/views/component.py:311
-#: cms/djangoapps/contentstore/views/component.py:313
+#: cms/djangoapps/contentstore/views/component.py:312
+#: cms/djangoapps/contentstore/views/component.py:314
 msgid "Blank"
 msgstr "空白"
 
@@ -151,7 +152,7 @@ msgid ""
 "Unable to create course '{name}'.\n"
 "\n"
 "{err}"
-msgstr "講座名「'{name}」を生成に失敗しました。\n{err}"
+msgstr "講座名「'{name}」の生成に失敗しました。\n{err}"
 
 #: cms/djangoapps/contentstore/views/export_git.py:46
 msgid "Course successfully exported to git repository"
@@ -181,7 +182,7 @@ msgstr "'{0}' の重複"
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py:430
 msgid "Incoming video data is empty."
-msgstr "入力されたビデーオデータは空です。"
+msgstr "入力されたビデオデータは空です。"
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py:435
 msgid "Can't find item by locator."

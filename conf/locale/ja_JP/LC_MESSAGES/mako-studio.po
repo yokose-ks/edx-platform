@@ -18,9 +18,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2014-06-04 12:10-0400\n"
-"PO-Revision-Date: 2014-06-09 09:40+0000\n"
-"Last-Translator: watcafe\n"
+"POT-Creation-Date: 2014-06-09 14:22-0400\n"
+"PO-Revision-Date: 2014-06-09 18:41+0000\n"
+"Last-Translator: Sarina Canelake <sarina@edx.org>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -169,7 +169,7 @@ msgid ""
 "course."
 msgstr "外部URLはコースの外のファイルや画像を参照するために使用します。講座でのリンクとして外部URLを使用しないでください。"
 
-#: cms/templates/asset_index.html:77 cms/templates/container.html:136
+#: cms/templates/asset_index.html:77 cms/templates/container.html:133
 #: cms/templates/overview.html:263 cms/templates/settings_graders.html:130
 msgid "What can I do on this page?"
 msgstr "このページで何ができるのか？"
@@ -255,35 +255,31 @@ msgstr "ドラッグして並び替え"
 msgid "Container"
 msgstr "含まれるもの"
 
-#: cms/templates/container.html:98
-msgid "This page has no content yet."
-msgstr "このページにはコンテンツがまだありません。"
-
-#: cms/templates/container.html:108 cms/templates/container.html:122
+#: cms/templates/container.html:105 cms/templates/container.html:119
 msgid "Publishing Status"
 msgstr "発行ステータス"
 
-#: cms/templates/container.html:108
+#: cms/templates/container.html:105
 msgid "Published"
 msgstr "公開済み"
 
-#: cms/templates/container.html:116
+#: cms/templates/container.html:113
 msgid ""
 "To make changes to the content of this page, you need to edit unit "
 "{unit_link} as a draft."
 msgstr "このページのコンテンツを編集するには、単元を下書きで編集{unit_link}する必要があります。"
 
-#: cms/templates/container.html:122
+#: cms/templates/container.html:119
 msgid "Draft"
 msgstr "下書き"
 
-#: cms/templates/container.html:130
+#: cms/templates/container.html:127
 msgid ""
 "You can edit the content of this page, and your changes will be published "
 "with unit {unit_link}."
 msgstr "このページのコンテンツを編集できます。変更は{unit_link}で公開されます。"
 
-#: cms/templates/container.html:138
+#: cms/templates/container.html:135
 msgid ""
 "You can view and edit course components that contain other components on "
 "this page. In the case of experiment blocks, this allows you to confirm that"
@@ -2315,6 +2311,22 @@ msgstr "edX Studioを使ってコースを設計するには"
 #: cms/templates/widgets/sock.html:44
 msgid "Have problems, questions, or suggestions about edX Studio?"
 msgstr "edX Studioに関する質問、要望はありますか？"
+
+#: cms/templates/widgets/split-edit.html:6
+msgid ""
+"This content experiment refers to a group configuration that has been "
+"deleted."
+msgstr ""
+
+#: cms/templates/widgets/split-edit.html:8
+msgid "This content experiment uses group configuration '{0}'."
+msgstr ""
+
+#: cms/templates/widgets/split-edit.html:10
+msgid ""
+"After you select the group configuration and save the content experiment, "
+"you cannot change this setting."
+msgstr ""
 
 #: cms/templates/widgets/tabs-aggregator.html:8
 msgid "name"

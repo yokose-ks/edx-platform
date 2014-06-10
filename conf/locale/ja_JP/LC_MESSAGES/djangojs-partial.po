@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2014-06-04 12:11-0400\n"
-"PO-Revision-Date: 2014-06-09 01:40+0000\n"
-"Last-Translator: kawa <h.kawasaki@nttks.co.jp>\n"
+"POT-Creation-Date: 2014-06-09 14:22-0400\n"
+"PO-Revision-Date: 2014-06-10 02:30+0000\n"
+"Last-Translator: sunk <s.kim@nttks.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,6 +44,12 @@ msgstr "キャンセル"
 #: cms/static/js/base.js:72 lms/static/js/verify_student/photocapture.js:337
 msgid "This link will open in a new browser window/tab"
 msgstr "新しいブラウザウィンドウまたはタブにこのリンクを開く"
+
+#: cms/static/js/views/asset.js:52 cms/static/js/views/show_textbook.js:36
+#: common/static/js/vendor/ova/catch/js/catch.js:140
+#: common/static/js/vendor/ova/catch/js/catch.js:253
+msgid "Delete"
+msgstr "削除"
 
 #: common/lib/xmodule/xmodule/js/src/annotatable/display.js:206
 msgid "Show Annotations"
@@ -251,16 +257,16 @@ msgstr "とても大きい"
 msgid "Maximum"
 msgstr "最大"
 
-#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js:151
+#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js:167
 msgid ""
 "VideoPlayer: Element corresponding to the given selector does not found."
 msgstr "ビデオプレイヤー：指定したセクターに対応するエレメントが見つかりません。"
 
-#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js:218
+#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js:217
 msgid "This browser cannot play .mp4, .ogg, or .webm files."
 msgstr "このブラウザは.mp4, .ogg, .webmファイルを再生できません。"
 
-#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js:219
+#: common/lib/xmodule/xmodule/js/src/video/02_html5_video.js:218
 msgid "Try using a different browser, such as Google Chrome."
 msgstr "違うブラウザを使用してください（例えばGoogle Chromeなど）。"
 
@@ -340,7 +346,7 @@ msgstr "ディスカッションを表示"
 #: common/static/coffee/src/discussion/discussion_module_view.js:100
 #: common/static/coffee/src/discussion/discussion_module_view.js:210
 #: common/static/coffee/src/discussion/utils.js:173
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:204
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:245
 #: common/static/coffee/src/discussion/views/discussion_thread_view.js:96
 #: common/static/coffee/src/discussion/views/discussion_thread_view.js:98
 #: common/static/coffee/src/discussion/views/discussion_thread_view.js:100
@@ -373,9 +379,9 @@ msgid "We had some trouble processing your request. Please try again."
 msgstr "リクエストを処理する際に問題が発生しました。再試行してください。"
 
 #: common/static/coffee/src/discussion/utils.js:368
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:384
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:390
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:393
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:425
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:431
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:434
 #: common/static/coffee/src/discussion/views/new_post_view.js:135
 #: common/static/coffee/src/discussion/views/new_post_view.js:141
 #: common/static/coffee/src/discussion/views/new_post_view.js:144
@@ -410,24 +416,24 @@ msgid "vote (click to vote)"
 msgid_plural "votes (click to vote)"
 msgstr[0] "投票(クリックして投票)"
 
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:153
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:194
 msgid "Load more"
 msgstr "続きを読み込む"
 
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:163
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:204
 msgid "Loading more threads"
 msgstr "追加のスレッドを読み込み中"
 
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:204
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:245
 msgid "We had some trouble loading more threads. Please try again."
 msgstr "追加のスレッドを読み込む際に問題が発生しました。再試行してください。"
 
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:225
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:266
 msgid "%(unread_count)s new comment"
 msgid_plural "%(unread_count)s new comments"
 msgstr[0] "%(unread_count)s の新しいコメント"
 
-#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:533
+#: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:575
 msgid "Loading thread list"
 msgstr "スレッドリストを読み込み中"
 
@@ -625,6 +631,97 @@ msgstr "約１年"
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "%d 年"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:45
+msgid "User"
+msgstr "ユーザ"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:49
+msgid "Annotation"
+msgstr "注釈"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:54
+msgid "Start"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:58
+msgid "End"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:63
+msgid "#Replies"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:67
+msgid "Date posted"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:76
+msgid "More"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:81
+#: common/static/js/vendor/ova/catch/js/catch.js:92
+msgid "My Notes"
+msgstr "マイノート"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:82
+msgid "Instructor"
+msgstr "講師"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:83
+#: common/static/js/vendor/ova/catch/js/catch.js:93
+msgid "Public"
+msgstr "一般公開"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:84
+#: common/static/js/vendor/ova/catch/js/catch.js:94
+msgid "Search"
+msgstr "検索"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:85
+#: common/static/js/vendor/ova/catch/js/catch.js:95
+msgid "Users"
+msgstr "ユーザー"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:86
+#: common/static/js/vendor/ova/catch/js/catch.js:96
+msgid "Tags"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:87
+#: common/static/js/vendor/ova/catch/js/catch.js:97
+msgid "Annotation Text"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:88
+#: common/static/js/vendor/ova/catch/js/catch.js:98
+msgid "Clear"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:104
+msgid "Text"
+msgstr "テキスト"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:107
+msgid "Video"
+msgstr "ビデオ"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:110
+msgid "Image"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:247
+msgid "Reply"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js:250
+msgid "Edit"
+msgstr "編集"
+
+#: common/static/js/vendor/ova/catch/js/catch.js:262
+msgid "Tags:"
+msgstr ""
 
 #: lms/static/admin/js/SelectFilter2.js:45
 #, c-format
@@ -1269,11 +1366,11 @@ msgstr "リンクを挿入"
 #. Translators: Please keep the quotation marks (") around this text
 #: lms/static/js/Markdown.Editor.js:32 lms/static/js/Markdown.Editor.js.c:35
 msgid "\"optional title\""
-msgstr "\"追加の題名\""
+msgstr "\"リンクの説明\""
 
 #: lms/static/js/Markdown.Editor.js:33
 msgid "Insert Image (upload file or type url)"
-msgstr "画像挿入(ファイルをアップロードまたはURLを指定)"
+msgstr "画像挿入(URLを指定)"
 
 #: lms/static/js/Markdown.Editor.js:42
 msgid "Markdown Editing Help"

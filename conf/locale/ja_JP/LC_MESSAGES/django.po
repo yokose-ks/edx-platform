@@ -20,6 +20,7 @@
 # Translators:
 # kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
+# sunk <s.kim@nttks.co.jp>, 2014
 # Takashi Nagai <ngi644@gmail.com>, 2014
 # Shige Usui <ushige@live.com>, 2014
 # わたカフェの店長, 2013
@@ -31,6 +32,7 @@
 # Translators:
 # watcafe, 2013-2014
 # Daisuke Yamamoto <yamamoto.daisuke@nitech.ac.jp>, 2013
+# kawa <h.kawasaki@nttks.co.jp>, 2014
 # h_yoshida <h_yoshida@matsumo-sys.com>, 2014
 # 井上淳也 <junya.inoue@nttps.co.jp>, 2013
 # Osamu Takahashi, 2014
@@ -448,6 +450,10 @@ msgstr "このメールアドレスのアカウントは既に存在していま
 #: common/djangoapps/student/views.py
 msgid "Old email is the same as the new email."
 msgstr "旧メールアドレスが新しいメールアドレスと同じです。"
+
+#: common/djangoapps/student/views.py
+msgid "Unable to send email activation link. Please try again later."
+msgstr ""
 
 #: common/djangoapps/student/views.py
 msgid "Name required"
@@ -1099,6 +1105,7 @@ msgstr "注釈（アノテーション）のためのXMLデータ"
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/lti_module.py
 #: common/lib/xmodule/xmodule/peer_grading_module.py
+#: common/lib/xmodule/xmodule/split_test_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
 #: common/lib/xmodule/xmodule/videoannotation_module.py
 #: common/lib/xmodule/xmodule/word_cloud_module.py
@@ -1870,6 +1877,47 @@ msgstr "注釈のストレージに対する秘密の文字列"
 msgid "Secret Token String for Annotation"
 msgstr "注釈に対する秘密のトークン文字列"
 
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Default Annotations Tab"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid ""
+"Select which tab will be the default in the annotations table: myNotes, "
+"Instructor, or Public."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Email for 'Instructor' Annotations"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid ""
+"Email of the user that will be attached to all annotations that will be "
+"found in 'Instructor' tab."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid "Mode for Annotation Tool"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/imageannotation_module.py
+#: common/lib/xmodule/xmodule/textannotation_module.py
+#: common/lib/xmodule/xmodule/videoannotation_module.py
+msgid ""
+"Type in number corresponding to following modes:  'instructor' or 'everyone'"
+msgstr ""
+
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid ""
 "Enter the name that students see for this component.  Analytics reports may "
@@ -2022,6 +2070,80 @@ msgstr "指定された相互採点問題のための受講者データ"
 #: common/lib/xmodule/xmodule/peer_grading_module.py
 msgid "Peer Grading Interface"
 msgstr "相互採点のインターフェース"
+
+#. Translators: This message will be added to the front of messages of type
+#. warning,
+#. e.g. "Warning: this component has not been configured yet".
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid "Warning"
+msgstr ""
+
+#. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
+#. Translators: This message will be added to the front of messages of type
+#. error,
+#. e.g. "Error: required field is missing".
+#: common/lib/xmodule/xmodule/split_test_module.py
+#: lms/templates/name_changes.html lms/templates/name_changes.html
+#: lms/templates/sysadmin_dashboard_gitlogs.html
+msgid "Error"
+msgstr "エラー"
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid "Not Selected"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid ""
+"This name is used for organizing your course content, but is not shown to "
+"students."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid "Content Experiment"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid ""
+"The list of group configurations for partitioning students in content "
+"experiments."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid ""
+"The configuration for how users are grouped for this content experiment. "
+"After you select the group configuration and save the content experiment, "
+"you cannot change this setting."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid "Group Configuration"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid "Which child module students in a particular group_id should see"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+#: lms/templates/split_test_studio_header.html
+msgid "You must select a group configuration for this content experiment."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid ""
+"This content experiment will not be shown to students because it refers to a"
+" group configuration that has been deleted. You can delete this experiment "
+"or reinstate the group configuration to repair it."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid ""
+"This content experiment is in an invalid state and cannot be repaired. "
+"Please delete and recreate."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/split_test_module.py
+msgid "This content experiment uses group configuration '{experiment_name}'."
+msgstr ""
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: 'Courseware' refers to the tab in the courseware that leads to
@@ -5066,7 +5188,7 @@ msgid ""
 "\n"
 "{err}"
 msgstr ""
-"講座名「'{name}」を生成に失敗しました。\n"
+"講座名「'{name}」の生成に失敗しました。\n"
 "{err}"
 
 #: cms/djangoapps/contentstore/views/export_git.py
@@ -5095,7 +5217,7 @@ msgstr "'{0}' の重複"
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py
 msgid "Incoming video data is empty."
-msgstr "入力されたビデーオデータは空です。"
+msgstr "入力されたビデオデータは空です。"
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py
 msgid "Can't find item by locator."
@@ -5780,7 +5902,7 @@ msgstr "新しいメールアドレスを使ったアカウントが既に存在
 
 #: lms/templates/enroll_students.html
 msgid "Student Enrollment Form"
-msgstr "学生の受講登録フォーム"
+msgstr "受講者の受講登録フォーム"
 
 #: lms/templates/enroll_students.html
 msgid "Course: "
@@ -5788,7 +5910,7 @@ msgstr "講座："
 
 #: lms/templates/enroll_students.html
 msgid "Add new students"
-msgstr "新たな学生を追加"
+msgstr "新たな受講者を追加"
 
 #: lms/templates/enroll_students.html
 msgid "Existing students:"
@@ -6070,13 +6192,9 @@ msgstr " {link_start}メール{link_end}を送信してください。"
 msgid "Please try again later."
 msgstr "少し経ってからお試しください。"
 
-#. Translators: Notes below refer to annotations. They wil later be put under
-#. a
-#. "Notes" section.
-#: lms/templates/imageannotation.html lms/templates/notes.html
-#: lms/templates/textannotation.html lms/templates/videoannotation.html
-msgid "You do not have any notes."
-msgstr "ノートがありません"
+#: lms/templates/imageannotation.html
+msgid "Note: only instructors may annotate."
+msgstr ""
 
 #: lms/templates/index.html
 msgid "Free courses from <strong>{university_name}</strong>"
@@ -6323,11 +6441,6 @@ msgstr "生データ："
 msgid "Accepted"
 msgstr "受理"
 
-#: lms/templates/name_changes.html lms/templates/name_changes.html
-#: lms/templates/sysadmin_dashboard_gitlogs.html
-msgid "Error"
-msgstr "エラー"
-
 #: lms/templates/name_changes.html
 msgid "Rejected"
 msgstr "却下"
@@ -6398,6 +6511,11 @@ msgid ""
 msgstr ""
 "<strong>警告:</strong>お使いのブラウザはサポートされていません。{chrome_link_start}Chrome{chrome_link_end}"
 " もしくは {ff_link_start}Firefox{ff_link_end}を使うことを、強く推奨します。"
+
+#: lms/templates/notes.html lms/templates/textannotation.html
+#: lms/templates/videoannotation.html
+msgid "You do not have any notes."
+msgstr "ノートがありません"
 
 #: lms/templates/problem.html
 msgid "Reset"
@@ -6731,6 +6849,10 @@ msgstr "ログイン。"
 #: lms/templates/split_test_staff_view.html
 msgid "Group {group_id}"
 msgstr "グループ {group_id}"
+
+#: lms/templates/split_test_studio_header.html
+msgid "Select a Group Configuration"
+msgstr ""
 
 #: lms/templates/staff_problem_info.html
 msgid "Staff Debug Info"
@@ -8573,7 +8695,7 @@ msgstr "ピン"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "(this post is about %(courseware_title_linked)s)"
-msgstr "(この投稿は%(courseware_title_linked)sについてのものです)"
+msgstr "(%(courseware_title_linked)s単元での投稿)"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Editing post"
@@ -8614,7 +8736,7 @@ msgstr "コメントを削除"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "-posted %(time_ago)s by"
-msgstr "%(time_ago)s前に投稿"
+msgstr "%(time_ago)sに投稿"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Editing comment"
@@ -8726,7 +8848,7 @@ msgstr "このフォーラムは現在メンテナンス中です。スタッフ
 
 #: lms/templates/discussion/user_profile.html
 msgid "User Profile"
-msgstr "ユーザプロフィール"
+msgstr "ユーザー情報"
 
 #: lms/templates/discussion/mustache/_inline_thread.mustache
 #: lms/templates/discussion/mustache/_inline_thread_cohorted.mustache
@@ -11540,10 +11662,6 @@ msgstr "ドラッグして並び替え"
 msgid "Container"
 msgstr "含まれるもの"
 
-#: cms/templates/container.html
-msgid "This page has no content yet."
-msgstr "このページにはコンテンツがまだありません。"
-
 #: cms/templates/container.html cms/templates/container.html
 msgid "Publishing Status"
 msgstr "発行ステータス"
@@ -13641,6 +13759,22 @@ msgstr "edX Studioを使ってコースを設計するには"
 msgid "Have problems, questions, or suggestions about edX Studio?"
 msgstr "edX Studioに関する質問、要望はありますか？"
 
+#: cms/templates/widgets/split-edit.html
+msgid ""
+"This content experiment refers to a group configuration that has been "
+"deleted."
+msgstr ""
+
+#: cms/templates/widgets/split-edit.html
+msgid "This content experiment uses group configuration '{0}'."
+msgstr ""
+
+#: cms/templates/widgets/split-edit.html
+msgid ""
+"After you select the group configuration and save the content experiment, "
+"you cannot change this setting."
+msgstr ""
+
 #: cms/templates/widgets/tabs-aggregator.html
 msgid "name"
 msgstr "名前"
@@ -14315,6 +14449,14 @@ msgstr "トップページ"
 msgid "Login"
 msgstr "ログイン"
 
+#: lms/templates/navigation.html
+msgid "Study Menu"
+msgstr "学習メニュー"
+
+#: lms/templates/courseware/courseware.html
+msgid "Unit List"
+msgstr "単元リスト"
+
 #: lms/templates/dashboard.html
 msgid "Resign"
 msgstr "退会手続き"
@@ -14457,6 +14599,12 @@ msgstr ""
 "\n"
 "退会手続きが完了しました。<br />\n"
 "何か不明な点がございましたら、<a href=\"mailto:%(support_email)s?subject=退会手続き\">%(support_email)s</a> へご連絡ください。"
+
+#: lms/templates/dashboard.html
+msgid ""
+"You'll receive a confirmation in your in-box. Please click the link in the "
+"email to confirm the email change."
+msgstr "メールアドレス変更メールを送信いたしました。メール文中にあるリンクをクリックすることで、メールアドレス変更確認画面が開きます。"
 
 #: lms/templates/registration/password_reset_confirm.html
 msgid "The following errors occurred while processing your password reset: "

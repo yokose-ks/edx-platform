@@ -62,6 +62,12 @@ msgstr "キャンセル"
 msgid "This link will open in a new browser window/tab"
 msgstr "新しいブラウザウィンドウまたはタブにこのリンクを開く"
 
+#: cms/static/js/views/asset.js cms/static/js/views/show_textbook.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Delete"
+msgstr "削除"
+
 #: common/lib/xmodule/xmodule/js/src/annotatable/display.js
 msgid "Show Annotations"
 msgstr "注釈を表示"
@@ -639,6 +645,97 @@ msgstr "約１年"
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "%d 年"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "User"
+msgstr "ユーザ"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Annotation"
+msgstr "注釈"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Start"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "End"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "#Replies"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Date posted"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "More"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "My Notes"
+msgstr "マイノート"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Instructor"
+msgstr "講師"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Public"
+msgstr "一般公開"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Search"
+msgstr "検索"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Users"
+msgstr "ユーザー"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Tags"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Annotation Text"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Clear"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Text"
+msgstr "テキスト"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Video"
+msgstr "ビデオ"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Image"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Reply"
+msgstr ""
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Edit"
+msgstr "編集"
+
+#: common/static/js/vendor/ova/catch/js/catch.js
+msgid "Tags:"
+msgstr ""
 
 #: lms/static/admin/js/SelectFilter2.js
 msgid "Available %s"
@@ -1294,11 +1391,11 @@ msgstr "リンクを挿入"
 #. Translators: Please keep the quotation marks (") around this text
 #: lms/static/js/Markdown.Editor.js lms/static/js/Markdown.Editor.js.c
 msgid "\"optional title\""
-msgstr "\"追加の題名\""
+msgstr "\"リンクの説明\""
 
 #: lms/static/js/Markdown.Editor.js
 msgid "Insert Image (upload file or type url)"
-msgstr "画像挿入(ファイルをアップロードまたはURLを指定)"
+msgstr "画像挿入(URLを指定)"
 
 #: lms/static/js/Markdown.Editor.js
 msgid "Markdown Editing Help"
@@ -1608,10 +1705,6 @@ msgstr ""
 "このアイテムを削除してもよろしいですか? 元には戻せません．\n"
 "\n"
 "また，このアイテムにリンクまたは参照しているコンテンツはすべて機能しなくなります (例: 画像切れやリンク切れ)"
-
-#: cms/static/js/views/asset.js cms/static/js/views/show_textbook.js
-msgid "Delete"
-msgstr "削除"
 
 #: cms/static/js/views/asset.js
 msgid "Your file has been deleted."
