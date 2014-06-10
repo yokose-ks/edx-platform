@@ -1,4 +1,4 @@
-<%! from django.utils.translation import ugettext as _ %>
+6c<%! from django.utils.translation import ugettext as _ %>
 <%! from django.template.defaultfilters import escapejs %>
 <%! from django_comment_client.permissions import has_permission %>
 
@@ -106,8 +106,8 @@
     <div class="form-row">
       <div class="edit-post-body" name="body">${"<%- body %>"}</div>
     </div>
-    <input type="submit" id="edit-post-submit" class="post-update" value="${_("Update post") | h}">
-    <a href="#" class="post-cancel">${_("Cancel")}</a>
+    <input type="submit" id="edit-post-submit" class="post-update f_button radius tiny success" value="${_("Update post") | h}">
+    <a href="#" class="post-cancel" style="margin-left:20px;">${_("Cancel")}</a>
   </div>
 </script>
 
@@ -159,8 +159,8 @@
     <div class="form-row">
       <div class="edit-post-body" name="body" data-id="${'<%- id %>'}">${"<%- body %>"}</div>
     </div>
-    <input type="submit" id="edit-response-submit" class="post-update" value="${_("Update response") | h}">
-    <a href="#" class="post-cancel">${_("Cancel")}</a>
+    <input type="submit" id="edit-response-submit" class="post-update f_button radius tiny success" value="${_("Update response") | h}">
+    <a href="#" class="post-cancel" style="margin-left:20px;">${_("Cancel")}</a>
   </div>
 </script>
 
@@ -229,7 +229,8 @@
                 ## Translators: 'comments_count' and 'unread_comments_count' are numerical placeholders for a specific discussion thread; 'span_*' placeholders refer to HTML markup.  Please translate the word 'comments'.
                 markup_with_unread=escapejs(_('%(comments_count)s %(span_sr_open)scomments (%(unread_comments_count)s unread comments)%(span_close)s')),
                 ## Translators: 'comments_count' is a numerical placeholder for a specific discussion thread; 'span_*' placeholders refer to HTML markup.  Please translate the word 'comments'.
-                markup_none_unread=escapejs(_('%(comments_count)s %(span_sr_open)scomments %(span_close)s'))
+##                markup_none_unread=escapejs(_('%(comments_count)s %(span_sr_open)scomments %(span_close)s'))
+                markup_none_unread=escapejs(_('%(comments_count)s %(span_sr_open)s %(span_close)s'))
             )
         %>
         <span class="comments-count">
@@ -244,7 +245,8 @@
                 )
         """.format(
                 ## Translators: 'votes_up_count' is a numerical placeholder for a specific discussion thread; 'span_*' placeholders refer to HTML markup.  Please translate the word 'votes'.
-                escapejs( _('%(votes_up_count)s%(span_sr_open)s votes %(span_close)s'))
+##                escapejs( _('%(votes_up_count)s%(span_sr_open)s votes %(span_close)s'))
+                escapejs( _('%(votes_up_count)s%(span_sr_open)s %(span_close)s'))
             )
         %>
         <span class="votes-count">+${'<%='}${js_block}${'%>'}</span>

@@ -6,9 +6,11 @@
       <span class="show-hide-discussion-icon"></span>
       <span class="button-text" style="color:#fff;">${_("Show Discussion")}</span>
     </a>
-    <a href="#" class="f_button small radius success right" data-reveal-id="discussion_inline_new_post_modal" onclick="$('#discussion_inline_new_post_modal').foundation('reveal','open'); return false;">
-      <span class="icon icon-edit new-post-icon" style="color:#fff;"></span>${_("New Post")}
-    </a>
+
+    ## move new post button inside discussion area (_inline_discussion.mustache)
+##    <a href="#" class="f_button small radius success right" data-reveal-id="discussion_inline_new_post_modal" onclick="$('#discussion_inline_new_post_modal').foundation('reveal','open'); return false;">
+##      <span class="icon icon-edit new-post-icon" style="color:#fff;"></span>${_("New Post")}
+##    </a>
 
     ## moved from _inline_discussion.mustache
     <div id="discussion_inline_new_post_modal" class="reveal-modal large" data-reveal>

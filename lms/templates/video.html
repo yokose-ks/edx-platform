@@ -4,6 +4,16 @@
     <h2>${display_name}</h2>
 % endif
 
+<style type="text/css">
+@media screen and (max-width: 480px)
+{
+  .video-controls{
+    display: none;
+  }
+}
+</style>
+
+
 <div
     id="video_${id}"
     class="video closed"
