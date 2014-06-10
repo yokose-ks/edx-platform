@@ -288,7 +288,7 @@
           <li class="field-group">
           <div class="field ${settings.REGISTRATION_EXTRA_FIELDS['country']} select" id="field-country">
               <label for="country">${_("Country")}</label>
-              <select id="country" name="country" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['country'] == 'required' else ''}>
+              <select style="-moz-appearance: none; text-indent: 0.01px; text-overflow:''; -ms-expand {display: none;} " id="country" name="country" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['country'] == 'required' else ''}>
                 <option value="">--</option>
                 %for code, country_name in COUNTRIES:
                 <option value="${code}">${ unicode(country_name) }</option>
@@ -301,7 +301,7 @@
           <li class="field-group">
           <div class="field ${settings.REGISTRATION_EXTRA_FIELDS['level_of_education']} select" id="field-education-level">
               <label for="education-level">${_("Highest Level of Education Completed")}</label>
-              <select id="education-level" name="level_of_education" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['level_of_education'] == 'required' else ''}>
+              <select style="-moz-appearance: none; text-indent: 0.01px; text-overflow:''; -ms-expand {display: none;} " id="education-level" name="level_of_education" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['level_of_education'] == 'required' else ''}>
                 <option value="">--</option>
                 %for code, ed_level in UserProfile.LEVEL_OF_EDUCATION_CHOICES:
                 <option value="${code}">${_(ed_level)}</option>
@@ -314,7 +314,7 @@
           <li class="field-group">
             <div class="field ${settings.REGISTRATION_EXTRA_FIELDS['gender']} select" id="field-gender">
               <label for="gender">${_("Gender")}</label>
-              <select id="gender" name="gender" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['gender'] == 'required' else ''}>
+              <select style="-moz-appearance: none; text-indent: 0.01px; text-overflow:''; -ms-expand {display: none;} " id="gender" name="gender" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['gender'] == 'required' else ''}>
                 <option value="">--</option>
                 %for code, gender in UserProfile.GENDER_CHOICES:
                 <option value="${code}">${_(gender)}</option>
@@ -327,7 +327,7 @@
           <li class="field-group">
             <div class="field ${settings.REGISTRATION_EXTRA_FIELDS['year_of_birth']} select" id="field-yob">
               <label for="yob">${_("Year of Birth")}</label>
-              <select id="yob" name="year_of_birth" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['year_of_birth'] == 'required' else ''}>
+              <select style="-moz-appearance: none; text-indent: 0.01px; text-overflow:''; -ms-expand {display: none;} " id="yob" name="year_of_birth" ${'required aria-required="true"' if settings.REGISTRATION_EXTRA_FIELDS['year_of_birth'] == 'required' else ''}>
                 <option value="">--</option>
                 %for year in UserProfile.VALID_YEARS:
                 <option value="${year}">${year}</option>

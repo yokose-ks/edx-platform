@@ -403,9 +403,9 @@
       <section class="empty-dashboard-message">
         % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
           <p>${_("Looks like you haven't registered for any courses yet.")}</p>
-          <a href="${marketing_link('COURSES')}">
-            ${_("Find courses now!")}
-          </a>
+          ##<a href="${marketing_link('COURSES')}">
+          ##  ${_("Find courses now!")}
+          ##</a>
         % else:
           <p>${_("Looks like you haven't been enrolled in any courses yet.")}</p>
         %endif
@@ -427,7 +427,7 @@
         </ul>
         % endfor
       % endif
-      <a href="http://gacco.org/list.html" class="f_button tiny radius success expand">${_("Find Courses")}</a>
+      <a href="http://gacco.org/list.html" class="f_button tiny radius success expand text-center">${_("Find Courses")}</a>
     </section>
   </div>
 </section>
@@ -435,7 +435,7 @@
 ##<section id="email-settings-modal" class="modal" aria-hidden="true">
 ##  <div class="inner-wrapper" role="dialog" aria-labelledby="email-settings-title">
   <div id="email-settings-modal" class="reveal-modal medium" role="dialog" aria-labelledby="email-settings-title" data-reveal>
-    <a class="close-reveal-modal">X</a>
+    <a class="close-reveal-modal">×</a>
 ##    <button class="close-modal">
 ##      <i class="icon-remove"></i>
 ##      <span class="sr">
@@ -494,7 +494,7 @@
           <p>${_('An email has been sent to {email}. Follow the link in the email to change your password.').format(email=user.email)}</p>
         </section>
       </form>
-      <a class="close-reveal-modal">X</a>
+      <a class="close-reveal-modal">×</a>
     </div>
   </div>
 ##</section>
@@ -616,14 +616,14 @@
         </fieldset>
       </form>
     </div>
-  <a class="close-reveal-modal">X</a>
+  <a class="close-reveal-modal">×</a>
   </div>
 ##</section>
 
 ##<section id="unenroll-modal" class="modal unenroll-modal" aria-hidden="true">
 ##  <div class="inner-wrapper" role="alertdialog" aria-labelledy="unenrollment-modal-title">
     <div id="unenroll-modal" class="reveal-modal medium" role="alertdialog" aria-labelledy="unenrollment-modal-title" data-reveal>
-    <a class="close-reveal-modal">X</a>
+    <a class="close-reveal-modal">×</a>
 ##    <button class="close-modal">
 ##      <i class="icon-remove"></i>
 ##      <span class="sr">
