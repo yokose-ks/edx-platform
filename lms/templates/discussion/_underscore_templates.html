@@ -1,4 +1,4 @@
-6c<%! from django.utils.translation import ugettext as _ %>
+<%! from django.utils.translation import ugettext as _ %>
 <%! from django.template.defaultfilters import escapejs %>
 <%! from django_comment_client.permissions import has_permission %>
 
@@ -276,7 +276,8 @@
               <span class="row-description">${_("Search for specific posts ")}</span>
             </td>
             <td class="row-item">
-              <i class="icon icon-sort"></i>
+##              <i class="icon icon-sort"></i>
+              <span class="icon"><img src="/static/images/icon-sort-gacco.png" style="width:26px; height:26px; max-width:inherit;"></span>
               <span class="row-description">${_("Sort by date, vote, or comments")}</span>
             </td>
           </tr>

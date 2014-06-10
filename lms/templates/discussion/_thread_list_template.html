@@ -3,9 +3,9 @@
 
   <div class="browse-search" style="border-bottom:none;">
     <div class="browse" style="background-color:transparent;">
-      <a href="#" class="f_button secondary small expand split" style="margin-bottom:0; padding-left:0.5rem; padding-right:3rem;">
+      <a href="#" class="f_button secondary expand split button" style="margin-bottom:0; padding-left:0.5rem; padding-right:3rem;">
         <p class="current-board" style="margin-bottom:0; line-height:1rem;">${_("Show All Discussions")}</p>
-        <span class="browse-dropdown" data-dropdown="browse-topic-filter-dropdown"></span>
+        <span class="browse-dropdown" data-dropdown="browse-topic-filter-dropdown" style="width:2.4rem;"></span>
       </a>
     </div>
     <div id="browse-topic-filter-dropdown" class="f-dropdown" style="top:60px; z-index:10001;">
@@ -16,9 +16,9 @@
   </div> 
   <div class="hide-for-medium-up browse-search">
     <div class="browse" style="background-color:#fff;">
-      <a href="#" class="split f_button secondary expand small">
-        <p class="current-thread"  style="margin-bottom:0; line-height:1rem; margin-left:0.5rem; margin-right:3rem">スレッドリスト</p>
-        <span class="browse-dropdown" data-dropdown="browse-topic-list">▾</span>
+      <a href="#" class="split f_button secondary expand small button" style="padding-left:0.5rem;">
+        <p class="current-thread"  style="margin-bottom:0; line-height:1rem;">スレッドリスト</p>
+        <span class="browse-dropdown" data-dropdown="browse-topic-list" style="width:2.4rem;"></span>
       </a>
     </div>
     <div id="browse-topic-list" class="topic-list f-dropdown" style="top:100px;">
@@ -34,13 +34,13 @@
     </form>
   </div>
   
-  <div class="sort-bar columns" style="background-color:#e7e7e7;">
+  <div class="sort-bar columns" style="background-color:#e7e7e7; padding-top:2px;">
     <dl class="sub-nav" style="width:100%;">
-      <dt class="sort-label">ソート</dt>
+      <dt><img src="/static/images/icon-sort-gacco.png" style="width:24px; height:24px;"></dt>
       ##        <dt class="sort-label">${_("Sort by:")}</dt>
       <dd class="active"><a href="#" role="radio" aria-checked="true" class="active" data-sort="date">${_("date")}</a></dd>
       <dd><a href="#" role="radio" aria-checked="false" data-sort="votes">${_("votes")}</a></dd>
-      <dd><a href="#" role="radio" aria-checked="false" data-sort="comments">コメント</a></dd>
+      <dd><a href="#" role="radio" aria-checked="false" data-sort="comments">${_("comments")}</a></dd>
     </dl>
     %if is_course_cohorted and is_moderator:
     <span class="group-filter-label cohort">${_("Show:")}</span>
