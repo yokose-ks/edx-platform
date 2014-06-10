@@ -58,6 +58,14 @@ msgstr "トップページ"
 msgid "Login"
 msgstr "ログイン"
 
+#: lms/templates/navigation.html
+msgid "Study Menu"
+msgstr "学習メニュー"
+
+#: lms/templates/courseware/courseware.html
+msgid "Unit List"
+msgstr "単元リスト"
+
 #: lms/templates/dashboard.html
 msgid "Resign"
 msgstr "退会手続き"
@@ -191,6 +199,10 @@ msgstr ""
 "\n"
 "退会手続きが完了しました。<br />\n"
 "何か不明な点がございましたら、<a href=\"mailto:%(support_email)s?subject=退会手続き\">%(support_email)s</a> へご連絡ください。"
+
+#: lms/templates/dashboard.html
+msgid "You'll receive a confirmation in your in-box. Please click the link in the email to confirm the email change."
+msgstr "メールアドレス変更メールを送信いたしました。メール文中にあるリンクをクリックすることで、メールアドレス変更確認画面が開きます。"
 
 #: lms/templates/registration/password_reset_confirm.html
 msgid "The following errors occurred while processing your password reset: "
