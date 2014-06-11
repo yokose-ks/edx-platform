@@ -11,7 +11,7 @@ function resetSubmit(){
 $(".submit_wrapper_button").click(function(event){
   if(!isSubmitted){
     isSubmitted = true;
-    setTimeout("resetSubmit()", 800);
+    setTimeout("resetSubmit", 800);
     isConfirmed = confirm("解答を提出します。\nよろしいですか？");
     if(isConfirmed){
       $(this).prev('.check').trigger('click');
