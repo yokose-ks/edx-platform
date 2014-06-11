@@ -6269,11 +6269,11 @@ msgstr "サポートページからよくある質問を確認してください
 
 #: lms/templates/login.html
 msgid "Log into your {platform_name} Account"
-msgstr "{platform_name}のアカウントにログイン"
+msgstr "{platform_name}にログイン"
 
 #: lms/templates/login.html
 msgid "Log into My {platform_name} Account"
-msgstr "{platform_name}のアカウントにログイン"
+msgstr "{platform_name}にログイン"
 
 #: lms/templates/login.html
 msgid "Access My Courses"
@@ -6873,7 +6873,7 @@ msgstr "コメント"
 
 #: lms/templates/staff_problem_info.html
 msgid "comment"
-msgstr "件のコメントがあります"
+msgstr "コメント"
 
 #: lms/templates/staff_problem_info.html
 msgid "Tag"
@@ -8626,7 +8626,7 @@ msgstr "投票"
 
 #: lms/templates/discussion/_thread_list_template.html
 msgid "comments"
-msgstr "件のコメントがあります"
+msgstr "コメント"
 
 #: lms/templates/discussion/_thread_list_template.html
 msgid "Show:"
