@@ -514,11 +514,14 @@ if Backbone?
             # so this would probably be necessary anyway
             @displayedCollection.reset(@collection.models) # Don't think this is necessary
             @collection.current_page = 0
+            @$(".post-search-field").removeAttr("disabled")
             @loadMorePages(event)
+
 	    
     clearSearch: (callback, value) ->
       @$(".post-search-field").val("")
       @searchFor("", callback, value)
+      
 
     setActiveItem: (event) ->
       if event.which == 13
