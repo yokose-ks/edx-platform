@@ -34,6 +34,14 @@ msgstr "すでに登録済の方はログイン"
 msgid "If you are under 20 years old, you have to get permission of your parents to regist this site."
 msgstr "※未成年の方がお申し込みをいただく場合は、親権者の同意が必要となります。"
 
+#: lms/templates/registration/activation_complete.html
+msgid "{link_start}My Page{link_end}"
+msgstr "{link_start}マイページ{link_end}"
+
+#: lms/templates/registration/activation_complete.html
+msgid "{link_start}Log In{link_end}"
+msgstr "{link_start}ログイン{link_end}"
+
 #: lms/templates/login.html
 msgid "Let's login and enjoy your courses!"
 msgstr "ログインして学習をはじめましょう。"
@@ -41,6 +49,22 @@ msgstr "ログインして学習をはじめましょう。"
 #: lms/templates/login.html
 msgid "If you're not registerd. Here to Register."
 msgstr "会員登録はこちら"
+
+#: lms/templates/courseware/course_about.html
+msgid "Play PV! PLAY Button above!!"
+msgstr "上の画像をクリックしてPVを再生！"
+
+#: lms/templates/courseware/course_about.html
+msgid "Period"
+msgstr "標準学習期間"
+
+#: lms/templates/courseware/course_about.html
+msgid "Weeks"
+msgstr "週間"
+
+#: lms/templates/courseware/course_about.html
+msgid "Share with friends"
+msgstr "ともだちに教えよう！"
 
 #: lms/templates/dashboard.html lms/templates/navigation.html
 msgid "My Page"
@@ -264,6 +288,10 @@ msgstr "アンケート結果がCSVファイルでダウンロードできます
 #: lms/templates/instructor/instructor_dashboard_2/survey.html
 msgid "Get Survey CSV"
 msgstr "アンケート結果をCSVとしてダウンロードする"
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html
+msgid "Congratulations! You've got the {cert_name_short} of this course. Download your {cert_name_short} and Share it below."
+msgstr "おめでとうございます！{cert_name_short}が授与されました。下のボタンから{cert_name_short}をダウンロードできます。"
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Download Your Certificate (PDF)"
