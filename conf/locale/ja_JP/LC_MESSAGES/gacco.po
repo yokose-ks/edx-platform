@@ -149,7 +149,7 @@ msgid ""
 "If you do not wish to resign, click the cancel button."
 msgstr ""
 "退会理由を記入し、退会するボタンをクリックすることで退会処理が行われます。<br />"
-"<strong class=\"indicator\">(*)付きの太字</strong>は必須項目となります。<br />"
+"<strong class=\"indicator\">(*)付きの太字</strong>は必須項目となります。全角半角を問わず、1000文字以内でご回答ください。<br />"
 "退会を希望されない方は、キャンセルボタンをクリックしてください。"
 
 # lms/templates/registration/resign_confirm.html
