@@ -160,7 +160,7 @@ msgstr "コミュニティTA"
 
 #: common/djangoapps/django_comment_common/models.py
 msgid "Student"
-msgstr "学習者"
+msgstr "受講者"
 
 #: common/djangoapps/student/middleware.py
 msgid ""
@@ -453,7 +453,7 @@ msgstr "旧メールアドレスが新しいメールアドレスと同じです
 
 #: common/djangoapps/student/views.py
 msgid "Unable to send email activation link. Please try again later."
-msgstr ""
+msgstr "有効なリンクにメールを送信できませんでした。後で再度試してください。"
 
 #: common/djangoapps/student/views.py
 msgid "Name required"
@@ -1004,7 +1004,7 @@ msgstr "もしくは"
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "error getting student answer from {student_answers}"
-msgstr "{student_answers}から学生の答えを取ってくる際のエラー"
+msgstr "{student_answers}から受講者の答えを取ってくる際のエラー"
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "No answer entered!"
@@ -1232,7 +1232,7 @@ msgstr "リセット中"
 
 #: common/lib/xmodule/xmodule/capa_base.py
 msgid "Per Student"
-msgstr "学生ごと"
+msgstr "受講者ごと"
 
 #: common/lib/xmodule/xmodule/capa_base.py
 #: common/lib/xmodule/xmodule/combined_open_ended_module.py
@@ -1434,7 +1434,7 @@ msgstr "このモジュール中にある各タスクの公式辞書のリスト
 
 #: common/lib/xmodule/xmodule/combined_open_ended_module.py
 msgid "Which step within the current task that the student is on."
-msgstr "受講生が現在取り組んでいるタスクの中で、どのステップにいるか。"
+msgstr "受講者が現在取り組んでいるタスクの中で、どのステップにいるか。"
 
 #: common/lib/xmodule/xmodule/combined_open_ended_module.py
 #: common/lib/xmodule/xmodule/peer_grading_module.py
@@ -1881,7 +1881,7 @@ msgstr "注釈に対する秘密のトークン文字列"
 #: common/lib/xmodule/xmodule/textannotation_module.py
 #: common/lib/xmodule/xmodule/videoannotation_module.py
 msgid "Default Annotations Tab"
-msgstr ""
+msgstr "デフォルトの注釈タブ"
 
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
@@ -1889,13 +1889,13 @@ msgstr ""
 msgid ""
 "Select which tab will be the default in the annotations table: myNotes, "
 "Instructor, or Public."
-msgstr ""
+msgstr "注釈テーブルの中でどのタブ（マイノート、講師、公開）をデフォルトにするか選択してください。"
 
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
 #: common/lib/xmodule/xmodule/videoannotation_module.py
 msgid "Email for 'Instructor' Annotations"
-msgstr ""
+msgstr "'講師'注釈のためのメール"
 
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
@@ -1903,20 +1903,20 @@ msgstr ""
 msgid ""
 "Email of the user that will be attached to all annotations that will be "
 "found in 'Instructor' tab."
-msgstr ""
+msgstr "'講師'タブ中の全ての注釈に添付されるユーザのメール"
 
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
 #: common/lib/xmodule/xmodule/videoannotation_module.py
 msgid "Mode for Annotation Tool"
-msgstr ""
+msgstr "注釈ツールのモード"
 
 #: common/lib/xmodule/xmodule/imageannotation_module.py
 #: common/lib/xmodule/xmodule/textannotation_module.py
 #: common/lib/xmodule/xmodule/videoannotation_module.py
 msgid ""
 "Type in number corresponding to following modes:  'instructor' or 'everyone'"
-msgstr ""
+msgstr "'講師'、'全員'のモードに対応する数字を入力"
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid ""
@@ -2076,7 +2076,7 @@ msgstr "相互採点のインターフェース"
 #. e.g. "Warning: this component has not been configured yet".
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid "Warning"
-msgstr ""
+msgstr "警告"
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: This message will be added to the front of messages of type
@@ -2090,23 +2090,23 @@ msgstr "エラー"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid "Not Selected"
-msgstr ""
+msgstr "未選択"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid ""
 "This name is used for organizing your course content, but is not shown to "
 "students."
-msgstr ""
+msgstr "この名前は講座コンテンツを編集する際に使用されますが、受講者からは見えません。"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid "Content Experiment"
-msgstr ""
+msgstr "実験コンテンツ"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid ""
 "The list of group configurations for partitioning students in content "
 "experiments."
-msgstr ""
+msgstr "実験コンテンツ中で受講者を区分するためのグループ設定のリスト"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid ""
@@ -2114,19 +2114,20 @@ msgid ""
 "After you select the group configuration and save the content experiment, "
 "you cannot change this setting."
 msgstr ""
+"この実験コンテンツ用にどのようにユーザをグループ分けするかの設定。グループ設定を選択し、コンテンツ・エクスペリメントを保存した後は、この設定を変更できません。"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid "Group Configuration"
-msgstr ""
+msgstr "グループ設定"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid "Which child module students in a particular group_id should see"
-msgstr ""
+msgstr "特定のグループIDの受講者がどの子モジュールを見るべきか"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 #: lms/templates/split_test_studio_header.html
 msgid "You must select a group configuration for this content experiment."
-msgstr ""
+msgstr "この実験コンテンツ用のグループ設定を選択する必要があります。"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid ""
@@ -2134,16 +2135,17 @@ msgid ""
 " group configuration that has been deleted. You can delete this experiment "
 "or reinstate the group configuration to repair it."
 msgstr ""
+"この実験コンテンツは、削除されたグループ設定を参照しているため、受講者に表示されません。修復するには、このエクスペリメントを削除するか、グループ設定を復元してください。"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid ""
 "This content experiment is in an invalid state and cannot be repaired. "
 "Please delete and recreate."
-msgstr ""
+msgstr "この実験コンテンツは無効であり、修復できません。削除するかもう一度作成してください。"
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid "This content experiment uses group configuration '{experiment_name}'."
-msgstr ""
+msgstr "この実験コンテンツはグループ設定'{experiment_name}'を使用しています。"
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: 'Courseware' refers to the tab in the courseware that leads to
@@ -3262,11 +3264,11 @@ msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Successfully changed due date for student {0} for {1} to {2}"
-msgstr "学習者：{0}の期日を{1} から {2} に変更しました。"
+msgstr "受講者：{0}の期日を{1} から {2} に変更しました。"
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Successfully reset due date for student {0} for {1} to {2}"
-msgstr "学習者：{0}の期日を{1} から {2} にリセットしました。"
+msgstr "受講者：{0}の期日を{1} から {2} にリセットしました。"
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 msgid "Membership"
@@ -3296,7 +3298,7 @@ msgstr "講座統計概要"
 
 #: lms/djangoapps/instructor/views/legacy.py
 msgid "Found a single student.  "
-msgstr "一人の学生を発見する"
+msgstr "一人の受講者を発見する"
 
 #: lms/djangoapps/instructor/views/legacy.py
 msgid "Couldn't find student with that email or username."
@@ -3659,42 +3661,42 @@ msgstr "進捗： {action} {succeeded} / {attempted} 完了 "
 #. {student} is a student identifier.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Unable to find submission to be {action} for student '{student}'"
-msgstr "学習者： '{student}'の{action} を探すことができませんでした。"
+msgstr "受講者： '{student}'の{action} を探すことができませんでした。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
 #. {student} is a student identifier.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Problem failed to be {action} for student '{student}'"
-msgstr "学習者： '{student}'の問題は{action} に失敗しました。"
+msgstr "受講者： '{student}'の問題は{action} に失敗しました。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
 #. {student} is a student identifier.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Problem successfully {action} for student '{student}'"
-msgstr "学習者： '{student}'の問題は{action} に成功しました。"
+msgstr "受講者： '{student}'の問題は{action} に成功しました。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Unable to find any students with submissions to be {action}"
-msgstr "{action}投稿をした学習者は見つかりません。"
+msgstr "{action}投稿をした受講者は見つかりません。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
 #. {attempted} is a count.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Problem failed to be {action} for any of {attempted} students"
-msgstr "問題は{attempted}名の学習者の{action}に失敗しました。"
+msgstr "問題は{attempted}名の受講者の{action}に失敗しました。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
 #. {attempted} is a count.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Problem successfully {action} for {attempted} students"
-msgstr "問題は{attempted}名の学習者の{action}に成功しました。"
+msgstr "問題は{attempted}名の受講者の{action}に成功しました。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
 #. {succeeded} and {attempted} are counts.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Problem {action} for {succeeded} of {attempted} students"
-msgstr "学習者の問題は{attempted}人中{succeeded}人{action}しました。"
+msgstr "受講者の問題は{attempted}人中{succeeded}人{action}しました。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
 #: lms/djangoapps/instructor_task/views.py
@@ -3813,7 +3815,7 @@ msgstr "採点エンジンとのやりとりにおいてエラーが発生しま
 
 #: lms/djangoapps/open_ended_grading/utils.py
 msgid "for course {0} and student {1}."
-msgstr "講座「{0}」生徒「{1}」"
+msgstr "講座「{0}」受講者「{1}」"
 
 #: lms/djangoapps/open_ended_grading/views.py
 msgid ""
@@ -4024,7 +4026,7 @@ msgstr "最小値を超える全体の収入"
 
 #: lms/djangoapps/shoppingcart/reports.py
 msgid "Number of Verified Students Contributing More than the Minimum"
-msgstr "最小値以上に寄付した認証された履修者"
+msgstr "最小値以上に寄付した認証された受講者"
 
 #: lms/djangoapps/shoppingcart/reports.py
 msgid "Number of Refunds"
@@ -5441,7 +5443,7 @@ msgstr "{}をアップグレードする|コースを選んでください"
 
 #: common/templates/course_modes/choose.html
 msgid "Register for {} | Choose Your Track"
-msgstr "{}を受講登録しました | 講座を選んでください"
+msgstr "{}を受講登録しました | コースを選んでください"
 
 #: common/templates/course_modes/choose.html
 msgid "Sorry, there was an error when trying to register you"
@@ -5922,7 +5924,7 @@ msgstr "追加された新たな受講者："
 
 #: lms/templates/enroll_students.html
 msgid "Students rejected: "
-msgstr "拒否した学生："
+msgstr "拒否された受講者："
 
 #: lms/templates/enroll_students.html
 msgid "Debug: "
@@ -5996,7 +5998,7 @@ msgid ""
 "computer science, public health, and artificial intelligence."
 msgstr ""
 "{platform_name} は {Harvard} と {MIT} "
-"によって創設された非営利サービスであり、どんな年齢、どんな場所の学生であっても、そこにインターネットさえあれば最上の高等教育を提供されるであろうことをミッションをしています。{platform_name}"
+"によって創設された非営利サービスであり、どんな年齢、どんな場所の受講者であっても、そこにインターネットさえあれば最上の高等教育を提供されるであろうことをミッションをしています。{platform_name}"
 " は無料のオンラインMOOCであり、相互学習ができると共に、計算機科学や一般公衆衛生、人工知能といった教科を提供します。"
 
 #: lms/templates/footer.html
@@ -6053,8 +6055,7 @@ msgid ""
 "lots of helpful information in the {platform_name} "
 "{link_start}FAQ{link_end}."
 msgstr ""
-"<strong>{platform_name} についての一般的な質問</strong>は{platform_name}は "
-"{link_start}よくある質問{link_end}にて、探してみてください。"
+"<strong>{platform_name}についての一般的な質問</strong>は{platform_name}の{link_start}よくある質問{link_end}にて、探してみてください。"
 
 #: lms/templates/help_modal.html
 msgid ""
@@ -6194,7 +6195,7 @@ msgstr "少し経ってからお試しください。"
 
 #: lms/templates/imageannotation.html
 msgid "Note: only instructors may annotate."
-msgstr ""
+msgstr "注意：講師だけが注釈を加えている可能性があります。"
 
 #: lms/templates/index.html
 msgid "Free courses from <strong>{university_name}</strong>"
@@ -6852,7 +6853,7 @@ msgstr "グループ {group_id}"
 
 #: lms/templates/split_test_studio_header.html
 msgid "Select a Group Configuration"
-msgstr ""
+msgstr "グループ設定の選択"
 
 #: lms/templates/staff_problem_info.html
 msgid "Staff Debug Info"
@@ -6901,7 +6902,7 @@ msgstr "行動"
 #: lms/templates/staff_problem_info.html
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Reset Student Attempts"
-msgstr "生徒の試行をリセットする"
+msgstr "受講者の試行をリセットする"
 
 #: lms/templates/staff_problem_info.html
 msgid "Delete Student State"
@@ -6910,7 +6911,7 @@ msgstr "受講者の状態を削除"
 #: lms/templates/staff_problem_info.html
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Rescore Student Submission"
-msgstr "学生が提出した課題を再度採点する"
+msgstr "受講者が提出した課題を再度採点する"
 
 #: lms/templates/staff_problem_info.html lms/templates/staff_problem_info.html
 msgid "Module Fields"
@@ -7651,7 +7652,7 @@ msgstr "成績一覧"
 
 #: lms/templates/courseware/gradebook.html
 msgid "Search students"
-msgstr "学生を検索"
+msgstr "受講者を検索"
 
 #: lms/templates/courseware/info.html
 msgid "{course_number} Course Info"
@@ -7802,7 +7803,7 @@ msgstr ""
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Student-specific grade inspection and adjustment"
-msgstr "生徒個別の評価調整"
+msgstr "受講者個別の評価調整"
 
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/instructor/instructor_dashboard_2/extensions.html
@@ -7812,7 +7813,7 @@ msgstr "生徒個別の評価調整"
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid ""
 "Specify the {platform_name} email address or username of a student here:"
-msgstr "{platform_name} のメールアドレスもしくは生徒のユーザ名をここに特定してださい："
+msgstr "{platform_name} のメールアドレスもしくは受講者のユーザ名をここに特定してださい："
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Click this, and a link to student's progress page will appear below:"
@@ -7821,7 +7822,7 @@ msgstr "受講者の成績ページを表示："
 #: lms/templates/courseware/instructor_dashboard.html
 msgid ""
 "You may also delete the entire state of a student for the specified module:"
-msgstr "この指定されたモジュールの学生の全ての状況もまた削除されます："
+msgstr "この指定されたモジュールの受講者の全ての状況もまた削除されます："
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid ""
@@ -7878,7 +7879,7 @@ msgstr "外部の採点エンジンから受講登録を引き出す"
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Section:"
-msgstr "セクション:"
+msgstr "章："
 
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
@@ -7889,15 +7890,15 @@ msgstr "受講登録バッチ"
 msgid ""
 "Enroll or un-enroll one or many students: enter emails, separated by new "
 "lines or commas;"
-msgstr "一人もしくは複数人の生徒の受講登録もしくは受講登録削除：改行もしくはカンマで区切られたメールアドレスを入力"
+msgstr "一人もしくは複数人の受講者の受講登録もしくは受講登録削除：改行もしくはカンマで区切られたメールアドレスを入力"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Notify students by email"
-msgstr "メールで生徒に知らせる"
+msgstr "メールで受講者に知らせる"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Auto-enroll students when they activate"
-msgstr "学生がアクティベーションすると、自動的に受講登録されます"
+msgstr "受講者がアクティベーションすると、自動的に受講登録されます"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Problem urlname:"
@@ -7911,7 +7912,7 @@ msgid ""
 "as configured via the <tt>days_early_for_beta</tt> option in the course "
 "policy."
 msgstr ""
-"ベータテストを実施する学生のユーザー名もしくはメールアドレスを、一行一名もしくはカンマ区切りにて入力してください。講座設定における<tt>ベータ向けの早期日程</tt>のオプション項目にて設定した日程通り、ベータ学生たちはコースコンテンツを早期にアクセスすることとなります。"
+"ベータテストを実施する受講者のユーザー名もしくはメールアドレスを、一行一名もしくはカンマ区切りにて入力してください。講座設定における<tt>ベータ向けの早期日程</tt>のオプション項目にて設定した日程通り、ベータ受講者たちはコースコンテンツを早期にアクセスすることとなります。"
 
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html
@@ -7997,11 +7998,11 @@ msgstr "受講登録者(既に受講解除をした人を含む累計値)"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Students active in the last week:"
-msgstr "最終週における学生の活動："
+msgstr "最終週における受講者の活動："
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Student activity day by day"
-msgstr "日毎の学生の活動"
+msgstr "日ごとの受講者の活動"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Day"
@@ -8009,7 +8010,7 @@ msgstr "曜日"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Students"
-msgstr "学生"
+msgstr "受講者"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Score distribution for problems"
@@ -8021,7 +8022,7 @@ msgstr "最大"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Points Earned (Num Students)"
-msgstr "獲得ポイント(学生数)"
+msgstr "獲得ポイント(受講者数)"
 
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html
@@ -8050,17 +8051,17 @@ msgstr "この章には問題がありません。"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Students answering correctly"
-msgstr "適正に学生は回答をしている"
+msgstr "正しい回答をしている受講者"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid "Number of students"
-msgstr "学生数"
+msgstr "受講者数"
 
 #: lms/templates/courseware/instructor_dashboard.html
 msgid ""
 "Student distribution per country, all courses, Sep-12 to Oct-17, 1 server "
 "(shown here as an example):"
-msgstr "国ごとの学生の分布、全コース、9月12日から10月17日、1サーバ(ここで表示されているものは一例です)："
+msgstr "国ごとの受講者の分布、全コース、9月-12日から10月-17日、1サーバ(ここで表示されているものは一例です)："
 
 #: lms/templates/courseware/instructor_dashboard.html
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
@@ -8345,7 +8346,7 @@ msgstr "本人認証付きコースにアップグレードする"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "View Archived Course"
-msgstr "講座画面へ（閉講済）"
+msgstr "講座画面へ（修了証発行済）"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "View Course"
@@ -9204,7 +9205,7 @@ msgstr "起草済のフィードバック"
 
 #: lms/templates/instructor/staff_grading.html
 msgid "Feedback for student (optional)"
-msgstr "学生へのフィードバック(任意)"
+msgstr "受講者へのフィードバック(任意)"
 
 #: lms/templates/instructor/staff_grading.html
 msgid "Flag as inappropriate content for later review"
@@ -9244,7 +9245,7 @@ msgstr "受講情報"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Total number of enrollees (instructors, staff members, and students)"
-msgstr "受講総数(講師、スタッフ、学生の和)"
+msgstr "登録者総数(講師、スタッフ、受講者の和)"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Basic Course Information"
@@ -9482,7 +9483,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html
 msgid "section_display_name"
-msgstr "セクション表示名"
+msgstr "章表示名"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
@@ -9639,7 +9640,7 @@ msgid ""
 "Beta testers can see course content before the rest of the students. They "
 "can make sure that the content works, but have no additional privileges."
 msgstr ""
-"ベータテスターは、ベータテスターではない一般の学習者よりも先に講座コンテンツを閲覧することができます。ベータテスターはコンテンツの動作を確認することができるが、それ以上の特権は有さないものです。"
+"ベータテスターは、ベータテスターではない一般の受講者よりも先に講座コンテンツを閲覧することができます。ベータテスターはコンテンツの動作を確認することができるが、それ以上の特権は有さないものです。"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Add Beta Tester"
@@ -9800,7 +9801,7 @@ msgstr "成績表"
 msgid ""
 "Click here to view the gradebook for enrolled students. This feature is only"
 " visible to courses with a small number of total enrolled students."
-msgstr "こちらをクリックすると、受講生の成績表を閲覧できます。本機能は少人数のコースでのみ使用できます。"
+msgstr "こちらをクリックすると、受講者の成績表を閲覧できます。本機能は少人数のコースでのみ使用できます。"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "View Gradebook"
@@ -9855,7 +9856,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Show Background Task History for Student"
-msgstr "バックグラウンドで実施される学生向けのタスク履歴を表示"
+msgstr "バックグラウンドで実施される受講者向けのタスク履歴を表示"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Then select an action"
@@ -9863,11 +9864,11 @@ msgstr "次の操作を選んでください"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Reset ALL students' attempts"
-msgstr "全ての学生の実施内容をリセット"
+msgstr "全ての受講者の実施内容をリセット"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "Rescore ALL students' problem submissions"
-msgstr "全ての学生が提出した課題を再度採点する"
+msgstr "全ての受講者が提出した課題を再度採点する"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid ""
@@ -13379,7 +13380,7 @@ msgstr "全評価レンジ"
 
 #: cms/templates/settings_graders.html
 msgid "Your overall grading scale for student final grades"
-msgstr "学習者の最終評価についての全評価スケール"
+msgstr "受講者の最終評価についての全評価スケール"
 
 #: cms/templates/settings_graders.html
 msgid "Grading Rules &amp; Policies"
@@ -13763,17 +13764,17 @@ msgstr "edX Studioに関する質問、要望はありますか？"
 msgid ""
 "This content experiment refers to a group configuration that has been "
 "deleted."
-msgstr ""
+msgstr "この実験コンテンツは削除されたグループ設定を参照しています。"
 
 #: cms/templates/widgets/split-edit.html
 msgid "This content experiment uses group configuration '{0}'."
-msgstr ""
+msgstr "この実験コンテンツはグループ設定'{0}'を使用しています。"
 
 #: cms/templates/widgets/split-edit.html
 msgid ""
 "After you select the group configuration and save the content experiment, "
 "you cannot change this setting."
-msgstr ""
+msgstr "グループ設定を選択し、実験コンテンツを保存した後は、この設定は変更できません。"
 
 #: cms/templates/widgets/tabs-aggregator.html
 msgid "name"
@@ -14425,6 +14426,14 @@ msgid ""
 " regist this site."
 msgstr "※未成年の方がお申し込みをいただく場合は、親権者の同意が必要となります。"
 
+#: lms/templates/registration/activation_complete.html
+msgid "{link_start}My Page{link_end}"
+msgstr "{link_start}マイページ{link_end}"
+
+#: lms/templates/registration/activation_complete.html
+msgid "{link_start}Log In{link_end}"
+msgstr "{link_start}ログイン{link_end}"
+
 #: lms/templates/login.html
 msgid "Let's login and enjoy your courses!"
 msgstr "ログインして学習をはじめましょう。"
@@ -14432,6 +14441,22 @@ msgstr "ログインして学習をはじめましょう。"
 #: lms/templates/login.html
 msgid "If you're not registerd. Here to Register."
 msgstr "会員登録はこちら"
+
+#: lms/templates/courseware/course_about.html
+msgid "Play PV! PLAY Button above!!"
+msgstr "上の画像をクリックしてPVを再生！"
+
+#: lms/templates/courseware/course_about.html
+msgid "Period"
+msgstr "標準学習期間"
+
+#: lms/templates/courseware/course_about.html
+msgid "Weeks"
+msgstr "週間"
+
+#: lms/templates/courseware/course_about.html
+msgid "Share with friends"
+msgstr "ともだちに教えよう！"
 
 #: lms/templates/dashboard.html lms/templates/navigation.html
 msgid "My Page"
@@ -14523,8 +14548,8 @@ msgid ""
 "cancel button."
 msgstr ""
 "退会理由を記入し、退会するボタンをクリックすることで退会処理が行われます。<br /><strong "
-"class=\"indicator\">(*)付きの太字</strong>は必須項目となります。<br "
-"/>退会を希望されない方は、キャンセルボタンをクリックしてください。"
+"class=\"indicator\">(*)付きの太字</strong>は必須項目となります。全角半角を問わず、1000文字以内でご回答ください。<br"
+" />退会を希望されない方は、キャンセルボタンをクリックしてください。"
 
 # lms/templates/registration/resign_confirm.html
 msgid "Resign Reason"
@@ -14625,6 +14650,29 @@ msgid ""
 "certificates:"
 msgstr "新しい氏名を入力してください。{platform}の修了書で表示されます："
 
+#: lms/templates/help_modal.html
+msgid "Do you have any questions?"
+msgstr "他にご質問がありますか？"
+
+#: lms/templates/help_modal.html
+msgid "See {link_start}FAQ{link_end}."
+msgstr ""
+"まずは、gacco<a href=\"https://support.gacco.org/\" "
+"target=\"_blank\">サポートサイト</a>をご覧ください。こちらに一般的なご質問に対しての情報が掲載されています。"
+
+#: lms/templates/help_modal.html
+msgid "If you have further questions, please send questions below."
+msgstr ""
+"お手数をお掛けしますが、サポートサイトにて記載のない内容については、改めてお問合せください。なお、返信には１〜３営業日（土日祝日等を除く）を頂いております。また、一般的な端末の操作方法等については、私どもにてご案内できかねますことご承知おきいただけますと幸いです。"
+
+#: lms/templates/help_modal.html
+msgid "Please provide a subject."
+msgstr "概要を入力してください"
+
+#: lms/templates/help_modal.html
+msgid "Please provide details."
+msgstr "詳細を入力してください"
+
 #: lms/djangoapps/open_ended_grading/views.py
 msgid "Problems you have submitted"
 msgstr "あなたが投稿した問題"
@@ -14668,6 +14716,13 @@ msgstr "アンケート結果がCSVファイルでダウンロードできます
 #: lms/templates/instructor/instructor_dashboard_2/survey.html
 msgid "Get Survey CSV"
 msgstr "アンケート結果をCSVとしてダウンロードする"
+
+#: lms/templates/dashboard/_dashboard_certificate_information.html
+msgid ""
+"Congratulations! You've got the {cert_name_short} of this course. Download "
+"your {cert_name_short} and Share it below."
+msgstr ""
+"おめでとうございます！{cert_name_short}が授与されました。下のボタンから{cert_name_short}をダウンロードできます。"
 
 #: lms/templates/dashboard/_dashboard_certificate_information.html
 msgid "Download Your Certificate (PDF)"

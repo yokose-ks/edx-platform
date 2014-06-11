@@ -19,8 +19,8 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2014-06-09 14:22-0400\n"
-"PO-Revision-Date: 2014-06-09 18:41+0000\n"
-"Last-Translator: Sarina Canelake <sarina@edx.org>\n"
+"PO-Revision-Date: 2014-06-10 15:50+0000\n"
+"Last-Translator: kawa <h.kawasaki@nttks.co.jp>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1929,7 +1929,7 @@ msgstr "全評価レンジ"
 
 #: cms/templates/settings_graders.html:59
 msgid "Your overall grading scale for student final grades"
-msgstr "学習者の最終評価についての全評価スケール"
+msgstr "受講者の最終評価についての全評価スケール"
 
 #: cms/templates/settings_graders.html:94
 msgid "Grading Rules &amp; Policies"
@@ -2316,17 +2316,17 @@ msgstr "edX Studioに関する質問、要望はありますか？"
 msgid ""
 "This content experiment refers to a group configuration that has been "
 "deleted."
-msgstr ""
+msgstr "この実験コンテンツは削除されたグループ設定を参照しています。"
 
 #: cms/templates/widgets/split-edit.html:8
 msgid "This content experiment uses group configuration '{0}'."
-msgstr ""
+msgstr "この実験コンテンツはグループ設定'{0}'を使用しています。"
 
 #: cms/templates/widgets/split-edit.html:10
 msgid ""
 "After you select the group configuration and save the content experiment, "
 "you cannot change this setting."
-msgstr ""
+msgstr "グループ設定を選択し、実験コンテンツを保存した後は、この設定は変更できません。"
 
 #: cms/templates/widgets/tabs-aggregator.html:8
 msgid "name"

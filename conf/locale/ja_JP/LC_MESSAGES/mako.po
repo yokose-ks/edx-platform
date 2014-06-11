@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2014-06-09 14:22-0400\n"
-"PO-Revision-Date: 2014-06-10 02:40+0000\n"
-"Last-Translator: kawa <h.kawasaki@nttks.co.jp>\n"
+"PO-Revision-Date: 2014-06-10 15:50+0000\n"
+"Last-Translator: watcafe\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -235,7 +235,7 @@ msgstr "{}をアップグレードする|コースを選んでください"
 
 #: common/templates/course_modes/choose.html:11
 msgid "Register for {} | Choose Your Track"
-msgstr "{}を受講登録しました | 講座を選んでください"
+msgstr "{}を受講登録しました | コースを選んでください"
 
 #: common/templates/course_modes/choose.html:42
 msgid "Sorry, there was an error when trying to register you"
@@ -730,7 +730,7 @@ msgstr "追加された新たな受講者："
 
 #: lms/templates/enroll_students.html:22
 msgid "Students rejected: "
-msgstr "拒否した学生："
+msgstr "拒否された受講者："
 
 #: lms/templates/enroll_students.html:25
 msgid "Debug: "
@@ -806,7 +806,7 @@ msgid ""
 "all ages anywhere in the world, wherever there is Internet access. "
 "{platform_name}'s free online MOOCs are interactive and subjects include "
 "computer science, public health, and artificial intelligence."
-msgstr "{platform_name} は {Harvard} と {MIT} によって創設された非営利サービスであり、どんな年齢、どんな場所の学生であっても、そこにインターネットさえあれば最上の高等教育を提供されるであろうことをミッションをしています。{platform_name} は無料のオンラインMOOCであり、相互学習ができると共に、計算機科学や一般公衆衛生、人工知能といった教科を提供します。"
+msgstr "{platform_name} は {Harvard} と {MIT} によって創設された非営利サービスであり、どんな年齢、どんな場所の受講者であっても、そこにインターネットさえあれば最上の高等教育を提供されるであろうことをミッションをしています。{platform_name} は無料のオンラインMOOCであり、相互学習ができると共に、計算機科学や一般公衆衛生、人工知能といった教科を提供します。"
 
 #: lms/templates/footer.html:78
 msgid "&copy; 2014 {platform_name}, some rights reserved."
@@ -864,7 +864,7 @@ msgid ""
 "Have <strong>general questions about {platform_name}</strong>? You can find "
 "lots of helpful information in the {platform_name} "
 "{link_start}FAQ{link_end}."
-msgstr "<strong>{platform_name} についての一般的な質問</strong>は{platform_name}は {link_start}よくある質問{link_end}にて、探してみてください。"
+msgstr "<strong>{platform_name}についての一般的な質問</strong>は{platform_name}の{link_start}よくある質問{link_end}にて、探してみてください。"
 
 #: lms/templates/help_modal.html:59
 msgid ""
@@ -1008,7 +1008,7 @@ msgstr "少し経ってからお試しください。"
 
 #: lms/templates/imageannotation.html:36
 msgid "Note: only instructors may annotate."
-msgstr ""
+msgstr "注意：講師だけが注釈を加えている可能性があります。"
 
 #: lms/templates/index.html:28
 msgid "Free courses from <strong>{university_name}</strong>"
@@ -1676,11 +1676,11 @@ msgstr "グループ {group_id}"
 
 #: lms/templates/split_test_studio_header.html:20
 msgid "You must select a group configuration for this content experiment."
-msgstr ""
+msgstr "この実験コンテンツ用のグループ設定を選択する必要があります。"
 
 #: lms/templates/split_test_studio_header.html:22
 msgid "Select a Group Configuration"
-msgstr ""
+msgstr "グループ設定の選択"
 
 #: lms/templates/staff_problem_info.html:21
 msgid "Staff Debug Info"
@@ -1735,7 +1735,7 @@ msgstr "ユーザー名"
 #: lms/templates/staff_problem_info.html:66
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:61
 msgid "Reset Student Attempts"
-msgstr "生徒の試行をリセットする"
+msgstr "受講者の試行をリセットする"
 
 #: lms/templates/staff_problem_info.html:69
 msgid "Delete Student State"
@@ -1744,7 +1744,7 @@ msgstr "受講者の状態を削除"
 #: lms/templates/staff_problem_info.html:71
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:64
 msgid "Rescore Student Submission"
-msgstr "学生が提出した課題を再度採点する"
+msgstr "受講者が提出した課題を再度採点する"
 
 #: lms/templates/staff_problem_info.html:81
 #: lms/templates/staff_problem_info.html:82
@@ -2489,7 +2489,7 @@ msgstr "成績一覧"
 
 #: lms/templates/courseware/gradebook.html:48
 msgid "Search students"
-msgstr "学生を検索"
+msgstr "受講者を検索"
 
 #: lms/templates/courseware/info.html:7
 msgid "{course_number} Course Info"
@@ -2642,7 +2642,7 @@ msgstr "これらの動作はバックグラウンドで実施されます、ま
 
 #: lms/templates/courseware/instructor_dashboard.html:294
 msgid "Student-specific grade inspection and adjustment"
-msgstr "生徒個別の評価調整"
+msgstr "受講者個別の評価調整"
 
 #: lms/templates/courseware/instructor_dashboard.html:296
 #: lms/templates/instructor/instructor_dashboard_2/extensions.html:13
@@ -2652,7 +2652,7 @@ msgstr "生徒個別の評価調整"
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:43
 msgid ""
 "Specify the {platform_name} email address or username of a student here:"
-msgstr "{platform_name} のメールアドレスもしくは生徒のユーザ名をここに特定してださい："
+msgstr "{platform_name} のメールアドレスもしくは受講者のユーザ名をここに特定してださい："
 
 #: lms/templates/courseware/instructor_dashboard.html:300
 msgid "Click this, and a link to student's progress page will appear below:"
@@ -2661,7 +2661,7 @@ msgstr "受講者の成績ページを表示："
 #: lms/templates/courseware/instructor_dashboard.html:321
 msgid ""
 "You may also delete the entire state of a student for the specified module:"
-msgstr "この指定されたモジュールの学生の全ての状況もまた削除されます："
+msgstr "この指定されたモジュールの受講者の全ての状況もまた削除されます："
 
 #: lms/templates/courseware/instructor_dashboard.html:326
 msgid ""
@@ -2715,7 +2715,7 @@ msgstr "外部の採点エンジンから受講登録を引き出す"
 #: lms/templates/courseware/instructor_dashboard.html:459
 #: lms/templates/courseware/instructor_dashboard.html:704
 msgid "Section:"
-msgstr "セクション:"
+msgstr "章："
 
 #: lms/templates/courseware/instructor_dashboard.html:468
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:31
@@ -2726,15 +2726,15 @@ msgstr "受講登録バッチ"
 msgid ""
 "Enroll or un-enroll one or many students: enter emails, separated by new "
 "lines or commas;"
-msgstr "一人もしくは複数人の生徒の受講登録もしくは受講登録削除：改行もしくはカンマで区切られたメールアドレスを入力"
+msgstr "一人もしくは複数人の受講者の受講登録もしくは受講登録削除：改行もしくはカンマで区切られたメールアドレスを入力"
 
 #: lms/templates/courseware/instructor_dashboard.html:472
 msgid "Notify students by email"
-msgstr "メールで生徒に知らせる"
+msgstr "メールで受講者に知らせる"
 
 #: lms/templates/courseware/instructor_dashboard.html:474
 msgid "Auto-enroll students when they activate"
-msgstr "学生がアクティベーションすると、自動的に受講登録されます"
+msgstr "受講者がアクティベーションすると、自動的に受講登録されます"
 
 #: lms/templates/courseware/instructor_dashboard.html:488
 msgid "Problem urlname:"
@@ -2747,7 +2747,7 @@ msgid ""
 "line, or separated by commas.  They will get to see course materials early, "
 "as configured via the <tt>days_early_for_beta</tt> option in the course "
 "policy."
-msgstr "ベータテストを実施する学生のユーザー名もしくはメールアドレスを、一行一名もしくはカンマ区切りにて入力してください。講座設定における<tt>ベータ向けの早期日程</tt>のオプション項目にて設定した日程通り、ベータ学生たちはコースコンテンツを早期にアクセスすることとなります。"
+msgstr "ベータテストを実施する受講者のユーザー名もしくはメールアドレスを、一行一名もしくはカンマ区切りにて入力してください。講座設定における<tt>ベータ向けの早期日程</tt>のオプション項目にて設定した日程通り、ベータ受講者たちはコースコンテンツを早期にアクセスすることとなります。"
 
 #: lms/templates/courseware/instructor_dashboard.html:533
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:9
@@ -2832,11 +2832,11 @@ msgstr "受講登録者(既に受講解除をした人を含む累計値)"
 
 #: lms/templates/courseware/instructor_dashboard.html:626
 msgid "Students active in the last week:"
-msgstr "最終週における学生の活動："
+msgstr "最終週における受講者の活動："
 
 #: lms/templates/courseware/instructor_dashboard.html:634
 msgid "Student activity day by day"
-msgstr "日毎の学生の活動"
+msgstr "日ごとの受講者の活動"
 
 #: lms/templates/courseware/instructor_dashboard.html:640
 msgid "Day"
@@ -2844,7 +2844,7 @@ msgstr "曜日"
 
 #: lms/templates/courseware/instructor_dashboard.html:641
 msgid "Students"
-msgstr "学生"
+msgstr "受講者"
 
 #: lms/templates/courseware/instructor_dashboard.html:656
 msgid "Score distribution for problems"
@@ -2862,7 +2862,7 @@ msgstr "最大"
 
 #: lms/templates/courseware/instructor_dashboard.html:664
 msgid "Points Earned (Num Students)"
-msgstr "獲得ポイント(学生数)"
+msgstr "獲得ポイント(受講者数)"
 
 #: lms/templates/courseware/instructor_dashboard.html:689
 #: lms/templates/instructor/instructor_dashboard_2/metrics.html:10
@@ -2891,17 +2891,17 @@ msgstr "この章には問題がありません。"
 
 #: lms/templates/courseware/instructor_dashboard.html:735
 msgid "Students answering correctly"
-msgstr "適正に学生は回答をしている"
+msgstr "正しい回答をしている受講者"
 
 #: lms/templates/courseware/instructor_dashboard.html:742
 msgid "Number of students"
-msgstr "学生数"
+msgstr "受講者数"
 
 #: lms/templates/courseware/instructor_dashboard.html:755
 msgid ""
 "Student distribution per country, all courses, Sep-12 to Oct-17, 1 server "
 "(shown here as an example):"
-msgstr "国ごとの学生の分布、全コース、9月12日から10月17日、1サーバ(ここで表示されているものは一例です)："
+msgstr "国ごとの受講者の分布、全コース、9月-12日から10月-17日、1サーバ(ここで表示されているものは一例です)："
 
 #: lms/templates/courseware/instructor_dashboard.html:851
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:64
@@ -3181,7 +3181,7 @@ msgstr "本人認証付きコースにアップグレードする"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html:123
 msgid "View Archived Course"
-msgstr "講座画面へ（閉講済）"
+msgstr "講座画面へ（修了証発行済）"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html:125
 msgid "View Course"
@@ -4033,7 +4033,7 @@ msgstr "起草済のフィードバック"
 
 #: lms/templates/instructor/staff_grading.html:79
 msgid "Feedback for student (optional)"
-msgstr "学生へのフィードバック(任意)"
+msgstr "受講者へのフィードバック(任意)"
 
 #: lms/templates/instructor/staff_grading.html:82
 msgid "Flag as inappropriate content for later review"
@@ -4077,7 +4077,7 @@ msgstr "受講情報"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:6
 msgid "Total number of enrollees (instructors, staff members, and students)"
-msgstr "受講総数(講師、スタッフ、学生の和)"
+msgstr "登録者総数(講師、スタッフ、受講者の和)"
 
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:14
 msgid "Basic Course Information"
@@ -4310,7 +4310,7 @@ msgstr "インストラクターダッシュボードのインターフェース
 
 #: lms/templates/instructor/instructor_dashboard_2/instructor_dashboard_2.html:84
 msgid "section_display_name"
-msgstr "セクション表示名"
+msgstr "章表示名"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:34
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:77
@@ -4461,7 +4461,7 @@ msgstr "ベータテスター"
 msgid ""
 "Beta testers can see course content before the rest of the students. They "
 "can make sure that the content works, but have no additional privileges."
-msgstr "ベータテスターは、ベータテスターではない一般の学習者よりも先に講座コンテンツを閲覧することができます。ベータテスターはコンテンツの動作を確認することができるが、それ以上の特権は有さないものです。"
+msgstr "ベータテスターは、ベータテスターではない一般の受講者よりも先に講座コンテンツを閲覧することができます。ベータテスターはコンテンツの動作を確認することができるが、それ以上の特権は有さないものです。"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html:175
 msgid "Add Beta Tester"
@@ -4631,7 +4631,7 @@ msgstr "成績表"
 msgid ""
 "Click here to view the gradebook for enrolled students. This feature is only"
 " visible to courses with a small number of total enrolled students."
-msgstr "こちらをクリックすると、受講生の成績表を閲覧できます。本機能は少人数のコースでのみ使用できます。"
+msgstr "こちらをクリックすると、受講者の成績表を閲覧できます。本機能は少人数のコースでのみ使用できます。"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:13
 msgid "View Gradebook"
@@ -4685,7 +4685,7 @@ msgstr "再採点の実施はバックグラウンドで実施されます。処
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:82
 msgid "Show Background Task History for Student"
-msgstr "バックグラウンドで実施される学生向けのタスク履歴を表示"
+msgstr "バックグラウンドで実施される受講者向けのタスク履歴を表示"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:101
 msgid "Then select an action"
@@ -4693,11 +4693,11 @@ msgstr "次の操作を選んでください"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:102
 msgid "Reset ALL students' attempts"
-msgstr "全ての学生の実施内容をリセット"
+msgstr "全ての受講者の実施内容をリセット"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:103
 msgid "Rescore ALL students' problem submissions"
-msgstr "全ての学生が提出した課題を再度採点する"
+msgstr "全ての受講者が提出した課題を再度採点する"
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:107
 msgid ""
