@@ -226,7 +226,7 @@ mark {
 .help-tab {
   @include transform(rotate(-90deg));
   @include transform-origin(0 0);
-  top: 250px;
+  top: 50%;
   left: 0;
   position: fixed;
   z-index: 99;

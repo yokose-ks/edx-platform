@@ -281,7 +281,9 @@ $menu-slide: "transform 500ms ease" !default;
                  $color:$tabbar-menu-icon-color,
                  $hover-color:$tabbar-menu-icon-hover) {
   span {
-    position: absolute;
+    // hamburger ZURE fix by daishi-san
+    // position: absolute;
+    position: relative;
     display: block;
     height: 0;
     width: $width;
