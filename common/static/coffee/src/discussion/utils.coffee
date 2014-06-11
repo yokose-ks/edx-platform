@@ -104,11 +104,11 @@ class @DiscussionUtil
       alertDiv = $("<div class='modal' role='alertdialog' id='discussion-alert' aria-describedby='discussion-alert-message'/>").css("display", "none")
       alertDiv.html(
         "<div class='inner-wrapper discussion-alert-wrapper'>" +
-        "  <button class='close-modal dismiss' aria-hidden='true'><i class='icon-remove'></i></button>" +
+        "  <a class='close-modal dismiss' aria-hidden='true'>×</a>" +
         "  <header><h2/><hr/></header>" +
         "  <p id='discussion-alert-message'/>" +
         "  <hr/>" +
-        "  <button class='dismiss'>" + gettext("OK") + "</button>" +
+        "  <button class='dismiss f_button radius tiny right'>" + gettext("OK") + "</button>" +
         "</div>"
       )
       @makeFocusTrap(alertDiv.find("button"))

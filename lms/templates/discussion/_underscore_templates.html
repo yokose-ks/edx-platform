@@ -227,7 +227,8 @@
         print(interpolate(fmt, data, true));
         """.format(
                 ## Translators: 'comments_count' and 'unread_comments_count' are numerical placeholders for a specific discussion thread; 'span_*' placeholders refer to HTML markup.  Please translate the word 'comments'.
-                markup_with_unread=escapejs(_('%(comments_count)s %(span_sr_open)scomments (%(unread_comments_count)s unread comments)%(span_close)s')),
+                ## markup_with_unread=escapejs(_('%(comments_count)s %(span_sr_open)scomments (%(unread_comments_count)s unread comments)%(span_close)s')),
+                markup_with_unread=escapejs(_('%(comments_count)s %(span_sr_open)s (%(unread_comments_count)s )%(span_close)s')),
                 ## Translators: 'comments_count' is a numerical placeholder for a specific discussion thread; 'span_*' placeholders refer to HTML markup.  Please translate the word 'comments'.
 ##                markup_none_unread=escapejs(_('%(comments_count)s %(span_sr_open)scomments %(span_close)s'))
                 markup_none_unread=escapejs(_('%(comments_count)s %(span_sr_open)s %(span_close)s'))
