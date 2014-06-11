@@ -72,8 +72,8 @@ else:
          ${_("Congratulations! You've got the {cert_name_short} of this course. Download your {cert_name_short} and Share it below.").format(cert_name_short=cert_name_short,)}<br/>
         <a class="f_button tiny radius left success" style="color:white; margin-bottom:0px;" href="${cert_status['download_url']}" title="${_('This link will open/download a PDF document')}" target="_blank">
          ${_("Download Your {cert_name_short} (PDF)").format(cert_name_short=cert_name_short,)}</a>
-        <a class="right" href="#" onclick='postToFB({"url":"${facebook_url}", "action_type":"${facebook_action_type}"}); return false;'>
-          <img src="/static/images/gacco_icon_facebook.png" width="36px" alt="${_("Share to facebook")}"></a>
+        ##<a class="right" href="#" onclick='postToFB({"url":"${facebook_url}", "action_type":"${facebook_action_type}"}); return false;'>
+        ##  <img src="/static/images/gacco_icon_facebook.png" width="36px" alt="${_("Share to facebook")}"></a>
         <a class="right" href="#" onclick="javascript:window.open('https://twitter.com/intent/tweet?url=${twitter_url}&text=${_("Successfully passed the Certificate of gacco")}(${course.display_name_with_default})','','width=550,height=480,scrollbars=1,resizable=1',0);">
            <img src="/static/images/gacco_icon_twitter.png" width="36px" alt="${_("Share to Twitter")}"></a>
       </div>
