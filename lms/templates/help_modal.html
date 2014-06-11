@@ -137,7 +137,7 @@
         open_time = "14:00"
         close_time = "22:00"
     %>
-    <p style="color:#333;"><strong>${_('Do you have any questions?')}</strong>${_('See <a href="https://support.gacco.org/">${_(FAQ)}</a>.')}</p>
+    <p style="color:#333;"><strong>${_('Do you have any questions?')}</strong>${_('See {link_start}FAQ{link_end}.').format(link_start='<a href="{url}" target="_blank">'.format(url=marketing_link('FAQ')),link_end='</a>')}</p>
     <p>${_('If you have further questions, please send questions below.')}</p>
 <%doc>
     <p style="color:#333;">
