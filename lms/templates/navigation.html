@@ -59,14 +59,14 @@ site_status_msg = get_site_status_msg(course_id)
                 </span>
             </li>
             % if course:
-            <li class="toggle-topbar"><a href="" style="padding: 0 0 0 0;"><span class="f_button small">${_('Study Menu')}</span></a></li>
+            <li class="toggle-topbar"><a href="" style="padding: 0 0 0 0; height:0px;"><span class="f_button small" style="display: inline; position: absolute;top: -45px;right: 0px;">${_('Study Menu')}</span></a></li>
             % endif
         </ul>
         <section class="top-bar-section">
-            <!-- Right Nav Section || Tablet -->
+            <!-- Right Nav Section || Smartphone -->
             <ul id="black_target_cnavi1" class="right hide-for-medium-up">
             </ul>
-            <!-- Right Nav Section || Smartphone -->
+            <!-- Right Nav Section || Tablet -->
             <ul class="right show-for-medium-up" style="z-index:1147483647;">
                 <li class="has-dropdown active" style="z-index:1147483647;">
                 % if course:
