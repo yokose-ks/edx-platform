@@ -2315,7 +2315,7 @@ msgstr "機械"
 #: common/lib/xmodule/xmodule/open_ended_grading_classes/combined_open_ended_modulev1.py
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Peer"
-msgstr "相互"
+msgstr "採点者"
 
 #. Translators: "Not started" is used to communicate to a student that their
 #. response
@@ -14784,7 +14784,7 @@ msgstr "採点することができません"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/self/oa_self_assessment.html
 msgid "Submit Your Assessment"
-msgstr "採点する"
+msgstr "自己採点を完了する"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_incomplete.html
 msgid "Your Grade"
@@ -14804,14 +14804,14 @@ msgstr "あなたのレポートの採点はまだ開始されていません"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_waiting.html
 msgid "Waiting for Peer Assessment"
-msgstr "評価待ち状態"
+msgstr "採点待ち状態"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_waiting.html
 msgid ""
 "Your response is still undergoing peer assessment. After your peers have "
 "assessed your response, you'll see their comments and receive your final "
 "grade."
-msgstr "あなたのレポートは現在評価中です。他者からの評価が完了しますと取得した得点やコメントが表示されます。"
+msgstr "あなたのレポートは現在採点中です。他の受講者からの採点が完了しますと取得した得点やコメントが表示されます。"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Overall Grade"
@@ -14819,7 +14819,7 @@ msgstr "総得点"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Assessor"
-msgstr "評価者"
+msgstr "採点者"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Peer's Assessment"
@@ -14835,7 +14835,7 @@ msgstr "点"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Your Self Assessment"
-msgstr "あなたの自己採点"
+msgstr "自己採点結果"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Your Assessment"
@@ -14851,7 +14851,7 @@ msgstr "あなたのレポートへの追加コメント"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Peer assessor"
-msgstr "評価者"
+msgstr "採点者"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Peer's assessment"
@@ -14859,27 +14859,27 @@ msgstr "他者の評価"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Provide Feedback on Peer Assessments"
-msgstr "他者評価へのフィードバック"
+msgstr "相互採点についてのコメント"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Submitting Feedback"
-msgstr "フィードバックの提出"
+msgstr "コメントの提出"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Your Feedback Has Been Submitted"
-msgstr "フィードバックが提出されました"
+msgstr "コメントが提出されました"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
-msgstr "フィードバックが提出されました。講座スタッフは講座データを確認する際にこの内容を参照します。"
+msgstr "コメントが提出されました。講座スタッフは講座データを確認する際にこの内容を参照します。"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
-msgstr "ここで提出したフィードバックは講座スタッフが講座データを確認する際に参照します。"
+msgstr "ここで提出したコメントは講座スタッフが講座データを確認する際に参照します。"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid ""
@@ -14907,7 +14907,7 @@ msgstr "受けた採点は不適切なものがある"
 msgid ""
 "Please provide any feedback on the grade or comments that you received from "
 "your peers."
-msgstr "あなたが他の受講者から受けた採点やコメントに対してのフィードバックを記述してください"
+msgstr "あなたが他の受講者から受けた採点や評価コメントに対してのご意見を記述してください"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "I feel the feedback I received was..."
@@ -14915,11 +14915,11 @@ msgstr "私が他の受講者から受けた採点は..."
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "We could not submit your feedback"
-msgstr "フィードバックを提出することができません"
+msgstr "コメントを提出することができません"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_complete.html
 msgid "Submit Feedback on Peer Assessments"
-msgstr "相互採点へのフィードバックを提出する"
+msgstr "相互採点へのコメントを提出する"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/grade/oa_grade_closed.html
 msgid "You have not completed all the steps of this problem."
@@ -15038,11 +15038,11 @@ msgstr "実施不可"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_waiting.html
 msgid "Waiting for Peer Responses"
-msgstr "他の受講者から採点待ち状態"
+msgstr "他の受講者からの採点待ち状態"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html
 msgid "I noticed that this response..."
-msgstr "このレポートは..."
+msgstr "他の受講者がこのコメントを読むことに配慮し、簡潔かつ根拠を明確に記述しましょう"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_closed.html
 msgid ""
@@ -15068,11 +15068,12 @@ msgstr "実施中"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
 msgid "Read and assess the following response from one of your peers."
-msgstr "以下にある他の受講者のレポートを読んで採点をしてください。"
+msgstr ""
+"以下にある他の受講者のレポートを読んで採点をしてください。採点にあたってはルーブリック（評価基準）の内容をよく読み、実施してください。また全ての項目の採点が完了した後、最下部のコメント欄になぜあなたがそのように採点したのかを簡潔に記入してください。このことはあなたに採点された受講者が採点結果を元にレポートの内容を振り返る際に大切ですので、必ず行うようにしましょう。"
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html
 msgid "Assessment #"
-msgstr "採点 #"
+msgstr "採点回数："
 
 #: /edx/app/edxapp/venvs/edxapp/src/edx-ora2/apps/openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode_waiting.html
 msgid "Peer Assessments Complete"
@@ -15103,7 +15104,7 @@ msgstr ""
 "\n"
 "                         <span class=\"grade__value__earned\">%(points_earned)s</span>\n"
 "                         /\n"
-"                         <span class=\"grade__value__potential\">%(points_possible)s</span>\n"
+"                         <span class=\"grade__value__potential\">%(points_possible)s</span> 点\n"
 "                         "
 
 msgid ""
@@ -15112,7 +15113,8 @@ msgid ""
 "                                  <span class=\"label label--divider sr\">out of</span>\n"
 "                                  <span class=\"question__score__potential\">\n"
 "                                    %(total)s\n"
-"                                    <span class=\"unit\">Points</span>¥                                  </span>\n"
+"                                    <span class=\"unit\">Points</span>\n"
+"                                  </span>\n"
 "                                  "
 msgstr ""
 "\n"
@@ -15120,7 +15122,8 @@ msgstr ""
 "                                  <span class=\"label label--divider sr\">/</span>\n"
 "                                  <span class=\"question__score__potential\">\n"
 "                                    %(total)s\n"
-"                                    <span class=\"unit\">点</span>¥                                  </span>\n"
+"                                    <span class=\"unit\">点</span>\n"
+"                                  </span>\n"
 "                                  "
 
 msgid ""
@@ -15129,14 +15132,14 @@ msgid ""
 "                                                      "
 msgstr ""
 "\n"
-"                                                      他の受講者 %(peer_num)s\n"
+"                                                      採点者 %(peer_num)s\n"
 "                                                      "
 
 msgid "More information about %(name)s"
 msgstr "%(name)s についての追加情報"
 
 msgid "Peer %(peer_num)s"
-msgstr "他の受講者 %(peer_num)s"
+msgstr "採点者 %(peer_num)s"
 
 msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
@@ -15146,10 +15149,12 @@ msgid ""
 "=\"#openassessment__self-assessment\">self assessment</a> steps, and after "
 "your peers have assessed your response."
 msgstr ""
-"すべての提出されたレポートが採点されました。しばらくしてこのページを開き、他の受講者が提出していないか確認してください。 あなたの得点は <a "
-"data-behavior=\"ui-scroll\" href=\"#openassessment__peer-"
-"assessment\">相互採点</a> と <a data-behavior=\"ui-scroll\" href"
-"=\"#openassessment__self-assessment\">自己採点</a> が終わり、数名からの採点を受け次第表示されます。"
+"すべての提出されたレポートが採点されました。しばらくしてから再度このページを開き、他の受講者が採点を完了していないか確認してください。 あなたの得点は "
+"<a data-behavior=\"ui-scroll\" href=\"#openassessment__peer-"
+"assessment\">相互採点</a> （あなたが右上に表示されている規定数分の他の受講者のレポートを採点しなくてはなりません）と <a data-"
+"behavior=\"ui-scroll\" href=\"#openassessment__self-"
+"assessment\">自己採点</a>（ご自身のレポートも採点しなくてはなりません） "
+"が終わり、あなたのレポートが別途規定された数の他の受講者から採点されると表示されます"
 
 msgid "This response has not been saved."
 msgstr "このレポートは一時保存されていません"
@@ -15161,4 +15166,13 @@ msgid "Save Your Progress"
 msgstr "一時保存"
 
 msgid "Submit your assessment & move to response #{}"
-msgstr "採点をして次のレポートへ進む #{}"
+msgstr "このレポートに対する採点を完了し、次のレポートの採点を行う #{}"
+
+msgid "Submit your assessment & review another response"
+msgstr "このレポートに対する採点を完了し、次のレポートの採点を行う"
+
+msgid "Submit your assessment & move onto next step"
+msgstr "このレポートに対する採点を完了し、次のステップへ進む"
+
+msgid "Assessments of Your Response"
+msgstr "あなたのレポートに対する評価"
