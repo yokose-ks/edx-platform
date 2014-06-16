@@ -67,8 +67,8 @@ class CertificateBase(object):
 class CertificateHonor(CertificateBase):
     """Certificate of Honor"""
 
-    def __init__(self, username, course_id, display_name=None,
-        course_name=None, grade=None, key=None):
+    def __init__(self, username, course_id, key, display_name=None,
+        course_name=None, grade=None):
 
         self.username = username
         self.display_name = display_name
@@ -117,7 +117,7 @@ class CertificateHonor(CertificateBase):
 
     def delete(self):
         """Delete certificate."""
-        return self.store.delete(self.username, self.course_id)
+        return self.store.delete("_".join([self.username, self.key[:5]]), self.course_id)
 
 
 class CertPDF(object):
@@ -298,19 +298,23 @@ class CertS3Store(CertStoreBase):
             s3key = Key(bucket)
             s3key.key = "{cid}/{name}.pdf".format(
                 cid=course_id, name=username)
-            s3key.delete()
+            if s3key.exists():
+                s3key.delete()
+            else:
+                return json.dumps({'error': "file does not exists.({})".format(
+                    s3key.key)})
         finally:
             s3key.close()
 
         return json.dumps({'error': None})
 
 
-def create_cert_pdf(username, course_id, display_name, course_name,
-    grade, key):
+def create_cert_pdf(username, course_id, key, display_name, course_name,
+    grade):
     """Create pdf of certificate."""
     try:
-        cert = CertificateHonor(username, course_id, display_name,
-             course_name, grade, key)
+        cert = CertificateHonor(username, course_id, key, display_name,
+             course_name, grade)
         contents = cert.create()
     except BotoServerError as e:
         log.error("Cannot get bucket: BotoServerError = %s", e)
@@ -322,10 +326,10 @@ def create_cert_pdf(username, course_id, display_name, course_name,
     return contents
 
 
-def delete_cert_pdf(username, course_id):
+def delete_cert_pdf(username, course_id, key):
     """Delete pdf of certificate."""
     try:
-        cert = CertificateHonor(username, course_id)
+        cert = CertificateHonor(username, course_id, key)
         contents = cert.delete()
     except BotoServerError as e:
         log.error("Cannot get bucket: BotoServerError = %s", e)

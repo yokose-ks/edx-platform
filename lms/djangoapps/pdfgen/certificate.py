@@ -69,13 +69,13 @@ class CertificatePDF(object):
                 if not self.noop:
                     cert.save()
             else:
-                key = self._make_hashkey(random.random())
+                key = self._make_hashkey(self.course_id + student.username)
                 cert.key = key
 
                 if not self.noop:
                     response_json = create_cert_pdf(student.username,
-                        self.course_id, cert.name, course_name,
-                        grade['percent'], key)
+                        self.course_id, cert.key, cert.name, course_name,
+                        grade['percent'])
                     response = json.loads(response_json)
                     self._dprint(": Response = %s" % response, newline=False)
                     cert.download_url = response.get(u'download_url', False)
@@ -117,17 +117,17 @@ class CertificatePDF(object):
                     new_status = CertificateStatuses.deleted
                     cert.status = new_status
                     response_json = delete_cert_pdf(student.username,
-                        self.course_id)
+                        self.course_id, cert.key)
                     response = json.loads(response_json)
                     self._dprint(": Response = %s" % response, newline=False)
                     msg = response.get(u'error', False)
                     if msg:
                         new_status = CertificateStatuses.error
-                        print ": Error {}".format(msg)
+                        print ": Error {}".format(msg),
                     else:
                         cert.download_url = ''
                         cert.key = ''
-                    cert.save()
+                        cert.save()
                     print ": Status {0}".format(new_status)
                 else:
                     print ": Status {0}({1})".format(cert.status,
