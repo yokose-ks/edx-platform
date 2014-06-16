@@ -2,6 +2,7 @@
 from optparse import make_option
 from django.core.management.base import BaseCommand, CommandError
 from pdfgen.certificate import CertificatePDF
+from resource import setrlimit, RLIMIT_NOFILE
 
 
 class Command(BaseCommand):
@@ -28,7 +29,13 @@ class Command(BaseCommand):
             metavar='method',
             dest='method',
             default='report',
-            help='create or delete or report')
+            help='Create or delete or report'),
+        make_option('-f', '--filedescriptors',
+            type="int",
+            metavar='fd',
+            dest='fd',
+            default=1024,
+            help='Number of file descriptors')
     )
 
     def handle(self, *args, **options):
@@ -36,9 +43,15 @@ class Command(BaseCommand):
         debug = options['debug']
         noop = options['noop']
         method = options['method']
+        fd = options['fd']
 
         if len(args) != 1:
-            raise CommandError("course_id not specified")
+            raise CommandError("course_id not specified.")
+
+        if fd <= 0:
+            raise CommandError("File descriptors is required to specify positive value.")
+
+        setrlimit(RLIMIT_NOFILE, (fd, fd))
         course_id = args[0]
         certpdf = CertificatePDF(user, course_id, debug, noop)
 
