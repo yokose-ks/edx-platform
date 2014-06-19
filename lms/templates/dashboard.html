@@ -434,7 +434,7 @@
 
 ##<section id="email-settings-modal" class="modal" aria-hidden="true">
 ##  <div class="inner-wrapper" role="dialog" aria-labelledby="email-settings-title">
-  <div id="email-settings-modal" class="reveal-modal medium" role="dialog" aria-labelledby="email-settings-title" data-reveal>
+  <div id="email-settings-modal" class="reveal-modal small" role="dialog" aria-labelledby="email-settings-title" data-reveal>
     <a class="close-reveal-modal">×</a>
 ##    <button class="close-modal">
 ##      <i class="icon-remove"></i>
@@ -457,7 +457,7 @@
 
     <form id="email_settings_form" method="post">
       <input name="course_id" id="email_settings_course_id" type="hidden" />
-      <label>${_("Receive course emails")} <input type="checkbox" id="receive_emails" name="receive_emails" /></label>
+      <label>${_("Receive course emails")} <input type="checkbox" id="receive_emails" style="width:1.5rem; height:1.5rem" name="receive_emails" /></label>
       <div class="submit">
         <input type="submit" id="submit" value="${_('Save Settings')}"class="f_button small radius alert" />
       </div>
