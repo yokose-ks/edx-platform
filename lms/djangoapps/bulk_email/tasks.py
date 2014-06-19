@@ -31,6 +31,7 @@ from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.mail import EmailMultiAlternatives, get_connection
 from django.core.urlresolvers import reverse
+from django.utils.translation import ugettext as _
 
 from bulk_email.models import (
     CourseEmail, Optout, CourseEmailTemplate,
@@ -377,7 +378,7 @@ def _get_source_address(course_id, course_title):
     invalid_chars = re.compile(r"[^\w.-]")
     course_num = invalid_chars.sub('_', course_num)
 
-    from_addr = u'"{0}" Course Staff <{1}-{2}>'.format(course_title_no_quotes, course_num, settings.BULK_EMAIL_DEFAULT_FROM_EMAIL)
+    from_addr = u'"{0}" {3} <{1}-{2}>'.format(course_title_no_quotes, course_num, settings.BULK_EMAIL_DEFAULT_FROM_EMAIL, _('Course Staff'))
     return from_addr
 
 
@@ -680,5 +681,5 @@ def _statsd_tag(course_title):
     """
     Calculate the tag we will use for DataDog.
     """
-    tag = u"course_email:{0}".format(course_title)
+    tag = u"course_email:{0}".format(course_title).encode('utf-8')
     return tag[:200]
