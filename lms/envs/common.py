@@ -1150,7 +1150,7 @@ YOUTUBE = {
     'TEXT_API': {
         'url': 'video.google.com/timedtext',
         'params': {
-            'lang': 'en',
+            'lang': 'ja',
             'v': 'set_youtube_id_of_11_symbols_here',
         },
     },
