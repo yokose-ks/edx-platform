@@ -242,7 +242,7 @@ class TranscriptS3Store(object):
     S3 store for transcripts
     """
     def __init__(self):
-        self.bucket_name = settings.TRANSCRIPTS_BACKUP_BUCKENT_NAME
+        self.bucket_name = settings.TRANSCRIPTS_BACKUP_BUCKET_NAME
         self.location = S3Location.APNortheast
         self.conn = self._connect()
 

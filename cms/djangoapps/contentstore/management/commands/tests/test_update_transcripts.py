@@ -29,7 +29,7 @@ from xmodule.video_module import transcripts_utils
 from xmodule.video_module.transcripts_utils import GetTranscriptsFromYouTubeException
 
 
-TRANSCRIPTS_BACKUP_BUCKENT_NAME = 'dummy_bucket'
+TRANSCRIPTS_BACKUP_BUCKET_NAME = 'dummy_bucket'
 TRANSCRIPTS_BACKUP_DIR = 'dummy_dir'
 AWS_ACCESS_KEY_ID = 'DUMMY_KEY_ID'
 AWS_SECRET_ACCESS_KEY = 'DUMMY_ACCESS_KEY'
@@ -85,7 +85,7 @@ class TestArgParsing(ModuleStoreTestCase):
 
 
 @override_settings(TRANSCRIPTS_COMMAND_OUTPUT=command_output_file.name,
-                   TRANSCRIPTS_BACKUP_BUCKENT_NAME=TRANSCRIPTS_BACKUP_BUCKENT_NAME,
+                   TRANSCRIPTS_BACKUP_BUCKET_NAME=TRANSCRIPTS_BACKUP_BUCKET_NAME,
                    TRANSCRIPTS_BACKUP_DIR=TRANSCRIPTS_BACKUP_DIR,
                    AWS_ACCESS_KEY_ID=AWS_ACCESS_KEY_ID,
                    AWS_SECRET_ACCESS_KEY=AWS_SECRET_ACCESS_KEY)
