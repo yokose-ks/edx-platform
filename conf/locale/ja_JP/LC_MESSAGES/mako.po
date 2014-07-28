@@ -3563,7 +3563,7 @@ msgstr "コメントを追加..."
 
 #: lms/templates/discussion/_underscore_templates.html:133
 msgid "endorse"
-msgstr "下書き"
+msgstr "その通り！"
 
 #: lms/templates/discussion/_underscore_templates.html:154
 msgid "Editing response"
