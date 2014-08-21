@@ -15188,3 +15188,30 @@ msgstr "完了"
 
 msgid "We could not retrieve additional submissions for assessment"
 msgstr "採点が必要なレポート提出はありません"
+
+#: lms/templates/instructor/instructor_dashboard_2/progress_report.html
+msgid "Progress Report"
+msgstr "進捗レポート"
+
+# #: lms/templates/instructor/instructor_dashboard_2/progress_report.html
+# msgid "Student Progress"
+# msgstr "受講者の進捗"
+#: lms/templates/instructor/instructor_dashboard_2/progress_report.html
+msgid "Current CSV: created "
+msgstr "現行のCSV：作成日時 "
+
+#: lms/templates/instructor/instructor_dashboard_2/progress_report.html
+msgid "Download Progress Report"
+msgstr "進捗レポートのダウンロード"
+
+#: lms/templates/instructor/instructor_dashboard_2/progress_report.html
+msgid "Generate Progress Report"
+msgstr "進捗レポートの作成"
+
+#: lms/templates/instructor/instructor_dashboard_2/progress_report.html
+msgid "Summary Progress"
+msgstr "進捗サマリ"
+
+#: lms/templates/instructor/instructor_dashboard_2/progress_report.html
+msgid "Problem Module Progress"
+msgstr "Problemモジュールの進捗"
