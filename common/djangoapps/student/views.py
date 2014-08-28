@@ -447,6 +447,7 @@ def dashboard(request):
     course_enrollment_pairs = list(get_course_enrollment_pairs(user, course_org_filter, org_filter_out_set))
 
     course_optouts = Optout.objects.filter(user=user).values_list('course_id', flat=True)
+    course_optouts_force = Optout.objects.filter(user=user, force_disabled=True).values_list('course_id', flat=True)
 
     message = ""
     if not user.is_active:
@@ -517,6 +518,7 @@ def dashboard(request):
     context = {
         'course_enrollment_pairs': course_enrollment_pairs,
         'course_optouts': course_optouts,
+        'course_optouts_force': course_optouts_force,
         'message': message,
         'external_auth_map': external_auth_map,
         'staff_access': staff_access,
@@ -1861,6 +1863,9 @@ def confirm_email_change(request, key):
             return response
 
         response = render_to_response("email_change_successful.html", address_context)
+        optout_object = Optout.objects.filter(user=user, force_disabled=True)
+        if optout_object:
+            optout_object.delete()
         transaction.commit()
         return response
     except Exception:
@@ -1986,7 +1991,7 @@ def change_email_settings(request):
     course_id = request.POST.get("course_id")
     receive_emails = request.POST.get("receive_emails")
     if receive_emails:
-        optout_object = Optout.objects.filter(user=user, course_id=course_id)
+        optout_object = Optout.objects.filter(user=user, course_id=course_id, force_disabled=False)
         if optout_object:
             optout_object.delete()
         log.info(u"User {0} ({1}) opted in to receive emails from course {2}".format(user.username, user.email, course_id))
