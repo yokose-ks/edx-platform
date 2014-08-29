@@ -2165,20 +2165,37 @@ class TestInstructorAPISurveyDownload(ModuleStoreTestCase, LoginEnrollmentTestCa
         body = response.content.rstrip('\n').replace('\r', '')
         rows = body.split('\n')
         self.assertTrue(4, len(rows))
-        self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Gender","Year of Birth","Level of Education","Disabled","Q1","Q2","Q3","Q4"')
+        #Note(#EDX-501): Modified temporarily.
+        #self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Gender","Year of Birth","Level of Education","Disabled","Q1","Q2","Q3","Q4"')
+        self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Disabled","Q1","Q2","Q3","Q4"')
+        #self.assertEqual(
+        #    rows[1],
+        #    '"11111111111111111111111111111111","survey #1","%s","%s","Male","1980","Doctorate","","1","1,2","submission #1",""'
+        #    % (submission1.created, submission1.user.username)
+        #)
+        #self.assertEqual(
+        #    rows[2],
+        #    '"11111111111111111111111111111111","survey #1","%s","%s","foo","","bar","disabled","1","2","submission #2",""'
+        #    % (submission2.created, submission2.user.username)
+        #)
+        #self.assertEqual(
+        #    rows[3],
+        #    '"22222222222222222222222222222222","survey #2","%s","%s","","","","","","","","extra"'
+        #    % (submission3.created, submission3.user.username)
+        #)
         self.assertEqual(
             rows[1],
-            '"11111111111111111111111111111111","survey #1","%s","%s","Male","1980","Doctorate","","1","1,2","submission #1",""'
+            '"11111111111111111111111111111111","survey #1","%s","%s","","1","1,2","submission #1",""'
             % (submission1.created, submission1.user.username)
         )
         self.assertEqual(
             rows[2],
-            '"11111111111111111111111111111111","survey #1","%s","%s","foo","","bar","disabled","1","2","submission #2",""'
+            '"11111111111111111111111111111111","survey #1","%s","%s","disabled","1","2","submission #2",""'
             % (submission2.created, submission2.user.username)
         )
         self.assertEqual(
             rows[3],
-            '"22222222222222222222222222222222","survey #2","%s","%s","","","","","","","","extra"'
+            '"22222222222222222222222222222222","survey #2","%s","%s","","","","","extra"'
             % (submission3.created, submission3.user.username)
         )
 
@@ -2189,7 +2206,9 @@ class TestInstructorAPISurveyDownload(ModuleStoreTestCase, LoginEnrollmentTestCa
         body = response.content.rstrip('\n').replace('\r', '')
         rows = body.split('\n')
         self.assertTrue(1, len(rows))
-        self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Gender","Year of Birth","Level of Education","Disabled"')
+        #Note(#EDX-501): Modified temporarily.
+        #self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Gender","Year of Birth","Level of Education","Disabled"')
+        self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Disabled"')
 
 
 #class TestInstructorAPIProgressModules(ModuleStoreTestCase, LoginEnrollmentTestCase):
