@@ -26,8 +26,6 @@ from pytz import UTC
 import datetime
 import StringIO
 import gzip
-#from xmodule.modulestore import Location
-#import json
 
 
 @override_settings(MODULESTORE=TEST_DATA_MIXED_MODULESTORE)
@@ -69,6 +67,7 @@ class ProgressReportTestCase(ModuleStoreTestCase):
             CourseEnrollmentFactory.create(user=user, course_id=self.course.id)
 
         self.pgreport = ProgressReport(self.course.id)
+        self.pgreport2 = ProgressReport(self.course.id, lambda state: state)
 
         self.chapter = ItemFactory.create(
             parent_location=self.course.location,
@@ -155,6 +154,8 @@ class ProgressReportTestCase(ModuleStoreTestCase):
         self.addCleanup(patcher.stop)
 
         """
+        from xmodule.modulestore import Location
+        import json
         for user in self.students:
             StudentModuleFactory.create(
                 grade=1,
@@ -447,7 +448,7 @@ class ProgressReportTestCase(ModuleStoreTestCase):
         with self.assertRaises(InvalidCommand):
             self.pgreport.get_raw(command="fake")
 
-        summary = self.pgreport.get_raw(command="summary")
+        summary = self.pgreport2.get_raw(command="summary")
         self.assertEquals(summary, {
             'enrollments': 7, 'active_students': 6, 'module_tree': []})
 
