@@ -82,3 +82,7 @@ msgstr "保存または提出をせずに別のページに遷移する場合、
 
 msgid "you'll lose any work you've done on the response."
 msgstr "記述したレポートの内容が失われます"
+
+#: pollxblock/static/js/src/pollxblock.js
+msgid "Change your vote"
+msgstr "選びなおす"
