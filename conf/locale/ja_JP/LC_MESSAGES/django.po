@@ -15215,3 +15215,8 @@ msgstr "進捗サマリ"
 #: lms/templates/instructor/instructor_dashboard_2/progress_report.html
 msgid "Problem Module Progress"
 msgstr "Problemモジュールの進捗"
+
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html
+msgid "You do not have permission to use this function."
+msgstr "この機能を使用する権限がありません。"

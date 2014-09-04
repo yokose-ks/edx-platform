@@ -27,6 +27,7 @@
 # 
 # Translators:
 # yokose-ks <ayokose.gacco@gmail.com>, 2014
+# WatanabeYasumasa <y.watanabe@nttks.co.jp>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
@@ -2001,3 +2002,11 @@ msgstr "保存または提出をせずに別のページに遷移する場合、
 
 msgid "you'll lose any work you've done on the response."
 msgstr "記述したレポートの内容が失われます"
+
+#: pollxblock/static/js/src/pollxblock.js
+msgid "Change your vote"
+msgstr "選びなおす"
+
+#: common/lib/xmodule/xmodule/js/src/capa/display.coffee
+msgid "Is this your final answer?"
+msgstr "解答を提出します。よろしいですか？"
