@@ -29,6 +29,7 @@
 <section class="discussion countainer" id="discussion-container" data-roles="${roles}" data-course-id="${course_id}" data-user-info="${user_info}" data-threads="${threads}" data-thread-pages="${thread_pages}" data-content-info="${annotated_content_info}" data-flag-moderator="${flag_moderator}" style="min-width: 0;">
     <div class="discussion-body">
       <div class="row">
+        % if course.forum_posts_allowed:
 	<div class="columns small-12 hide-for-medium-up">
 	  <!-- スマホ用新規投稿ボタン -->
 	  <a href="#" class="f_button small right radius expand success" data-reveal-id="discussion_new_post_modal">
@@ -41,6 +42,7 @@
 	    <span class="icon icon-edit new-post-icon" style="margin-right:0.3rem; color:white;"></span>
 	    ${_("New Post")}</a>
 	</div>
+        % endif
 	<div class="columns large-3 medium-4 small-12" style="margin-bottom:0px;">
           <div class="sidebar columns" style="width:100%; padding:0px;"></div>
 	</div>
