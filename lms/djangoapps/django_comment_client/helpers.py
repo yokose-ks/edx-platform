@@ -4,7 +4,7 @@ from mako.template import Template
 import os
 
 
-def include_mustache_templates():
+def include_mustache_templates(context_dictionary={}):
     mustache_dir = settings.PROJECT_ROOT / 'templates' / 'discussion' / 'mustache'
 
     def is_valid_file_name(file_name):
@@ -14,7 +14,7 @@ def include_mustache_templates():
     def template_id_from_file_name(file_name):
         return file_name.rpartition('.')[0]
     def process_mako(template_content):
-        return Template(template_content).render_unicode()
+        return Template(template_content).render_unicode(**context_dictionary)
     def make_script_tag(id, content):
         return u"<script type='text/template' id='{0}'>{1}</script>".format(id, content)
 
