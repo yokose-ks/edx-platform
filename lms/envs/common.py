@@ -927,7 +927,7 @@ PIPELINE_CSS = {
     },
     'style-gacco': {
         'source_filenames': [
-            'sass/gacco/gacco.css',
+            'sass/gacco.css',
         ],
         'output_filename': 'css/lms-style-gacco.css',
     },
