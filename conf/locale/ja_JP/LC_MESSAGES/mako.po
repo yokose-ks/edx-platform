@@ -1236,7 +1236,7 @@ msgid ""
 "We're sorry, this module is temporarily unavailable. Our staff is working to"
 " fix it as soon as possible. Please email us at {tech_support_email} to "
 "report any problems or downtime."
-msgstr "申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンダイムについて{tech_support_email}へメールをお願いします。"
+msgstr "申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンタイムについて{tech_support_email}へメールをお願いします。"
 
 #: lms/templates/module-error.html:26
 msgid "Raw data:"
@@ -2362,7 +2362,7 @@ msgid ""
 "We're sorry, this module is temporarily unavailable. Our staff is working to"
 " fix it as soon as possible. Please email us at {tech_support_email}' to "
 "report any problems or downtime."
-msgstr "申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンダイムについて{tech_support_email}へメールをお願いします。"
+msgstr "申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンタイムについて{tech_support_email}へメールをお願いします。"
 
 #: lms/templates/courseware/courseware.html:6
 msgid "{course_number} Courseware"
@@ -2471,7 +2471,7 @@ msgid ""
 "We're sorry, this module is temporarily unavailable. Our staff is working to"
 " fix it as soon as possible. Please email us at {link_to_support_email} to "
 "report any problems or downtime."
-msgstr "申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンダイムについて{link_to_support_email}へメールをお願いします。"
+msgstr "申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンタイムについて{link_to_support_email}へメールをお願いします。"
 
 #: lms/templates/courseware/grade_summary.html:11
 #: lms/templates/courseware/instructor_dashboard.html:211
@@ -5358,7 +5358,7 @@ msgstr "現在{platform_name}のサーバーはダウンしています"
 msgid ""
 "Our staff is currently working to get the site back up as soon as possible. "
 "Please email us at {tech_support_email} to report any problems or downtime."
-msgstr " スタッフができるだけ早く復旧するように作業しています。問題やダウンダイムについて {tech_support_email} へメールをお願いします。"
+msgstr " スタッフができるだけ早く復旧するように作業しています。問題やダウンタイムについて {tech_support_email} へメールをお願いします。"
 
 #: lms/templates/static_templates/server-error.html:6
 msgid "There has been a 500 error on the {platform_name} servers"

@@ -6432,7 +6432,7 @@ msgid ""
 " fix it as soon as possible. Please email us at {tech_support_email} to "
 "report any problems or downtime."
 msgstr ""
-"申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンダイムについて{tech_support_email}へメールをお願いします。"
+"申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンタイムについて{tech_support_email}へメールをお願いします。"
 
 #: lms/templates/module-error.html
 msgid "Raw data:"
@@ -7524,7 +7524,7 @@ msgid ""
 " fix it as soon as possible. Please email us at {tech_support_email}' to "
 "report any problems or downtime."
 msgstr ""
-"申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンダイムについて{tech_support_email}へメールをお願いします。"
+"申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンタイムについて{tech_support_email}へメールをお願いします。"
 
 #: lms/templates/courseware/courseware.html
 msgid "{course_number} Courseware"
@@ -7634,7 +7634,7 @@ msgid ""
 " fix it as soon as possible. Please email us at {link_to_support_email} to "
 "report any problems or downtime."
 msgstr ""
-"申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンダイムについて{link_to_support_email}へメールをお願いします。"
+"申し訳ございません。このモジュールは一時的に利用できません。スタッフができるだけ早く修正すべく働いています。問題やダウンタイムについて{link_to_support_email}へメールをお願いします。"
 
 #: lms/templates/courseware/grade_summary.html
 #: lms/templates/courseware/instructor_dashboard.html
@@ -10510,7 +10510,7 @@ msgid ""
 "Our staff is currently working to get the site back up as soon as possible. "
 "Please email us at {tech_support_email} to report any problems or downtime."
 msgstr ""
-" スタッフができるだけ早く復旧するように作業しています。問題やダウンダイムについて {tech_support_email} へメールをお願いします。"
+" スタッフができるだけ早く復旧するように作業しています。問題やダウンタイムについて {tech_support_email} へメールをお願いします。"
 
 #: lms/templates/static_templates/server-error.html
 msgid "There has been a 500 error on the {platform_name} servers"
