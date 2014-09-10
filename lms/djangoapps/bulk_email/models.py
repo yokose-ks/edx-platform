@@ -128,6 +128,7 @@ class Optout(models.Model):
     # and given the unique index, 'null' is the best default value.
     user = models.ForeignKey(User, db_index=True, null=True)
     course_id = models.CharField(max_length=255, db_index=True)
+    force_disabled = models.BooleanField(default=False)
 
     class Meta:  # pylint: disable=C0111
         unique_together = ('user', 'course_id')

@@ -157,7 +157,11 @@
       % endif
 
 % if show_email_settings:
+  % if course.id in course_optouts_force:
+        <div title="${_('Your registered Email address might be wrong or denied by Spam-filter')}" class="email-settings f_label right tiny radius alert" style="margin-right:1rem;">${_('Email not delivered')}</div>
+  % else:
         <a href="#email-settings-modal" class="email-settings f_label right tiny radius secondary" style="margin-right:1rem;" rel="" data-reveal-id="email-settings-modal" data-course-id="${course.id}" data-course-number="${course.number}" data-optout="${course.id in course_optouts}">${_('Email Settings')}</a>
+  % endif
 % endif
 
 
