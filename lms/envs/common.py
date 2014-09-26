@@ -1371,6 +1371,15 @@ LINKEDIN_API = {
 }
 
 
+############################ ORA 2 ############################################
+
+# By default, don't use a file prefix
+ORA2_FILE_PREFIX = None
+
+# Default File Upload Storage bucket and prefix. Used by the FileUpload Service.
+FILE_UPLOAD_STORAGE_BUCKET_NAME = 'edxuploads'
+FILE_UPLOAD_STORAGE_PREFIX = 'submissions_attachments'
+
 ##### ACCOUNT LOCKOUT DEFAULT PARAMETERS #####
 MAX_FAILED_LOGIN_ATTEMPTS_ALLOWED = 5
 MAX_FAILED_LOGIN_ATTEMPTS_LOCKOUT_PERIOD_SECS = 15 * 60
@@ -1579,6 +1588,7 @@ OPTIONAL_APPS = (
     'submissions',
     'openassessment',
     'openassessment.assessment',
+    'openassessment.fileupload',
     'openassessment.workflow',
     'openassessment.xblock'
 )
