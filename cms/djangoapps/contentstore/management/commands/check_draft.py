@@ -2,7 +2,7 @@ import logging
 from itertools import izip_longest
 from unicodedata import east_asian_width
 
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand, CommandError, make_option
 
 from xmodule.modulestore.django import modulestore
 from xmodule.modulestore import Location
@@ -13,12 +13,19 @@ log = logging.getLogger(__name__)
 
 class Command(BaseCommand):
     """
-    Usage: python manage.py cms check_draft --settings=aws edX/Open_DemoX/edx_demo_course
+    Usage: python manage.py cms check_draft --settings=aws --active_only edX/Open_DemoX/edx_demo_course
 
     Args:
         course_id: edX/Open_DemoX/edx_demo_course
     """
-    help = """Usage: check_draft [<course_id>]"""
+    help = """Usage: check_draft [--active_only] [<course_id>]"""
+
+    option_list = BaseCommand.option_list + (
+        make_option('--active_only',
+                    default=False,
+                    action='store_true',
+                    help='Limit courses to active ones'),
+    )
 
     def handle(self, *args, **options):
         if len(args) > 1:
@@ -31,6 +38,9 @@ class Command(BaseCommand):
                 Location.parse_course_id(course_id)
             except ValueError:
                 raise CommandError("The course_id is not of the right format. It should be like 'org/course/name'")
+
+        # Check options: active_only
+        active_only = options['active_only']
 
         # Result
         output = SimpleTable()
@@ -51,7 +61,7 @@ class Command(BaseCommand):
 
         for course_item in course_items:
             # Note: Use only active courses
-            if course_item.has_ended():
+            if active_only and course_item.has_ended():
                 continue
             # Find chapter items
             chapter_items = [modulestore().get_item(Location(item_id)) for item_id in course_item.children]
