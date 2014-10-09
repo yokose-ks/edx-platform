@@ -33,42 +33,59 @@ class TaskState(object):
 
     def __init__(self, task_name, course_id):
         """Initialize."""
-        self.key = task_name + "_" + course_id
-        self.timeout=23.5 * 60 * 60
+        self.key = "celery_task_state-" + task_name
+        self.course_id = course_id
 
     @property
     def is_active(self):
         """Property of state."""
-        date = cache.get(key=self.key, default=None)
-        return True if date is not None else False
+        state = cache.get(key=self.key, default={})
+        if state is not None and self.course_id in state:
+            return True
+
+        return False 
 
     def set_task_state(self):
         """Set task state."""
-        cache.set(key=self.key, value=datetime.now(), timeout=self.timeout)
+        state = cache.get(key=self.key, default={})
+        if state:
+            state.update({self.course_id: datetime.now()})
+        else:
+            state = {self.course_id: datetime.now()}
+        cache.set(key=self.key, value=state)
 
     def delete_task_state(self):
         """Delete task state."""
-        cache.delete(key=self.key)
+        state = cache.get(key=self.key, default={})
+        state.pop(self.course_id, None)
+        if not state:
+            cache.delete(key=self.key)
+        else:
+            cache.set(key=self.key, value=state)
 
 
 class BaseProgressReportTask(Task):
     """Base class for progress report."""
     abstract = True
 
-    def _delete_task_state(self):
+    def _delete_task_state(self, args):
         """Delete task state."""
-        course_id = self.request.args[1]
+        if args:
+            course_id = args[1]
+        else:
+            course_id = "AllCourses"
+
         task_name = self.name
         task_state = TaskState(task_name, course_id)
         task_state.delete_task_state()
 
     def on_success(self, retval, task_id, args, kwargs):
         """Delete task state on success."""
-        self._delete_task_state()
+        self._delete_task_state(args)
 
     def on_failure(self, exc, task_id, args, kwargs, einfo):
         """Delete task state on failure."""
-        self._delete_task_state()
+        self._delete_task_state(args)
 
 
 class ProgressReportTask(object):
@@ -97,26 +114,13 @@ class ProgressReportTask(object):
         task_state.set_task_state()
         print "Send task (task_id: %s)" % (result.id)
 
-    def send_tasks(self, course_id):
+    def send_tasks(self):
         """Send task for all of active courses."""
-        course_ids = []
         store = modulestore(self.modulestore_name)
 
-        if course_id is None:
-            for course in store.get_courses():
-                if course.has_started() and not course.has_ended():
-                    course_ids.append(course.location.course_id)
-        else:
-            check_course_id(course_id)
-            course = store.get_course(course_id)
-
-            if course is None:
-                raise ProgressreportException("Course is not found (%s)" % (course_id))
-
-            course_ids.append(course_id)
-    
-        for course_id in course_ids:
-            self.send_task(course_id)
+        for course in store.get_courses():
+            if course.has_started() and not course.has_ended():
+                self.send_task(course.location.course_id)
 
     def show_task_status(self, task_id):
         """Show current state of task."""
@@ -193,4 +197,4 @@ def create_report_task(task_id, course_id):
 def update_table_task_for_active_course(course_id=None):
     """Update progress_modules table for active course."""
     task = ProgressReportTask(update_table_task)
-    task.send_tasks(course_id)
+    task.send_tasks()

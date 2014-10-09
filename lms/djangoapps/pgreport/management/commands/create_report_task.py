@@ -3,12 +3,12 @@
 """
 from optparse import make_option
 from django.core.management.base import BaseCommand, CommandError
-from pgreport.tasks import create_report_task, ProgressReportTask, check_course_id
+from pgreport.tasks import create_report_task, ProgressReportTask, check_course_id, TaskState
 
 
 class Command(BaseCommand):
     args = "<create or list or status or revoke>"
-    help = """Push task that create progress_modules report\n  create_report_task create: Create progress report.\n  create_report_task list: List active tasks.\n  create_report_task status -t [task_id]: Show task status.\n  create_report_task revoke -t [task_id]: Revoke task."""""
+    help = """Push task that create progress_modules report\n  create_report_task create: Create progress report.\n  create_report_task list: List active tasks.\n  create_report_task status -t [task_id]: Show task status.\n  create_report_task revoke -t [task_id]: Revoke task.\n create_report_task clear_cache -c [course_id]: clear memcache."""
     option_list = BaseCommand.option_list + (
         make_option(
             '-c', '--course-id',
@@ -35,7 +35,8 @@ class Command(BaseCommand):
             check_course_id(course_id)
 
         if len(args) != 1:
-            raise CommandError('Required subcommand, create, list, status or revoke.')
+            raise CommandError(
+                'Required subcommand, create, list, status, revoke or clear_cache.')
         command = args[0]
         task = ProgressReportTask(create_report_task)
 
@@ -53,5 +54,10 @@ class Command(BaseCommand):
             if course_id is None:
                 raise CommandError('"create" subcommand required course_id.')
             task.send_task(course_id)
+        elif command == "clear_cache":
+            if course_id is None:
+                raise CommandError('"clear_cache" subcommand required course_id.')
+            state = TaskState("pgreport.tasks.create_report_task", course_id)
+            state.delete_task_state()
         else:
             raise CommandError('Invalid subcommand.')

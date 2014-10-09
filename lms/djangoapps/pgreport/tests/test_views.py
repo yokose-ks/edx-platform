@@ -365,12 +365,11 @@ class ProgressReportTestCase(ModuleStoreTestCase):
         grade_mock = MagicMock(return_value={'grade': True, 'percent': 1.0})
         with nested(
             patch('pgreport.views.grades'),
-            patch(
-                'pgreport.views.get_module_for_student',
-                side_effect=[module_mock, module_mock]
-            ),
+            patch('pgreport.views.get_module_for_student',
+                side_effect=[module_mock, module_mock]),
         ) as (grmock, gemock):
             grmock.grade = grade_mock
+            #self.pgreport.update_state = lambda state: state
             self.pgreport.students = User.objects.filter(id__in=[1, 2])
             self.pgreport.location_list = location_list
             for row in self.pgreport.yield_students_progress():
@@ -390,6 +389,56 @@ class ProgressReportTestCase(ModuleStoreTestCase):
         grmock.grade.assert_called_with(ANY, ANY, ANY)
         gemock.assert_called_with(ANY, ANY, ANY)
         self.assertEquals(rows, create_csvrow([csvheader]))
+
+    """
+    def test_yield_student_summary_with_update_state(self):
+        module_mock = MagicMock()
+        module_mock.location = self.problems[0].location
+
+        csvheader = [
+            'username', 'location', 'last_login', 'grade', 'percent',
+            'start', 'display_name', 'student_answers', 'weight', 'correct_map',
+            'type', 'due', 'score/total'
+        ]
+        rows = []
+        mg = MagicMock()
+        location_list = {
+            u'chapter': [self.chapter.location],
+            u'problem': [self.problems[0].location],
+            u'sequential': [self.section.location],
+            u'vertical': [self.vertical.location]
+        }
+
+        grade_mock = MagicMock(return_value={'grade': True, 'percent': 1.0})
+        with nested(
+            patch('pgreport.views.grades'),
+            patch(
+                'pgreport.views.get_module_for_student',
+                side_effect=[module_mock, module_mock]
+            ),
+        ) as (grmock, gemock):
+            grmock.grade = grade_mock
+            self.pgreport.update_state = lambda state: state
+            self.pgreport.students = User.objects.filter(id__in=[1, 2])
+            self.pgreport.location_list = location_list
+            for row in self.pgreport.yield_students_progress():
+                rows.append(row)
+
+        def create_csvrow(csvrows):
+            for i in [0, 1]:
+                csvrows.append([
+                    unicode(self.students[i].username), self.problems[0].location,
+                    self.students[i].last_login.strftime("%Y/%m/%d %H:%M:%S %Z"),
+                    True, 1.0, module_mock.start, module_mock.display_name,
+                    {}, module_mock.weight, {}, module_mock.category,
+                    module_mock.due, module_mock.get_progress(),
+                ])
+            return csvrows
+
+        grmock.grade.assert_called_with(ANY, ANY, ANY)
+        gemock.assert_called_with(ANY, ANY, ANY)
+        self.assertEquals(rows, create_csvrow([csvheader]))
+    """
 
     def test_get_children_rec(self):
         course_mock = MagicMock()
@@ -520,8 +569,7 @@ class ProgressReportTestCase(ModuleStoreTestCase):
         progress_mock.get_raw.return_value = rows
         scontent_mock = MagicMock()
         cstore_mock = MagicMock()
-        enter_mock = MagicMock()
-        cstore_mock.fs.new_file.return_value = enter_mock
+        cstore_mock.fs.new_file().__exit__.return_value = False
 
         with nested(
             patch('pgreport.views.StaticContent', return_value=scontent_mock),
@@ -539,7 +587,7 @@ class ProgressReportTestCase(ModuleStoreTestCase):
         scontent_mock.get_url_path.assert_called_once_with()
 
         progress_mock.get_raw.return_value = rows
-        cstore_mock.fs.new_file.side_effect = GridFSError()
+        cstore_mock.fs.new_file().__enter__().write.side_effect = GridFSError()
         with nested(
             patch('pgreport.views.StaticContent', return_value=scontent_mock),
             patch('pgreport.views.contentstore', return_value=cstore_mock),

@@ -3,12 +3,12 @@
 """
 from optparse import make_option
 from django.core.management.base import BaseCommand, CommandError
-from pgreport.tasks import update_table_task, ProgressReportTask, check_course_id
+from pgreport.tasks import update_table_task, ProgressReportTask, check_course_id, TaskState
 
 
 class Command(BaseCommand):
-    args = "<update or list or status or revoke>"
-    help = """Push task that update progress_modules table\n  update_table_task update: Update progress_module table.\n  update_table_task list: List active tasks.\n  update_table_task status -t [task_id]: Show task status.\n  update_table_task revoke -t [task_id]: Revoke task."""""
+    args = "<update or list or status, revoke or clear_cache>"
+    help = """Push task that update progress_modules table\n  update_table_task update: Update progress_module table.\n  update_table_task list: List active tasks.\n  update_table_task status -t [task_id]: Show task status.\n  update_table_task revoke -t [task_id]: Revoke task.\n update_table_task clear_cache -c [course_id]: clear memcache."""
     option_list = BaseCommand.option_list + (
         make_option(
             '-c', '--course-id',
@@ -35,7 +35,8 @@ class Command(BaseCommand):
             check_course_id(course_id)
 
         if len(args) != 1:
-            raise CommandError('Required subcommand, update, list, status or revoke.')
+            raise CommandError(
+                'Required subcommand, update, list, status, revoke or clear_cache.')
         command = args[0]
         task = ProgressReportTask(update_table_task)
 
@@ -50,6 +51,14 @@ class Command(BaseCommand):
                 raise CommandError('"revoke" subcommand required task_id.')
             task.revoke_task(task_id)
         elif command == "update":
-            task.send_tasks(course_id)
+            if course_id:
+                task.send_task(course_id)
+            else:
+                task.send_tasks()
+        elif command == "clear_cache":
+            if course_id is None:
+                raise CommandError('"clear_cache" subcommand required course_id.')
+            state = TaskState("pgreport.tasks.update_table_task", course_id)
+            state.delete_task_state()
         else:
             raise CommandError('Invalid subcommand.')
