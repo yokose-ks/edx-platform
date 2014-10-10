@@ -15220,3 +15220,11 @@ msgstr "Problemモジュールの進捗"
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid "You do not have permission to use this function."
 msgstr "この機能を使用する権限がありません。"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "Email not delivered"
+msgstr "メール配信不能"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "Your registered Email address might be wrong or denied by Spam-filter"
+msgstr "登録されたメールアドレスが間違っているか迷惑メールフィルタによって拒否されている可能性があります"
