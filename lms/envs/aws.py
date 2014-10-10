@@ -442,7 +442,7 @@ FB_ACTION_TYPE = ENV_TOKENS.get('FB_ACTION_TYPE', "")
 
 CELERY_TIMEZONE = ENV_TOKENS.get('CELERY_TIMEZONE', TIME_ZONE)
 from celery.schedules import crontab
-task_schedule = ENV_TOKENS.get('TASK_SCHEDULE', [])
+task_schedule = ENV_TOKENS.get('TASK_SCHEDULE', {})
 CELERYBEAT_SCHEDULE = {}
 for name, val in task_schedule.items():
     celery_task = {
