@@ -30,22 +30,35 @@ class TaskStateTestCase(TestCase):
         pass
 
     def test_is_active(self):
+        self.cache_mock.get.return_value = {"course_id": "date"}
         state = TaskState("task_name", "course_id")
         result = state.is_active
         self.assertEquals(result, True)
-        self.cache_mock.get.assert_called_once_with(key=state.key, default=None)
+        self.cache_mock.get.assert_called_once_with(key=state.key, default={})
 
         self.cache_mock.get.return_value = None
         result = state.is_active
         self.assertEquals(result, False)
         
     def test_set_task_state(self):
-        state = TaskState("task_name", "course_id")
+        self.cache_mock.get.return_value = {"course_id": "date"}
+        state = TaskState("task_name", "course_id2")
         state.set_task_state()
-        self.cache_mock.set.assert_called_once_with(
-            key=state.key, value=ANY, timeout=state.timeout)
+        self.cache_mock.set.assert_called_with(key=state.key, value={
+            'course_id': 'date', 'course_id2': ANY})
+
+        self.cache_mock.get.return_value = None
+        state.set_task_state()
+        self.cache_mock.set.assert_called_with(key=state.key, value={
+            'course_id2': ANY})
 
     def test_delete_task_state(self):
+        self.cache_mock.get.return_value = {"course_id": "date", "course_id2": "date"}
+        state = TaskState("task_name", "course_id")
+        state.delete_task_state()
+        self.assertEquals(self.cache_mock.delete.call_count, 0)
+
+        self.cache_mock.get.return_value = {} 
         state = TaskState("task_name", "course_id")
         state.delete_task_state()
         self.cache_mock.delete.assert_called_once_with(key=state.key)
@@ -61,23 +74,24 @@ class BaseProgressReportTaskTestCase(TestCase):
 
     @patch('pgreport.tasks.TaskState')
     def test_delete_task_state(self, state_mock):
-        pass
-        """
         base = BaseProgressReportTask()
-        base._delete_task_state()
-        """
+        base._delete_task_state(args=["task_name", "course_id"])
+        state_mock.assert_called_with(ANY, "course_id")
+
+        base._delete_task_state(args=None)
+        state_mock.assert_called_with(ANY, "AllCourses")
 
     @patch('pgreport.tasks.BaseProgressReportTask._delete_task_state')
     def test_on_success(self, del_mock):
         base = BaseProgressReportTask()
         base.on_success("retval", "task_id", "args", "kwargs")
-        del_mock.assert_called_once_with()
+        del_mock.assert_called_once_with("args")
 
     @patch('pgreport.tasks.BaseProgressReportTask._delete_task_state')
     def test_on_failure(self, del_mock):
         base = BaseProgressReportTask()
         base.on_failure("exc", "task_id", "args", "kwargs", "einfo")
-        del_mock.assert_called_once_with()
+        del_mock.assert_called_once_with("args")
 
 @override_settings(MODULESTORE=TEST_DATA_MIXED_MODULESTORE)
 class ProgressReportTaskTestCase(ModuleStoreTestCase):
@@ -151,34 +165,12 @@ class ProgressReportTaskTestCase(ModuleStoreTestCase):
         )
 
     @patch('pgreport.tasks.ProgressReportTask.send_task') 
-    @patch('pgreport.tasks.check_course_id') 
     @patch('pgreport.tasks.modulestore') 
-    def test_send_tasks(self, module_mock, check_mock, send_mock):
+    def test_send_tasks(self, module_mock, send_mock):
         task = ProgressReportTask(self.func_mock)
-        task.send_tasks(self.course1.id)
+        module_mock().get_courses.return_value = self.courses
 
-        module_mock.assert_called_with(task.modulestore_name)
-        module_mock().get_course.assert_called_once_with(self.course1.id)
-        check_mock.assert_called_once_with(self.course1.id)
-        send_mock.assert_called_once_with(self.course1.id)
-
-        msg = "^Course is not found \({}\)".format(self.course1.id)
-        with self.assertRaisesRegexp(ProgressreportException, msg):
-            store_mock = MagicMock()
-            store_mock.get_course.return_value = None
-            module_mock.return_value = store_mock
-            task.send_tasks(self.course1.id)
-
-    @patch('pgreport.tasks.ProgressReportTask.send_task') 
-    @patch('pgreport.tasks.check_course_id') 
-    @patch('pgreport.tasks.modulestore')
-    def test_send_tasks_for_all_active_courses(self, module_mock, check_mock, send_mock):
-        task = ProgressReportTask(self.func_mock)
-        store_mock = MagicMock()
-        store_mock.get_courses.return_value = self.courses
-        module_mock.return_value = store_mock
-        task.send_tasks(None)
-
+        task.send_tasks()
         module_mock.assert_called_with(task.modulestore_name)
         module_mock().get_courses.assert_called_once_with()
         send_mock.assert_has_calls([call(self.course1.id), call(self.course2.id)])
@@ -286,6 +278,6 @@ class ProgressReportTaskTestCase(ModuleStoreTestCase):
         with patch('pgreport.tasks.ProgressReportTask',
              return_value=task_mock) as prt_mock:
 
-            update_table_task_for_active_course(self.course1.id)
+            update_table_task_for_active_course()
             prt_mock.assert_called_once_with(update_table_task)
-            task_mock.send_tasks.assert_called_once_with(self.course1.id)
+            task_mock.send_tasks.assert_called_once_with()
