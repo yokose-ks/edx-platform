@@ -6,6 +6,8 @@ from optparse import make_option
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 
+from opaque_keys import InvalidKeyError
+from opaque_keys.edx.locator import CourseLocator
 from student.models import CourseEnrollment, get_user_by_username_or_email
 from bulk_email.models import Optout
 
@@ -18,9 +20,9 @@ class Command(BaseCommand):
     args = '<email or username>'
     option_list = BaseCommand.option_list + (
         make_option('-c', '--course_id',
-                    metavar="COURSE_ID",
-                    dest='spec_course_id',
-                    default=False,
+                    action="store",
+                    dest='course_id',
+                    default=None,
                     help="Change specific course state"),
         make_option('-r', '--reactivate',
                     action="store_true",
@@ -30,8 +32,6 @@ class Command(BaseCommand):
     )
 
     def handle(self, *args, **options):
-        spec_course_id = options['spec_course_id']
-        reactivate = options['reactivate']
         if len(args) != 1:
             raise CommandError('Must called with arguments: {}'.format(self.args))
         try:
@@ -39,8 +39,14 @@ class Command(BaseCommand):
         except:
             raise CommandError('No user exists [ {} ]'.format(args[0]))
 
-        if spec_course_id:
-            self.change_optout_state(user, spec_course_id, reactivate)
+        course_id = options['course_id']
+        reactivate = options['reactivate']
+        if course_id:
+            try:
+                course_id = CourseLocator.from_string(course_id)
+            except InvalidKeyError:
+                raise CommandError("'{}' is an invalid course_id".format(course_id))
+            self.change_optout_state(user, course_id, reactivate)
         else:
             course_enrollments = CourseEnrollment.enrollments_for_user(user)
             for enrollment in course_enrollments:

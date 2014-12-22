@@ -16,11 +16,11 @@ class BulkEmailCommandTestCase(TestCase):
 
     def setUp(self):
 
-        self.kwargs = {"spec_course_id": False, "reactivate": False}
+        self.kwargs = {"course_id": None, "reactivate": False}
         ###dummy course
         self.course = CourseFactory.create()
 
-        self.spec_course_kwargs = {"spec_course_id": self.course.id, "reactivate": False}
+        self.course_kwargs = {"course_id": self.course.id.to_deprecated_string(), "reactivate": False}
 
         ###testuser1 (enrolled one course and no optout)
         self.user = UserFactory.create(username="testuser1", email="testuser1@example.com")
@@ -28,7 +28,7 @@ class BulkEmailCommandTestCase(TestCase):
         self.args = [self.user.email]
 
         ###testuser1 reactivate(enrolled one course and no optout)
-        self.reactivate_kwargs = {"spec_course_id": False, "reactivate": True}
+        self.reactivate_kwargs = {"course_id": None, "reactivate": True}
 
         ###testuser2 (enrolled no course and no optout)
         self.nocourse_user = UserFactory.create(username="testuser2", email="testuser2@example.com")
@@ -69,9 +69,9 @@ class BulkEmailCommandTestCase(TestCase):
             user_mock.assert_called_once_with("testuser1@example.com")
             optout_mock.assert_called_once_with(course_id=self.course.id, user=self.user)
 
-    def test_handle_spec_course_deactivate(self):
+    def test_handle_course_deactivate(self):
         with patch('bulk_email.management.commands.deactivate_bulk_email.get_user_by_username_or_email', return_value=self.user) as user_mock:
-            deactivate_bulk_email.Command().handle(*self.args, **self.spec_course_kwargs)
+            deactivate_bulk_email.Command().handle(*self.args, **self.course_kwargs)
             user_mock.assert_called_once_with("testuser1@example.com")
 
     def test_handle_nocourse(self):
