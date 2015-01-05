@@ -41,7 +41,7 @@ from django.template.response import TemplateResponse
 
 from ratelimitbackend.exceptions import RateLimitException
 
-from edxmako.shortcuts import render_to_response, render_to_string
+from edxmako.shortcuts import render_to_response, render_to_string, marketing_link
 from mako.exceptions import TopLevelLookupException
 
 from course_modes.models import CourseMode
@@ -1084,10 +1084,13 @@ def logout_user(request):
     # to perform logging on successful logouts.
     logout(request)
     if settings.FEATURES.get('AUTH_USE_CAS'):
-        target = reverse('cas-logout')
+        redirect_uri = reverse('cas-logout')
     else:
-        target = '/'
-    response = redirect(target)
+        redirect_uri = marketing_link('ROOT')
+        if redirect_uri is None or redirect_uri == "#":
+            redirect_uri = '/'
+
+    response = redirect(redirect_uri)
     response.delete_cookie(
         settings.EDXMKTG_COOKIE_NAME,
         path='/', domain=settings.SESSION_COOKIE_DOMAIN,
