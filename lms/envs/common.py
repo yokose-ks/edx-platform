@@ -347,6 +347,7 @@ XQUEUE_WAITTIME_BETWEEN_REQUESTS = 5  # seconds
 PROJECT_ROOT = path(__file__).abspath().dirname().dirname()  # /edx-platform/lms
 REPO_ROOT = PROJECT_ROOT.dirname()
 COMMON_ROOT = REPO_ROOT / "common"
+GACCO_ROOT = REPO_ROOT / "ga"
 ENV_ROOT = REPO_ROOT.dirname()  # virtualenv dir /edx-platform is in
 COURSES_ROOT = ENV_ROOT / "data"
 
@@ -826,7 +827,10 @@ USE_I18N = True
 USE_L10N = True
 
 # Localization strings (e.g. django.po) are under this directory
-LOCALE_PATHS = (REPO_ROOT + '/conf/locale',)  # edx-platform/conf/locale/
+LOCALE_PATHS = (
+    GACCO_ROOT + '/conf/locale',
+    REPO_ROOT + '/conf/locale',  # edx-platform/conf/locale/
+)
 # Messages
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
