@@ -27,6 +27,7 @@ class CourseTab(object):  # pylint: disable=incomplete-protocol
     # Class property that specifies the type of the tab.  It is generally a constant value for a
     # subclass, shared by all instances of the subclass.
     type = ''
+    icon = ''
 
     # Class property that specifies whether the tab can be hidden for a particular course
     is_hideable = False
@@ -281,6 +282,7 @@ class CoursewareTab(EnrolledOrStaffTab):
     """
 
     type = 'courseware'
+    icon = 'fa fa-edit'
     is_movable = False
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
@@ -298,6 +300,7 @@ class CourseInfoTab(CourseTab):
     """
 
     type = 'course_info'
+    icon = 'fa fa-info-circle'
     is_movable = False
 
     def __init__(self, tab_dict=None):
@@ -319,6 +322,7 @@ class ProgressTab(EnrolledOrStaffTab):
     """
 
     type = 'progress'
+    icon = 'fa fa-bar-chart'
 
     def __init__(self, tab_dict=None):
         super(ProgressTab, self).__init__(
@@ -345,6 +349,7 @@ class WikiTab(HideableTab):
     """
 
     type = 'wiki'
+    icon = 'fa fa-comment'
 
     def __init__(self, tab_dict=None):
         super(WikiTab, self).__init__(
@@ -371,6 +376,7 @@ class DiscussionTab(EnrolledOrStaffTab):
     """
 
     type = 'discussion'
+    icon = 'fa fa-comments'
 
     def __init__(self, tab_dict=None):
         super(DiscussionTab, self).__init__(
@@ -438,6 +444,7 @@ class ExternalDiscussionTab(LinkTab):
     """
 
     type = 'external_discussion'
+    icon = 'fa fa-question-circle'
 
     def __init__(self, tab_dict=None, link_value=None):
         super(ExternalDiscussionTab, self).__init__(
@@ -453,6 +460,7 @@ class ExternalLinkTab(LinkTab):
     A tab containing an external link.
     """
     type = 'external_link'
+    icon = 'fa fa-question-circle'
 
     def __init__(self, tab_dict):
         super(ExternalLinkTab, self).__init__(
@@ -467,6 +475,7 @@ class StaticTab(CourseTab):
     A custom tab.
     """
     type = 'static_tab'
+    icon = 'fa fa-circle'
 
     @classmethod
     def validate(cls, tab_dict, raise_error=True):
@@ -509,6 +518,7 @@ class SingleTextbookTab(CourseTab):
     Textbook collection tab.  It should not be serialized or persisted.
     """
     type = 'single_textbook'
+    icon = 'fa fa-book'
     is_movable = False
     is_collection_item = True
 
@@ -544,6 +554,7 @@ class TextbookTabs(TextbookTabsBase):
     A tab representing the collection of all textbook tabs.
     """
     type = 'textbooks'
+    icon = 'fa fa-book'
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
         super(TextbookTabs, self).__init__(
@@ -567,6 +578,8 @@ class PDFTextbookTabs(TextbookTabsBase):
     A tab representing the collection of all PDF textbook tabs.
     """
     type = 'pdf_textbooks'
+    icon = 'fa fa-book'
+
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
         super(PDFTextbookTabs, self).__init__(
@@ -587,6 +600,8 @@ class HtmlTextbookTabs(TextbookTabsBase):
     A tab representing the collection of all Html textbook tabs.
     """
     type = 'html_textbooks'
+    icon = 'fa fa-book'
+
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
         super(HtmlTextbookTabs, self).__init__(
@@ -614,6 +629,7 @@ class StaffGradingTab(StaffTab, GradingTab):
     A tab for staff grading.
     """
     type = 'staff_grading'
+    icon = 'fa fa-check-square-o'
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
         super(StaffGradingTab, self).__init__(
@@ -630,6 +646,7 @@ class PeerGradingTab(AuthenticatedCourseTab, GradingTab):
     A tab for peer grading.
     """
     type = 'peer_grading'
+    icon = 'fa fa-check-square-o'
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
         super(PeerGradingTab, self).__init__(
@@ -646,6 +663,7 @@ class OpenEndedGradingTab(AuthenticatedCourseTab, GradingTab):
     A tab for open ended grading.
     """
     type = 'open_ended'
+    icon = 'fa fa-check-square-o'
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
         super(OpenEndedGradingTab, self).__init__(
@@ -662,6 +680,7 @@ class SyllabusTab(CourseTab):
     A tab for the course syllabus.
     """
     type = 'syllabus'
+    icon = 'fa fa-list-alt'
 
     def can_display(self, course, settings, is_user_authenticated, is_user_staff, is_user_enrolled):
         return hasattr(course, 'syllabus_present') and course.syllabus_present
@@ -680,6 +699,7 @@ class NotesTab(AuthenticatedCourseTab):
     A tab for the course notes.
     """
     type = 'notes'
+    icon = 'fa fa-file-text'
 
     def can_display(self, course, settings, is_user_authenticated, is_user_staff, is_user_enrolled):
         return settings.FEATURES.get('ENABLE_STUDENT_NOTES')
@@ -701,6 +721,7 @@ class EdxNotesTab(AuthenticatedCourseTab):
     A tab for the course student notes.
     """
     type = 'edxnotes'
+    icon = 'fa fa-file-text'
 
     def can_display(self, course, settings, is_user_authenticated, is_user_staff, is_user_enrolled):
         return settings.FEATURES.get('ENABLE_EDXNOTES')
@@ -722,6 +743,7 @@ class InstructorTab(StaffTab):
     A tab for the course instructors.
     """
     type = 'instructor'
+    icon = 'fa fa-gears'
 
     def __init__(self, tab_dict=None):  # pylint: disable=unused-argument
         super(InstructorTab, self).__init__(
