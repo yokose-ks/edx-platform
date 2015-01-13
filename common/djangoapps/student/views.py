@@ -263,12 +263,17 @@ def single_course_reverification_info(user, course, enrollment):  # pylint: disa
     )
 
 
-def get_course_enrollment_pairs(user, course_org_filter, org_filter_out_set):
+def get_course_enrollment_pairs(user, course_org_filter, org_filter_out_set, sort_order="default"):
     """
     Get the relevant set of (Course, CourseEnrollment) pairs to be displayed on
     a student's dashboard.
     """
-    for enrollment in CourseEnrollment.enrollments_for_user(user):
+    if sort_order == "-created":
+        enrollments = CourseEnrollment.enrollments_for_user(user).order_by('-created')
+    else:
+        enrollments = CourseEnrollment.enrollments_for_user(user)
+        
+    for enrollment in enrollments:
         store = modulestore()
         with store.bulk_operations(enrollment.course_id):
             course = store.get_course(enrollment.course_id)
@@ -507,7 +512,7 @@ def dashboard(request):
     # Build our (course, enrollment) list for the user, but ignore any courses that no
     # longer exist (because the course IDs have changed). Still, we don't delete those
     # enrollments, because it could have been a data push snafu.
-    course_enrollment_pairs = list(get_course_enrollment_pairs(user, course_org_filter, org_filter_out_set))
+    course_enrollment_pairs = list(get_course_enrollment_pairs(user, course_org_filter, org_filter_out_set, sort_order="-created"))
 
     # sort the enrollment pairs by the enrollment date
     course_enrollment_pairs.sort(key=lambda x: x[1].created, reverse=True)
