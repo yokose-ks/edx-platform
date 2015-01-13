@@ -1619,6 +1619,7 @@ INSTALLED_APPS = (
 
     # Certificate generator
     'pdfgen',
+    'pgreport',
 
     'lms.djangoapps.lms_xblock',
 )

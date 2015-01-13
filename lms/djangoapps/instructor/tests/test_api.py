@@ -25,7 +25,7 @@ from django.test import RequestFactory, TestCase
 from django.test.utils import override_settings
 from django.utils.timezone import utc
 
-from mock import Mock, patch
+from mock import Mock, patch, ANY
 from nose.tools import raises
 from opaque_keys.edx.locations import SlashSeparatedCourseKey
 
@@ -60,6 +60,7 @@ from instructor.tests.utils import FakeContentTask, FakeEmail, FakeEmailInfo
 from instructor.views.api import generate_unique_password
 from instructor.views.api import _split_input_list, common_exceptions_400
 from instructor_task.api_helper import AlreadyRunningError
+from xmodule.exceptions import NotFoundError
 
 from .test_tools import msk_from_problem_urlname
 from ..views.tools import get_extended_due
@@ -189,6 +190,8 @@ class TestInstructorAPIDenyLevels(ModuleStoreTestCase, LoginEnrollmentTestCase):
             ('list_report_downloads', {}),
             ('calculate_grades_csv', {}),
             ('get_students_features', {}),
+            ('create_pgreport_csv', {}),
+            ('get_pgreport_csv', {}),
         ]
         # Endpoints that only Instructors can access
         self.instructor_level_endpoints = [
@@ -253,7 +256,7 @@ class TestInstructorAPIDenyLevels(ModuleStoreTestCase, LoginEnrollmentTestCase):
 
         for endpoint, args in self.staff_level_endpoints:
             # TODO: make these work
-            if endpoint in ['update_forum_role_membership', 'proxy_legacy_analytics', 'list_forum_members']:
+            if endpoint in ['update_forum_role_membership', 'proxy_legacy_analytics', 'list_forum_members', 'create_pgreport_csv', 'get_pgreport_csv']:
                 continue
             self._access_endpoint(
                 endpoint,
@@ -280,7 +283,7 @@ class TestInstructorAPIDenyLevels(ModuleStoreTestCase, LoginEnrollmentTestCase):
 
         for endpoint, args in self.staff_level_endpoints:
             # TODO: make these work
-            if endpoint in ['update_forum_role_membership', 'proxy_legacy_analytics']:
+            if endpoint in ['update_forum_role_membership', 'proxy_legacy_analytics', 'create_pgreport_csv', 'get_pgreport_csv']:
                 continue
             self._access_endpoint(
                 endpoint,
@@ -3711,3 +3714,62 @@ class TestInstructorAPISurveyDownload(ModuleStoreTestCase, LoginEnrollmentTestCa
         #Note(EDX-501): Modified temporarily.
         #self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Gender","Year of Birth","Level of Education","Disabled"')
         self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Disabled"')
+
+
+#class TestInstructorAPIProgressModules(ModuleStoreTestCase, LoginEnrollmentTestCase):
+@override_settings(MODULESTORE=TEST_DATA_MIXED_MODULESTORE)
+class TestInstructorAPIProgressModules(ModuleStoreTestCase):
+    """
+    Test instructor progress modules endpoint.
+    """
+    def setUp(self):
+        self.course = CourseFactory.create()
+        self.instructor = InstructorFactory(course_key=self.course.id)
+        self.client.login(username=self.instructor.username, password='test')
+
+    def test_create_pgreport_url(self):
+        """ Test create url generation. """
+        create_url = reverse('create_pgreport_csv', kwargs={'course_id': self.course.id.to_deprecated_string()})
+
+        with patch('instructor_task.api.submit_create_pgreport_csv') as mock_task:
+            mock_task.return_value = True
+            response = self.client.get(create_url, {})
+
+        mock_task.assert_called_once_with(ANY, self.course.id)
+        success_status = "Report is being generated! You can view the status of the generation task in the 'Pending Instructor Tasks' section."
+        self.assertEqual(response.status_code, 200)
+        self.assertIn(success_status, response.content)
+
+        with patch('instructor_task.api.submit_create_pgreport_csv') as mock_task2:
+            mock_task2.side_effect = AlreadyRunningError()
+            response = self.client.get(create_url)
+
+        mock_task2.assert_called_once_with(ANY, self.course.id)
+        already_running_status = "Report generation task is already in progress. Check the 'Pending Instructor Tasks' table for the status of the task. When completed, the report will be available for download in the table below."
+        self.assertIn(already_running_status, response.content)
+
+    def test_get_pgreport_url(self):
+        """ Test get url generation. """
+        get_url = reverse('get_pgreport_csv', kwargs={'course_id': self.course.id.to_deprecated_string()})
+        cstore_mock = Mock()
+        content_mock = Mock()
+        content_mock.stream_data.return_value = ["row1", "row2", "row3"]
+        cstore_mock.find.return_value = content_mock
+
+        with patch('instructor.views.api.contentstore', return_value=cstore_mock) as pmock:
+            response = self.client.get(get_url, {})
+
+        self.assertEqual(response.status_code, 200)
+        pmock.assert_called_once_with()
+        cstore_mock.find.assert_called_once_with(ANY, throw_on_not_found=True, as_stream=True)
+        content_mock.stream_data.assert_called_once_with()
+        self.assertEquals(response.content, 'row1row2row3')
+
+        cstore_mock.reset_mock()
+        cstore_mock.find.side_effect = NotFoundError()
+        with patch('instructor.views.api.contentstore', return_value=cstore_mock) as p2mock:
+            response = self.client.get(get_url, {})
+
+        p2mock.assert_called_once_with()
+        cstore_mock.find.assert_called_once_with(ANY, throw_on_not_found=True, as_stream=True)
+        self.assertEqual(response.status_code, 403)
