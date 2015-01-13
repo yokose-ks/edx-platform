@@ -77,6 +77,7 @@ def instructor_dashboard_2(request, course_id):
         _section_student_admin(course, access),
         _section_data_download(course, access),
         _section_analytics(course, access),
+        _section_survey(course, access),
     ]
 
     #check if there is corresponding entry in the CourseMode Table related to the Instructor Dashboard course
@@ -433,5 +434,16 @@ def _section_metrics(course, access):
         'get_students_opened_subsection_url': reverse('get_students_opened_subsection'),
         'get_students_problem_grades_url': reverse('get_students_problem_grades'),
         'post_metrics_data_csv_url': reverse('post_metrics_data_csv'),
+    }
+    return section_data
+
+def _section_survey(course, access):
+    """ Provide data for the corresponding survey section """
+    course_key = course.id
+    section_data = {
+        'section_key': 'survey',
+        'section_display_name': _('Survey'),
+        'access': access,
+        'get_survey_url': reverse('get_survey', kwargs={'course_id': course_key.to_deprecated_string()}),
     }
     return section_data

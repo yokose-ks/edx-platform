@@ -84,6 +84,9 @@ urlpatterns = ('',  # nopep8
     # CourseInfo API RESTful endpoints
     url(r'^api/course/details/v0/', include('course_about.urls')),
 
+    # Entrance/Exit Survey (xmodule/templates/html)
+    url(r'^survey_init$', 'ga_survey.views.survey_init', name="survey_init"),
+    url(r'^survey_ajax$', 'ga_survey.views.survey_ajax', name="survey_ajax"),
 )
 
 if settings.FEATURES["ENABLE_MOBILE_REST_API"]:

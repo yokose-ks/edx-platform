@@ -1614,6 +1614,9 @@ INSTALLED_APPS = (
     # Surveys
     'survey',
 
+    # Entrance/Exit Survey (xmodule/templates/html)
+    'ga_survey',
+
     'lms.djangoapps.lms_xblock',
 )
 
