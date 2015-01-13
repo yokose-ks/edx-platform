@@ -1617,6 +1617,9 @@ INSTALLED_APPS = (
     # Entrance/Exit Survey (xmodule/templates/html)
     'ga_survey',
 
+    # Certificate generator
+    'pdfgen',
+
     'lms.djangoapps.lms_xblock',
 )
 
