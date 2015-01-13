@@ -5,6 +5,7 @@ from functools import wraps
 
 from django.conf import settings
 from django.core.validators import ValidationError, validate_email
+from django.utils.translation import ugettext as _
 from django.views.decorators.csrf import requires_csrf_token
 from django.views.defaults import server_error
 from django.http import (Http404, HttpResponse, HttpResponseNotAllowed,
@@ -202,10 +203,10 @@ def submit_feedback(request):
     if not request.user.is_authenticated():
         required_fields += ["name", "email"]
     required_field_errs = {
-        "subject": "Please provide a subject.",
-        "details": "Please provide details.",
-        "name": "Please provide your name.",
-        "email": "Please provide a valid e-mail.",
+        "subject": _("Please provide a subject."),
+        "details": _("Please provide details."),
+        "name": _("Please provide your name."),
+        "email": _("Please provide a valid e-mail."),
     }
 
     for field in required_fields:
