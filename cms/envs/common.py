@@ -835,6 +835,7 @@ ADVANCED_COMPONENT_TYPES = [
     'notes',
     'schoolyourself_review',
     'schoolyourself_lesson',
+    'pollxblock',
 ]
 
 # Adding components in this list will disable the creation of new problem for those
