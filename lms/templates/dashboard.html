@@ -41,6 +41,7 @@
         changeEmailSettings: "${reverse('change_email_settings')}",
         changeName: "${reverse('change_name')}",
         verifyToggleBannerFailedOff: "${reverse('verify_student_toggle_failed_banner_off')}",
+        resign: "${reverse("resign")}",
       });
     });
   </script>
@@ -163,6 +164,12 @@
             <!-- <input type="submit" id="pwd_reset_button" value="${_("Reset Password")}" /> -->
           </form>
         </li>
+        <li class="controls--account">
+          <span class="title"><a href="#resign_complete" rel="leanModal" id="resign_button">${_("Resign")}</a></span>
+          <form id="resign_form" method="post" data-remote="true" action="${reverse('resign')}">
+            <input id="id_email" type="hidden" name="email" maxlength="75" value="${user.email}" />
+          </form>
+        </li>
         % endif
 
         <%include file='dashboard/_dashboard_status_verification.html' />
@@ -283,6 +290,36 @@
       <form> <!-- Here for styling reasons -->
         <section>
           <p>${_("An email has been sent to {email}. Follow the link in the email to change your password.").format(email=user.email)}</p>
+        </section>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="resign_complete" class="modal" aria-hidden="true">
+  <div class="inner-wrapper" role="dialog" aria-labelledby="resign-email">
+    <button class="close-modal">
+      <i class="icon-remove"></i>
+      <span class="sr">
+        ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
+        ${_('Close')}
+      </span>
+    </button>
+
+    <header>
+      <h2 id="resign-email">
+        ${_('Resign Email Sent')}
+        <span class="sr">,
+          ## Translators: this text gives status on if the modal interface (a menu or piece of UI that takes the full focus of the screen) is open or not
+          ${_("window open")}
+        </span>
+      </h2>
+      <hr/>
+    </header>
+    <div>
+      <form> <!-- Here for styling reasons -->
+        <section>
+          <p>${_('An email has been sent to {email}. Follow the link in the email to resign.').format(email=user.email)}</p>
         </section>
       </form>
     </div>

@@ -131,6 +131,10 @@
             );
         });
 
+        $('#resign_button').click(function() {
+            $.post(urls.resign, {"email": $('#id_email').val()});
+        });
+
         $("#submit-lang").click(function(event) {
             event.preventDefault();
             $.post('/lang_pref/setlang/',
@@ -217,6 +221,13 @@
             "#pwd_reset_button",
             "#password_reset_complete .close-modal",
             "#password_reset_complete",
+            "#dashboard-main"
+        );
+
+        accessibleModal(
+            "#resign_button",
+            "#resign_complete .close-modal",
+            "#resign_complete",
             "#dashboard-main"
         );
 

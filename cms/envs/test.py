@@ -202,6 +202,9 @@ SEGMENT_IO_KEY = '***REMOVED***'
 
 FEATURES['ENABLE_SERVICE_STATUS'] = True
 
+# This is to disable a test under the common directory that will not pass when run under CMS
+FEATURES['DISABLE_RESIGN_EMAIL_TEST'] = True
+
 # Toggles embargo on for testing
 FEATURES['EMBARGO'] = True
 
