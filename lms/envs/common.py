@@ -1636,6 +1636,7 @@ MKTG_URL_LINK_MAP = {
     # Verified Certificates
     'WHAT_IS_VERIFIED_CERT': 'verified-certificate',
 }
+MKTG_URL_LINK_MAP_URLS = {}
 
 ################# Mobile URLS ##########################
 
