@@ -3,7 +3,7 @@ Utility functions for validating forms
 """
 from django import forms
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import PasswordResetForm
+from django.contrib.auth.forms import PasswordResetForm, SetPasswordForm
 from django.contrib.auth.hashers import UNUSABLE_PASSWORD
 from django.contrib.auth.tokens import default_token_generator
 
@@ -13,6 +13,7 @@ from django.template import loader
 from django.conf import settings
 from microsite_configuration import microsite
 
+from django.utils.translation import ugettext_lazy as _
 
 class PasswordResetFormNoActive(PasswordResetForm):
     def clean_email(self):
@@ -70,3 +71,19 @@ class PasswordResetFormNoActive(PasswordResetForm):
             subject = subject.replace('\n', '')
             email = loader.render_to_string(email_template_name, context)
             send_mail(subject, email, from_email, [user.email])
+
+class SetPasswordFormErrorMessages(SetPasswordForm):
+    """
+    A form to enter new password.
+    The only change from django.contrib.auth.forms.SetResignReasonForm is error_messages.
+    """
+    new_password1 = forms.CharField(
+        label=_("New password"),
+        widget=forms.PasswordInput,
+        error_messages={'required': _('New password is required.')},
+    )
+    new_password2 = forms.CharField(
+        label=_("New password confirmation"),
+        widget=forms.PasswordInput,
+        error_messages={'required': _('New password confirmation is required.')},
+    )

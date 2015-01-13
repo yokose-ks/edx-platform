@@ -55,7 +55,7 @@ from student.models import (
     CourseEnrollmentAllowed, UserStanding, LoginFailures,
     create_comments_service_user, PasswordHistory, UserSignupSource,
     DashboardConfiguration)
-from student.forms import PasswordResetFormNoActive
+from student.forms import PasswordResetFormNoActive, SetPasswordFormErrorMessages
 
 from verify_student.models import SoftwareSecurePhotoVerification, MidcourseReverificationWindow
 from certificates.models import CertificateStatuses, certificate_status_for_student
@@ -1977,7 +1977,8 @@ def password_reset_confirm_wrapper(
             old_password_hash = user.password
 
             result = password_reset_confirm(
-                request, uidb36=uidb36, token=token, extra_context=extra_context
+                request, uidb36=uidb36, token=token, extra_context=extra_context,
+                set_password_form=SetPasswordFormErrorMessages
             )
 
             # get the updated user
