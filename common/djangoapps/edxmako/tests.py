@@ -42,6 +42,7 @@ class ShortcutsTests(UrlResetMixin, TestCase):
 
     @ddt.data((True, True), (False, False), (False, True), (True, False))
     @ddt.unpack
+    @override_settings(FAVICON_PATH="images/foo.ico")
     def test_header_and_footer(self, header_setting, footer_setting):
         with patch.dict('django.conf.settings.FEATURES', {
             'ENABLE_NEW_EDX_HEADER': header_setting,

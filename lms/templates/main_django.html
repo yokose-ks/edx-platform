@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   {% block title %}<title>{% platform_name %}</title>{% endblock %}
 
- <link rel="icon" type="image/x-icon" href="{% favicon_path %}" />
+ <link rel="icon" type="image/x-icon" href="{% static FAVICON_PATH %}" />
 
   {% compressed_css 'style-vendor' %}
   {% compressed_css 'style-app' %}
@@ -31,7 +31,10 @@
 
 <body class="{% block bodyclass %}{% endblock %} lang_{{LANGUAGE_CODE}}">
   <a class="nav-skip" href="{% block nav_skip %}#content{% endblock %}">{% trans "Skip to this view's content" %}</a>
-  {% if ENABLE_NEW_EDX_HEADER %}
+  {% if ENABLE_CUSTOM_THEME %}
+    {% include "theme-head-extra.html" %}
+    {% include "theme-header.html" %}
+  {% elif ENABLE_NEW_EDX_HEADER %}
     {% include "navigation.html" %}
   {% else %}
     {% include "original_navigation.html" %}
@@ -40,7 +43,9 @@
     {% block body %}{% endblock %}
     {% block bodyextra %}{% endblock %}
   </div>
-  {% if IS_EDX_DOMAIN %}
+  {% if ENABLE_CUSTOM_THEME %}
+    {% include "theme-footer.html" %}
+  {% elif IS_EDX_DOMAIN %}
     {% if ENABLE_NEW_EDX_FOOTER %}
         {% include "edx_footer.html" %}
     {% else %}

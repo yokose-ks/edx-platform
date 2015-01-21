@@ -87,7 +87,9 @@ def header_footer_context_processor(request):
     return dict(
         [
             ("ENABLE_NEW_EDX_HEADER", settings.FEATURES.get("ENABLE_NEW_EDX_HEADER", False)),
-            ("ENABLE_NEW_EDX_FOOTER", settings.FEATURES.get("ENABLE_NEW_EDX_FOOTER", False))
+            ("ENABLE_NEW_EDX_FOOTER", settings.FEATURES.get("ENABLE_NEW_EDX_FOOTER", False)),
+            ("ENABLE_CUSTOM_THEME", settings.FEATURES.get("USE_CUSTOM_THEME", False) and not microsite.is_request_in_microsite()),
+            ("FAVICON_PATH", microsite.get_value("favicon_path", settings.FAVICON_PATH))
         ]
     )
 
