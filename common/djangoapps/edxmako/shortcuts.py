@@ -83,7 +83,8 @@ def open_source_footer_context_processor(request):
     """
     return dict(
         [
-            ("IS_EDX_DOMAIN", settings.FEATURES.get('IS_EDX_DOMAIN', False))
+            ("IS_EDX_DOMAIN", settings.FEATURES.get('IS_EDX_DOMAIN', False)),
+            ("ENABLE_CUSTOM_THEME", settings.FEATURES.get("USE_CUSTOM_THEME", False) and not microsite.is_request_in_microsite())
         ]
     )
 
