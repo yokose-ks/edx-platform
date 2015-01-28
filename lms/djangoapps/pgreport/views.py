@@ -15,6 +15,7 @@ import StringIO
 import gzip
 
 from .models import ProgressModules
+from cache_toolbox.core import del_cached_content
 from opaque_keys import InvalidKeyError
 from opaque_keys.edx.keys import CourseKey, AssetKey
 from opaque_keys.edx.locator import CourseLocator
@@ -380,7 +381,7 @@ def create_pgreport_csv(course_id, update_state=None):
 
     try:
         gzipfile = StringIO.StringIO()
-        gzipcsv = gzip.GzipFile(fileobj=gzipfile, mode='wb')
+        gzipcsv = gzip.GzipFile(filename="progress_students.csv.gz", mode='wb', fileobj=gzipfile)
         writer = csv.writer(gzipcsv, encoding='utf-8')
         progress = ProgressReport(course_key, update_state)
 
@@ -391,13 +392,14 @@ def create_pgreport_csv(course_id, update_state=None):
         gzipcsv.close()
 
     try:
-        content_loc = StaticContent.compute_location(course_key, "progress_students.csv.gz")
+        content_loc = StaticContent.compute_location(course_key, gzipcsv.name)
         content = StaticContent(
             loc=content_loc,
-            name="progress_students.csv.gz",
-            content_type="text/comma-separated-values",
+            name=gzipcsv.name,
+            content_type="application/x-gzip",
             data=gzipfile.getvalue())
         contentstore().save(content)
+        del_cached_content(content_loc)
 
     except GridFSError as e:
         store.delete(content_id)
