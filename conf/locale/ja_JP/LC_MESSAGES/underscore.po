@@ -83,7 +83,7 @@ msgstr "この投稿は全ユーザーに表示されます。"
 #: common/templates/js/discussion/thread-show.underscore:31
 #, python-format
 msgid "%(post_type)s posted %(time_ago)s by %(author)s"
-msgstr " %(author)sによる%(time_ago)s前の投稿（%(post_type)s）"
+msgstr "%(author)sにより%(post_type)sとして%(time_ago)sに投稿"
 
 #: common/templates/js/discussion/thread-show.underscore:38
 msgid "Pinned"

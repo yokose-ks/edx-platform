@@ -1813,7 +1813,7 @@ msgstr[0] "%(numResponses)s件の投稿"
 #: common/static/coffee/src/discussion/views/discussion_thread_view.js:238
 msgid "%(numResponses)s response"
 msgid_plural "%(numResponses)s responses"
-msgstr[0] "%(numResponses)s の回答"
+msgstr[0] "%(numResponses)s件の返信"
 
 #: common/static/coffee/src/discussion/views/discussion_thread_view.js:247
 msgid "Showing all responses"

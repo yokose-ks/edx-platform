@@ -821,7 +821,7 @@ msgstr ""
 msgid ""
 "To gain insights into student enrollment and participation, "
 "{link_start}visit the new dashboard for course analytics{link_end}."
-msgstr "受講登録および三角柱の受講者情報を得るには、{link_start}新しい講座データの分析システム{link_end}へアクセス。"
+msgstr "受講者の受講状況、活動状況の情報を入手するには、{link_start}新しい分析ダッシュボード{link_end}をご利用ください。"
 
 #: lms/djangoapps/instructor/views/legacy.py
 msgid "Found a single student.  "
@@ -1395,7 +1395,7 @@ msgstr "購入済講座を受講取消してよろしいかご確認ください
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Are you sure you want to unregister from"
-msgstr "次の講座を受講取消してよろしいかご確認ください"
+msgstr "本当に受講取消しますか？<br />講座名："
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid ""
@@ -1411,12 +1411,20 @@ msgstr ""
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "{post_type} posted {time_ago} by {author}"
-msgstr "{author}により{post_type}として{time_ago}に投稿"
+msgstr "{author}により{time_ago}に投稿"
 
 #: lms/templates/discussion/_underscore_templates.html
 #, python-format
 msgid "(this post is about %(courseware_title_linked)s)"
 msgstr "(%(courseware_title_linked)sについての投稿)"
+
+#: lms/templates/discussion/_underscore_templates.html
+msgid "Thread list"
+msgstr "スレッド一覧"
+
+#: lms/templates/discussion/_underscore_templates.html
+msgid "Filter out topics"
+msgstr "トピックをフィルタ"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid ""
@@ -1954,16 +1962,15 @@ msgstr ""
 "何か不明な点がございましたら、<a href=\"mailto:%(support_email)s?subject=退会手続き\">%(support_email)s</a> へご連絡ください。"
 
 #: lms/templates/help_modal.html
-msgid "Do you have any questions?"
-msgstr "他にご質問がありますか？"
-
-#: lms/templates/help_modal.html
-msgid "See {link_start}FAQ{link_end}."
-msgstr "まずは、gacco<a href=\"https://support.gacco.org/\" target=\"_blank\">サポートサイト</a>をご覧ください。こちらに一般的なご質問に対しての情報が掲載されています。"
-
-#: lms/templates/help_modal.html
-msgid "If you have further questions, please send questions below."
-msgstr "お手数をお掛けしますが、サポートサイトにて記載のない内容については、改めてお問合せください。なお、返信には１〜３営業日（土日祝日等を除く）を頂いております。また、一般的な端末の操作方法等については、私どもにてご案内できかねますことご承知おきただけますと幸いです。"
+msgid ""
+"Thank you for your inquiry or feedback.  We typically respond to a request "
+"within one business day (Monday to Friday, {open_time} UTC to {close_time} "
+"UTC.) In the meantime, please review our {link_start}detailed FAQs{link_end}"
+" where most questions have already been answered."
+msgstr ""
+"他にご質問がありますか？<br />"
+"まずは、{link_start}よくある質問{link_end}をご覧ください。こちらに一般的なご質問に対しての情報が掲載されています。<br /><br />"
+"お手数をお掛けしますが、サポートサイトにて記載のない内容については、改めてお問合せください。なお、返信には１～３営業日（土日祝日等を除く）を頂いております。また、一般的な端末の操作方法等については、私どもにてご案内できかねますことご承知おきいただけますと幸いです。"
 
 #: lms/templates/help_modal.html
 msgid "Please provide a subject."

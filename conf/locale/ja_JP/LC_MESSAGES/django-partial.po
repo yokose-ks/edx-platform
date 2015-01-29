@@ -425,7 +425,7 @@ msgstr "有効なリンクにメールを送信できませんでした。後で
 
 #: common/djangoapps/student/views.py:2167
 msgid "Name required"
-msgstr "名前は必須"
+msgstr "氏名は必須"
 
 #: common/djangoapps/student/views.py:2210
 #: common/djangoapps/student/views.py:2227
