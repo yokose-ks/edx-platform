@@ -1424,6 +1424,10 @@ msgid ""
 "cohorts or only to a specific cohort."
 msgstr "講師は、特定のユーザー群宛に投稿されたものを全てのユーザー群に表示するか、特定のユーザー群にのみ表示するかを設定できます。"
 
+#: lms/templates/discussion/_underscore_templates.html
+msgid "%(votes_up_count)s%(span_sr_open)s votes %(span_close)s"
+msgstr "%(votes_up_count)s%(span_sr_open)s件%(span_close)s"
+
 #: lms/templates/emails/order_confirmation_email.txt
 msgid "Hi {name}"
 msgstr ""
