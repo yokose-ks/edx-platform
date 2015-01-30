@@ -502,7 +502,7 @@ msgstr "有効なリンクにメールを送信できませんでした。後で
 
 #: common/djangoapps/student/views.py
 msgid "Name required"
-msgstr "名前は必須"
+msgstr "氏名は必須"
 
 #: common/djangoapps/student/views.py common/djangoapps/student/views.py
 msgid "Invalid ID"
@@ -8006,7 +8006,7 @@ msgstr "学校"
 
 #: lms/templates/navigation.html lms/templates/navigation.html
 msgid "Register Now"
-msgstr "会員登録"
+msgstr "新規会員登録"
 
 #: lms/templates/notes.html lms/templates/textannotation.html
 #: lms/templates/videoannotation.html
@@ -8167,7 +8167,7 @@ msgid ""
 "Once registered, most questions can be answered in the course specific "
 "discussion forums or through the FAQs."
 msgstr ""
-"講座内容についての質問は、各講座内に設置されるディスカッションで講師・スタッフに問いかけましょう。サービス全般について質問は「よくある質問」をご確認ください。"
+"講座内容についての質問は、各講座内に設置されるディスカッションで講師・スタッフに問いかけましょう。サービス全般についての質問は「よくある質問」をご確認ください。"
 
 #: lms/templates/register.html
 msgid "Register for {platform_name}"
@@ -9530,15 +9530,15 @@ msgstr "{total:.3n}分の{earned:.3n}の可能性のある点"
 
 #: lms/templates/courseware/progress.html
 msgid "Problem Scores: "
-msgstr "問題のスコア："
+msgstr "課題："
 
 #: lms/templates/courseware/progress.html
 msgid "Practice Scores: "
-msgstr "演習のスコア："
+msgstr "練習問題："
 
 #: lms/templates/courseware/progress.html
 msgid "No problem scores in this section"
-msgstr "この章で問題のスコアはありません"
+msgstr "この節には課題・練習問題はありません。"
 
 #: lms/templates/courseware/syllabus.html
 msgid "{course.display_number_with_default} Course Info"
@@ -9969,7 +9969,7 @@ msgstr "フォローしている投稿"
 #: lms/templates/discussion/_recent_active_posts.html
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Following"
-msgstr "フォローしている"
+msgstr "フォロー中"
 
 #: lms/templates/discussion/_search_bar.html
 msgid "Search posts"
@@ -9996,18 +9996,18 @@ msgstr "フィルタ："
 #. Translators: This is a menu option for showing all forum threads unfiltered
 #: lms/templates/discussion/_thread_list_template.html
 msgid "Show all"
-msgstr "全表示"
+msgstr "全ての投稿を表示"
 
 #. Translators: This is a menu option for showing only unread forum threads
 #: lms/templates/discussion/_thread_list_template.html
 msgid "Unread"
-msgstr "未読"
+msgstr "未読のみ表示"
 
 #. Translators: This is a menu option for showing only forum threads flagged
 #. for abuse
 #: lms/templates/discussion/_thread_list_template.html
 msgid "Flagged"
-msgstr "フラグあり"
+msgstr "報告済のみ表示"
 
 #. Translators: This labels a cohort menu in forum navigation
 #: lms/templates/discussion/_thread_list_template.html
@@ -10026,17 +10026,17 @@ msgstr "並び替え："
 #. Translators: This is a menu option for sorting forum threads
 #: lms/templates/discussion/_thread_list_template.html
 msgid "by recent activity"
-msgstr "直前の活動"
+msgstr "投稿日時順"
 
 #. Translators: This is a menu option for sorting forum threads
 #: lms/templates/discussion/_thread_list_template.html
 msgid "by most activity"
-msgstr "最多の活動"
+msgstr "投稿数順"
 
 #. Translators: This is a menu option for sorting forum threads
 #: lms/templates/discussion/_thread_list_template.html
 msgid "by most votes"
-msgstr "最大得票"
+msgstr "いいね！数順"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Add A Response"
@@ -10112,15 +10112,15 @@ msgstr "報告済"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Editing response"
-msgstr "回答を編集する"
+msgstr "返信を編集する"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Update response"
-msgstr "回答を更新する"
+msgstr "返信を更新する"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "posted %(time_ago)s by %(author)s"
-msgstr "%(time_ago)s前に%(author)sによって投稿"
+msgstr "%(author)sにより%(time_ago)sに投稿"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Editing comment"
@@ -10148,11 +10148,11 @@ msgstr "ピン"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "By: Staff"
-msgstr "スタッフによる"
+msgstr "スタッフより"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "By: Community TA"
-msgstr "コミュニティTAによる"
+msgstr "コミュニティTAより"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "%(votes_up_count)s%(span_sr_open)s votes %(span_close)s"
