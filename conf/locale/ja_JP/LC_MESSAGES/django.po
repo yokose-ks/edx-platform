@@ -9951,11 +9951,11 @@ msgstr ""
 
 #: lms/templates/discussion/_filter_dropdown.html
 msgid "Filter Topics"
-msgstr "トピックを絞り込む"
+msgstr "カテゴリを絞り込む"
 
 #: lms/templates/discussion/_filter_dropdown.html
 msgid "filter topics"
-msgstr "トピックをフィルタ"
+msgstr "カテゴリをフィルタ"
 
 #: lms/templates/discussion/_filter_dropdown.html
 #: lms/templates/discussion/_thread_list_template.html
@@ -10249,7 +10249,7 @@ msgstr "件名："
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Add a clear and descriptive title to encourage participation."
-msgstr "他の受講者が参加しようと思う、明確でわかりやすいタイトルをつけてください。"
+msgstr "他の受講者が参加しようと思う、明確でわかりやすい件名をつけてください。"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Enter your question or comment…"
@@ -10290,16 +10290,16 @@ msgstr "「質問」は回答を必要とする議題に用います。「ディ
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Topic Area:"
-msgstr "トピックエリア："
+msgstr "カテゴリ："
 
 #: lms/templates/discussion/_underscore_templates.html
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Filter topics"
-msgstr "トピックをフィルタ"
+msgstr "カテゴリをフィルタ"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Add your post to a relevant topic to help others find it."
-msgstr "他の受講者が見つけやすいよう適切なトピックに投稿をしてください。"
+msgstr "カテゴリを適切に設定していただくと、他の受講者があなたの書き込みを見つけやすくなります。"
 
 #: lms/templates/discussion/_underscore_templates.html
 msgid "Endorse"
