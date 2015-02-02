@@ -1117,13 +1117,13 @@ msgstr ""
 
 #: lms/templates/dashboard.html
 msgid "Please verify your new email"
-msgstr "新しいemailを確認してください"
+msgstr "メールをご確認ください"
 
 #: lms/templates/dashboard.html
 msgid ""
 "You'll receive a confirmation in your inbox. Please click the link in the"
 " email to confirm the email change."
-msgstr "受信箱に確認メールが届くはずです。emailの変更を確認するために、文中のリンクをクリックしてください。"
+msgstr "確認メールが送信されました。メール文中にある変更用のリンクをクリックすることで、メールアドレスの変更手続きが完了となります。"
 
 #: lms/templates/dashboard.html
 msgid "Looks like you haven't registered for any courses yet."
