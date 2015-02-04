@@ -11,6 +11,11 @@ import mock
 from user_api.models import UserPreference
 from lang_pref import LANGUAGE_KEY
 
+from xmodule.modulestore.tests.factories import CourseFactory
+from course_global.tests.factories import CourseGlobalSettingFactory
+
+from opaque_keys.edx.locations import SlashSeparatedCourseKey
+
 import student
 
 TEST_CS_URL = 'https://comments.service.test:123/'
@@ -30,6 +35,8 @@ class TestCreateAccount(TestCase):
             "honor_code": "true",
             "terms_of_service": "true",
         }
+        self.course_1 = CourseFactory.create(display_name = "test course 1")
+        self.course_2 = CourseFactory.create(display_name = "test course 2")
 
     @ddt.data("en", "eo")
     def test_default_lang_pref_saved(self, lang):
@@ -46,6 +53,26 @@ class TestCreateAccount(TestCase):
         user = User.objects.get(username=self.username)
         self.assertEqual(UserPreference.get_preference(user, LANGUAGE_KEY), lang)
 
+    def test_no_global_course(self):
+        response = self.client.post(self.url, self.params)
+        self.assertEqual(response.status_code, 200)
+        user = User.objects.get(username=self.username)
+        self.assertEqual(0, student.models.CourseEnrollmentAllowed.objects.all().count())
+
+    def test_exists_global_course(self):
+        dummy_course_id = SlashSeparatedCourseKey('a', 'b', 'c')
+        CourseGlobalSettingFactory.create(course_id = dummy_course_id)
+        CourseGlobalSettingFactory.create(course_id = self.course_1.id)
+        CourseGlobalSettingFactory.create(course_id = self.course_2.id)
+
+        response = self.client.post(self.url, self.params)
+        self.assertEqual(response.status_code, 200)
+        user = User.objects.get(username=self.username)
+        cea1 = student.models.CourseEnrollmentAllowed.objects.get(email = user.email, course_id = self.course_1.id)
+        self.assertTrue(cea1.auto_enroll)
+        cea2 = student.models.CourseEnrollmentAllowed.objects.get(email = user.email, course_id = self.course_2.id)
+        self.assertTrue(cea2.auto_enroll)
+        self.assertFalse(student.models.CourseEnrollmentAllowed.objects.filter(course_id = dummy_course_id))
 
 @mock.patch.dict("student.models.settings.FEATURES", {"ENABLE_DISCUSSION_SERVICE": True})
 @mock.patch("lms.lib.comment_client.User.base_url", TEST_CS_URL)
