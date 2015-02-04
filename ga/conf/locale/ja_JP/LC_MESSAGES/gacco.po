@@ -1137,7 +1137,7 @@ msgstr "まだ受講登録講座がないようです。"
 msgid ""
 "We will send a confirmation to both {email} and your new email as part of"
 " the process."
-msgstr "手順の一環として、確認メールを{email}と新しいアドレスの両方に送信します。"
+msgstr "メールアドレス変更の手続きのため、新しいメールアドレスに確認メールが送信されます。また、メールアドレス変更後に新しいアドレスと旧アドレス（{email}）の両方に通知のメールが送信されます。"
 
 #: lms/templates/dashboard.html
 msgid ""
