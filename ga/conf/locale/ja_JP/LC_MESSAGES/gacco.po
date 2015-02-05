@@ -2083,7 +2083,7 @@ msgstr "メニュー"
 
 #: templates/courseware/courseware.html
 msgid "Table of contents"
-msgstr "教材一覧"
+msgstr "学習リスト"
 
 #: templates/courseware/progress.html
 msgid "Grade graph"
