@@ -2,13 +2,15 @@ from django.test import TestCase
 from django.core.management import call_command, CommandError
 
 from xmodule.modulestore.tests.factories import CourseFactory
-from student.tests.factories import UserFactory, UserStandingFactory, CourseEnrollmentFactory
+from student.tests.factories import UserFactory, UserStandingFactory
 from student.models import CourseEnrollment, UserStanding
 
-from course_global.models import CourseGlobalSetting
 from course_global.tests.factories import CourseGlobalSettingFactory
 
 class EnrollAllUsersTest(TestCase):
+    """
+    Tests for the command.
+    """
 
     def setUp(self):
         self.users = [UserFactory.create() for _ in range(5)]

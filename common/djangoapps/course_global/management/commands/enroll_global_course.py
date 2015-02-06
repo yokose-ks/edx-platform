@@ -5,9 +5,7 @@ from opaque_keys import InvalidKeyError
 from opaque_keys.edx.keys import CourseKey
 from opaque_keys.edx.locations import SlashSeparatedCourseKey
 
-from django.contrib.auth.models import User
-
-from student.models import UserStanding, CourseEnrollment
+from student.models import CourseEnrollment
 from course_global.models import CourseGlobalSetting
 
 from course_global.management.commands import users_unenrolled_in

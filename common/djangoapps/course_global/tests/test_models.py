@@ -4,6 +4,9 @@ from opaque_keys.edx.locations import SlashSeparatedCourseKey
 from course_global.models import CourseGlobalSetting
 
 class CourseGlobalSettingTest(TestCase):
+    """
+    Tests for the CourseGlobalSetting model.
+    """
 
     def setUp(self):
         pass
