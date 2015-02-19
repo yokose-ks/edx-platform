@@ -12423,7 +12423,7 @@ msgstr ""
 
 #: lms/templates/registration/activation_complete.html
 msgid "Activation Complete!"
-msgstr "ユーザー登録完了"
+msgstr "会員登録完了"
 
 #: lms/templates/registration/activation_complete.html
 msgid "Account already active!"

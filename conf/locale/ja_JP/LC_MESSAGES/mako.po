@@ -5826,7 +5826,7 @@ msgstr "{platform_name}のアカウント登録に成功しました。{email}�
 
 #: lms/templates/registration/activation_complete.html:11
 msgid "Activation Complete!"
-msgstr "ユーザー登録完了"
+msgstr "会員登録完了"
 
 #: lms/templates/registration/activation_complete.html:13
 msgid "Account already active!"
