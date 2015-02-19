@@ -464,6 +464,7 @@ PDFGEN_BASE_PDF_DIR = ENV_TOKENS.get('PDFGEN_BASE_PDF_DIR', CONFIG_ROOT)
 PDFGEN_CERT_AUTHOR = ENV_TOKENS.get('PDFGEN_CERT_AUTHOR', 'gacco')
 PDFGEN_CERT_TITLE = ENV_TOKENS.get('PDFGEN_CERT_TITLE', 'gacco Certificate')
 
+##### CELERY #####
 CELERY_TIMEZONE = ENV_TOKENS.get('CELERY_TIMEZONE', TIME_ZONE)
 from celery.schedules import crontab
 task_schedule = ENV_TOKENS.get('TASK_SCHEDULE', {})
@@ -477,3 +478,6 @@ for name, val in task_schedule.items():
         }
     }
     CELERYBEAT_SCHEDULE.update(celery_task)
+
+##### YOUTUBE #####
+YOUTUBE.update(ENV_TOKENS.get("YOUTUBE", {}))
