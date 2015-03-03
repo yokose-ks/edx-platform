@@ -463,6 +463,7 @@ def _send_course_email(entry_id, email_id, to_list, global_email_context, subtas
             # This is convenient for retries, which will need to send to those who haven't
             # yet been emailed, but not send to those who have already been sent to.
             current_recipient = to_list[-1]
+            recipient_id = current_recipient['pk']
             email = current_recipient['email']
             email_context['email'] = email
             email_context['name'] = current_recipient['profile__name']
@@ -517,7 +518,7 @@ def _send_course_email(entry_id, email_id, to_list, global_email_context, subtas
             else:
                 dog_stats_api.increment('course_email.sent', tags=[_statsd_tag(course_title)])
                 if settings.BULK_EMAIL_LOG_SENT_EMAILS:
-                    log.info('Email with id %s sent to %s', email_id, email)
+                    log.info('Email with id %s sent to user with id %s', email_id, recipient_id)
                 else:
                     log.debug('Email with id %s sent to %s', email_id, email)
                 subtask_status.increment(succeeded=1)
