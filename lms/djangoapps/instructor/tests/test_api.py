@@ -3654,6 +3654,13 @@ class TestInstructorAPISurveyDownload(ModuleStoreTestCase, LoginEnrollmentTestCa
             'survey_name': 'survey #2',
             'survey_answer': '{"Q1": "1", "Q2": "2", "Q3": "submission #4"}',
         }
+        self.submission5 = {
+            'course_id': self.course.id,
+            'unit_id': '22222222222222222222222222222222',
+            'user': self.user1,
+            'survey_name': 'survey #5',
+            'survey_answer': '{"Q1": "1", "Q2": "Invalid JSON format"',
+        }
 
     def test_get_survey(self):
         """
@@ -3690,12 +3697,12 @@ class TestInstructorAPISurveyDownload(ModuleStoreTestCase, LoginEnrollmentTestCa
         self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Disabled","Q1","Q2","Q3","Q4"')
         self.assertEqual(
             rows[1],
-            '"11111111111111111111111111111111","survey #1","%s","%s","","1","1,2","submission #1",""'
+            '"11111111111111111111111111111111","survey #1","%s","%s","","1","1,2","submission #1","N/A"'
             % (submission1.created, submission1.user.username)
         )
         self.assertEqual(
             rows[2],
-            '"11111111111111111111111111111111","survey #1","%s","%s","disabled","1","2","submission #2",""'
+            '"11111111111111111111111111111111","survey #1","%s","%s","disabled","1","2","submission #2","N/A"'
             % (submission2.created, submission2.user.username)
         )
         self.assertEqual(
@@ -3714,6 +3721,28 @@ class TestInstructorAPISurveyDownload(ModuleStoreTestCase, LoginEnrollmentTestCa
         #Note(EDX-501): Modified temporarily.
         #self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Gender","Year of Birth","Level of Education","Disabled"')
         self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Disabled"')
+
+    def test_get_survey_when_data_is_broken(self):
+        submission1 = SurveySubmissionFactory.create(**self.submission1)
+        submission5 = SurveySubmissionFactory.create(**self.submission5)
+
+        url = reverse('get_survey', kwargs={'course_id': self.course.id.to_deprecated_string()})
+        response = self.client.get(url, {})
+        self.assertEqual(response['Content-Type'], 'text/csv')
+        body = response.content.rstrip('\n').replace('\r', '')
+        rows = body.split('\n')
+        self.assertEqual(3, len(rows))
+        self.assertEqual(rows[0], '"Unit ID","Survey Name","Created","User Name","Disabled","Q1","Q2","Q3"')
+        self.assertEqual(
+            rows[1],
+            '"11111111111111111111111111111111","survey #1","%s","%s","","1","1,2","submission #1"'
+            % (submission1.created, submission1.user.username)
+        )
+        self.assertEqual(
+            rows[2],
+            '"22222222222222222222222222222222","survey #5","%s","%s","","N/A","N/A","N/A"'
+            % (submission5.created, submission5.user.username)
+        )
 
 
 #class TestInstructorAPIProgressModules(ModuleStoreTestCase, LoginEnrollmentTestCase):

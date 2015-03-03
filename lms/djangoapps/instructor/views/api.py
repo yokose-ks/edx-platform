@@ -2169,11 +2169,22 @@ def get_survey(request, course_id):  # pylint: disable=W0613
         # NOTE: eliminate duplication of question names
         keyset = set()
         for s in submissions:
-            keyset.update(s.get_survey_answer().keys())
+            try:
+                ans_dict = s.get_survey_answer()
+            except ValueError:
+                continue
+            keyset.update(ans_dict.keys())
         keys = sorted(keyset)
         header.extend(keys)
 
         for s in submissions:
+            try:
+                ans_dict = s.get_survey_answer()
+            except ValueError:
+                ans_dict = {}
+                msg = "Couldn't parse JSON in survey_answer, so treat each item as 'N/A'. course_id={0}, unit_id={1}, username={2}".format(
+                    unicode(s.course_id), s.unit_id, s.username)
+                log.warning(msg)
             row = [s.unit_id, s.survey_name, s.created, s.username]
             #Note(EDX-501): Modified temporarily.
             #row.append(dict(UserProfile.GENDER_CHOICES).get(s.gender, s.gender) or '')
@@ -2181,7 +2192,7 @@ def get_survey(request, course_id):  # pylint: disable=W0613
             #row.append(dict(UserProfile.LEVEL_OF_EDUCATION_CHOICES).get(s.level_of_education, s.level_of_education) or '')
             row.append(s.account_status if s.account_status == UserStanding.ACCOUNT_DISABLED else '')
             for key in keys:
-                value = s.get_survey_answer().get(key, '')
+                value = ans_dict.get(key, 'N/A')
                 # NOTE: replace list into commified str
                 if isinstance(value, list):
                     value = ','.join(value)
