@@ -363,7 +363,7 @@ msgstr "パスワード："
 
 #: common/djangoapps/student/views.py:1590
 msgid "Username and password fields cannot match"
-msgstr "ユーザー名とパスワード枠が一致しません。"
+msgstr "パスワードはユーザー名と別のものとしてください。"
 
 #: common/djangoapps/student/views.py:1671
 msgid "Could not send activation e-mail."
