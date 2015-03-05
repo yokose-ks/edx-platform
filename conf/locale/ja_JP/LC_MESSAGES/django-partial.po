@@ -835,7 +835,7 @@ msgstr "{0} つ以上のユニークな言葉を含む必要があります。"
 
 #: common/djangoapps/util/password_policy_validators.py:92
 msgid "Too similar to a restricted dictionary word."
-msgstr "辞書にある単語に類似すぎています。"
+msgstr "禁止パスワード一覧に含まれていますので、変更をお願いします。"
 
 #: common/lib/capa/capa/capa_problem.py:386
 msgid "Cannot rescore problems with possible file submissions"
