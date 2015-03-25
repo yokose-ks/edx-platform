@@ -1,0 +1,895 @@
+# edX translation file
+# Copyright (C) 2015 edX
+# This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# 
+# Translators:
+# watcafe, 2014-2015
+# ayokose <ayokose.gacco@gmail.com>, 2015
+# h_yoshida <h_yoshida@matsumo-sys.com>, 2014-2015
+msgid ""
+msgstr ""
+"Project-Id-Version: edx-platform\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"POT-Creation-Date: 2015-03-16 14:09+0000\n"
+"PO-Revision-Date: 2015-02-20 21:40+0000\n"
+"Last-Translator: Sarina Canelake <sarina@edx.org>\n"
+"Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.3\n"
+"Language: ja_JP\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: cms/templates/js/add-xblock-component-menu-problem.underscore:47
+#: cms/templates/js/add-xblock-component-menu.underscore:22
+#: cms/templates/js/content-group-editor.underscore:32
+#: cms/templates/js/course_info_handouts.underscore:20
+#: cms/templates/js/edit-textbook.underscore:26
+#: cms/templates/js/group-configuration-editor.underscore:46
+#: cms/templates/js/section-name-edit.underscore:4
+#: cms/templates/js/xblock-string-field-editor.underscore:14
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:126
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: cms/templates/js/content-group-editor.underscore:31
+#: cms/templates/js/course_info_handouts.underscore:19
+#: cms/templates/js/edit-textbook.underscore:25
+#: cms/templates/js/group-configuration-editor.underscore:45
+#: cms/templates/js/section-name-edit.underscore:3
+#: cms/templates/js/xblock-string-field-editor.underscore:13
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:123
+msgid "Save"
+msgstr "一時保存"
+
+#: cms/templates/js/course-outline.underscore:47
+#: cms/templates/js/course-outline.underscore:159
+#: cms/templates/js/course-outline.underscore:177
+#: cms/templates/js/list.underscore:5 cms/templates/js/list.underscore:12
+#: cms/templates/js/publish-xblock.underscore:51
+#: cms/templates/js/publish-xblock.underscore:73
+#: cms/templates/js/xblock-outline.underscore:10
+#: cms/templates/js/xblock-outline.underscore:57
+#: cms/templates/js/xblock-outline.underscore:70
+#: lms/templates/courseware_search/search_list.underscore:12
+msgid "gettext("
+msgstr "gettext("
+
+#: cms/templates/js/group-configuration-editor.underscore:23
+#: lms/templates/verify_student/payment_confirmation_step.underscore:19
+msgid "Description"
+msgstr "記述"
+
+#: cms/templates/js/previous-video-upload-list.underscore:15
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:16
+msgid "Status"
+msgstr "状態"
+
+#: common/templates/js/image-modal.underscore:6
+msgid "Fullscreen"
+msgstr "フルスクリーン"
+
+#: common/templates/js/image-modal.underscore:14
+msgid "Large"
+msgstr "大きい"
+
+#: common/templates/js/image-modal.underscore:19
+msgid "Close"
+msgstr "閉じる"
+
+#: common/templates/js/image-modal.underscore:27
+msgid "Zoom In"
+msgstr "ズームイン"
+
+#: common/templates/js/image-modal.underscore:35
+msgid "Zoom Out"
+msgstr "ズームアウト"
+
+#: common/templates/js/discussion/thread-show.underscore:7
+#, python-format
+msgid "This post is visible only to %(group_name)s."
+msgstr "この投稿は%(group_name)sにのみ表示されます。"
+
+#: common/templates/js/discussion/thread-show.underscore:13
+msgid "This post is visible to everyone."
+msgstr "この投稿は全ユーザーに表示されます。"
+
+#: common/templates/js/discussion/thread-show.underscore:31
+#, python-format
+msgid "%(post_type)s posted %(time_ago)s by %(author)s"
+msgstr "%(author)sにより%(post_type)sとして%(time_ago)sに投稿"
+
+#: common/templates/js/discussion/thread-show.underscore:38
+msgid "Pinned"
+msgstr "注目"
+
+#: common/templates/js/discussion/thread-show.underscore:39
+msgid "Reported"
+msgstr "報告済"
+
+#: common/templates/js/discussion/thread-show.underscore:40
+msgid "Closed"
+msgstr "〆切済"
+
+#: common/templates/js/discussion/thread-show.underscore:71
+#, python-format
+msgid "(this post is about %(courseware_title_linked)s)"
+msgstr "(この投稿は%(courseware_title_linked)sについてのものです)"
+
+#: lms/templates/courseware_search/search_error.underscore:1
+msgid "There was an error, try searching again."
+msgstr ""
+
+#: lms/templates/courseware_search/search_item.underscore:4
+#: lms/templates/courseware_search/search_item_seq.underscore:4
+msgid "View"
+msgstr "見る"
+
+#: lms/templates/courseware_search/search_list.underscore:2
+msgid "Search Results"
+msgstr "検索結果"
+
+#: lms/templates/courseware_search/search_list.underscore:19
+msgid "Sorry, no results were found."
+msgstr ""
+
+#: lms/templates/courseware_search/search_loading.underscore:1
+msgid "Loading"
+msgstr "読み込み中"
+
+#: lms/templates/dashboard/donation.underscore:5
+msgid "Donate"
+msgstr "義援金を送る"
+
+#: lms/templates/edxnotes/note-item.underscore:3
+msgid "Highlighted text"
+msgstr ""
+
+#: lms/templates/edxnotes/note-item.underscore:7
+msgid "Less"
+msgstr ""
+
+#: lms/templates/edxnotes/note-item.underscore:9
+msgid "More"
+msgstr "その他"
+
+#: lms/templates/edxnotes/note-item.underscore:17
+msgid "Note"
+msgstr ""
+
+#: lms/templates/edxnotes/note-item.underscore:19
+msgid "You commented..."
+msgstr ""
+
+#: lms/templates/edxnotes/note-item.underscore:26
+msgid "References"
+msgstr ""
+
+#: lms/templates/edxnotes/note-item.underscore:28
+msgid "Noted in:"
+msgstr ""
+
+#: lms/templates/edxnotes/note-item.underscore:35
+msgid "Last Edited:"
+msgstr ""
+
+#: lms/templates/edxnotes/tab-item.underscore:4
+msgid "name"
+msgstr "名前"
+
+#: lms/templates/edxnotes/tab-item.underscore:10
+msgid "Clear search results"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:7
+#, python-format
+msgid "(contains %(student_count)s student)"
+msgid_plural "(contains %(student_count)s students)"
+msgstr[0] "(%(student_count)s名の受講者が含まれます)"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:16
+msgid ""
+"Students are added to this cohort only when you provide their email "
+"addresses or usernames on this page."
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:17
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:20
+msgid "What does this mean?"
+msgstr "これは何を意味するの？"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:19
+msgid "Students are added to this cohort automatically."
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:25
+msgid "Edit settings in Studio"
+msgstr "Studioで編集する"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:32
+msgid "Selected tab"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:32
+msgid "Manage Students"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:33
+msgid "Settings"
+msgstr "設定"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:39
+msgid "Add students to this cohort"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:42
+msgid ""
+"Note: Students can be in only one cohort. Adding students to this group "
+"overrides any previous group assignment."
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:51
+msgid ""
+"Enter email addresses and/or usernames, separated by new lines or commas, "
+"for the students you want to add. *"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:52
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:18
+msgid "(Required Field)"
+msgstr "(必須項目)"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:56
+msgid "e.g. johndoe@example.com, JaneDoe, joeydoe@example.com"
+msgstr "例：johndoe@example.com, 学校太郎, joeydoe@example.com"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:59
+msgid ""
+"You will not receive notification for emails that bounce, so double-check "
+"your spelling."
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-editor.underscore:65
+msgid "Add Students"
+msgstr "受講者を追加"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:5
+msgid "Add a New Cohort"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:17
+msgid "Cohort Name"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:22
+msgid "Enter the name of the cohort"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:37
+msgid "Associated Content Group"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:39
+msgid "No Content Group"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:41
+msgid "Select a Content Group"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:44
+msgid "Choose a content group to associate"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:46
+msgid "Not selected"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:68
+msgid "Deleted Content Group"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-form.underscore:107
+msgid "Create a content group"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-selector.underscore:2
+msgid "Select a cohort"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohort-selector.underscore:7
+#, python-format
+msgid "%(cohort_name)s (%(user_count)s)"
+msgstr "%(cohort_name)s (%(user_count)s人)"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:2
+msgid "Cohort Management"
+msgstr "ユーザー群管理"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:7
+msgid "Assign students to cohorts manually"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:11
+msgid "Select a cohort group to manage"
+msgstr "管理するユーザー群を選択"
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:16
+msgid "View Cohort"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:22
+msgid "Add Cohort"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:37
+msgid "Assign students to cohorts by uploading a CSV file"
+msgstr ""
+
+#: lms/templates/instructor/instructor_dashboard_2/cohorts.underscore:44
+#, python-format
+msgid ""
+"To review student cohort assignments or see the results of uploading a CSV "
+"file, download course profile information or cohort results on "
+"%(link_start)s the Data Download page. %(link_end)s"
+msgstr ""
+
+#: lms/templates/student_account/account.underscore:2
+msgid "New Address"
+msgstr "新しいアドレス"
+
+#: lms/templates/student_account/account.underscore:6
+msgid "Password"
+msgstr "パスワード"
+
+#: lms/templates/student_account/account.underscore:11
+msgid "Change My Email Address"
+msgstr "メールアドレスを変更"
+
+#: lms/templates/student_account/account.underscore:16
+msgid "Reset Password"
+msgstr "パスワード変更"
+
+#: lms/templates/student_account/form_field.underscore:64
+msgid "Forgot password?"
+msgstr "パスワードを忘れた方はこちら"
+
+#: lms/templates/student_account/login.underscore:4
+#, python-format
+msgid ""
+"You've successfully signed into %(currentProvider)s, but your "
+"%(currentProvider)s account isn't linked with an %(platformName)s account. "
+"To link your accounts, go to your %(platformName)s dashboard."
+msgstr ""
+
+#: lms/templates/student_account/login.underscore:10
+msgid "Password Reset Email Sent"
+msgstr "パスワードレセットのメールを送信"
+
+#: lms/templates/student_account/login.underscore:13
+msgid ""
+"We've sent instructions for resetting your password to the email address you"
+" provided."
+msgstr "入力されたemailアドレスへパスワードリセットの手順を送信しました。"
+
+#: lms/templates/student_account/login.underscore:19
+msgid "We couldn't sign you in."
+msgstr ""
+
+#: lms/templates/student_account/login.underscore:27
+#: lms/templates/student_account/login.underscore:33
+#: lms/templates/student_account/register.underscore:56
+msgid "Sign in"
+msgstr ""
+
+#: lms/templates/student_account/login.underscore:39
+msgid "or sign in with"
+msgstr ""
+
+#: lms/templates/student_account/login.underscore:58
+#, python-format
+msgid "New to %(platformName)s?"
+msgstr ""
+
+#: lms/templates/student_account/login.underscore:61
+msgid "Create an account"
+msgstr ""
+
+#: lms/templates/student_account/password_reset.underscore:2
+msgid "An error occurred."
+msgstr "エラーが発生しました。"
+
+#: lms/templates/student_account/password_reset.underscore:10
+msgid "Password assistance"
+msgstr ""
+
+#: lms/templates/student_account/password_reset.underscore:14
+msgid ""
+"Please enter your email address below and we will send you instructions for "
+"setting a new password."
+msgstr ""
+
+#: lms/templates/student_account/password_reset.underscore:18
+msgid "Reset my password"
+msgstr ""
+
+#: lms/templates/student_account/register.underscore:2
+msgid "We couldn't create your account."
+msgstr ""
+
+#: lms/templates/student_account/register.underscore:10
+#, python-format
+msgid "You've successfully signed into %(currentProvider)s."
+msgstr ""
+
+#: lms/templates/student_account/register.underscore:11
+#, python-format
+msgid ""
+"We just need a little more information before you start learning with "
+"%(platformName)s."
+msgstr "%(platformName)sでの学習を始めるにあたって、あと少しの情報が必要です。"
+
+#: lms/templates/student_account/register.underscore:18
+msgid "Create an account using"
+msgstr ""
+
+#: lms/templates/student_account/register.underscore:33
+msgid "or create a new one here"
+msgstr ""
+
+#: lms/templates/student_account/register.underscore:39
+msgid "Create a new account"
+msgstr ""
+
+#: lms/templates/student_account/register.underscore:46
+msgid "Create your account"
+msgstr ""
+
+#: lms/templates/student_account/register.underscore:47
+msgid "Required field"
+msgstr "必須項目"
+
+#: lms/templates/student_account/register.underscore:53
+msgid "Already have an account?"
+msgstr "既にアカウントをお持ちですか？"
+
+#: lms/templates/student_profile/profile.underscore:2
+msgid "Full Name"
+msgstr "氏名"
+
+#: lms/templates/student_profile/profile.underscore:6
+msgid "Preferred Language"
+msgstr "使用言語"
+
+#: lms/templates/student_profile/profile.underscore:11
+msgid "Update Profile"
+msgstr "プロフィールを更新"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:3
+#, python-format
+msgid "Congratulations! You are now verified on %(platformName)s!"
+msgstr "おめでとうございます！あなたは %(platformName)s で承認されました。"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:5
+msgid "You are now enrolled as a verified student for:"
+msgstr ""
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:12
+msgid "A list of courses you have just enrolled in as a verified student"
+msgstr "あなたが認証された受講者として受講登録した講座の一覧"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:15
+msgid "Course"
+msgstr "講座"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:24
+#, python-format
+msgid "Starts: %(start)s"
+msgstr "開始：%(start)s"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:33
+msgid "Explore your course!"
+msgstr "講座へ進む"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:37
+msgid "Go to your Dashboard"
+msgstr "マイページへ移動"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:48
+msgid "Verified Status"
+msgstr "認証の状況"
+
+#: lms/templates/verify_student/enrollment_confirmation_step.underscore:50
+#, python-format
+msgid ""
+"Thank you for submitting your photos. We will review them shortly. You can "
+"now sign up for any %(platformName)s course that offers verified "
+"certificates. Verification is good for one year. After one year, you must "
+"submit photos for verification again."
+msgstr ""
+
+#: lms/templates/verify_student/error.underscore:6
+msgid "Error:"
+msgstr "エラー:"
+
+#: lms/templates/verify_student/face_photo_step.underscore:3
+msgid "Take Your Photo"
+msgstr "あなたの写真を撮る"
+
+#: lms/templates/verify_student/face_photo_step.underscore:5
+msgid ""
+"Use your webcam to take a photo of your face. We will match this photo with "
+"the photo on your ID."
+msgstr ""
+
+#: lms/templates/verify_student/face_photo_step.underscore:13
+#: lms/templates/verify_student/id_photo_step.underscore:15
+msgid "Tips on taking a successful photo"
+msgstr "適切な写真を撮るためのヒント"
+
+#: lms/templates/verify_student/face_photo_step.underscore:17
+msgid "Make sure your face is well-lit"
+msgstr "顔が十分に明るいかを確認"
+
+#: lms/templates/verify_student/face_photo_step.underscore:18
+msgid "Be sure your entire face is inside the frame"
+msgstr "フレームの内側に顔全体が入っているかを確認"
+
+#: lms/templates/verify_student/face_photo_step.underscore:20
+#, python-format
+msgid "Once in position, use the camera button %(icon)s to capture your photo"
+msgstr ""
+
+#: lms/templates/verify_student/face_photo_step.underscore:22
+msgid "Can we match the photo you took with the one on your ID?"
+msgstr "あなたの身分証明書と今回撮影した写真とを照合してもよろしいでしょうか？"
+
+#: lms/templates/verify_student/face_photo_step.underscore:23
+#: lms/templates/verify_student/id_photo_step.underscore:24
+msgid "Use the retake photo button if you are not pleased with your photo"
+msgstr "写真を撮り直したい場合は、再撮影ボタンを押してください。"
+
+#: lms/templates/verify_student/face_photo_step.underscore:29
+#: lms/templates/verify_student/id_photo_step.underscore:30
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: lms/templates/verify_student/face_photo_step.underscore:33
+#: lms/templates/verify_student/id_photo_step.underscore:35
+#, python-format
+msgid "Why does %(platformName)s need my photo?"
+msgstr "%(platformName)s でなぜ写真が必要なのか？"
+
+#: lms/templates/verify_student/face_photo_step.underscore:35
+#: lms/templates/verify_student/id_photo_step.underscore:37
+msgid ""
+"As part of the verification process, you take a photo of both your face and "
+"a government-issued photo ID. Our authorization service confirms your "
+"identity by comparing the photo you take with the photo on your ID."
+msgstr ""
+
+#: lms/templates/verify_student/face_photo_step.underscore:37
+#: lms/templates/verify_student/id_photo_step.underscore:40
+#, python-format
+msgid "What does %(platformName)s do with this photo?"
+msgstr ""
+
+#: lms/templates/verify_student/face_photo_step.underscore:39
+#: lms/templates/verify_student/id_photo_step.underscore:42
+#, python-format
+msgid ""
+"We use the highest levels of security available to encrypt your photo and "
+"send it to our authorization service for review. Your photo and information "
+"are not saved or visible anywhere on %(platformName)s after the verification"
+" process is complete."
+msgstr ""
+
+#: lms/templates/verify_student/face_photo_step.underscore:50
+#: lms/templates/verify_student/id_photo_step.underscore:53
+#: lms/templates/verify_student/intro_step.underscore:76
+#: lms/templates/verify_student/payment_confirmation_step.underscore:144
+#, python-format
+msgid "Next: %(nextStepTitle)s"
+msgstr ""
+
+#: lms/templates/verify_student/id_photo_step.underscore:3
+msgid "Take a Photo of Your ID"
+msgstr "あなたのIDの写真を撮影します"
+
+#: lms/templates/verify_student/id_photo_step.underscore:5
+msgid ""
+"Use your webcam to take a photo of your ID. We will match this photo with "
+"the photo of your face and the name on your account."
+msgstr ""
+
+#: lms/templates/verify_student/id_photo_step.underscore:13
+msgid ""
+"You need an ID with your name and photo. A driver's license, passport, or "
+"other government-issued IDs are all acceptable."
+msgstr ""
+
+#: lms/templates/verify_student/id_photo_step.underscore:19
+msgid "Ensure that you can see your photo and read your name"
+msgstr "写真と名前が見えるかどうかをご確認ください。"
+
+#: lms/templates/verify_student/id_photo_step.underscore:20
+msgid "Make sure your ID is well-lit"
+msgstr "身分証明書が明るく写っているか確認"
+
+#: lms/templates/verify_student/id_photo_step.underscore:22
+#, python-format
+msgid "Once in position, use the camera button %(icon)s to capture your ID"
+msgstr "準備ができましたら、カメラボタン %(icon)s を押してIDを撮影してください。"
+
+#: lms/templates/verify_student/image_input.underscore:1
+msgid "Preview of uploaded image"
+msgstr ""
+
+#: lms/templates/verify_student/image_input.underscore:3
+msgid "Upload an image or capture one with your web or phone camera."
+msgstr ""
+
+#: lms/templates/verify_student/intro_step.underscore:6
+#, python-format
+msgid "Thanks for returning to verify your ID in: %(courseName)s"
+msgstr ""
+
+#: lms/templates/verify_student/intro_step.underscore:15
+#: lms/templates/verify_student/make_payment_step.underscore:31
+msgid ""
+"You need to activate your account before you can enroll in courses. Check "
+"your inbox for an activation email. After you complete activation you can "
+"return and refresh this page."
+msgstr ""
+
+#: lms/templates/verify_student/intro_step.underscore:27
+#: lms/templates/verify_student/make_payment_step.underscore:43
+#: lms/templates/verify_student/payment_confirmation_step.underscore:87
+msgid "Activate Your Account"
+msgstr "アカウントをアクティベートする"
+
+#: lms/templates/verify_student/intro_step.underscore:34
+#: lms/templates/verify_student/make_payment_step.underscore:50
+msgid "Check Your Email"
+msgstr ""
+
+#: lms/templates/verify_student/intro_step.underscore:41
+#: lms/templates/verify_student/payment_confirmation_step.underscore:105
+msgid "Photo ID"
+msgstr ""
+
+#: lms/templates/verify_student/intro_step.underscore:49
+msgid ""
+"A driver's license, passport, or other government-issued ID with your name "
+"and photo"
+msgstr ""
+
+#: lms/templates/verify_student/intro_step.underscore:57
+#: lms/templates/verify_student/make_payment_step.underscore:69
+#: lms/templates/verify_student/payment_confirmation_step.underscore:121
+msgid "Webcam"
+msgstr "ウェブカメラ"
+
+#: lms/templates/verify_student/make_payment_step.underscore:6
+#, python-format
+msgid "You are enrolling in: %(courseName)s"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:13
+#, python-format
+msgid "You are upgrading your enrollment for: %(courseName)s"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:18
+msgid ""
+"You can now enter your payment information and complete your enrollment."
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:27
+#, python-format
+msgid ""
+"You can pay now even if you don't have the following items available, but "
+"you will need to have these by %(date)s to qualify to earn a Verified "
+"Certificate."
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:33
+msgid ""
+"You can pay now even if you don't have the following items available, but "
+"you will need to have these to qualify to earn a Verified Certificate."
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:57
+msgid "Government-Issued Photo ID"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:88
+msgid "Choose your contribution for your Verified Track upgrade"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:90
+msgid "Enter Your Contribution Level"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:97
+#, python-format
+msgid ""
+"Please confirm your contribution for this course (min. %(minPrice)s "
+"%(currency)s)"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:141
+msgid "Your Total Contribution"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:143
+msgid "To complete your enrollment, you will need to pay:"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:163
+msgid "Next: Make payment"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:167
+msgid "Continue to payment"
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:4
+#, python-format
+msgid "Thank you! We have received your payment for %(courseName)s."
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:11
+msgid ""
+"Please print this page for your records; it serves as your receipt. You will"
+" also receive an email with the same information."
+msgstr "このページを記録として印刷してください；これはレシート扱いです。同様の情報をメールでもお送りしています。"
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:18
+msgid "Order No."
+msgstr "注文番号"
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:20
+msgid "Date"
+msgstr "日付"
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:21
+msgid "Amount"
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:45
+msgid "Total"
+msgstr "合計"
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:56
+msgid "Please Note"
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:58
+msgid "Crossed out items have been refunded."
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:65
+msgid "Billed to"
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:77
+msgid "No receipt available"
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:81
+msgid "Next Step: Confirm your identity"
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:94
+msgid "Check your email"
+msgstr "メールをチェックしてください"
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:96
+msgid ""
+"You need to activate your account before you can enroll in courses. Check "
+"your inbox for an activation email."
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:113
+msgid ""
+"A driver's license, passport, or government-issued ID with your name and "
+"photo."
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:135
+#, python-format
+msgid ""
+"If you don't verify your identity now, you can still explore your course "
+"from your dashboard. You will receive periodic reminders from "
+"%(platformName)s to verify your identity."
+msgstr ""
+
+#: lms/templates/verify_student/payment_confirmation_step.underscore:136
+msgid "Want to confirm your identity later?"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:3
+msgid "Review Your Photos"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:5
+msgid ""
+"Make sure we can verify your identity with the photos and information you "
+"have provided."
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:13
+#, python-format
+msgid "Photo of %(fullName)s"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:18
+#, python-format
+msgid "Photo of %(fullName)s's ID"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:25
+msgid "Photo requirements:"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:27
+msgid "Does the photo of you show your whole face?"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:28
+msgid "Does the photo of you match your ID photo?"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:29
+msgid "Is your name on your ID readable?"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:30
+#, python-format
+msgid "Does the name on your ID match your account name: %(fullName)s?"
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:34
+msgid "Edit Your Name"
+msgstr "名前を編集"
+
+#: lms/templates/verify_student/review_photos_step.underscore:39
+msgid ""
+"Make sure that the full name on your account matches the name on your ID."
+msgstr ""
+
+#: lms/templates/verify_student/review_photos_step.underscore:51
+msgid "Photos don't meet the requirements?"
+msgstr "写真が要求事項に合致しないですか？"
+
+#: lms/templates/verify_student/review_photos_step.underscore:53
+msgid "Retake Your Photos"
+msgstr "再撮影する"
+
+#: lms/templates/verify_student/review_photos_step.underscore:64
+msgid "Before proceeding, please confirm that your details match"
+msgstr "手続きを進める前に、詳細情報が合致しているか確認をしてください"
+
+#: lms/templates/verify_student/review_photos_step.underscore:70
+msgid "Confirm"
+msgstr "確認"
+
+#: lms/templates/verify_student/webcam_photo.underscore:4
+msgid ""
+"Don't see your picture? Make sure to allow your browser to use your camera "
+"when it asks for permission."
+msgstr "あなたの写真が見えないですか？ブラウザがカメラを使う際に許可が求められるのであれば、それを許可するよう確認してください。"
+
+#: lms/templates/verify_student/webcam_photo.underscore:7
+msgid "Live view of webcam"
+msgstr ""
+
+#: lms/templates/verify_student/webcam_photo.underscore:24
+msgid "Retake Photo"
+msgstr ""
+
+#: lms/templates/verify_student/webcam_photo.underscore:28
+msgid "Take Photo"
+msgstr "写真を撮る"
