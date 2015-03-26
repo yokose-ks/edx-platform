@@ -247,7 +247,7 @@ msgstr "必須枠にて、一箇所および複数箇所のミスがあります
 
 #: common/djangoapps/student/forms.py:206
 msgid "Username and password fields cannot match"
-msgstr "ユーザー名とパスワード枠が一致しません。"
+msgstr "パスワードはユーザー名と別のものとしてください。"
 
 #: common/djangoapps/student/forms.py:213
 #: common/djangoapps/student/views.py:1829
@@ -883,31 +883,31 @@ msgstr ""
 
 #: common/djangoapps/util/password_policy_validators.py:23
 msgid "Invalid Length ({0})"
-msgstr "無効な長さ ({0})"
+msgstr "文字数を調整してください。 ({0})"
 
 #: common/djangoapps/util/password_policy_validators.py:30
 msgid "must be {0} characters or more"
-msgstr " {0} 文字以上である必要があります。"
+msgstr "{0} 文字以上"
 
 #: common/djangoapps/util/password_policy_validators.py:32
 msgid "must be {0} characters or less"
-msgstr "{0} 文字以下である必要があります。"
+msgstr "{0} 文字以下"
 
 #: common/djangoapps/util/password_policy_validators.py:39
 msgid "Must be more complex ({0})"
-msgstr "さらに複雑である必要があります。 ({0})"
+msgstr "次の組み合わせが必要です。 ({0})"
 
 #: common/djangoapps/util/password_policy_validators.py:65
 msgid "must contain {0} or more uppercase characters"
-msgstr "{0} 文字以上の大文字を含む必要があります。"
+msgstr "半角アルファベット大文字 {0} 文字以上"
 
 #: common/djangoapps/util/password_policy_validators.py:67
 msgid "must contain {0} or more lowercase characters"
-msgstr "{0} 文字以上の小文字を含む必要があります。"
+msgstr "半角アルファベット小文字 {0} 文字以上"
 
 #: common/djangoapps/util/password_policy_validators.py:69
 msgid "must contain {0} or more digits"
-msgstr "{0} 桁以上必要です。"
+msgstr "数字 {0} 文字以上"
 
 #: common/djangoapps/util/password_policy_validators.py:71
 msgid "must contain {0} or more punctuation characters"
@@ -923,7 +923,7 @@ msgstr "{0} つ以上のユニークな言葉を含む必要があります。"
 
 #: common/djangoapps/util/password_policy_validators.py:92
 msgid "Too similar to a restricted dictionary word."
-msgstr "辞書にある単語に類似すぎています。"
+msgstr "禁止パスワード一覧に含まれていますので、変更をお願いします。"
 
 #: common/lib/capa/capa/capa_problem.py:386
 msgid "Cannot rescore problems with possible file submissions"
