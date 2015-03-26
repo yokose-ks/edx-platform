@@ -101,6 +101,8 @@ from shoppingcart.models import CourseRegistrationCode
 import analytics
 from eventtracking import tracker
 
+from course_global.models import CourseGlobalSetting
+
 
 log = logging.getLogger("edx.student")
 AUDIT_LOG = logging.getLogger("audit")
@@ -507,6 +509,14 @@ def dashboard(request):
         )
     )
 
+    # only show unenroll settings for not global course.
+    global_courses = CourseGlobalSetting.all_course_id()
+    show_unenroll_settings_for = frozenset(
+        course.id for course, _ in course_enrollment_pairs if (
+          course.id not in global_courses
+        )
+    )
+
     # Verification Attempts
     # Used to generate the "you must reverify for course x" banner
     verification_status, verification_msg = SoftwareSecurePhotoVerification.user_status(user)
@@ -570,6 +580,7 @@ def dashboard(request):
         'all_course_modes': course_modes,
         'cert_statuses': cert_statuses,
         'show_email_settings_for': show_email_settings_for,
+        'show_unenroll_settings_for': show_unenroll_settings_for,
         'reverifications': reverifications,
         'verification_status': verification_status,
         'verification_msg': verification_msg,
@@ -1563,6 +1574,9 @@ def create_account(request, post_override=None):  # pylint: disable-msg=too-many
             login_user.save()
             AUDIT_LOG.info(u"Login activated on extauth account - {0} ({1})".format(login_user.username, login_user.email))
 
+    # temporary enroll in global course.
+    _enroll_global_course(email)
+
     dog_stats_api.increment("common.student.account_created")
     redirect_url = try_change_enrollment(request)
 
@@ -1596,6 +1610,25 @@ def create_account(request, post_override=None):  # pylint: disable-msg=too-many
                         httponly=None)
     return response
 
+def _enroll_global_course(email):
+    """
+    Enroll in the global course for the user.
+
+    `email` E-mail addres of the user.
+    """
+    try:
+        for course_id in CourseGlobalSetting.all_course_id():
+            # check whether course exists.
+            if not modulestore().has_course(course_id):
+                log.warning("Course {} does not exists".format(course_id))
+                continue
+            cea, _ = CourseEnrollmentAllowed.objects.get_or_create(course_id=course_id, email=email)
+            cea.auto_enroll = True
+            cea.save()
+    except Exception as e: # pylint: disable=broad-except
+        # Exception will ignore but logged as error. User management command to enroll global course later.
+        log.error('Failed to temporary enroll to global course.')
+        log.exception(e)
 
 def auto_auth(request):
     """

@@ -10,6 +10,8 @@ from edxmako.template import Template
 
 import tempdir
 
+from microsite_configuration import microsite
+
 log = logging.getLogger(__name__)
 
 
@@ -64,7 +66,8 @@ class MakoLoader(object):
 
     def load_template_source(self, template_name, template_dirs=None):
         # Just having this makes the template load as an instance, instead of a class.
-        return self.base_loader.load_template_source(template_name, template_dirs)
+        _template_name = microsite.get_template_path(template_name)
+        return self.base_loader.load_template_source(_template_name, template_dirs)
 
     def reset(self):
         self.base_loader.reset()

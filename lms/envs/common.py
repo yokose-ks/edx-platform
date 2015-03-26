@@ -1394,6 +1394,9 @@ INSTALLED_APPS = (
     # Certificate generator
     'pdfgen',
     'pgreport',
+
+    # Course global setting
+    'course_global',
 )
 
 ######################### MARKETING SITE ###############################
