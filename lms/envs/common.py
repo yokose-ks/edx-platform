@@ -1622,6 +1622,9 @@ INSTALLED_APPS = (
     'pgreport',
 
     'lms.djangoapps.lms_xblock',
+
+    # Course global setting
+    'course_global',
 )
 
 ######################### MARKETING SITE ###############################

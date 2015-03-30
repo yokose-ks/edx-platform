@@ -74,7 +74,7 @@ from instructor.views import INVOICE_KEY
 
 from submissions import api as sub_api  # installed from the edx-submissions repository
 
-from bulk_email.models import CourseEmail
+from bulk_email.models import CourseEmail, SEND_TO_ALL, SEND_TO_ALL_INCLUDE_OPTOUT
 from ga_survey.models import SurveySubmission
 
 from .tools import (
@@ -1812,6 +1812,10 @@ def send_email(request, course_id):
     send_to = request.POST.get("send_to")
     subject = request.POST.get("subject")
     message = request.POST.get("message")
+
+    include_optout = request.POST.get('include_optout') in ['true', 'True', True]
+    if send_to == SEND_TO_ALL and request.user.is_staff and include_optout:
+        send_to = SEND_TO_ALL_INCLUDE_OPTOUT
 
     # allow two branding points to come from Microsites: which CourseEmailTemplate should be used
     # and what the 'from' field in the email should be
