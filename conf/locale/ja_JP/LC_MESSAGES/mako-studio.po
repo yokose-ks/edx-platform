@@ -18,8 +18,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2015-03-16 14:09+0000\n"
-"PO-Revision-Date: 2015-03-12 14:14+0000\n"
+"POT-Creation-Date: 2015-02-26 16:06+0000\n"
+"PO-Revision-Date: 2015-02-26 16:09+0000\n"
 "Last-Translator: Sarina Canelake <sarina@edx.org>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
@@ -122,31 +122,22 @@ msgstr "ファイル &amp; アップロード"
 
 #: cms/templates/asset_index.html:36 cms/templates/course_info.html:32
 #: cms/templates/course_outline.html:59 cms/templates/edit-tabs.html:31
-#: cms/templates/textbooks.html:37 cms/templates/videos_index.html:41
+#: cms/templates/textbooks.html:37 cms/templates/videos_index.html:40
 #: cms/templates/widgets/header.html:50
 msgid "Content"
 msgstr "コンテンツ"
 
-#: cms/templates/asset_index.html:40 cms/templates/asset_index.html:41
-#: cms/templates/container.html:67 cms/templates/container.html:68
-#: cms/templates/course-create-rerun.html:29 cms/templates/course_info.html:36
-#: cms/templates/course_info.html:37 cms/templates/course_outline.html:63
-#: cms/templates/course_outline.html:64 cms/templates/edit-tabs.html:36
-#: cms/templates/edit-tabs.html:37 cms/templates/index.html:20
-#: cms/templates/index.html:21 cms/templates/library.html:49
-#: cms/templates/library.html:50 cms/templates/manage_users.html:19
-#: cms/templates/manage_users.html:20 cms/templates/manage_users_lib.html:18
-#: cms/templates/manage_users_lib.html:19 cms/templates/textbooks.html:41
-#: cms/templates/textbooks.html:42 cms/templates/videos_index.html:45
-#: cms/templates/videos_index.html:46
-#: cms/templates/ux/reference/container.html:37
-#: cms/templates/ux/reference/course-create-rerun.html:22
-#: cms/templates/ux/reference/outline.html:24
+#: cms/templates/asset_index.html:41 cms/templates/container.html:68
+#: cms/templates/course_info.html:37 cms/templates/course_outline.html:64
+#: cms/templates/edit-tabs.html:37 cms/templates/index.html:21
+#: cms/templates/library.html:50 cms/templates/manage_users.html:20
+#: cms/templates/manage_users_lib.html:19 cms/templates/textbooks.html:42
+#: cms/templates/videos_index.html:45
 msgid "Page Actions"
 msgstr "ページの動き"
 
 #: cms/templates/asset_index.html:44 cms/templates/asset_index.html:90
-#: cms/templates/videos_index.html:49
+#: cms/templates/videos_index.html:48
 msgid "Upload New File"
 msgstr "新規ファイルをアップロード"
 
@@ -220,9 +211,9 @@ msgstr "警告を閉じる"
 msgid "Course Checklists"
 msgstr "開講チェックリスト"
 
-#: cms/templates/checklists.html:31 cms/templates/export.html:36
-#: cms/templates/export_git.html:15 cms/templates/import.html:21
-#: cms/templates/widgets/header.html:107 cms/templates/widgets/header.html:164
+#: cms/templates/checklists.html:31 cms/templates/export.html:29
+#: cms/templates/export_git.html:15 cms/templates/import.html:14
+#: cms/templates/widgets/header.html:107
 msgid "Tools"
 msgstr "ツール"
 
@@ -618,7 +609,7 @@ msgstr ""
 #. Translators: Pages refer to the tabs that appear in the top navigation of
 #. each course.
 #: cms/templates/edit-tabs.html:10 cms/templates/edit-tabs.html:33
-#: cms/templates/export.html:103 cms/templates/widgets/header.html:62
+#: cms/templates/export.html:71 cms/templates/widgets/header.html:62
 msgid "Pages"
 msgstr "ページ"
 
@@ -714,7 +705,7 @@ msgid "Internal Server Error"
 msgstr "内部サーバエラー"
 
 #: cms/templates/error.html:19 cms/templates/widgets/footer.html:28
-#: cms/templates/widgets/sock.html:56
+#: cms/templates/widgets/sock.html:57
 msgid "Use our feedback tool, Tender, to share your feedback"
 msgstr "あなたの評価を共有するにはフィードバックツールTenderを使ってください"
 
@@ -747,33 +738,16 @@ msgstr ""
 msgid "Back to dashboard"
 msgstr "マイページに戻る"
 
-#: cms/templates/export.html:11 cms/templates/export.html:39
-msgid "Library Export"
-msgstr ""
-
-#: cms/templates/export.html:13 cms/templates/export.html:41
+#: cms/templates/export.html:9 cms/templates/export.html:30
 msgid "Course Export"
 msgstr "エクスポート"
 
-#: cms/templates/export.html:53
-msgid "About Exporting Libraries"
-msgstr ""
-
-#. Translators: ".tar.gz" is a file extension, and should not be translated
-#: cms/templates/export.html:56
-msgid ""
-"You can export libraries and edit them outside of {studio_name}. The "
-"exported file is a .tar.gz file (that is, a .tar file compressed with GNU "
-"Zip) that contains the library structure and content. You can also re-import"
-" libraries that you've exported."
-msgstr ""
-
-#: cms/templates/export.html:61
+#: cms/templates/export.html:40
 msgid "About Exporting Courses"
 msgstr "エクスポートについて"
 
 #. Translators: ".tar.gz" is a file extension, and should not be translated
-#: cms/templates/export.html:64
+#: cms/templates/export.html:43
 msgid ""
 "You can export courses and edit them outside of {studio_name}. The exported "
 "file is a .tar.gz file (that is, a .tar file compressed with GNU Zip) that "
@@ -781,7 +755,7 @@ msgid ""
 "that you've exported."
 msgstr ""
 
-#: cms/templates/export.html:67
+#: cms/templates/export.html:46
 msgid ""
 "{em_start}Caution:{em_end} When you export a course, information such as "
 "MATLAB API keys, LTI passports, annotation secret token strings, and "
@@ -790,104 +764,68 @@ msgid ""
 "information."
 msgstr ""
 
-#: cms/templates/export.html:75
-msgid "Export My Library Content"
-msgstr ""
-
-#: cms/templates/export.html:77
+#: cms/templates/export.html:51
 msgid "Export My Course Content"
 msgstr "講座コンテンツをエクスポートする"
 
-#: cms/templates/export.html:86
-msgid "Export Library Content"
-msgstr ""
-
-#: cms/templates/export.html:88
+#: cms/templates/export.html:57
 msgid "Export Course Content"
 msgstr "コースのコンテンツをエクスポートする"
 
-#: cms/templates/export.html:97
+#: cms/templates/export.html:65
 msgid "Data {em_start}exported with{em_end} your course:"
 msgstr "{em_start}エクスポートされた{em_end}講座のデータ："
 
-#: cms/templates/export.html:99
+#: cms/templates/export.html:67
 msgid ""
 "Values from Advanced Settings, including MATLAB API keys and LTI passports"
 msgstr ""
 
-#: cms/templates/export.html:100
+#: cms/templates/export.html:68
 msgid "Course Content (all Sections, Sub-sections, and Units)"
 msgstr "講座コンテンツ (すべての章, 節, 単元)"
 
-#: cms/templates/export.html:101
+#: cms/templates/export.html:69
 msgid "Course Structure"
 msgstr "コース構成"
 
-#: cms/templates/export.html:102
+#: cms/templates/export.html:70
 msgid "Individual Problems"
 msgstr "個々の問題"
 
-#: cms/templates/export.html:104
+#: cms/templates/export.html:72
 msgid "Course Assets"
 msgstr "素材"
 
-#: cms/templates/export.html:105
+#: cms/templates/export.html:73
 msgid "Course Settings"
 msgstr "コース設定"
 
-#: cms/templates/export.html:110
+#: cms/templates/export.html:78
 msgid "Data {em_start}not exported{em_end} with your course:"
 msgstr "{em_start}エクスポートされなかった{em_end}講座のデータ："
 
-#: cms/templates/export.html:112
+#: cms/templates/export.html:80
 msgid "User Data"
 msgstr "ユーザ情報"
 
-#: cms/templates/export.html:113
+#: cms/templates/export.html:81
 msgid "Course Team Data"
 msgstr "コースチーム情報"
 
-#: cms/templates/export.html:114
+#: cms/templates/export.html:82
 msgid "Forum/discussion Data"
 msgstr "フォーラム／ディスカッションデータ"
 
-#: cms/templates/export.html:115
+#: cms/templates/export.html:83
 msgid "Certificates"
 msgstr "証明書"
 
-#: cms/templates/export.html:124
-msgid "Why export a library?"
-msgstr ""
-
-#: cms/templates/export.html:125
-msgid ""
-"You may want to edit the XML in your library directly, outside of "
-"{studio_name}. You may want to create a backup copy of your library. Or, you"
-" may want to create a copy of your library that you can later import into "
-"another library instance and customize."
-msgstr ""
-
-#: cms/templates/export.html:131 cms/templates/export.html:155
-msgid "Opening the downloaded file"
-msgstr "ダウンロードしたファイルを開いています"
-
-#. Translators: ".tar.gz" is a file extension, and should not be translated
-#: cms/templates/export.html:133
-msgid ""
-"Use an archive program to extract the data from the .tar.gz file. Extracted "
-"data includes the library.xml file, as well as subfolders that contain "
-"library content."
-msgstr ""
-
-#: cms/templates/export.html:136
-msgid "Learn more about exporting a library"
-msgstr ""
-
-#: cms/templates/export.html:142
+#: cms/templates/export.html:91
 msgid "Why export a course?"
 msgstr "コースをエキスポートする目的は？"
 
-#: cms/templates/export.html:143
+#: cms/templates/export.html:92
 msgid ""
 "You may want to edit the XML in your course directly, outside of "
 "{studio_name}. You may want to create a backup copy of your course. Or, you "
@@ -895,11 +833,11 @@ msgid ""
 "another course instance and customize."
 msgstr ""
 
-#: cms/templates/export.html:149
+#: cms/templates/export.html:98
 msgid "What content is exported?"
 msgstr "どのコンテンツがエクスポートされますか？"
 
-#: cms/templates/export.html:151
+#: cms/templates/export.html:100
 msgid ""
 "The course content and structure (including sections, subsections, and "
 "units) are exported. Values from Advanced Settings, including MATLAB API "
@@ -908,15 +846,19 @@ msgid ""
 "course team information, is not exported."
 msgstr ""
 
+#: cms/templates/export.html:104
+msgid "Opening the downloaded file"
+msgstr "ダウンロードしたファイルを開いています"
+
 #. Translators: ".tar.gz" is a file extension, and should not be translated
-#: cms/templates/export.html:157
+#: cms/templates/export.html:106
 msgid ""
 "Use an archive program to extract the data from the .tar.gz file. Extracted "
 "data includes the course.xml file, as well as subfolders that contain course"
 " content."
 msgstr "圧縮ソフトウェアを使用して.tar.gzファイルを解凍してください。解凍されたファイルにはcourse.xmlファイル、講座コンテンツを含むサブフォルダが含まれます。"
 
-#: cms/templates/export.html:160
+#: cms/templates/export.html:109
 msgid "Learn more about exporting a course"
 msgstr ""
 
@@ -1041,12 +983,9 @@ msgid ""
 "delete icon."
 msgstr "実験で利用をしていない場合に限り、グループ設定を削除することができます。設定を削除するには、設定ボックスの上をマウスオーバーし削除アイコンをクリックします。"
 
-#: cms/templates/group_configurations.html:94
-#: cms/templates/group_configurations.html:95 cms/templates/settings.html:350
-#: cms/templates/settings.html:351 cms/templates/settings_advanced.html:88
-#: cms/templates/settings_advanced.html:89
+#: cms/templates/group_configurations.html:94 cms/templates/settings.html:350
+#: cms/templates/settings_advanced.html:88
 #: cms/templates/settings_graders.html:132
-#: cms/templates/settings_graders.html:133
 msgid "Other Course Settings"
 msgstr "その他の設定"
 
@@ -1284,55 +1223,28 @@ msgid ""
 "to fix the error."
 msgstr "受講者はこのアイテムにアクセスすることができません。アイテムを再編集してエラーを修正してください。"
 
-#: cms/templates/import.html:10 cms/templates/import.html:24
-msgid "Library Import"
-msgstr ""
-
-#: cms/templates/import.html:12 cms/templates/import.html:26
+#: cms/templates/import.html:7 cms/templates/import.html:15
 msgid "Course Import"
 msgstr "インポート"
 
-#: cms/templates/import.html:38
+#: cms/templates/import.html:25
 msgid ""
-"Be sure you want to import a library before continuing. The contents of the "
-"imported library will replace the contents of the existing library. "
-"{em_start}You cannot undo a library import{em_end}. Before you proceed, we "
-"recommend that you export the current library, so that you have a backup "
-"copy of it."
-msgstr ""
+"Be sure you want to import a course before continuing. Content of the "
+"imported course replaces all the content of this course. {em_start}You "
+"cannot undo a course import{em_end}. We recommend that you first export the "
+"current course, so you have a backup copy of it."
+msgstr "継続する前に講座をインポートしたいか確認してください。インポートされた講座はこの講座のすべての内容を置き換えします。{em_start}インポートは取り消すことができません{em_end}。バックアップを残す為に、現在の講座を先にエクスポートすることをお勧めします。 "
 
-#: cms/templates/import.html:39
-msgid ""
-"The library that you import must be in a .tar.gz file (that is, a .tar file "
-"compressed with GNU Zip). This .tar.gz file must contain a library.xml file."
-" It may also contain other files."
-msgstr ""
-
-#: cms/templates/import.html:40
-msgid ""
-"The import process has five stages. During the first two stages, you must "
-"stay on this page. You can leave this page after the Unpacking stage has "
-"completed. We recommend, however, that you don't make important changes to "
-"your library until the import operation has completed."
-msgstr ""
-
-#: cms/templates/import.html:42
-msgid ""
-"Be sure you want to import a course before continuing. The contents of the "
-"imported course will replace the contents of the existing course. "
-"{em_start}You cannot undo a course import{em_end}. Before you proceed, we "
-"recommend that you export the current course, so that you have a backup copy"
-" of it."
-msgstr ""
-
-#: cms/templates/import.html:43
+#. Translators: ".tar.gz" is a file extension, and files with that extension
+#. are called "gzipped tar files": these terms should not be translated
+#: cms/templates/import.html:27
 msgid ""
 "The course that you import must be in a .tar.gz file (that is, a .tar file "
 "compressed with GNU Zip). This .tar.gz file must contain a course.xml file. "
 "It may also contain other files."
 msgstr "インポートする講座は.tar.gzファイル(tarファイルGNU Zipで圧縮したファイル)である必要があります。この.tar.gzファイルにはcourse.xmlファイルとその他のファイルを含む必要があります。"
 
-#: cms/templates/import.html:44
+#: cms/templates/import.html:28
 msgid ""
 "The import process has five stages. During the first two stages, you must "
 "stay on this page. You can leave this page after the Unpacking stage has "
@@ -1340,144 +1252,93 @@ msgid ""
 "your course until the import operation has completed."
 msgstr "インポートの流れは５段階あります。はじめの２つの段階ではこのページで行います。展開が終わりましたら、別のページに遷移しても問題ありません。ただし、インポートの処理が完了するまでは重要な変更を講座にしないことをお勧めします。"
 
-#: cms/templates/import.html:54
-msgid "Select a .tar.gz File to Replace Your Library Content"
-msgstr ""
-
-#: cms/templates/import.html:56
+#. Translators: ".tar.gz" is a file extension, and files with that extension
+#. are called "gzipped tar files": these terms should not be translated
+#: cms/templates/import.html:34
 msgid "Select a .tar.gz File to Replace Your Course Content"
 msgstr "入れ替えるコースコンテンツの.tar.gzファイルを選択してください"
 
-#: cms/templates/import.html:64
+#: cms/templates/import.html:40
 msgid "Choose a File to Import"
 msgstr "インポートするファイルを選んでください"
 
-#: cms/templates/import.html:69
+#: cms/templates/import.html:45
 msgid "File Chosen:"
 msgstr "選ばれたファイル："
 
-#: cms/templates/import.html:77
-msgid "Replace my library with the selected file"
-msgstr ""
+#: cms/templates/import.html:51
+msgid "Replace my course with the one above"
+msgstr "講座コンテンツを上記のもので置き換えます。"
 
-#: cms/templates/import.html:79
-msgid "Replace my course with the selected file"
-msgstr ""
-
-#: cms/templates/import.html:87
-msgid "Library Import Status"
-msgstr ""
-
-#: cms/templates/import.html:89
+#: cms/templates/import.html:55
 msgid "Course Import Status"
 msgstr "インポート状況"
 
-#: cms/templates/import.html:101
+#: cms/templates/import.html:65
 msgid "Uploading"
 msgstr "アップデート中"
 
-#: cms/templates/import.html:105
+#: cms/templates/import.html:69
 msgid "Transferring your file to our servers"
 msgstr "ファイルをサーバに転送中"
 
-#: cms/templates/import.html:116
+#: cms/templates/import.html:80
 msgid "Unpacking"
 msgstr "解凍中"
 
-#: cms/templates/import.html:117
+#: cms/templates/import.html:81
 msgid ""
 "Expanding and preparing folder/file structure (You can now leave this page "
 "safely, but avoid making drastic changes to content until this import is "
 "complete)"
 msgstr "解凍、そして、フォルダ/ファイル構造を準備しています(これ以降、このページを安全に離脱することができますが、インポートが完了するまでは大規模な変更は避けてください)"
 
-#: cms/templates/import.html:129
+#: cms/templates/import.html:93
 msgid "Verifying"
 msgstr "確認中"
 
-#: cms/templates/import.html:130
+#: cms/templates/import.html:94
 msgid "Reviewing semantics, syntax, and required data"
 msgstr "意味、構文、必須データを確認中"
 
-#: cms/templates/import.html:143
-msgid "Updating Library"
-msgstr ""
-
-#: cms/templates/import.html:145
+#: cms/templates/import.html:105
 msgid "Updating Course"
 msgstr "更新中"
 
-#: cms/templates/import.html:150
+#: cms/templates/import.html:106
 msgid ""
-"Integrating your imported content into this library. This process might take"
-" longer with larger libraries."
-msgstr ""
+"Integrating your imported content into this course. This may take a while "
+"with larger courses."
+msgstr "インポートされたコンテンツを統合中。本講座のコンテンツはより多くのものとなるでしょう。"
 
-#: cms/templates/import.html:152
-msgid ""
-"Integrating your imported content into this course. This process might take "
-"longer with larger courses."
-msgstr ""
-
-#: cms/templates/import.html:163
+#: cms/templates/import.html:115
 msgid "Success"
 msgstr "成功"
 
-#: cms/templates/import.html:166
-msgid "Your imported content has now been integrated into this library"
-msgstr ""
-
-#: cms/templates/import.html:168
+#: cms/templates/import.html:116
 msgid "Your imported content has now been integrated into this course"
 msgstr "インポートしたコンテンツは、ただ今、本講座に統合されました。"
 
-#: cms/templates/import.html:176
-msgid "View Updated Library"
-msgstr ""
-
-#: cms/templates/import.html:178
+#: cms/templates/import.html:120
 msgid "View Updated Outline"
 msgstr "更新された概要を見る"
 
-#: cms/templates/import.html:193
-msgid "Why import a library?"
-msgstr ""
-
-#: cms/templates/import.html:194
-msgid ""
-"You might want to update an existing library to a new version, or replace an"
-" existing library entirely. You might also have developed a library outside "
-"of Studio."
-msgstr ""
-
-#: cms/templates/import.html:198
-msgid "Note: Library content is not automatically updated in courses"
-msgstr ""
-
-#: cms/templates/import.html:199
-msgid ""
-"If you change and import a library that is referenced by randomized content "
-"blocks in one or more courses, those courses do not automatically use the "
-"updated content. You must manually refresh the randomized content blocks to "
-"bring them up to date with the latest library content."
-msgstr ""
-
-#: cms/templates/import.html:205
+#: cms/templates/import.html:132
 msgid "Why import a course?"
 msgstr "コースをインポートする理由は何ですか？"
 
-#: cms/templates/import.html:206
+#: cms/templates/import.html:133
 msgid ""
 "You may want to run a new version of an existing course, or replace an "
 "existing course altogether. Or, you may have developed a course outside "
 "{studio_name}."
 msgstr ""
 
-#: cms/templates/import.html:210
+#: cms/templates/import.html:137
 msgid "What content is imported?"
 msgstr "どのコンテンツがインポートされたのか？"
 
-#: cms/templates/import.html:211
+#: cms/templates/import.html:138
 msgid ""
 "Only the course content and structure (including sections, subsections, and "
 "units) are imported. Other data, including student data, grading "
@@ -1485,11 +1346,11 @@ msgid ""
 "information, remains the same as it was in the existing course."
 msgstr "コース内のコンテンツとコース構造(セクション、サブセクション、ユニットを含む)のみがインポートされます。受講者情報、成績情報、ディスカッションデータ、コース設定、コース管理者情報は既存のコースのまま情報が残ります。"
 
-#: cms/templates/import.html:215
+#: cms/templates/import.html:142
 msgid "Warning: Importing while a course is running"
 msgstr "警告：講座開講中のインポート"
 
-#: cms/templates/import.html:216
+#: cms/templates/import.html:143
 msgid ""
 "If you perform an import while your course is running, and you change the "
 "URL names (or url_name nodes) of any Problem components, the student data "
@@ -1498,7 +1359,7 @@ msgid ""
 msgstr "講座開講中にインポートを行い、問題型アイテムのURL名(またはurl_nameノード)を変更すると、そのアイテムに関連するデータが喪失する可能性があります。このデータは受講者の問題に対する得点が含まれます。"
 
 #: cms/templates/index.html:5 cms/templates/index.html:17
-#: cms/templates/widgets/header.html:200
+#: cms/templates/widgets/header.html:182
 msgid "{studio_name} Home"
 msgstr ""
 
@@ -1775,7 +1636,7 @@ msgstr ""
 msgid ""
 "Click Help in the upper-right corner to get more information about the "
 "{studio_name} page you are viewing. You can also use the links at the bottom"
-" of the page to access our continually updated documentation and other "
+" of the page to access our continously updated documentation and other "
 "{studio_name} resources."
 msgstr ""
 
@@ -1854,42 +1715,57 @@ msgstr ""
 msgid "Add Component"
 msgstr ""
 
-#: cms/templates/library.html:77
+#: cms/templates/library.html:76 cms/templates/library.html:78
+msgid "Library ID"
+msgstr ""
+
+#: cms/templates/library.html:81
+msgid "Tip:"
+msgstr ""
+
+#: cms/templates/library.html:81
+msgid ""
+"To add content from this library to a course that uses a Randomized Content "
+"Block, copy this ID and enter it in the Libraries field in the Randomized "
+"Content Block settings."
+msgstr ""
+
+#: cms/templates/library.html:87
 msgid "Adding content to your library"
 msgstr ""
 
-#: cms/templates/library.html:78
+#: cms/templates/library.html:88
 msgid ""
 "Add components to your library for use in courses, using Add New Component "
 "at the bottom of this page."
 msgstr ""
 
-#: cms/templates/library.html:79
+#: cms/templates/library.html:89
 msgid ""
 "Components are listed in the order in which they are added, with the most "
 "recently added at the bottom. Use the pagination arrows to navigate from "
 "page to page if you have more than one page of components in your library."
 msgstr ""
 
-#: cms/templates/library.html:80
+#: cms/templates/library.html:90
 msgid "Using library content in courses"
 msgstr ""
 
-#: cms/templates/library.html:81
+#: cms/templates/library.html:91
 msgid ""
 "Use library content in courses by adding the "
-"{em_start}library_content{em_end} policy key to the Advanced Module List in "
-"the course's Advanced Settings, then adding a Randomized Content Block to "
-"your courseware. In the settings for each Randomized Content Block, select "
-"this library as the source library, and specify the number of problems to be"
-" randomly selected and displayed to each student."
+"{em_start}library_content{em_end} policy key to Advanced Settings, then "
+"adding a Randomized Content Block to your courseware. In the settings for "
+"each Randomized Content Block, enter the Library ID for each library from "
+"which you want to draw content, and specify the number of problems to be "
+"randomly selected and displayed to each student."
 msgstr ""
 
-#: cms/templates/library.html:85
+#: cms/templates/library.html:95
 msgid "Learn more about content libraries"
 msgstr ""
 
-#: cms/templates/login.html:7 cms/templates/widgets/header.html:223
+#: cms/templates/login.html:7 cms/templates/widgets/header.html:205
 msgid "Sign In"
 msgstr "サインイン"
 
@@ -2022,7 +1898,7 @@ msgid "Library User Access"
 msgstr ""
 
 #: cms/templates/manage_users_lib.html:15
-#: cms/templates/widgets/header.html:157
+#: cms/templates/widgets/header.html:155
 msgid "User Access"
 msgstr ""
 
@@ -2094,7 +1970,7 @@ msgid ""
 "members. There must be at least one user with Admin privileges in a library."
 msgstr ""
 
-#: cms/templates/register.html:6 cms/templates/widgets/header.html:220
+#: cms/templates/register.html:6 cms/templates/widgets/header.html:202
 msgid "Sign Up"
 msgstr "会員登録"
 
@@ -2631,16 +2507,16 @@ msgstr "もし、テキストに独立した章が無い場合は、テキスト
 msgid "Learn more about textbooks"
 msgstr ""
 
-#: cms/templates/videos_index.html:8 cms/templates/videos_index.html:42
+#: cms/templates/videos_index.html:7 cms/templates/videos_index.html:41
 #: cms/templates/widgets/header.html:72
 msgid "Video Uploads"
 msgstr ""
 
-#: cms/templates/videos_index.html:62
+#: cms/templates/videos_index.html:61
 msgid "Why upload video files?"
 msgstr ""
 
-#: cms/templates/videos_index.html:63
+#: cms/templates/videos_index.html:62
 msgid ""
 "For a video to play on different devices, it needs to be available in "
 "multiple formats. After you upload an original video file in .mp4 or .mov "
@@ -2648,51 +2524,42 @@ msgid ""
 "and stores them for you."
 msgstr ""
 
-#: cms/templates/videos_index.html:64
+#: cms/templates/videos_index.html:63
 msgid "Monitoring files as they upload"
 msgstr ""
 
-#: cms/templates/videos_index.html:65
+#: cms/templates/videos_index.html:64
 msgid ""
 "Each video file that you upload needs to reach the video processing servers "
 "successfully before additional work can begin. You can monitor the progress "
 "of files as they upload, and try again if the upload fails."
 msgstr ""
 
-#: cms/templates/videos_index.html:66
+#: cms/templates/videos_index.html:65
 msgid "Managing uploaded files"
 msgstr ""
 
-#: cms/templates/videos_index.html:67
+#: cms/templates/videos_index.html:66
 msgid ""
 "After a file uploads successfully, automated processing begins. After "
 "automated processing begins for a file it is listed under Previous Uploads "
-"as {em_start}In Progress{em_end}. You can add the video to your course as "
-"soon as it has a unique video ID and the status is {em_start}Ready{em_end}. "
-"Allow 24 hours for file processing at the external video hosting sites to "
-"complete."
+"as {em_start}In Progress{em_end}. When the status is "
+"{em_start}Complete{em_end}, edX assigns a unique video ID to the video file "
+"and you can add it to your course. If something goes wrong, the "
+"{em_start}Failed{em_end} status message appears. Check for problems in the "
+"file and upload a replacement."
+msgstr ""
+
+#: cms/templates/videos_index.html:67
+msgid "How do I get the videos into my course?"
 msgstr ""
 
 #: cms/templates/videos_index.html:68
 msgid ""
-"If something goes wrong, the {em_start}Failed{em_end} status message "
-"appears. Check for problems in your original file and upload a replacement."
-msgstr ""
-
-#: cms/templates/videos_index.html:69
-msgid "How do I get the videos into my course?"
-msgstr ""
-
-#: cms/templates/videos_index.html:70
-msgid ""
-"As soon as the status for a file is {em_start}Ready{em_end}, you can add "
-"that video to a component in your course. Copy the unique video ID. In "
-"another browser window, on the Course Outline page, create or locate a video"
-" component to play this video. Edit the video component to paste the ID into"
-" the Advanced {em_start}EdX Video ID{em_end} field. The video can play in "
-"the LMS as soon as its status is {em_start}Ready{em_end}, although "
-"processing may not be complete for all encodings and all video hosting "
-"sites."
+"After processing is complete for the video file, you copy its unique video "
+"ID. On the Course Outline page, you create or locate a video component to "
+"play this video. Edit the video component to paste the ID into the Advanced "
+"{em_start}EdX Video ID{em_end} field."
 msgstr ""
 
 #: cms/templates/visibility_editor.html:18
@@ -2813,7 +2680,7 @@ msgid ""
 "trademarks or trademarks of {link_start}edX Inc.{link_end}"
 msgstr ""
 
-#: cms/templates/widgets/footer.html:28 cms/templates/widgets/sock.html:56
+#: cms/templates/widgets/footer.html:28 cms/templates/widgets/sock.html:57
 msgid "Contact Us"
 msgstr "お問い合わせ"
 
@@ -2821,8 +2688,11 @@ msgstr "お問い合わせ"
 msgid "Current Course:"
 msgstr "学習中の講座："
 
-#: cms/templates/widgets/header.html:46 cms/templates/widgets/header.html:50
-#: cms/templates/widgets/header.html:81 cms/templates/widgets/header.html:147
+#: cms/templates/widgets/header.html:47 cms/templates/widgets/header.html:145
+msgid "Navigation for {course_name}"
+msgstr ""
+
+#: cms/templates/widgets/header.html:50 cms/templates/widgets/header.html:81
 msgid "Course"
 msgstr "講座"
 
@@ -2842,41 +2712,41 @@ msgstr "スケジュールと詳細"
 msgid "Checklists"
 msgstr "チェックリスト"
 
-#: cms/templates/widgets/header.html:115 cms/templates/widgets/header.html:170
+#: cms/templates/widgets/header.html:115
 msgid "Import"
 msgstr "インポート"
 
-#: cms/templates/widgets/header.html:118 cms/templates/widgets/header.html:173
+#: cms/templates/widgets/header.html:118
 msgid "Export"
 msgstr "エクスポート"
 
-#: cms/templates/widgets/header.html:140
+#: cms/templates/widgets/header.html:137
 msgid "Current Library:"
 msgstr ""
 
-#: cms/templates/widgets/header.html:152
+#: cms/templates/widgets/header.html:149
 msgid "Library"
 msgstr ""
 
-#: cms/templates/widgets/header.html:186 cms/templates/widgets/header.html:213
-msgid "Account"
-msgstr ""
+#: cms/templates/widgets/header.html:169
+msgid "Help &amp; Account Navigation"
+msgstr "ヘルプとアカウント"
 
-#: cms/templates/widgets/header.html:187 cms/templates/widgets/header.html:214
-msgid "Account Navigation"
-msgstr ""
-
-#: cms/templates/widgets/header.html:190 cms/templates/widgets/header.html:217
+#: cms/templates/widgets/header.html:172 cms/templates/widgets/header.html:199
 msgid "Contextual Online Help"
 msgstr "コンテキストによるオンラインヘルプ"
 
-#: cms/templates/widgets/header.html:194
+#: cms/templates/widgets/header.html:176
 msgid "Currently signed in as:"
 msgstr "サインインしています："
 
-#: cms/templates/widgets/header.html:203
+#: cms/templates/widgets/header.html:185
 msgid "Sign Out"
 msgstr "サインアウト"
+
+#: cms/templates/widgets/header.html:196
+msgid "You're not currently signed in"
+msgstr "サインインしていません"
 
 #: cms/templates/widgets/metadata-edit.html:32
 msgid "Launch Latex Source Compiler"

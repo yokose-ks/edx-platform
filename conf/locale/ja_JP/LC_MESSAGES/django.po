@@ -21,7 +21,7 @@
 # Translators:
 # watcafe, 2014
 # kawa <h.kawasaki@nttks.co.jp>, 2014
-# h_yoshida <h_yoshida@matsumo-sys.com>, 2014-2015
+# h_yoshida <h_yoshida@matsumo-sys.com>, 2014
 # sunk <s.kim@nttks.co.jp>, 2014
 # Takashi Nagai <ngi644@gmail.com>, 2014
 # Shige Usui <ushige@live.com>, 2014
@@ -36,7 +36,7 @@
 # ayokose <ayokose.gacco@gmail.com>, 2014-2015
 # Daisuke Yamamoto <yamamoto.daisuke@nitech.ac.jp>, 2013
 # kawa <h.kawasaki@nttks.co.jp>, 2014
-# h_yoshida <h_yoshida@matsumo-sys.com>, 2014-2015
+# h_yoshida <h_yoshida@matsumo-sys.com>, 2014
 # 井上淳也 <junya.inoue@nttps.co.jp>, 2013
 # Osamu Takahashi, 2014
 # Shige Usui <ushige@live.com>, 2013-2014
@@ -82,7 +82,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2015-03-16 14:11+0000\n"
+"POT-Creation-Date: 2015-02-26 16:08+0000\n"
 "PO-Revision-Date: 2014-12-30 16:21+0000\n"
 "Last-Translator: h_yoshida <h_yoshida@matsumo-sys.com>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
@@ -104,7 +104,7 @@ msgstr "レポート管理"
 #: cms/djangoapps/contentstore/utils.py common/lib/xmodule/xmodule/tabs.py
 #: lms/templates/edxnotes/edxnotes.html
 msgid "Notes"
-msgstr "ノート"
+msgstr ""
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: "Discussion" is the title of the course forum page
@@ -149,6 +149,15 @@ msgstr "節"
 msgid "Unit"
 msgstr "単元"
 
+#. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
+#. Translators: This is the status for a video that the servers have
+#. successfully processed
+#: cms/djangoapps/contentstore/views/videos.py
+#: lms/djangoapps/instructor/views/instructor_task_helpers.py
+#: lms/templates/verify_student/midcourse_reverify_dash.html
+msgid "Complete"
+msgstr "完了"
+
 #: cms/djangoapps/contentstore/views/videos.py
 #: lms/djangoapps/class_dashboard/dashboard_data.py
 #: lms/djangoapps/class_dashboard/dashboard_data.py
@@ -174,61 +183,6 @@ msgstr "状態"
 #: common/djangoapps/course_modes/models.py
 msgid "Honor Code Certificate"
 msgstr "無料聴講コースの修了証"
-
-#: common/djangoapps/course_modes/models.py
-msgid "Your verification is pending"
-msgstr "あなたの認証は現在未認可"
-
-#: common/djangoapps/course_modes/models.py
-msgid "Verified: Pending Verification"
-msgstr "認証：認証未認可"
-
-#: common/djangoapps/course_modes/models.py
-msgid "ID verification pending"
-msgstr "本人認証は現在未認可"
-
-#: common/djangoapps/course_modes/models.py
-msgid "You're enrolled as a verified student"
-msgstr "認証された受講者として登録されています"
-
-#: common/djangoapps/course_modes/models.py
-#: lms/templates/instructor/instructor_dashboard_2/course_info.html
-msgid "Verified"
-msgstr "認証済み"
-
-#: common/djangoapps/course_modes/models.py
-#: lms/templates/dashboard/_dashboard_course_listing.html
-msgid "ID Verified Ribbon/Badge"
-msgstr "本人認証リボン/バッチ"
-
-#: common/djangoapps/course_modes/models.py
-#: common/djangoapps/course_modes/models.py
-msgid "You're enrolled as an honor code student"
-msgstr "倫理規定受講者として登録されています。"
-
-#: common/djangoapps/course_modes/models.py
-#: common/djangoapps/course_modes/models.py
-#: openedx/core/djangoapps/user_api/views.py
-#: lms/templates/static_templates/honor.html
-#: lms/templates/static_templates/honor.html
-msgid "Honor Code"
-msgstr "無料聴講コース"
-
-#: common/djangoapps/course_modes/models.py
-msgid "You're auditing this course"
-msgstr "あなたはこの講座を聴講しています。"
-
-#: common/djangoapps/course_modes/models.py
-msgid "Auditing"
-msgstr "聴講中"
-
-#: common/djangoapps/course_modes/models.py
-msgid "You're enrolled as a professional education student"
-msgstr "プロレベル受講者として受講登録しています"
-
-#: common/djangoapps/course_modes/models.py
-msgid "Professional Ed"
-msgstr "プロレベル"
 
 #: common/djangoapps/course_modes/views.py
 msgid "Enrollment is closed"
@@ -266,23 +220,23 @@ msgstr "受講者"
 
 #: common/djangoapps/embargo/forms.py
 msgid "COURSE NOT FOUND.  Please check that the course ID is valid."
-msgstr "講座が見つかりません。講座IDが有効か確認してください。"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid "The course key for the restricted course."
-msgstr "制限された講座の講座キー"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid "The message to show when a user is blocked from enrollment."
-msgstr "ユーザが受講登録にブロックされた場合に表示されるメッセージ。"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid "The message to show when a user is blocked from accessing a course."
-msgstr "ユーザーが講座のアクセスにブロックされた場合に表示されるメッセージ。"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid "Two character ISO country code."
-msgstr "２文字のISOカントリーコード。"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid ""
@@ -291,23 +245,22 @@ msgid ""
 " the course.  If blacklist countries are specified, then users from "
 "blacklisted countries will NOT be able to access the course."
 msgstr ""
-"講座に含むか含まないかを決めます。ホワイトリストの国が定義されている場合、ホワイトリストに記述された国のみが講座にアクセスできます。ブラックリストの国が定義されている場合、ブラックリストに記載した国が講座にアクセスできなくなります。"
 
 #: common/djangoapps/embargo/models.py
 msgid "The course to which this rule applies."
-msgstr "ルールを適用する講座。"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid "The country to which this rule applies."
-msgstr "ルールを適用する国。"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid "Whitelist {country} for {course}"
-msgstr "{course} 講座の {country} ホワイトリスト"
+msgstr ""
 
 #: common/djangoapps/embargo/models.py
 msgid "Blacklist {country} for {course}"
-msgstr "{course} 講座の {country} ブラックリスト"
+msgstr ""
 
 #: common/djangoapps/student/forms.py
 msgid "Username must be minimum of two characters long"
@@ -331,11 +284,11 @@ msgstr "ユーザ名は半角英数の文字のみが利用可能です。なお
 
 #: common/djangoapps/student/forms.py
 msgid "Username cannot be more than %(limit_value)s characters long"
-msgstr "ユーザー名は%(limit_value)s文字以下で入力してください"
+msgstr ""
 
 #: common/djangoapps/student/forms.py
 msgid "Email cannot be more than %(limit_value)s characters long"
-msgstr "Emailは%(limit_value)s文字以下で入力してください。"
+msgstr ""
 
 #: common/djangoapps/student/forms.py
 msgid "You must accept the terms of service."
@@ -379,7 +332,7 @@ msgstr "必須枠にて、一箇所および複数箇所のミスがあります
 
 #: common/djangoapps/student/forms.py
 msgid "Username and password fields cannot match"
-msgstr "パスワードはユーザー名と別のものとしてください。"
+msgstr "ユーザー名とパスワード枠が一致しません。"
 
 #: common/djangoapps/student/forms.py common/djangoapps/student/views.py
 msgid "Password: "
@@ -446,21 +399,21 @@ msgstr "なし"
 
 #: common/djangoapps/student/models.py
 msgid "{platform_name} Honor Code Certificate for {course_name}"
-msgstr "{course_name}講座の{platform_name} 無料聴講コースの修了証"
+msgstr ""
 
 #: common/djangoapps/student/models.py
 msgid "{platform_name} Verified Certificate for {course_name}"
-msgstr "{course_name}講座の{platform_name}本人認証付き修了証"
+msgstr ""
 
-#: common/djangoapps/student/models.py common/djangoapps/student/models.py
+#: common/djangoapps/student/models.py
 msgid "{platform_name} Professional Certificate for {course_name}"
-msgstr "{course_name}講座の{platform_name}プロフェッショナル修了証"
+msgstr ""
 
 #: common/djangoapps/student/models.py
 msgid ""
 "The company identifier for the LinkedIn Add-to-Profile button e.g "
 "0_0dPSPyS070e0HsE9HNz_13_d11_"
-msgstr "Add-to-Profileボタンの企業コード 例： 0_0dPSPyS070e0HsE9HNz_13_d11_"
+msgstr ""
 
 #: common/djangoapps/student/models.py
 msgid ""
@@ -468,12 +421,10 @@ msgid ""
 "(Example: 'edx')  If no value is provided, tracking codes will not be sent "
 "to LinkedIn."
 msgstr ""
-"LinkedInパートナーがトラッキングコードで使用する短い識別子(例：'edx')  "
-"値が定義されていない場合はトラッキングコードはLinkedInには送信されません。"
 
 #: common/djangoapps/student/models.py
 msgid "{platform_name} Certificate for {course_name}"
-msgstr "{course_name}講座の{platform_name}修了証"
+msgstr ""
 
 #: common/djangoapps/student/views.py
 msgid "Course id not specified"
@@ -551,8 +502,6 @@ msgid ""
 "This account has not been activated. We have sent another activation "
 "message. Please check your email for the activation instructions."
 msgstr ""
-"このアカウントはアクティベーションが完了していません。 "
-"アクティベーション用のメッセージを送信していますので、メールでアクティベーション方法を確認してください。"
 
 #: common/djangoapps/student/views.py
 msgid "Please enter a username"
@@ -629,12 +578,12 @@ msgid "Valid e-mail address required."
 msgstr "正しいメールアドレスが必要です。"
 
 #: common/djangoapps/student/views.py
-msgid "Old email is the same as the new email."
-msgstr "旧メールアドレスが新しいメールアドレスと同じです。"
-
-#: common/djangoapps/student/views.py
 msgid "An account with this e-mail already exists."
 msgstr "このメールアドレスのアカウントは既に存在しています。"
+
+#: common/djangoapps/student/views.py
+msgid "Old email is the same as the new email."
+msgstr "旧メールアドレスが新しいメールアドレスと同じです。"
 
 #: common/djangoapps/student/views.py
 msgid "Unable to send email activation link. Please try again later."
@@ -644,7 +593,7 @@ msgstr "有効なリンクにメールを送信できませんでした。後で
 msgid "Name required"
 msgstr "氏名は必須"
 
-#: common/djangoapps/student/views.py
+#: common/djangoapps/student/views.py common/djangoapps/student/views.py
 msgid "Invalid ID"
 msgstr "不正なID"
 
@@ -1010,40 +959,40 @@ msgid "Maximum upload file size is {file_size} bytes."
 msgstr "最大アップロードファイルサイズは {file_size} byteです。"
 
 #: common/djangoapps/util/milestones_helpers.py
-msgid "Course {course_id} requires {prerequisite_course_id}"
-msgstr "講座 {course_id} には {prerequisite_course_id} の受講が必要です。"
+msgid "Course {} requires {}"
+msgstr ""
 
 #: common/djangoapps/util/milestones_helpers.py
 msgid "System defined milestone"
-msgstr "システムで定義されたマイルストーン"
+msgstr ""
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "Invalid Length ({0})"
-msgstr "文字数を調整してください。 ({0})"
+msgstr "無効な長さ ({0})"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "must be {0} characters or more"
-msgstr "{0} 文字以上"
+msgstr " {0} 文字以上である必要があります。"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "must be {0} characters or less"
-msgstr "{0} 文字以下"
+msgstr "{0} 文字以下である必要があります。"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "Must be more complex ({0})"
-msgstr "次の組み合わせが必要です。 ({0})"
+msgstr "さらに複雑である必要があります。 ({0})"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "must contain {0} or more uppercase characters"
-msgstr "半角アルファベット大文字 {0} 文字以上"
+msgstr "{0} 文字以上の大文字を含む必要があります。"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "must contain {0} or more lowercase characters"
-msgstr "半角アルファベット小文字 {0} 文字以上"
+msgstr "{0} 文字以上の小文字を含む必要があります。"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "must contain {0} or more digits"
-msgstr "数字 {0} 文字以上"
+msgstr "{0} 桁以上必要です。"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "must contain {0} or more punctuation characters"
@@ -1059,7 +1008,7 @@ msgstr "{0} つ以上のユニークな言葉を含む必要があります。"
 
 #: common/djangoapps/util/password_policy_validators.py
 msgid "Too similar to a restricted dictionary word."
-msgstr "禁止パスワード一覧に含まれていますので、変更をお願いします。"
+msgstr "辞書にある単語に類似すぎています。"
 
 #: common/lib/capa/capa/capa_problem.py
 msgid "Cannot rescore problems with possible file submissions"
@@ -1168,7 +1117,7 @@ msgstr "XMLソースを確認してください　行番号： {sourcenum}"
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "JavaScript Input"
-msgstr "JavaScript入力"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Execution of unsafe Javascript code is not allowed."
@@ -1215,7 +1164,7 @@ msgstr "choicegroupは1つ以上の正解と1つ以上の不正解の選択肢�
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "True/False Choice"
-msgstr "正/誤 選択"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 #: cms/templates/widgets/problem-edit.html
@@ -1295,7 +1244,7 @@ msgstr "もしくは"
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Custom Evaluated Script"
-msgstr "カスタム評価スクリプト"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "error getting student answer from {student_answers}"
@@ -1311,7 +1260,7 @@ msgstr "カスタム応答: チェック処理が無効な辞書を応答しま�
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Symbolic Math Input"
-msgstr "Symbolic Math入力"
+msgstr ""
 
 #. Translators: 'SymbolicResponse' is a problem type and should not be
 #. translated.
@@ -1321,7 +1270,7 @@ msgstr "SymbolicResponseでエラーが発生しました。エラー内容：{e
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Code Input"
-msgstr "コード入力"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "No answer provided."
@@ -1349,11 +1298,11 @@ msgstr "無効な評価処理の応答です。コーススタッフに連絡し
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "External Grader"
-msgstr "外部採点エンジン"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Math Expression Input"
-msgstr "Math Expression入力"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Invalid input: {bad_input} not permitted in answer."
@@ -1375,7 +1324,7 @@ msgstr "無効な入力：'{bad_input}' は式として処理することが出�
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Circuit Schematic Builder"
-msgstr "回路図ビルダー"
+msgstr ""
 
 #. Translators: 'SchematicResponse' is a problem type and should not be
 #. translated.
@@ -1385,7 +1334,7 @@ msgstr "回路図の評価に問題があります。 エラー内容：{error_m
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Image Mapped Input"
-msgstr "画像マップ入力"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "error grading {image_input_id} (input={user_input})"
@@ -1398,11 +1347,11 @@ msgstr "問題の指定に関するエラー！{sr_coords}の四角形を解析�
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Annotation Input"
-msgstr "注釈入力"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Checkboxes With Text Input"
-msgstr "テキスト入力月チェックボックス"
+msgstr ""
 
 #: common/lib/capa/capa/responsetypes.py
 msgid "Answer not provided for {input_type}"
@@ -1899,7 +1848,7 @@ msgstr "コースのTLIツールのパスポートを、次のフォーマット
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Cosmetic Course Display Price"
-msgstr "表示上の講座価格"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
@@ -1907,7 +1856,6 @@ msgid ""
 " registration price is set by an administrator in the database, that price "
 "will be displayed instead of this one."
 msgstr ""
-"受講者が講座を受講登録する際に表示される価格。データベースに登録価格が管理者によって設定されている場合この価格ではなく、設定した価格が表示されます。"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Advertised Start Date"
@@ -1923,11 +1871,11 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Pre-Requisite Courses"
-msgstr "事前必須講座"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Pre-Requisite Course key if this course has a pre-requisite course"
-msgstr "この講座に事前必須講座が存在する場合の事前必須講座キー"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Show Calculator"
@@ -2074,17 +2022,6 @@ msgstr "ビデオアップロード資格情報"
 msgid ""
 "Enter the unique identifier for your course's video files provided by edX."
 msgstr "edXから提供された講座のビデオファイルの一意な識別子を入力します。"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Enter the URL for the official course Facebook group. If you provide a URL, "
-"the mobile app includes a button that students can tap to access the group."
-msgstr ""
-"コースのFacebook公式グループURLを入力してください。入力されていればモバイルアプリでグループにアクセスできるボタンが生成されます。"
-
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Facebook URL"
-msgstr "Facebook URL"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course Not Graded"
@@ -2407,7 +2344,7 @@ msgstr ""
 msgid ""
 "True if timezones should be shown on dates in the courseware. Deprecated in "
 "favor of due_date_display_format."
-msgstr "講座にタイムゾーンを表示する場合は有効にします。due_date_display_formatで指定した形で表示されます。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Due Date Display Format"
@@ -2415,13 +2352,11 @@ msgstr "期日の表示形式"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
-"Enter the format for due dates. The default is Mon DD, YYYY. Enter "
-"\"%m-%d-%Y\" for MM-DD-YYYY, \"%d-%m-%Y\" for DD-MM-YYYY, \"%Y-%m-%d\" for "
-"YYYY-MM-DD, or \"%Y-%d-%m\" for YYYY-DD-MM."
+"Enter the format due dates are displayed in. Due dates must be in MM-DD-"
+"YYYY, DD-MM-YYYY, YYYY-MM-DD, or YYYY-DD-MM format."
 msgstr ""
-"期日表示のフォーマットを入力してください。 デフォルトは Mon DD, YYYY です。MM-DD-YYYY は\"%m-%d-%Y\"、DD-MM-"
-"YYYY は \"%d-%m-%Y\"、YYYY-MM-DDは\"%Y-%m-%d\"、YYYY-DD-"
-"MMは\"%Y-%d-%m\"と入力してください。"
+"期日を表示されるような形式で入力してください。期日はMM-DD-YYYY、DD-MM-YYYY、YYYY-MM-DD、もしくは、YYYY-DD-"
+"MMといった形式である必要があります。"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "External Login Domain"
@@ -2448,17 +2383,15 @@ msgstr "修了証表示の挙動"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
-"Enter end, early_with_info, or early_no_info. After certificate generation, "
-"students who passed see a link to their certificates on the dashboard and "
-"students who did not pass see information about the grading configuration. "
-"The default is end, which displays this certificate information to all "
-"students after the course end date. To display this certificate information "
-"to all students as soon as certificates are generated, enter "
-"early_with_info. To display only the links to passing students as soon as "
-"certificates are generated, enter early_no_info."
+"Has three possible states: 'end', 'early_with_info', 'early_no_info'. 'end' "
+"is the default behavior, where certificates will only appear after a course "
+"has ended. 'early_with_info' will display all certificate information before"
+" a course has ended. 'early_no_info' will hide all certificate information "
+"unless a student has earned a certificate."
 msgstr ""
-"'end', 'early_with_info', "
-"'early_no_info'のいずれかを入力してください。修了証の生成後、合格した受講者はマイページで修了証へのリンクが確認でき、不合格の受講者は採点に関する情報を確認できます。デフォルトは'end'で閉講後にこの情報が表示されます。生成後すぐに表示するには'early_with_info'を指定してください。合格した受講者にのみ生成直後から表示するには'early_no_info'を指定してください。"
+"３パターンあります：'end', 'early_with_info', "
+"'early_no_info'。'end'はデフォルトの挙動であり、閉講後にのみ修了証が表示されます。 "
+"'early_with_info'は閉講前に修了情報が表示されます。'early_no_info'は受講者が合格基準を満たしていない限り、修了情報を表示しない設定です。"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Course About Page Image"
@@ -2491,20 +2424,6 @@ msgstr "引用マークの間に、このコースの正式名を入力してく
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Certificate Name (Long)"
 msgstr "修了証名(正式)"
-
-#. Translators: This field is the container for course-specific certifcate
-#. configuration values
-#: common/lib/xmodule/xmodule/course_module.py
-msgid "Certificate Web/HTML View Overrides"
-msgstr "修了証のWeb/HTML表示オーバーライド"
-
-#. Translators: These overrides allow for an alternative configuration of the
-#. certificate web view
-#: common/lib/xmodule/xmodule/course_module.py
-msgid ""
-"Enter course-specific overrides for the Web/HTML template parameters here "
-"(JSON format)"
-msgstr "Web/HTMLテンプレートパラメータの講座固有のオーバーライドを入力してください。(JSONフォーマット)"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "CSS Class for Course Reruns"
@@ -2584,7 +2503,7 @@ msgstr "招待制"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Whether to restrict enrollment to invitation by the course staff."
-msgstr "受講登録を講座スタッフの招待に限定するかどうか"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Pre-Course Survey Name"
@@ -2626,7 +2545,6 @@ msgstr "両方"
 
 #: common/lib/xmodule/xmodule/course_module.py
 #: lms/templates/footer-edx-new.html lms/templates/footer.html
-#: lms/templates/footer.html lms/templates/certificates/valid.html
 #: lms/templates/static_templates/about.html
 #: lms/templates/static_templates/about.html
 msgid "About"
@@ -2634,33 +2552,33 @@ msgstr "ツールについて"
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Entrance Exam Enabled"
-msgstr "入学試験有効"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
 "Specify whether students must complete an entrance exam before they can view"
 " your course content. Note, you must enable Entrance Exams for this course "
 "setting to take effect."
-msgstr "講座コンテンツが閲覧可能になる前に、入学試験を完了しなければいけないかどうかを設定します。この講座の入学試験を有効にする必要があります。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Entrance Exam Minimum Score (%)"
-msgstr "入学試験最低点(％)"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid ""
 "Specify a minimum percentage score for an entrance exam before students can "
 "view your course content. Note, you must enable Entrance Exams for this "
 "course setting to take effect."
-msgstr "講座コンテンツが閲覧可能になる入学試験の最低点を設定します。この講座の入学試験を有効にする必要があります。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Entrance Exam ID"
-msgstr "入学試験ID"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "Content module identifier (location) of entrance exam."
-msgstr "入学試験のコンテンツモジュール識別子(場所)"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/course_module.py
 msgid "General"
@@ -2678,7 +2596,7 @@ msgstr "ディスカッションID"
 
 #: common/lib/xmodule/xmodule/discussion_module.py
 msgid "The id is a unique identifier for the discussion. It is non editable."
-msgstr "IDはディスカッション固有の識別子です。変更はできません。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/discussion_module.py
 msgid "Category"
@@ -2834,31 +2752,33 @@ msgstr "emailアドレスが見つかりません。"
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Any Type"
-msgstr "全ての形式"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
-msgid "Library"
-msgstr "ライブラリ"
+msgid "\"{value}\" is not a valid library ID."
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
-msgid "Select the library from which you want to draw content."
-msgstr "コンテンツを描画するライブラリを選択してください。"
+#: cms/templates/index.html
+msgid "Libraries"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
-msgid "Library Version"
-msgstr "ライブラリバージョン"
+msgid ""
+"Enter a library ID for each library from which you want to draw content."
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Mode"
-msgstr "モード"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Determines how content is drawn from the library"
-msgstr "ライブラリからのコンテンツの描画方法を決定します。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Choose n at random"
-msgstr "ランダムに n を選択"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Count"
@@ -2866,17 +2786,17 @@ msgstr "数量"
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Enter the number of components to display to each student."
-msgstr "それぞれの受講者に表示するコンポーネントの数を入力してください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Problem Type"
-msgstr "問題の形式"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid ""
 "Choose a problem type to fetch from the library. If \"Any Type\" is selected"
 " no filtering is applied."
-msgstr "ライブラリから取得する問題の形式を選んでください。「すべての形式」が選択されている場合フィルタリングされません。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 #: common/lib/xmodule/xmodule/lti_module.py
@@ -2887,73 +2807,62 @@ msgstr "採点された（採点済み）"
 msgid ""
 "Set this value to True if this module is either a graded assignment or a "
 "practice problem."
-msgstr "このモジュールが評価済の課題または練習問題のとき、この値をTrueにしてください。"
-
-#: common/lib/xmodule/xmodule/library_content_module.py
-msgid "Course does not support Library tools."
-msgstr "講座はライブラリツールに対応していません。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "This component is out of date. The library has new content."
-msgstr "このコンポーネントは期限切れです。ライブラリに新しいコンテンツがあります。"
+msgstr ""
 
 #. Translators: {refresh_icon} placeholder is substituted to "↻" (without
 #. double quotes)
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "{refresh_icon} Update now."
-msgstr "{refresh_icon} 更新する"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Library is invalid, corrupt, or has been deleted."
-msgstr "ライブラリが無効か壊れているか削除されています。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Edit Library List."
-msgstr "ライブラリリストを編集する。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid ""
 "This course does not support content libraries. Contact your system "
 "administrator for more information."
-msgstr "この講座はコンテンツライブラリに対応していません。詳しい情報はシステム管理者に確認してください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "A library has not yet been selected."
-msgstr "ライブラリがまだ選択されていません。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Select a Library."
-msgstr "ライブラリを選択してください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "There are no matching problem types in the specified libraries."
-msgstr "ライブラリに合致する問題の形式がありません。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Select another problem type."
-msgstr "別の問題の形式を選択してください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
-msgid "The specified library is configured to fetch {count} problem, "
-msgid_plural "The specified library is configured to fetch {count} problems, "
-msgstr[0] "指定されたライブラリは{count}個の問題が取得されるように設定されています。"
+msgid "The specified libraries are configured to fetch {count} problem, "
+msgid_plural ""
+"The specified libraries are configured to fetch {count} problems, "
+msgstr[0] ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "but there is only {actual} matching problem."
 msgid_plural "but there are only {actual} matching problems."
-msgstr[0] "しかし、実際には{actual}個の合致する問題しかありません。"
+msgstr[0] ""
 
 #: common/lib/xmodule/xmodule/library_content_module.py
 msgid "Edit the library configuration."
-msgstr "ライブラリ設定を編集する。"
-
-#: common/lib/xmodule/xmodule/library_content_module.py
-msgid "Invalid Library"
-msgstr "無効なライブラリ"
-
-#: common/lib/xmodule/xmodule/library_content_module.py
-msgid "No Library Selected"
-msgstr "ライブラリ未選択"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/library_root_xblock.py
 msgid "Enter the name of the library as it should appear in Studio."
@@ -2984,8 +2893,6 @@ msgid ""
 "Settings page.<br />See {docs_anchor_open}the edX LTI "
 "documentation{anchor_close} for more details on this setting."
 msgstr ""
-"外部のLTIプロバイダー用のLTI IDを入力してください。この値は詳細設定ページのLTIパスポートに入力されたものと同じである必要があります。<br "
-"/>詳細は{docs_anchor_open}edX LTIドキュメント{anchor_close}を参照してください。"
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid "LTI URL"
@@ -2998,8 +2905,6 @@ msgid ""
 "{docs_anchor_open}the edX LTI documentation{anchor_close} for more details "
 "on this setting."
 msgstr ""
-"このコンポーネントが起動する外部ツールのURLを入力してください。この設定は外部ツールを隠す設定をFalseにする時にのみ使われます。<br "
-"/>詳細は{docs_anchor_open}edX LTIドキュメント{anchor_close}を参照してください。"
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid "Custom Parameters"
@@ -3012,8 +2917,6 @@ msgid ""
 "{docs_anchor_open}the edX LTI documentation{anchor_close} for more details "
 "on this setting."
 msgstr ""
-"カスタムパラメータ用のキー／値のペアを追加してください。パラメータの例としては、e-bookで開くページや、このコンポーネントの背景色などがあります。<br"
-" />詳細は{docs_anchor_open}edX LTIドキュメント{anchor_close}を参照してください。"
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid "Open in New Page"
@@ -3109,12 +3012,12 @@ msgstr "サードパーティ製アプリケーションを起動する際に用
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid "Accept grades past deadline"
-msgstr "締切を過ぎた採点を受理する"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid ""
 "Select True to allow third party systems to post grades past the deadline."
-msgstr "サードパーティー製システムで締切を過ぎた採点の投稿を許可するにはTrueを選択してください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/lti_module.py
 msgid ""
@@ -3183,13 +3086,13 @@ msgstr "問題を実施すべき期日を入力してください。"
 
 #: common/lib/xmodule/xmodule/seq_module.py
 msgid "Is Entrance Exam"
-msgstr "入学試験である"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/seq_module.py
 msgid ""
 "Tag this course module as an Entrance Exam. Note, you must enable Entrance "
 "Exams for this course setting to take effect."
-msgstr "この講座モジュールを入学試験としてタグをつけます。この講座で入学試験を有効にする必要があります。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid "Group ID {group_id}"
@@ -3254,7 +3157,7 @@ msgstr "この実験は削除済のグループ設定を利用しています。
 msgid ""
 "The experiment uses a group configuration that is not supported for "
 "experiments. Select a valid group configuration or delete this experiment."
-msgstr "この実験は実験に対応していないグループ設定を利用しています。適切なグループ設定を選択するか、この実験を削除してください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/split_test_module.py
 msgid ""
@@ -3427,15 +3330,15 @@ msgstr "ワードクラウド用のトップワード"
 
 #: common/lib/xmodule/xmodule/modulestore/courseware_index.py
 msgid "Could not index item: {}"
-msgstr "項目の見出しを作成できませんでした: {}"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/courseware_index.py
 msgid "General indexing error occurred"
-msgstr "見出し作成エラーが発生しました"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/courseware_index.py
 msgid "Error(s) present during indexing"
-msgstr "見出し作成中にエラー(s)が発生しました"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid "Enter the default date by which problems are due."
@@ -3480,7 +3383,7 @@ msgstr "注釈ストレージの秘密鍵を入力してください。テキス
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid "Enter the ids for the content groups this problem belongs to."
-msgstr "この問題の属しているコンテンツグループのIDを入力してください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid ""
@@ -3602,28 +3505,28 @@ msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid "Enable Student Notes"
-msgstr "受講者ノートを有効にする"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid ""
 "Enter true or false. If true, students can use the Student Notes feature."
-msgstr "trueもしくはfalseを入力してください。trueの場合、受講者はノート機能が使用できます。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid ""
 "Indicates whether Student Notes are visible in the course. Students can also"
 " show or hide their notes in the courseware."
-msgstr "講座で受講者ノートが表示されるかを示します。受講生はコース教材で自身のノートの表示を切り替えることができます。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid "Tag this module as part of an Entrance Exam section"
-msgstr "このモジュールを入学試験セクションの一部としてタグをつける"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/modulestore/inheritance.py
 msgid ""
 "Enter true or false. If true, answer submissions for problem modules will be"
 " considered in the Entrance Exam scoring/gating algorithm."
-msgstr "trueもしくはfalseを入力してください。trueの場合、入学試験採点アルゴリズムで問題モジュールの解答提出が考慮されます。"
+msgstr ""
 
 #. Translators: "Self" is used to denote an openended response that is self-
 #. graded
@@ -4109,235 +4012,6 @@ msgstr "検索"
 msgid "Copyright"
 msgstr "著作権"
 
-#: lms/djangoapps/certificates/models.py
-msgid ""
-"A human-readable description of the example certificate.  For example, "
-"'verified' or 'honor' to differentiate between two types of certificates."
-msgstr "修了証の例の人間が判読できる説明。「認証済」や「優等」など修了証の種類を区別できるもの。"
-
-#: lms/djangoapps/certificates/models.py
-msgid ""
-"A unique identifier for the example certificate.  This is used when we "
-"receive a response from the queue to determine which example certificate was"
-" processed."
-msgstr "修了証の例の一意の識別子。これはキューから応答を受信したときに、どの修了証の例が処理されたかを判別するために使用されます。"
-
-#: lms/djangoapps/certificates/models.py
-msgid ""
-"An access key for the example certificate.  This is used when we receive a "
-"response from the queue to validate that the sender is the same entity we "
-"asked to generate the certificate."
-msgstr "修了証の例へのアクセスキー。これはキューから応答を受信したときに、送信者が修了証の生成依頼先と同一であることを確認するために使用されます。"
-
-#: lms/djangoapps/certificates/models.py
-msgid "The full name that will appear on the certificate."
-msgstr "修了証に記入される名前"
-
-#: lms/djangoapps/certificates/models.py
-msgid "The template file to use when generating the certificate."
-msgstr "修了証の生成に使われるテンプレートファイル"
-
-#: lms/djangoapps/certificates/models.py
-msgid "The status of the example certificate."
-msgstr "修了証の例の状態"
-
-#: lms/djangoapps/certificates/models.py
-msgid "The reason an error occurred during certificate generation."
-msgstr "修了証生成で発生したエラーの理由"
-
-#: lms/djangoapps/certificates/models.py
-msgid "The download URL for the generated certificate."
-msgstr "生成された修了証のダウンロードURL"
-
-#. Translators: This line appears on the certificate after the name of a
-#. course, and provides more
-#. information about the organizations providing the course material to
-#. platform users
-#: lms/djangoapps/certificates/views.py
-msgid "a course of study offered by {partner_name}, through {platform_name}."
-msgstr "{platform_name}での{partner_name}による講座"
-
-#: lms/djangoapps/certificates/views.py
-msgid "More Information About {user_name}'s Certificate:"
-msgstr "{user_name}の修了証についての追加情報："
-
-#. Translators:  This line appears on the page just before the generation date
-#. for the certificate
-#: lms/djangoapps/certificates/views.py
-msgid "Issued On:"
-msgstr "発行日："
-
-#. Translators:  The format of the date includes the full name of the month
-#: lms/djangoapps/certificates/views.py
-msgid "{month} {day}, {year}"
-msgstr " {year}年 {month}月 {day}日"
-
-#. Translators:  The Certificate ID Number is an alphanumeric value unique to
-#. each individual certificate
-#: lms/djangoapps/certificates/views.py
-msgid "Certificate ID Number"
-msgstr "修了証番号"
-
-#: lms/djangoapps/certificates/views.py
-msgid "About {platform_name} Certificates"
-msgstr "{platform_name}修了証について"
-
-#. Translators: This text describes the purpose (and therefore, value) of a
-#. course certificate
-#. 'verifying your identity' refers to the process for establishing the
-#. authenticity of the student
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"{platform_name} acknowledges achievements through certificates, which are "
-"awarded for various activities {platform_name} students complete under the "
-"<a href='{tos_url}'>{platform_name} Honor Code</a>.  Some certificates "
-"require completing additional steps, such as <a href='{verified_cert_url}'> "
-"verifying your identity</a>."
-msgstr ""
-"{platform_name}は修了証を通して成果を確認します。それらは<a "
-"href='{tos_url}'>{platform_name}倫理規定</a>の下で{platform_name}受講者が完了した様々な活動に応じて与えられます。いくつかの修了証は追加の手順を完了する必要があります。例えば<a"
-" href='{verified_cert_url}'>個人認証</a>です。"
-
-#. Translators:  Certificate Types correspond to the different enrollment
-#. options available for a given course
-#: lms/djangoapps/certificates/views.py
-msgid "{certificate_type} Certfificate"
-msgstr "{certificate_type}修了証"
-
-#: lms/djangoapps/certificates/views.py
-msgid "How {platform_name} Validates Student Certificates"
-msgstr "どのように{platform_name}が受講者の修了証を認証するか"
-
-#. Translators:  This text describes the validation mechanism for a
-#. certificate file (known as GPG security)
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"Certificates issued by {platform_name} are signed by a gpg key so that they "
-"can be validated independently by anyone with the {platform_name} public "
-"key. For independent verification, {platform_name} uses what is called a "
-"\"detached signature\"&quot;\"."
-msgstr ""
-"{platform_name}が発行する修了証はgpgキーで署名されていて、誰もが独立して{platform_name}公開鍵で検証できます。独立検証に{platform_name}は「detached"
-" signature」という方法を使用しています。"
-
-#: lms/djangoapps/certificates/views.py
-msgid "Validate this certificate for yourself"
-msgstr "この修了証を自分で認証する"
-
-#. Translators:  This text describes (at a high level) the mission and charter
-#. the edX platform and organization
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"{platform_name} offers interactive online classes and MOOCs from the world's"
-" best universities, including MIT, Harvard, Berkeley, University of Texas, "
-"and many others.  {platform_name} is a non-profit online initiative created "
-"by founding partners Harvard and MIT."
-msgstr ""
-"{platform_name}はMIT、ハーバード、バークレー、テキサス大学など数多くの世界中の最高の大学からインタラクティブなオンライン講座とMOOCをお届けします。{platform_name}は非営利目的の団体であり、ハーバード大学とマサチューセッツ工科大学によって設立されました"
-
-#: lms/djangoapps/certificates/views.py
-msgid "About {platform_name}"
-msgstr "{platform_name}について"
-
-#: lms/djangoapps/certificates/views.py
-msgid "Learn more about {platform_name}"
-msgstr "{platform_name}についてもっと学ぶ"
-
-#: lms/djangoapps/certificates/views.py
-msgid "Learn with {platform_name}"
-msgstr "{platform_name}で学ぶ"
-
-#: lms/djangoapps/certificates/views.py
-msgid "Work at {platform_name}"
-msgstr "{platform_name}で働く"
-
-#: lms/djangoapps/certificates/views.py
-msgid "Contact {platform_name}"
-msgstr "{platform_name}への問い合わせ"
-
-#: lms/djangoapps/certificates/views.py cms/templates/widgets/footer.html
-#: lms/templates/footer-edx-new.html lms/templates/footer.html
-#: lms/templates/static_templates/privacy.html
-#: lms/templates/static_templates/privacy.html
-msgid "Privacy Policy"
-msgstr "プライバシーポリシー"
-
-#: lms/djangoapps/certificates/views.py
-msgid "Terms of Service &amp; Honor Code"
-msgstr "利用規約および倫理規定"
-
-#. Translators:  This text appears near the top of the certficate and
-#. describes the guarantee provided by edX
-#: lms/djangoapps/certificates/views.py
-msgid "{platform_name} acknowledges the following student accomplishment"
-msgstr "{platform_name}は次の受講者の修了を認めます"
-
-#: lms/djangoapps/certificates/views.py
-msgid "Certificate Validation"
-msgstr "修了証の有効化"
-
-#. Translators:  This text describes the 'Honor' course certificate type.
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"An {cert_type} Certificate signifies that an {platform_name} learner has "
-"agreed to abide by {platform_name}'s honor code and completed all of the "
-"required tasks for this course under its guidelines."
-msgstr ""
-"{cert_type}修了証は{platform_name}受講者が{platform_name}の倫理規定に従うことに同意してガイドラインのもとこの講座のすべてのタスクを完了したことを示します。"
-
-#. Translators:  This text describes the 'ID Verified' course certificate
-#. type, which is a higher level of
-#. verification offered by edX.  This type of verification is useful for
-#. professional education/certifications
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"An {cert_type} Certificate signifies that an {platform_name} learner has "
-"agreed to abide by {platform_name}'s honor code and completed all of the "
-"required tasks for this course under its guidelines, as well as having their"
-" photo ID checked to verify their identity."
-msgstr ""
-"{cert_type}修了証は{platform_name}受講者が{platform_name}の倫理規定に従うことに同意してガイドラインのもとこの講座のすべてのタスクを完了して、さらに写真入りの身分証明書で個人認証を行ったことを示します。"
-
-#. Translators:  This text describes the 'XSeries' course certificate type.
-#. An XSeries is a collection of
-#. courses related to each other in a meaningful way, such as a specific topic
-#. or theme, or even an organization
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"An {cert_type} Certificate demonstrates a high level of achievement in a "
-"program of study, and includes verification of the student's identity."
-msgstr "{cert_type}修了証は学習プログラムにおいて優秀な成績を修めたことを示し、受講者の個人認証を含みます。"
-
-#. Translators:  This is the copyright line which appears at the bottom of the
-#. certificate page/screen
-#: lms/djangoapps/certificates/views.py
-msgid "&copy; {year} {platform_name}. All rights reserved."
-msgstr "&copy; {year} {platform_name}. All rights reserved."
-
-#. Translators:  This text represents the verification of the certificate
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"This is a valid {platform_name} certificate for {user_name}, who "
-"participated in {partner_name} {course_number}"
-msgstr ""
-"これは{user_name}が{partner_name} {course_number}を受講した有効な{platform_name}修了証です。"
-
-#. Translators:  This text is bound to the HTML 'title' element of the page
-#. and appears in the browser title bar
-#: lms/djangoapps/certificates/views.py
-msgid "Valid {partner_name} {course_number} Certificate | {platform_name}"
-msgstr "有効な{partner_name} {course_number}修了証 | {platform_name}"
-
-#. Translators:  This text fragment appears after the student's name
-#. (displayed in a large font) on the certificate
-#. screen.  The text describes the accomplishment represented by the
-#. certificate information displayed to the user
-#: lms/djangoapps/certificates/views.py
-msgid ""
-"successfully completed, received a passing grade, and was awarded a "
-"{platform_name} {certificate_type} Certificate of Completion in "
-msgstr "完了し、合格点を受け、{platform_name} {certificate_type}修了証を受けました"
-
 #: lms/djangoapps/class_dashboard/dashboard_data.py
 #: lms/djangoapps/class_dashboard/dashboard_data.py
 #: lms/djangoapps/instructor/views/api.py
@@ -4396,16 +4070,16 @@ msgid "Course page automatically created."
 msgstr "講座ページは自動的に生成されました。"
 
 #: lms/djangoapps/course_wiki/views.py
-msgid "Welcome to the {platform_name} Wiki"
-msgstr "{platform_name} Wikiへようこそ"
+msgid "Welcome to the edX Wiki"
+msgstr "edX Wikiへようこそ"
 
 #: lms/djangoapps/course_wiki/views.py
 msgid "Visit a course wiki to add an article."
 msgstr "記事を追加するには講座 Wikiへ進んでください。"
 
-#: lms/djangoapps/courseware/tabs.py
+#: lms/djangoapps/courseware/tabs.py cms/templates/settings.html
 msgid "Entrance Exam"
-msgstr "入学試験"
+msgstr ""
 
 #. Translators: This will look like '$50', where {currency_symbol} is a symbol
 #. such as '$' and {price} is a
@@ -4413,13 +4087,13 @@ msgstr "入学試験"
 #. language.
 #: lms/djangoapps/courseware/views.py
 msgid "{currency_symbol}{price}"
-msgstr "{currency_symbol}{price}"
+msgstr ""
 
 #. Translators: This refers to the cost of the course. In this case, the
 #. course costs nothing so it is free.
 #: lms/djangoapps/courseware/views.py
 msgid "Free"
-msgstr "無料"
+msgstr ""
 
 #. Translators: The join of three or more institution names (e.g., Harvard,
 #. MIT, and Dartmouth).
@@ -4455,19 +4129,20 @@ msgstr "{username} は問題{location}にアクセスしたことがありませ
 
 #: lms/djangoapps/courseware/views.py
 msgid "You must be signed in to {platform_name} to create a certificate."
-msgstr "修了証を作成するには{platform_name}にサインインしている必要があります。"
+msgstr ""
 
 #: lms/djangoapps/courseware/views.py
 msgid "Course is not valid"
-msgstr "講座が無効"
+msgstr ""
 
-#: lms/djangoapps/courseware/views.py
+#: lms/djangoapps/courseware/views.py lms/templates/courseware/progress.html
 msgid "Your certificate will be available when you pass the course."
-msgstr "修了証は講座に合格してから利用可能になります。"
+msgstr ""
 
 #: lms/djangoapps/courseware/views.py lms/djangoapps/courseware/views.py
+#: lms/templates/courseware/progress.html
 msgid "Creating certificate"
-msgstr "修了証を作成中"
+msgstr ""
 
 #: lms/djangoapps/courseware/features/video.py
 msgid "ERROR: No playable video sources found!"
@@ -4814,31 +4489,15 @@ msgstr "良い"
 
 #: lms/djangoapps/edxnotes/helpers.py
 msgid "EdxNotes Service is unavailable. Please try again in a few minutes."
-msgstr "EdxNotesが利用できません。 数分後にお試しください。"
+msgstr ""
 
 #: lms/djangoapps/edxnotes/helpers.py
 msgid "Server error. Please try again in a few minutes."
-msgstr "サーバーエラー　数分後にお試しください。"
+msgstr ""
 
 #: lms/djangoapps/edxnotes/helpers.py
 msgid "No endpoint was provided for EdxNotes."
-msgstr "EdxNotesにエンドポイントが提供されていません。"
-
-#: lms/djangoapps/instructor/tests/test_api.py
-#: lms/djangoapps/instructor/views/instructor_task_helpers.py
-#: lms/templates/verify_student/midcourse_reverify_dash.html
-msgid "Complete"
-msgstr "完了"
-
-#: lms/djangoapps/instructor/tests/test_api.py
-#: lms/djangoapps/instructor/views/api.py
-msgid "This student (%s) will skip the entrance exam."
-msgstr "この受講者(%s)は入学試験をスキップします。"
-
-#: lms/djangoapps/instructor/tests/test_api.py
-#: lms/djangoapps/instructor/views/api.py
-msgid "This student (%s) is already allowed to skip the entrance exam."
-msgstr "この受講者(%s)はすでに入学試験のスキップを許可されています。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "User does not exist."
@@ -4987,16 +4646,16 @@ msgstr "ファイルは'ユーザー名'の列か'email'の列または両方を
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Could not parse amount as a decimal"
-msgstr "数値として解析することができません"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Unable to generate redeem codes because of course misconfiguration."
-msgstr "講座設定ミスのため償還コードを生成できません。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 #: lms/djangoapps/shoppingcart/models.py
 msgid "pdf download unavailable right now, please contact support."
-msgstr "PDFダウンロードは現在使えません。サポートに確認してください。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Module does not exist."
@@ -5009,34 +4668,34 @@ msgstr "得点を削除する際にエラーが発生しました。"
 #: lms/djangoapps/instructor/views/api.py
 #: lms/djangoapps/instructor/views/api.py
 msgid "Course has no entrance exam section."
-msgstr "講座に入学試験セクションがありません。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "all_students and unique_student_identifier are mutually exclusive."
-msgstr "all_studentsとunique_student_identifierは相互に排他的です。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "all_students and delete_module are mutually exclusive."
-msgstr "all_studentsとdelete_moduleは相互に排他的です。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Requires instructor access."
-msgstr "講師のアクセスが必要です。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 #: lms/djangoapps/instructor/views/api.py
 #: lms/djangoapps/instructor/views/api.py
 msgid "Course has no valid entrance exam section."
-msgstr "講座に有効な入学試験セクションがありません。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 #: lms/djangoapps/instructor/views/api.py
 msgid "All Students"
-msgstr "全受講者"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid "Cannot rescore with all_students and unique_student_identifier."
-msgstr "all_studentsとunique_student_identifierで再採点することはできません。"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/api.py
 msgid ""
@@ -5101,7 +4760,7 @@ msgstr "クーポン値引率は100、もしくはそれ以下の値としてく
 
 #: lms/djangoapps/instructor/views/coupons.py
 msgid "Please enter the date in this format i-e month/day/year"
-msgstr "日付を次の書式で入力してください。 月/日/年"
+msgstr ""
 
 #: lms/djangoapps/instructor/views/coupons.py
 msgid "coupon with the coupon code ({code}) added successfully"
@@ -5130,11 +4789,6 @@ msgstr ""
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 msgid "E-Commerce"
 msgstr "Eコマース"
-
-#: lms/djangoapps/instructor/views/instructor_dashboard.py
-#: cms/templates/export.html
-msgid "Certificates"
-msgstr "証明書"
 
 #: lms/djangoapps/instructor/views/instructor_dashboard.py
 msgid "Please Enter the numeric value for the course price"
@@ -5364,7 +5018,7 @@ msgstr "期日延長： {0} {1} ({2})"
 
 #: lms/djangoapps/instructor_task/api_helper.py
 msgid "Not all problems in entrance exam support re-scoring."
-msgstr "入学試験の問題のいずれかが再採点をサポートしていません。"
+msgstr ""
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
@@ -5470,20 +5124,6 @@ msgid "Problem successfully {action} for student '{student}'"
 msgstr "受講者： '{student}'の問題は{action} に成功しました。"
 
 #. Translators: {action} is a past-tense verb that is localized separately.
-#. {student} is a student identifier.
-#: lms/djangoapps/instructor_task/views.py
-msgid ""
-"Unable to find entrance exam submission to be {action} for student "
-"'{student}'"
-msgstr "受講者'{student}'の{action}になる入学試験の提出がありませんでした。"
-
-#. Translators: {action} is a past-tense verb that is localized separately.
-#. {student} is a student identifier.
-#: lms/djangoapps/instructor_task/views.py
-msgid "Entrance exam successfully {action} for student '{student}'"
-msgstr "受講者'{student}'の入学試験は{action}に成功しました。"
-
-#. Translators: {action} is a past-tense verb that is localized separately.
 #: lms/djangoapps/instructor_task/views.py
 msgid "Unable to find any students with submissions to be {action}"
 msgstr "{action}投稿をした受講者は見つかりません。"
@@ -5548,17 +5188,6 @@ msgid " (out of {total})"
 msgstr " (合計{total}のうち)"
 
 #: lms/djangoapps/lms_xblock/mixin.py
-msgid "Whether to display this module in the table of contents"
-msgstr "このモジュールを目次に表示するかどうか"
-
-#. Translators: "TOC" stands for "Table of Contents"
-#: lms/djangoapps/lms_xblock/mixin.py
-msgid ""
-"What format this module is in (used for deciding which grader to apply, and "
-"what to show in the TOC)"
-msgstr "このモジュールがどのフォーマットに含まれるか(どの判定基準を適用するか、何を目次に表示するかを決めるために使われる)"
-
-#: lms/djangoapps/lms_xblock/mixin.py
 msgid "Courseware Chrome"
 msgstr "Chromeコースウェア"
 
@@ -5612,16 +5241,15 @@ msgid ""
 "the block is considered visible to all. Note that this field is ignored if "
 "the block is visible_to_staff_only."
 msgstr ""
-"どのグループにこのブロックを示すかをマッピングする辞書。キーはグループ構成IDで値はグループIDのリストです。グループ構成にキーがない、またはグループIDが空の場合、ブロックは全員に表示されると判断されます。ブロックがvisible_to_staff_onlyの場合このフィールドは無視されることに注意してください。"
 
 #: lms/djangoapps/lms_xblock/mixin.py
 msgid ""
 "This component refers to deleted or invalid content group configurations."
-msgstr "このコンポーネントは削除されたか無効なコンテンツグループ設定を参照しています。"
+msgstr ""
 
 #: lms/djangoapps/lms_xblock/mixin.py
 msgid "This component refers to deleted or invalid content groups."
-msgstr "このコンポーネントは削除されたか無効なコンテンツグループを参照しています。"
+msgstr ""
 
 #: lms/djangoapps/open_ended_grading/staff_grading_service.py
 msgid ""
@@ -5735,25 +5363,25 @@ msgstr "異なる通貨のものをカートに入れようとしています"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Internal reference code for this invoice."
-msgstr "この請求書の内部参照コード"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Customer's reference code for this invoice."
-msgstr "この請求書の顧客参照コード"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
 "The amount of the transaction.  Use positive amounts for payments and "
 "negative amounts for refunds."
-msgstr "取引金額　支払いにプラスの値、払い戻しにマイナスの値"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py lms/djangoapps/shoppingcart/models.py
 msgid "Lower-case ISO currency codes"
-msgstr "小文字のISO通貨コード"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Optional: provide additional information for this transaction"
-msgstr "この取引の追加情報（任意）"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
@@ -5762,15 +5390,14 @@ msgid ""
 " payment or refund was received. 'cancelled' means that payment or refund "
 "was expected, but was cancelled before money was transferred. "
 msgstr ""
-"支払いまたは払い戻しの状況。'started'は支払いが予定されているが送金処理が完了していない状態、'completed'支払いまたは払い戻しが完了した状態、'cancelled'は支払いまたは払い戻しが予定されていたが送金される前にキャンセルされた状態"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "The number of items sold."
-msgstr "アイテムの販売数"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "The price per item sold, including discounts."
-msgstr "割引を含むアイテムの販売単価"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Registration for Course: {course_name}"
@@ -5779,7 +5406,7 @@ msgstr "次のコースを登録：{course_name}"
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
 "Please visit your {link_start}dashboard{link_end} to see your new course."
-msgstr "新しい講座を確認するには{link_start} ダッシュボード {link_end} に移動してください"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid "Enrollment codes for Course: {course_name}"
@@ -5802,19 +5429,19 @@ msgstr "「{course}」講座（{mode_name}）"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
-"If you haven't verified your identity yet, please start the verification "
-"process ({verification_url})."
-msgstr "まだ本人認証をしていない場合は、本人認証の手続きを行ってください。({verification_url})。"
+"You have up to two weeks into the course to unenroll from the Verified "
+"Certificate option and receive a full refund. To receive your refund, "
+"contact {billing_email}. Please include your order number in your email. "
+"Please do NOT include your credit card information."
+msgstr ""
+"認証された修了証オプションから登録解除し全額払い戻しできる期間は２週間あります。払い戻しを受けるためには、{billing_email} "
+"に連絡してください。注文番号とemailを記載してください。クレジットカード情報は記載しないでください。"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
-"You have up to two weeks into the course to unenroll and receive a full "
-"refund.To receive your refund, contact {billing_email}. Please include your "
-"order number in your email. Please do NOT include your credit card "
-"information."
-msgstr ""
-"登録解除し全額払い戻しできる期間は２週間あります。払い戻しを受けるためには、{billing_email} "
-"に連絡してください。注文番号をメールに記載してください。クレジットカード情報は記載しないでください。"
+"If you haven't verified your identity yet, please start the verification "
+"process ({verification_url})."
+msgstr "まだ本人認証をしていない場合は、本人認証の手続きを行ってください。({verification_url})。"
 
 #: lms/djangoapps/shoppingcart/models.py
 msgid ""
@@ -5839,7 +5466,7 @@ msgstr "{platform_name}への寄付"
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Page {page_number} of {page_count}"
-msgstr "{page_count}ページ中{page_number}ページ目"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py lms/djangoapps/shoppingcart/pdf.py
 #: lms/templates/shoppingcart/receipt.html
@@ -5848,15 +5475,15 @@ msgstr "請求書"
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Receipt"
-msgstr "領収証"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Order"
-msgstr "注文"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "{id_label} # {item_id}"
-msgstr "{id_label} # {item_id}"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 #: lms/templates/emails/registration_codes_sale_invoice_attachment.txt
@@ -5880,20 +5507,16 @@ msgid ""
 "List Price\n"
 "per item"
 msgstr ""
-"定価\n"
-"（単価）"
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid ""
 "Discount\n"
 "per item"
 msgstr ""
-"割引\n"
-"（単価）"
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Amount"
-msgstr "数量"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
@@ -5904,23 +5527,23 @@ msgstr "合計"
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Payment Received"
-msgstr "代金受領済"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Balance"
-msgstr "残高"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Billing Address"
-msgstr "請求先"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "Disclaimer"
-msgstr "免責事項"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/pdf.py
 msgid "TERMS AND CONDITIONS"
-msgstr "利用規約"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/reports.py
 msgid "Order Number"
@@ -5979,7 +5602,6 @@ msgstr "大学"
 
 #: lms/djangoapps/shoppingcart/reports.py
 #: lms/djangoapps/shoppingcart/reports.py cms/templates/widgets/header.html
-#: cms/templates/widgets/header.html cms/templates/widgets/header.html
 #: cms/templates/widgets/header.html
 msgid "Course"
 msgstr "講座"
@@ -6063,11 +5685,11 @@ msgstr "この講座は存在しません。"
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid "The course {course_id} is already in your cart."
-msgstr "講座{course_id}は既にカートに入っています。"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid "You are already registered in course {course_id}."
-msgstr "既に講座{course_id}に登録済です。"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid "Course added to cart."
@@ -6075,18 +5697,18 @@ msgstr "講座はカートに追加されました。"
 
 #: lms/djangoapps/shoppingcart/views.py lms/djangoapps/shoppingcart/views.py
 msgid "Discount does not exist against code '{code}'."
-msgstr "コード'{code}'の値引きはありません。"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid ""
 "Oops! The code '{registration_code}' you entered is either invalid or "
 "expired"
-msgstr "おっと！このコード'{registration_code}'は無効もしくは期限切れです。"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid ""
 "Code '{registration_code}' is not valid for any course in the shopping cart."
-msgstr "コード'{registration_code}'はカートに入れられた講座には不適切です。"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/views.py
 msgid ""
@@ -6134,7 +5756,6 @@ msgid ""
 " charged. Please try a different form of payment. Contact us with payment-"
 "related questions at {email}."
 msgstr ""
-"申し訳ありません。決済システムが支払いを受け付けられませんでした。応答：{decision_text}、理由：{decision_text}。課金は実施されていません。別の支払方法をお試しください。支払いに関する質問は{email}へお願いします。"
 
 #: lms/djangoapps/shoppingcart/processors/CyberSource.py
 msgid ""
@@ -6144,10 +5765,6 @@ msgid ""
 "is: {error_message}. Your credit card may possibly have been charged. "
 "Contact us with payment-specific questions at {email}."
 msgstr ""
-"申し訳ありありません。 支払処理が矛盾するデータを応答しました。\n"
-"支払い手続きの結果を確認することができません。\n"
-"エラーメッセージ：{error_message}\n"
-"あなたのクレジットカードは課金された可能性があります。{email}へ支払いに関する質問を送ってください。"
 
 #: lms/djangoapps/shoppingcart/processors/CyberSource.py
 msgid ""
@@ -6156,7 +5773,6 @@ msgid ""
 "credit card has probably been charged. Contact us with payment-specific "
 "questions at {email}."
 msgstr ""
-"申し訳ございません。注文総額とは異なる金額が課金されたため、支払いエラーとなりました。エラーメッセージ：{error_message}。クレジットカードに対して恐らく課金が実施されています。{email}へ支払いに関する質問を送ってください。"
 
 #: lms/djangoapps/shoppingcart/processors/CyberSource.py
 msgid ""
@@ -6167,9 +5783,6 @@ msgid ""
 "further action on your order. Your credit card may possibly have been "
 "charged. Contact us with payment-specific questions at {email}."
 msgstr ""
-"申し訳ありません。支払処理が判読できないメッセージをあなたの支払いに対して応答し、 内容を判断することが出来ません。 "
-"エラーメッセージ：{error_message}。支払い手続きの結果を確認することができません。 "
-"あなたのクレジットカードは課金された可能性があります。{email} へ支払いに関する質問へご連絡ください。"
 
 #: lms/djangoapps/shoppingcart/processors/CyberSource.py
 #: lms/djangoapps/shoppingcart/processors/CyberSource2.py
@@ -6338,7 +5951,7 @@ msgstr "システムにより拒否されました。別の支払方法をお試
 msgid ""
 "There is a problem with our CyberSource merchant configuration.  Please let "
 "us know at {0}"
-msgstr "CyberSourceの取引設定に問題があります。 {0} へお知らせください。"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/processors/CyberSource.py
 msgid "The requested amount exceeds the originally authorized amount."
@@ -6507,7 +6120,6 @@ msgid ""
 "have been saved. If you have any questions about this transaction, please "
 "contact us at {email}."
 msgstr ""
-"申し訳ありません、この支払いが拒否されました。ショッピングカートのアイテムは保存されます。この取引に関する質問がある場合は、{email}までお問い合わせください。"
 
 #: lms/djangoapps/shoppingcart/processors/CyberSource2.py
 msgid ""
@@ -6591,7 +6203,7 @@ msgstr ""
 msgid ""
 "There is a problem with the information in your CyberSource account.  Please"
 " let us know at {0}"
-msgstr "CyberSourceのアカウントに問題となる情報があります。以下にお知らせください：{0}"
+msgstr ""
 
 #: lms/djangoapps/shoppingcart/processors/CyberSource2.py
 msgid "The cardholder is enrolled for payer authentication"
@@ -6627,15 +6239,15 @@ msgstr "日付の入力形式にエラーがあります。日付はYYYY-MM-DD�
 
 #: lms/djangoapps/student_account/views.py
 msgid "No user with the provided email address exists."
-msgstr "指定されたメールアドレスのユーザーが見つかりません。"
+msgstr ""
 
 #: lms/djangoapps/student_account/views.py
 msgid "No email address provided."
-msgstr "メールアドレスが指定されていません"
+msgstr ""
 
 #: lms/djangoapps/verify_student/models.py
 msgid "Your {platform_name} verification has expired."
-msgstr "{platform_name}の認証期限切れです。"
+msgstr ""
 
 #: lms/djangoapps/verify_student/models.py
 msgid "No photo ID was provided."
@@ -6656,7 +6268,7 @@ msgstr "あなたの顔の画像が鮮明ではありません。"
 
 #: lms/djangoapps/verify_student/models.py
 msgid "Your face was not visible in your self-photo."
-msgstr "撮影された写真の画像であなたの顔が判別できません。"
+msgstr ""
 
 #: lms/djangoapps/verify_student/models.py
 msgid "There was an error verifying your ID photos."
@@ -6668,11 +6280,11 @@ msgstr "イントロ"
 
 #: lms/djangoapps/verify_student/views.py
 msgid "Make payment"
-msgstr "支払いをする"
+msgstr ""
 
 #: lms/djangoapps/verify_student/views.py
 msgid "Payment confirmation"
-msgstr "支払い承認"
+msgstr ""
 
 #: lms/djangoapps/verify_student/views.py
 #: lms/templates/verify_student/midcourse_photo_reverification.html
@@ -6683,23 +6295,23 @@ msgstr "写真を撮る"
 
 #: lms/djangoapps/verify_student/views.py
 msgid "Take a photo of your ID"
-msgstr "あなたのIDの写真を撮影します"
+msgstr ""
 
 #: lms/djangoapps/verify_student/views.py
 msgid "Review your info"
-msgstr "情報の確認"
+msgstr ""
 
 #: lms/djangoapps/verify_student/views.py
 msgid "Enrollment confirmation"
-msgstr "受講登録の確認"
+msgstr ""
 
 #: lms/djangoapps/verify_student/views.py
 msgid "Selected price is not valid number."
 msgstr "選択された価格は正しい数字ではありません。"
 
 #: lms/djangoapps/verify_student/views.py
-msgid "This course doesn't support paid certificates"
-msgstr "このコースは有料の修了証の発行に対応していません。"
+msgid "This course doesn't support verified certificates"
+msgstr "本講座は修了証の発行に対応していません。"
 
 #: lms/djangoapps/verify_student/views.py
 msgid "No selected price or selected price is below minimum."
@@ -6733,14 +6345,10 @@ msgstr "認証写真を受信しました"
 msgid "Taiwan"
 msgstr "台湾"
 
-#: lms/lib/courseware_search/lms_result_processor.py
-msgid "(Unnamed)"
-msgstr "(名称未設定)"
-
 #: lms/templates/main_django.html cms/templates/base.html
 #: lms/templates/main.html
 msgid "Skip to main content"
-msgstr "メインコンテンツまでスキップする"
+msgstr ""
 
 #: lms/templates/dashboard/_dashboard_refund.html
 #: lms/templates/dashboard/support.html
@@ -6863,7 +6471,7 @@ msgstr ""
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
-msgstr "入力内容の正確性を確認するために、新しいパスワードを二回入力してください。"
+msgstr ""
 
 #: lms/templates/registration/password_reset_confirm.html
 msgid ""
@@ -6871,8 +6479,6 @@ msgid ""
 "        Required fields are noted by %(bold_start)sbold text and an asterisk (*)%(bold_end)s.\n"
 "        "
 msgstr ""
-"\n"
-"%(bold_start)s太字およびアスタリスク(*)%(bold_end)sの枠は必須です。"
 
 #: lms/templates/registration/password_reset_confirm.html
 #: lms/templates/forgot_password_modal.html lms/templates/login.html
@@ -6932,7 +6538,7 @@ msgstr ""
 msgid ""
 "You're receiving this e-mail because you requested a password reset for your"
 " user account at %(site_name)s."
-msgstr "このメールを受信しているのは、%(site_name)sでパスワードの再設定を要求したためです。"
+msgstr ""
 
 #: lms/templates/registration/password_reset_email.html
 msgid "Please go to the following page and choose a new password:"
@@ -6950,7 +6556,7 @@ msgstr "ご利用いただき、ありがとうございます。"
 
 #: lms/templates/registration/password_reset_email.html
 msgid "The %(platform_name)s Team"
-msgstr "%(platform_name)s運営チーム"
+msgstr ""
 
 #: lms/templates/wiki/article.html
 msgid "Last modified:"
@@ -7216,7 +6822,7 @@ msgstr "[記事名](wiki:記事名)"
 
 #: lms/templates/wiki/includes/cheatsheet.html
 msgid "%(platform_name)s Additions:"
-msgstr "%(platform_name)s 追加事項："
+msgstr ""
 
 #: lms/templates/wiki/includes/cheatsheet.html
 msgid "Math Expression"
@@ -7232,7 +6838,7 @@ msgstr "ウィキペディア"
 
 #: lms/templates/wiki/includes/cheatsheet.html
 msgid "%(platform_name)s Wiki"
-msgstr "%(platform_name)s Wiki"
+msgstr ""
 
 #: lms/templates/wiki/includes/cheatsheet.html
 msgid "Huge Header"
@@ -7425,7 +7031,7 @@ msgstr "こちらの氏名は修了証に記入されるものです"
 #. meant to hold the user's public username.
 #: openedx/core/djangoapps/user_api/views.py
 msgid "Public username"
-msgstr "公開名"
+msgstr ""
 
 #: openedx/core/djangoapps/user_api/views.py
 msgid "The name that will identify you in your courses"
@@ -7435,7 +7041,7 @@ msgstr "こちらの名前は講座内であなたを特定するためのもの
 #. form used to select the user's highest completed level of education.
 #: openedx/core/djangoapps/user_api/views.py
 msgid "Highest level of education completed"
-msgstr "最終学歴"
+msgstr ""
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: This label appears above a dropdown menu on the registration
@@ -7453,7 +7059,7 @@ msgstr "住所"
 
 #: openedx/core/djangoapps/user_api/views.py
 msgid "Tell us why you're interested in {platform_name}"
-msgstr "なぜ{platform_name}に興味をもたれたのかご教示ください。"
+msgstr ""
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: This label appears above a field on the registration form
@@ -7475,7 +7081,15 @@ msgstr "国"
 
 #: openedx/core/djangoapps/user_api/views.py
 msgid "Please select your Country."
-msgstr "国を選択してください"
+msgstr ""
+
+#: openedx/core/djangoapps/user_api/views.py
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/static_templates/honor.html
+#: lms/templates/static_templates/honor.html
+msgid "Honor Code"
+msgstr "無料聴講コース"
 
 #. #-#-#-#-#  django-partial.po (edx-platform)  #-#-#-#-#
 #. Translators: This is a legal document users must agree to
@@ -7503,13 +7117,13 @@ msgstr "{platform_name}の{terms_of_service}に同意する必要があります
 msgid "Terms of Service"
 msgstr "利用規約"
 
-#: openedx/core/djangoapps/user_api/accounts/api.py
+#: openedx/core/djangoapps/user_api/accounts/views.py
 msgid "Field '{field_name}' cannot be edited."
-msgstr "フィールド'{field_name}'は編集できません。"
+msgstr ""
 
-#: openedx/core/djangoapps/user_api/accounts/api.py
+#: openedx/core/djangoapps/user_api/accounts/views.py
 msgid "Value '{field_value}' is not valid for field '{field_name}'."
-msgstr "フィールド'{field_name}'の値'{field_value}'は正しくありません。"
+msgstr ""
 
 #: cms/djangoapps/contentstore/course_info_model.py
 #: cms/djangoapps/contentstore/course_info_model.py
@@ -7596,8 +7210,6 @@ msgid ""
 "instructions here to upload a file elsewhere and link to it instead: "
 "{faq_url}"
 msgstr ""
-"ファイル{filename}は最大サイズ{size_mb}MBを超えています。 "
-"この説明に従ってファイルを別の場所にアップロードしたうえでリンクしてください。 {maxFileSizeRedirectUrl}"
 
 #: cms/djangoapps/contentstore/views/assets.py
 msgid "Upload completed"
@@ -7618,7 +7230,7 @@ msgstr "空白"
 #: cms/djangoapps/contentstore/views/course.py
 #: cms/djangoapps/contentstore/views/tests/test_course_index.py
 msgid "Course has been successfully reindexed."
-msgstr "コースの見出し再作成が完了しました。"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid "Unscheduled"
@@ -7653,7 +7265,7 @@ msgstr ""
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid "Invalid prerequisite course key"
-msgstr "無効な必要条件コースキー"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid "invalid JSON"
@@ -7669,15 +7281,11 @@ msgstr "最低一つのグループが必要です"
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid "This group configuration is in use and cannot be deleted."
-msgstr "このグループ設定は利用中なので、削除することができません。"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/course.py
 msgid "This content group is in use and cannot be deleted."
-msgstr "このコンテンツグループは利用中なので、削除することができません。"
-
-#: cms/djangoapps/contentstore/views/entrance_exam.py
-msgid "Entrance Exam - Subsection"
-msgstr "入学試験 - 節"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/export_git.py
 msgid "Course successfully exported to git repository"
@@ -7700,16 +7308,16 @@ msgid "File upload corrupted. Please try again"
 msgstr "ファイルアップロードが失敗しました。再度、お試しください。"
 
 #: cms/djangoapps/contentstore/views/import_export.py
-msgid "Could not find the {0} file in the package."
-msgstr "パッケージ内にファイル {0} が見当たりませんでした。"
+msgid "Could not find the course.xml file in the package."
+msgstr "パッケージ内に course.xml が見当たりませんでした。"
 
 #: cms/djangoapps/contentstore/views/item.py
 msgid "Invalid data"
-msgstr "不正なデータ"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/item.py
 msgid "Invalid data ({details})"
-msgstr "不正なデータ ({details})"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/item.py
 msgid "Duplicate of {0}"
@@ -7720,16 +7328,12 @@ msgid "Duplicate of '{0}'"
 msgstr "'{0}' の重複"
 
 #: cms/djangoapps/contentstore/views/item.py
-msgid "Students must score {score}% or higher to access course materials."
-msgstr "受講生は学習教材にアクセスするには {score}% o以上得点しなければなりません。"
-
-#: cms/djangoapps/contentstore/views/item.py
 msgid "{section_or_subsection} \"{display_name}\""
 msgstr "{section_or_subsection} \"{display_name}\""
 
 #: cms/djangoapps/contentstore/views/library.py
 msgid "Unable to create library - missing required field '{field}'"
-msgstr "ライブラリを作成できませんでした。必要なフィールド'{field}'がありません。"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/library.py
 msgid ""
@@ -7737,9 +7341,6 @@ msgid ""
 "\n"
 "{err}"
 msgstr ""
-"ライブラリ'{name}'を作成できません。\n"
-"\n"
-"{err}"
 
 #: cms/djangoapps/contentstore/views/library.py
 msgid ""
@@ -7747,7 +7348,6 @@ msgid ""
 "code. Please change your library code so that it is unique within your "
 "organization."
 msgstr ""
-"既に同様に組織、ライブラリコードで規定されているコースがあります。組織もしくはライブラリコードのどちらかがユニークとなるように変更をしてください。"
 
 #: cms/djangoapps/contentstore/views/transcripts_ajax.py
 msgid "Incoming video data is empty."
@@ -7775,15 +7375,15 @@ msgstr "ユーザ {email} は登録済みですが、まだアクティベーシ
 
 #: cms/djangoapps/contentstore/views/user.py
 msgid "No `role` specified."
-msgstr "「ロール」が指定されていません。"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/user.py
 msgid "Invalid `role` specified."
-msgstr "無効な「ロール」が指定されています。"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/user.py
 msgid "You may not remove the last Admin. Add another Admin first."
-msgstr "最後の管理者を削除することはできません。先に別の管理者を追加してください。"
+msgstr ""
 
 #. #-#-#-#-#  django-studio.po (edx-platform)  #-#-#-#-#
 #. Translators: This is the status of an active video upload
@@ -7797,12 +7397,6 @@ msgstr "アップデート中"
 msgid "In Progress"
 msgstr "実施中"
 
-#. Translators: This is the status for a video that the servers have
-#. successfully processed
-#: cms/djangoapps/contentstore/views/videos.py
-msgid "Ready"
-msgstr "準備完了"
-
 #. #-#-#-#-#  django-studio.po (edx-platform)  #-#-#-#-#
 #. Translators: This is the status for a video that the servers have failed to
 #. process
@@ -7815,7 +7409,7 @@ msgstr "失敗"
 #. processing token was provided in the course settings
 #: cms/djangoapps/contentstore/views/videos.py
 msgid "Invalid Token"
-msgstr "無効なトークン"
+msgstr ""
 
 #. Translators: This is the status for a video that is in an unknown state
 #: cms/djangoapps/contentstore/views/videos.py
@@ -7827,11 +7421,11 @@ msgstr "不明"
 #. (e.g. desktop, mobile high quality, mobile low quality)
 #: cms/djangoapps/contentstore/views/videos.py
 msgid "{profile_name} URL"
-msgstr "{profile_name} URL"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/videos.py
 msgid "Duration"
-msgstr "期間"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/videos.py
 msgid "Date Added"
@@ -7839,7 +7433,7 @@ msgstr "追加日"
 
 #: cms/djangoapps/contentstore/views/videos.py
 msgid "Video ID"
-msgstr "動画ID"
+msgstr ""
 
 #. #-#-#-#-#  django-studio.po (edx-platform)  #-#-#-#-#
 #. Translators: This is listed as the duration for a video that has not
@@ -7855,7 +7449,7 @@ msgstr "ペンディング"
 #. listing for videos uploaded through Studio
 #: cms/djangoapps/contentstore/views/videos.py
 msgid "{course}_video_urls"
-msgstr "{course}動画URL"
+msgstr ""
 
 #: cms/djangoapps/course_creators/models.py
 msgid "unrequested"
@@ -8066,10 +7660,11 @@ msgstr "このアカウントは既に有効になっています。"
 msgid "Visit your {link_start}dashboard{link_end} to see your courses."
 msgstr "{link_start}マイページ{link_end}で講座を確認しましょう。"
 
-#: cms/templates/widgets/header.html cms/templates/widgets/header.html
-#: lms/templates/courseware/courseware.html
-msgid "Course Navigation"
-msgstr "講座メニュー"
+#: cms/templates/widgets/footer.html lms/templates/footer-edx-new.html
+#: lms/templates/footer.html lms/templates/static_templates/privacy.html
+#: lms/templates/static_templates/privacy.html
+msgid "Privacy Policy"
+msgstr "プライバシーポリシー"
 
 #: cms/templates/widgets/header.html cms/templates/widgets/header.html
 #: lms/templates/help_modal.html lms/templates/navigation-edx.html
@@ -8400,7 +7995,6 @@ msgid "Due:"
 msgstr "締切"
 
 #: lms/templates/folditbasic.html
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
 msgid "Status:"
 msgstr "状況："
 
@@ -8452,21 +8046,20 @@ msgid ""
 "EdX, Open edX, and the edX and Open edX logos are registered trademarks or "
 "trademarks of {link_start}edX Inc.{link_end}"
 msgstr ""
-"EdX、Open edXおよびedX、Open edXロゴは {link_start}edX Inc.{link_end} の商標または登録商標です。"
 
 #. Translators: {date} will be an abbreviated date, indicating when the
 #. privacy
 #. policy was most recently revised.
 #: lms/templates/footer-edx-new.html
 msgid "(Revised {date})"
-msgstr "(改定 {date})"
+msgstr ""
 
 #. Translators: {date} will be an abbreviated date, indicating when the
 #. privacy
 #. policy was most recently revised.
 #: lms/templates/footer-edx-new.html
 msgid "10/22/2014"
-msgstr "2014年10月22日"
+msgstr ""
 
 #: lms/templates/footer-edx-new.html lms/templates/footer.html
 msgid "News"
@@ -8532,15 +8125,15 @@ msgstr "Google+"
 
 #: lms/templates/footer-edx-new.html
 msgid "Mobile Apps"
-msgstr "モバイルアプリ"
+msgstr ""
 
 #: lms/templates/footer-edx-new.html
 msgid "Apple app on Apple Store"
-msgstr "Apple StoreのAppleアプリ"
+msgstr ""
 
 #: lms/templates/footer-edx-new.html
 msgid "Android app on Google Play"
-msgstr "Google PlayのAndroidアプリ"
+msgstr ""
 
 #: lms/templates/footer.html lms/templates/static_templates/jobs.html
 #: lms/templates/static_templates/jobs.html
@@ -8548,15 +8141,10 @@ msgid "Jobs"
 msgstr "ジョブ"
 
 #: lms/templates/footer.html
-msgid "Legal"
-msgstr "合法"
-
-#: lms/templates/footer.html
 msgid ""
 "{tos_link_start}Terms of Service{tos_link_end} and {honor_link_start}Honor "
 "Code{honor_link_end}"
 msgstr ""
-"{tos_link_start}利用規約{tos_link_end}と{honor_link_start}倫理規定{honor_link_end}"
 
 #. Translators: 'Open edX' is a brand, please keep this untranslated. See
 #. http://openedx.org for more information.
@@ -8750,13 +8338,13 @@ msgstr "いつでも、どこでも、誰にでも"
 #. http://openedx.org for more information.
 #: lms/templates/index.html
 msgid "Welcome to Open edX!"
-msgstr "Open edXへようこそ！"
+msgstr ""
 
 #. Translators: 'Open edX' is a brand, please keep this untranslated. See
 #. http://openedx.org for more information.
 #: lms/templates/index.html
 msgid "It works! This is the default homepage for this Open edX instance."
-msgstr "機能しています！これはOpen edXインスタンスのデフォルトホームページです。"
+msgstr ""
 
 #: lms/templates/invalid_email_key.html
 msgid "Invalid email change key"
@@ -8790,7 +8378,6 @@ msgid_plural ""
 "student will be assigned {max_count} components drawn randomly from this "
 "list."
 msgstr[0] ""
-"{display_name}に追加される条件を満たすすべてのコンテンツを表示しています。各受講者にはリストからランダムに選ばれた{max_count}のコンポーネントが割り当てられます。"
 
 #: lms/templates/login-sidebar.html
 msgid "Helpful Information"
@@ -8839,7 +8426,7 @@ msgstr "講座で学習"
 #: lms/templates/login.html lms/templates/register-shib.html
 #: lms/templates/register.html
 msgid "Processing your account information"
-msgstr "会員登録しています"
+msgstr ""
 
 #: lms/templates/login.html
 msgid "Please log in"
@@ -8945,7 +8532,7 @@ msgstr "(情報を更新するにはこのページを再読み込みしてく�
 
 #: lms/templates/manage_user_standing.html
 msgid "working"
-msgstr "処理中"
+msgstr ""
 
 #: lms/templates/mathjax_accessible.html
 msgid ""
@@ -8982,6 +8569,31 @@ msgstr ""
 msgid "Raw data:"
 msgstr "生データ："
 
+#: lms/templates/name_changes.html
+msgid "Accepted"
+msgstr "受理"
+
+#: lms/templates/name_changes.html lms/templates/name_changes.html
+#: lms/templates/sysadmin_dashboard_gitlogs.html
+msgid "Error"
+msgstr "エラー"
+
+#: lms/templates/name_changes.html
+msgid "Rejected"
+msgstr "却下"
+
+#: lms/templates/name_changes.html
+msgid "Pending name changes"
+msgstr "名前変更の保留中"
+
+#: lms/templates/name_changes.html lms/templates/modal/accessible_confirm.html
+msgid "Confirm"
+msgstr "確認"
+
+#: lms/templates/name_changes.html
+msgid "Reject"
+msgstr "却下"
+
 #: lms/templates/navigation-edx.html lms/templates/navigation-edx.html
 #: lms/templates/navigation.html
 msgid "How it Works"
@@ -9006,7 +8618,7 @@ msgstr "他の選択肢をドロップダウン"
 
 #: lms/templates/navigation-edx.html lms/templates/navigation.html
 msgid "Sign out"
-msgstr "サインアウト"
+msgstr ""
 
 #: lms/templates/navigation-edx.html lms/templates/navigation.html
 msgid "Shopping Cart"
@@ -9020,7 +8632,7 @@ msgstr "会員登録"
 #: lms/templates/navigation-edx.html lms/templates/navigation-edx.html
 #: lms/templates/navigation.html lms/templates/navigation.html
 msgid "Sign in"
-msgstr "サインイン"
+msgstr ""
 
 #: lms/templates/navigation-edx.html lms/templates/navigation.html
 msgid ""
@@ -9030,8 +8642,8 @@ msgstr ""
 "<strong>警告:</strong>お使いのブラウザはサポートされていません。{chrome_link}もしくは{ff_link}を使うことを、強く推奨します。"
 
 #: lms/templates/navigation.html
-msgid "Global"
-msgstr "グローバル"
+msgid "Global Navigation"
+msgstr "グローバルナビゲーション"
 
 #: lms/templates/navigation.html
 msgid "Schools"
@@ -9233,7 +8845,7 @@ msgstr "{selected_provider}でのサインインに成功しました。"
 msgid ""
 "We just need a little more information before you start learning with "
 "{platform_name}."
-msgstr "{platform_name}での学習を始めるにあたって、あと少しの情報が必要です。"
+msgstr ""
 
 #: lms/templates/register.html
 msgid "Please complete the following fields to register for an account. "
@@ -9450,10 +9062,6 @@ msgid "Textbook Navigation"
 msgstr "テキストのナビゲーション"
 
 #: lms/templates/staticbook.html
-msgid "Page"
-msgstr "ページ"
-
-#: lms/templates/staticbook.html
 msgid "Previous page"
 msgstr "前のページ"
 
@@ -9559,24 +9167,20 @@ msgstr "プラットフォームバージョン"
 
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "previous"
-msgstr "前"
+msgstr ""
 
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "Page {current_page} of {total_pages}"
-msgstr "{total_pages}ページ中{current_page}ページ目"
+msgstr ""
 
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "next"
-msgstr "次"
+msgstr ""
 
 #. Translators: Git is a version-control system; see http://git-scm.com/about
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "Recent git load activity for {course_id}"
 msgstr "{course_id}における直近のgit履歴"
-
-#: lms/templates/sysadmin_dashboard_gitlogs.html
-msgid "Error"
-msgstr "エラー"
 
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "Date"
@@ -9590,7 +9194,7 @@ msgstr "Gitアクション"
 #. Translators: git is a version-control system; see http://git-scm.com/about
 #: lms/templates/sysadmin_dashboard_gitlogs.html
 msgid "No git import logs have been recorded."
-msgstr "gitインポートのログは記録されていません。"
+msgstr ""
 
 #. Translators: git is a version-control system; see http://git-scm.com/about
 #: lms/templates/sysadmin_dashboard_gitlogs.html
@@ -9784,25 +9388,25 @@ msgstr "ヒント"
 msgid ""
 "Use parentheses () to make expressions clear. You can use parentheses inside"
 " other parentheses."
-msgstr "括弧 () を使って表現を明確にしてください。括弧の中にさらに括弧を入れることができます。"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Do not use spaces in expressions."
-msgstr "表現にスペースを入れないでください。"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "For constants, indicate multiplication explicitly (example: 5*c)."
-msgstr "定数には明示的に乗算を指定してください。(例：5*c)"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "For affixes, type the number and affix without a space (example: 5c)."
-msgstr "接辞は数字と接辞の間にスペースを入れずに記述してください。(例：5c)"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid ""
 "For functions, type the name of the function, then the expression in "
 "parentheses."
-msgstr "関数はまず関数名を記述しその後ろの括弧内に表現を記述してください。"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "To Use"
@@ -9826,7 +9430,7 @@ msgstr "整数"
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Fractions"
-msgstr "分数"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Decimals"
@@ -9839,17 +9443,17 @@ msgstr "演算子"
 #. Translators: Please do not translate mathematical symbols.
 #: lms/templates/calculator/toggle_calculator.html
 msgid "+ - * / (add, subtract, multiply, divide)"
-msgstr "+ - * / (加減乗除)"
+msgstr ""
 
 #. Translators: Please do not translate mathematical symbols.
 #: lms/templates/calculator/toggle_calculator.html
 msgid "^ (raise to a power)"
-msgstr "^ (べき乗)"
+msgstr ""
 
 #. Translators: Please do not translate mathematical symbols.
 #: lms/templates/calculator/toggle_calculator.html
 msgid "|| (parallel resistors)"
-msgstr "|| (並列抵抗)"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Greek letters"
@@ -9857,7 +9461,7 @@ msgstr "ギリシャ文字"
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Name of letter"
-msgstr "文字の名前"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Constants"
@@ -9869,7 +9473,7 @@ msgstr "添付"
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Percent sign (%) and metric affixes (d, c, m, u, n, p, k, M, G, T)"
-msgstr "百分率記号(%) とSI接頭辞(d, c, m, u, n, p, k, M, G, T)"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Basic functions"
@@ -9887,7 +9491,7 @@ msgstr "科学的記数法"
 #. Translators: 10^ is a mathematical symbol. Please do not translate.
 #: lms/templates/calculator/toggle_calculator.html
 msgid "10^ and the exponent"
-msgstr "10^ と指数"
+msgstr ""
 
 #. Translators: this is part of scientific notation. Please see
 #. http://en.wikipedia.org/wiki/Scientific_notation#E_notation
@@ -9898,7 +9502,7 @@ msgstr "指数表記eの記法"
 #. Translators: 1e is a mathematical symbol. Please do not translate.
 #: lms/templates/calculator/toggle_calculator.html
 msgid "1e and the exponent"
-msgstr "1e と指数"
+msgstr ""
 
 #: lms/templates/calculator/toggle_calculator.html
 msgid "Calculate"
@@ -9908,44 +9512,13 @@ msgstr "計算"
 msgid "Calculator Output Field"
 msgstr "計算機の出力枠"
 
-#: lms/templates/certificates/invalid.html
-msgid "This is an invalid edX certificate number"
-msgstr "これは無効なedX修了証番号です"
-
-#: lms/templates/certificates/invalid.html
-msgid ""
-"Please check the number to make sure that it is the exact same as on the "
-"certificate."
-msgstr "修了証の番号と間違いがないか確認してください。"
-
-#: lms/templates/certificates/invalid.html
-msgid ""
-"This is an unknown certificate number and therefore is a potential forgery."
-msgstr "これは未確認の修了証番号で偽造の可能性があります。"
-
-#: lms/templates/certificates/valid.html
-msgid "Skip to This Page's Content"
-msgstr "このページのコンテンツまでスキップする"
-
-#: lms/templates/certificates/valid.html
-msgid "Validation Status"
-msgstr "検証のステータス"
-
-#: lms/templates/certificates/valid.html
-msgid "Student Accomplishment"
-msgstr "受講者の成果"
-
-#: lms/templates/certificates/valid.html
-msgid "More Information"
-msgstr "追加情報"
-
 #: lms/templates/chat/toggle_chat.html
 msgid "Open Chat"
-msgstr "チャットを開く"
+msgstr ""
 
 #: lms/templates/chat/toggle_chat.html
 msgid "Close Chat"
-msgstr "チャットを閉じる"
+msgstr ""
 
 #: lms/templates/combinedopenended/combined_open_ended.html
 msgid "Open Response"
@@ -10162,19 +9735,15 @@ msgstr "登録は終了しました"
 
 #: lms/templates/courseware/course_about.html
 msgid "Add {course_name} to Cart ({price})"
-msgstr "{course_name}をカートに入れる({price})"
+msgstr ""
 
 #: lms/templates/courseware/course_about.html
 msgid "Register for {course_name}"
-msgstr "{course_name}に登録"
+msgstr ""
 
 #: lms/templates/courseware/course_about.html
 msgid "View About Page in studio"
 msgstr "講座詳細をStudioで参照"
-
-#: lms/templates/courseware/course_about.html
-msgid "Course About"
-msgstr "コースの内容"
 
 #: lms/templates/courseware/course_about.html
 msgid "Overview"
@@ -10187,12 +9756,12 @@ msgstr "友人や家族に共有する！"
 #: lms/templates/courseware/course_about.html
 #: lms/templates/courseware/course_about.html
 msgid "Tweet that you've registered for this course"
-msgstr "この講座に登録したことをTweetする。"
+msgstr ""
 
 #: lms/templates/courseware/course_about.html
 #: lms/templates/courseware/course_about.html
 msgid "Email someone to say you've registered for this course"
-msgstr "この講座に登録したことを誰かにメールする"
+msgstr ""
 
 #. Translators: This text will be automatically posted to the student's
 #. Twitter account. {url} should appear at the end of the text.
@@ -10210,7 +9779,7 @@ msgstr "{platform} {url}で{number} {title}を登録しました"
 
 #: lms/templates/courseware/course_about.html
 msgid "Post a Facebook message to say you've registered for this course"
-msgstr "この講座に登録したことをFacebookに投稿する"
+msgstr ""
 
 #: lms/templates/courseware/course_about.html
 msgid "Classes Start"
@@ -10237,7 +9806,7 @@ msgstr "必要条件"
 msgid ""
 "You must successfully complete {link_start}{prc_display}{link_end} before "
 "you begin this course."
-msgstr "この講座を開始する前に{link_start}{prc_display}{link_end}を完了する必要があります。"
+msgstr ""
 
 #: lms/templates/courseware/course_about.html
 msgid "Additional Resources"
@@ -10255,24 +9824,16 @@ msgid "enroll"
 msgstr "登録"
 
 #: lms/templates/courseware/course_navigation.html
-msgid "Course View"
-msgstr "コースビュー"
-
-#: lms/templates/courseware/course_navigation.html
 msgid "View this course as:"
-msgstr "この講座を次のように見る："
+msgstr ""
 
 #: lms/templates/courseware/course_navigation.html
 msgid "Student in {content_group}"
-msgstr "{content_group}の受講者"
+msgstr ""
 
 #: lms/templates/courseware/course_navigation.html
 msgid "set preview mode"
-msgstr "プレビューモードにする"
-
-#: lms/templates/courseware/course_navigation.html
-msgid "Course Material"
-msgstr "講座教材"
+msgstr ""
 
 #. Translators: 'needs attention' is an alternative string for the
 #. notification image that indicates the tab "needs attention".
@@ -10296,7 +9857,7 @@ msgstr "{university_name}から無料講座を探す"
 
 #: lms/templates/courseware/courses.html
 msgid "Explore courses from {platform_name}."
-msgstr "{platform_name}から講座をを探す。"
+msgstr ""
 
 #: lms/templates/courseware/courses.html
 msgid "{platform_name} Logo"
@@ -10320,31 +9881,23 @@ msgstr "試験に戻る"
 
 #: lms/templates/courseware/courseware.html
 msgid "Course Search"
-msgstr "講座検索"
+msgstr ""
 
 #: lms/templates/courseware/courseware.html
 msgid "search"
-msgstr "検索"
+msgstr ""
 
 #: lms/templates/courseware/courseware.html
 msgid "Clear search"
-msgstr "検索を削除"
+msgstr ""
+
+#: lms/templates/courseware/courseware.html
+msgid "Course Navigation"
+msgstr "講座メニュー"
 
 #: lms/templates/courseware/courseware.html
 msgid "No content has been added to this course"
 msgstr "このコースにはまだコンテンツがありません"
-
-#: lms/templates/courseware/courseware.html
-msgid ""
-"To access course materials, you must score {required_score}% or higher on "
-"this                 exam. Your current score is {current_score}%."
-msgstr ""
-"コース教材にアクセスするためには、この試験で{required_score}% "
-"o以上得点しなければなりません。あなたの現在の得点は{current_score}%です。"
-
-#: lms/templates/courseware/courseware.html
-msgid "Your score is {current_score}%. You have passed the entrance exam."
-msgstr "あなたの得点は{current_score}%です。入学試験に合格しました。"
 
 #: lms/templates/courseware/courseware.html
 msgid "Course Utilities"
@@ -10892,8 +10445,64 @@ msgid "{course_number} {course_name} Cover Image"
 msgstr "{course_number} {course_name} カバー画像"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "Your verification is pending"
+msgstr "あなたの認証は現在未認可"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Enrolled as: "
 msgstr "右記として受講登録済："
+
+#. Translators: This text describes that the student has enrolled for a
+#. Verified Certificate, but verification of identity is pending.
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "ID verification pending"
+msgstr "本人認証は現在未認可"
+
+#. Translators: The student is enrolled for a Verified Certificate, but
+#. verification of identity is pending.
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "Verified: Pending Verification"
+msgstr "認証：認証未認可"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "You're enrolled as a verified student"
+msgstr "認証された受講者として登録されています"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "ID Verified Ribbon/Badge"
+msgstr "本人認証リボン/バッチ"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/instructor/instructor_dashboard_2/course_info.html
+msgid "Verified"
+msgstr "認証済み"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "You're enrolled as an honor code student"
+msgstr "無料聴講コース受講者として登録されています。"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "You're auditing this course"
+msgstr "あなたはこの講座を評価しています。"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "Auditing"
+msgstr "評価"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "You're enrolled as a professional education student"
+msgstr "プロレベル受講者として受講登録しています"
+
+#: lms/templates/dashboard/_dashboard_course_listing.html
+msgid "Professional Ed"
+msgstr "プロレベル"
 
 #: lms/templates/dashboard/_dashboard_course_listing.html
 msgid "Course Completed - {end_date}"
@@ -11042,8 +10651,6 @@ msgstr ""
 msgid "{course_name}: Re-verify by {date}"
 msgstr "{course_name} : {date}に再認証"
 
-#: lms/templates/dashboard/_dashboard_prompt_midcourse_reverify.html
-#: lms/templates/dashboard/_dashboard_prompt_midcourse_reverify.html
 #: lms/templates/dashboard/_dashboard_prompt_midcourse_reverify.html
 #: lms/templates/dashboard/_dashboard_prompt_midcourse_reverify.html
 msgid "Notification Actions"
@@ -12396,53 +12003,6 @@ msgstr "割引率"
 msgid "Add expiration date"
 msgstr ""
 
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Example Certificates"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Generate example certificates for the course."
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Generate Example Certificates"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Generating example {name} certificate"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Error generating example {name} certificate: {error}"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "View {name} certificate"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Refresh Status"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Student-Generated Certificates"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Disable Student-Generated Certificates"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid "Enable Student-Generated Certificates"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html
-msgid ""
-"You must successfully generate example certificates before you enable "
-"student-generated certificates."
-msgstr ""
-
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html
 msgid "Enrollment Information"
 msgstr "受講情報"
@@ -13573,10 +13133,6 @@ msgid "Rescore All Problems"
 msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html
-msgid "Let Student Skip Entrance Exam"
-msgstr ""
-
-#: lms/templates/instructor/instructor_dashboard_2/student_admin.html
 msgid ""
 "You can also delete all of the student's answers and scores for the entire "
 "entrance exam."
@@ -13635,10 +13191,6 @@ msgid ""
 "Don't see your preferred language? {link_start}Volunteer to become a "
 "translator!{link_end}"
 msgstr "使用言語をご覧になっていないのではないでしょうか？ {link_start}翻訳のボランティアになる！{link_end}"
-
-#: lms/templates/modal/accessible_confirm.html
-msgid "Confirm"
-msgstr "確認"
 
 #. Translators: this text gives status on if the modal interface (a menu or
 #. piece of UI that takes the full focus of the screen) is open or not
@@ -14399,6 +13951,39 @@ msgstr "しばらくしたら、このページをリロードしてください
 msgid "Currently the {platform_name} servers are overloaded"
 msgstr "現在、{platform_name}は高負荷になっています。"
 
+#: lms/templates/student_account/email_change_failed.html
+msgid "Email change failed."
+msgstr "Emailの変更に失敗。"
+
+#: lms/templates/student_account/email_change_failed.html
+msgid "Something went wrong. Please contact {support} for help."
+msgstr "何か問題が発生しました。{support}へご連絡ください。"
+
+#: lms/templates/student_account/email_change_failed.html
+msgid ""
+"The email address you wanted to use is already used by another "
+"{platform_name} account."
+msgstr "登録しようとされているemailは別の{platform_name}アカウントで既に利用をされています。"
+
+#: lms/templates/student_account/email_change_failed.html
+msgid ""
+"You can try again from the {link_start}account settings{link_end} page."
+msgstr "{link_start}アカウント設定{link_end}ページから改めてお試しください。"
+
+#: lms/templates/student_account/email_change_successful.html
+msgid "Email change successful!"
+msgstr "email変更が成功！"
+
+#: lms/templates/student_account/email_change_successful.html
+msgid ""
+"You should see your new email address listed on the {link_start}account "
+"settings{link_end} page."
+msgstr "{link_start}アカウント設定{link_end}ページで、新しいemailアドレスを確認してください。"
+
+#: lms/templates/student_account/index.html
+msgid "Student Account"
+msgstr "受講者のアカウント"
+
 #: lms/templates/student_account/login_and_register.html
 msgid "Sign in or Register"
 msgstr ""
@@ -14720,13 +14305,6 @@ msgstr ""
 #: lms/templates/verify_student/photo_reverification.html
 msgid "Edit your name"
 msgstr "名前を編集"
-
-#: lms/templates/verify_student/midcourse_photo_reverification.html
-#: lms/templates/verify_student/photo_reverification.html
-#: lms/templates/verify_student/photo_reverification.html
-#: lms/templates/verify_student/photo_reverification.html
-msgid "Verification"
-msgstr ""
 
 #: lms/templates/verify_student/midcourse_photo_reverification.html
 msgid ""
@@ -15233,20 +14811,12 @@ msgstr "ファイル &amp; アップロード"
 msgid "Content"
 msgstr "コンテンツ"
 
-#: cms/templates/asset_index.html cms/templates/asset_index.html
-#: cms/templates/container.html cms/templates/container.html
-#: cms/templates/course-create-rerun.html cms/templates/course_info.html
+#: cms/templates/asset_index.html cms/templates/container.html
 #: cms/templates/course_info.html cms/templates/course_outline.html
-#: cms/templates/course_outline.html cms/templates/edit-tabs.html
 #: cms/templates/edit-tabs.html cms/templates/index.html
-#: cms/templates/index.html cms/templates/library.html
 #: cms/templates/library.html cms/templates/manage_users.html
-#: cms/templates/manage_users.html cms/templates/manage_users_lib.html
 #: cms/templates/manage_users_lib.html cms/templates/textbooks.html
-#: cms/templates/textbooks.html cms/templates/videos_index.html
-#: cms/templates/videos_index.html cms/templates/ux/reference/container.html
-#: cms/templates/ux/reference/course-create-rerun.html
-#: cms/templates/ux/reference/outline.html
+#: cms/templates/videos_index.html
 msgid "Page Actions"
 msgstr "ページの動き"
 
@@ -15328,7 +14898,7 @@ msgstr "開講チェックリスト"
 
 #: cms/templates/checklists.html cms/templates/export.html
 #: cms/templates/export_git.html cms/templates/import.html
-#: cms/templates/widgets/header.html cms/templates/widgets/header.html
+#: cms/templates/widgets/header.html
 msgid "Tools"
 msgstr "ツール"
 
@@ -15854,25 +15424,8 @@ msgid "Back to dashboard"
 msgstr "マイページに戻る"
 
 #: cms/templates/export.html cms/templates/export.html
-msgid "Library Export"
-msgstr ""
-
-#: cms/templates/export.html cms/templates/export.html
 msgid "Course Export"
 msgstr "エクスポート"
-
-#: cms/templates/export.html
-msgid "About Exporting Libraries"
-msgstr ""
-
-#. Translators: ".tar.gz" is a file extension, and should not be translated
-#: cms/templates/export.html
-msgid ""
-"You can export libraries and edit them outside of {studio_name}. The "
-"exported file is a .tar.gz file (that is, a .tar file compressed with GNU "
-"Zip) that contains the library structure and content. You can also re-import"
-" libraries that you've exported."
-msgstr ""
 
 #: cms/templates/export.html
 msgid "About Exporting Courses"
@@ -15897,16 +15450,8 @@ msgid ""
 msgstr ""
 
 #: cms/templates/export.html
-msgid "Export My Library Content"
-msgstr ""
-
-#: cms/templates/export.html
 msgid "Export My Course Content"
 msgstr "講座コンテンツをエクスポートする"
-
-#: cms/templates/export.html
-msgid "Export Library Content"
-msgstr ""
 
 #: cms/templates/export.html
 msgid "Export Course Content"
@@ -15958,32 +15503,8 @@ msgid "Forum/discussion Data"
 msgstr "フォーラム／ディスカッションデータ"
 
 #: cms/templates/export.html
-msgid "Why export a library?"
-msgstr ""
-
-#: cms/templates/export.html
-msgid ""
-"You may want to edit the XML in your library directly, outside of "
-"{studio_name}. You may want to create a backup copy of your library. Or, you"
-" may want to create a copy of your library that you can later import into "
-"another library instance and customize."
-msgstr ""
-
-#: cms/templates/export.html cms/templates/export.html
-msgid "Opening the downloaded file"
-msgstr "ダウンロードしたファイルを開いています"
-
-#. Translators: ".tar.gz" is a file extension, and should not be translated
-#: cms/templates/export.html
-msgid ""
-"Use an archive program to extract the data from the .tar.gz file. Extracted "
-"data includes the library.xml file, as well as subfolders that contain "
-"library content."
-msgstr ""
-
-#: cms/templates/export.html
-msgid "Learn more about exporting a library"
-msgstr ""
+msgid "Certificates"
+msgstr "証明書"
 
 #: cms/templates/export.html
 msgid "Why export a course?"
@@ -16009,6 +15530,10 @@ msgid ""
 "data, grading information, discussion forum data, course settings, and "
 "course team information, is not exported."
 msgstr ""
+
+#: cms/templates/export.html
+msgid "Opening the downloaded file"
+msgstr "ダウンロードしたファイルを開いています"
 
 #. Translators: ".tar.gz" is a file extension, and should not be translated
 #: cms/templates/export.html
@@ -16139,11 +15664,8 @@ msgid ""
 msgstr ""
 "実験で利用をしていない場合に限り、グループ設定を削除することができます。設定を削除するには、設定ボックスの上をマウスオーバーし削除アイコンをクリックします。"
 
-#: cms/templates/group_configurations.html
 #: cms/templates/group_configurations.html cms/templates/settings.html
-#: cms/templates/settings.html cms/templates/settings_advanced.html
 #: cms/templates/settings_advanced.html cms/templates/settings_graders.html
-#: cms/templates/settings_graders.html
 msgid "Other Course Settings"
 msgstr "その他の設定"
 
@@ -16377,46 +15899,21 @@ msgid ""
 msgstr "受講者はこのアイテムにアクセスすることができません。アイテムを再編集してエラーを修正してください。"
 
 #: cms/templates/import.html cms/templates/import.html
-msgid "Library Import"
-msgstr ""
-
-#: cms/templates/import.html cms/templates/import.html
 msgid "Course Import"
 msgstr "インポート"
 
 #: cms/templates/import.html
 msgid ""
-"Be sure you want to import a library before continuing. The contents of the "
-"imported library will replace the contents of the existing library. "
-"{em_start}You cannot undo a library import{em_end}. Before you proceed, we "
-"recommend that you export the current library, so that you have a backup "
-"copy of it."
+"Be sure you want to import a course before continuing. Content of the "
+"imported course replaces all the content of this course. {em_start}You "
+"cannot undo a course import{em_end}. We recommend that you first export the "
+"current course, so you have a backup copy of it."
 msgstr ""
+"継続する前に講座をインポートしたいか確認してください。インポートされた講座はこの講座のすべての内容を置き換えします。{em_start}インポートは取り消すことができません{em_end}。バックアップを残す為に、現在の講座を先にエクスポートすることをお勧めします。"
+" "
 
-#: cms/templates/import.html
-msgid ""
-"The library that you import must be in a .tar.gz file (that is, a .tar file "
-"compressed with GNU Zip). This .tar.gz file must contain a library.xml file."
-" It may also contain other files."
-msgstr ""
-
-#: cms/templates/import.html
-msgid ""
-"The import process has five stages. During the first two stages, you must "
-"stay on this page. You can leave this page after the Unpacking stage has "
-"completed. We recommend, however, that you don't make important changes to "
-"your library until the import operation has completed."
-msgstr ""
-
-#: cms/templates/import.html
-msgid ""
-"Be sure you want to import a course before continuing. The contents of the "
-"imported course will replace the contents of the existing course. "
-"{em_start}You cannot undo a course import{em_end}. Before you proceed, we "
-"recommend that you export the current course, so that you have a backup copy"
-" of it."
-msgstr ""
-
+#. Translators: ".tar.gz" is a file extension, and files with that extension
+#. are called "gzipped tar files": these terms should not be translated
 #: cms/templates/import.html
 msgid ""
 "The course that you import must be in a .tar.gz file (that is, a .tar file "
@@ -16435,10 +15932,8 @@ msgid ""
 msgstr ""
 "インポートの流れは５段階あります。はじめの２つの段階ではこのページで行います。展開が終わりましたら、別のページに遷移しても問題ありません。ただし、インポートの処理が完了するまでは重要な変更を講座にしないことをお勧めします。"
 
-#: cms/templates/import.html
-msgid "Select a .tar.gz File to Replace Your Library Content"
-msgstr ""
-
+#. Translators: ".tar.gz" is a file extension, and files with that extension
+#. are called "gzipped tar files": these terms should not be translated
 #: cms/templates/import.html
 msgid "Select a .tar.gz File to Replace Your Course Content"
 msgstr "入れ替えるコースコンテンツの.tar.gzファイルを選択してください"
@@ -16452,16 +15947,8 @@ msgid "File Chosen:"
 msgstr "選ばれたファイル："
 
 #: cms/templates/import.html
-msgid "Replace my library with the selected file"
-msgstr ""
-
-#: cms/templates/import.html
-msgid "Replace my course with the selected file"
-msgstr ""
-
-#: cms/templates/import.html
-msgid "Library Import Status"
-msgstr ""
+msgid "Replace my course with the one above"
+msgstr "講座コンテンツを上記のもので置き換えます。"
 
 #: cms/templates/import.html
 msgid "Course Import Status"
@@ -16492,67 +15979,26 @@ msgid "Reviewing semantics, syntax, and required data"
 msgstr "意味、構文、必須データを確認中"
 
 #: cms/templates/import.html
-msgid "Updating Library"
-msgstr ""
-
-#: cms/templates/import.html
 msgid "Updating Course"
 msgstr "更新中"
 
 #: cms/templates/import.html
 msgid ""
-"Integrating your imported content into this library. This process might take"
-" longer with larger libraries."
-msgstr ""
-
-#: cms/templates/import.html
-msgid ""
-"Integrating your imported content into this course. This process might take "
-"longer with larger courses."
-msgstr ""
+"Integrating your imported content into this course. This may take a while "
+"with larger courses."
+msgstr "インポートされたコンテンツを統合中。本講座のコンテンツはより多くのものとなるでしょう。"
 
 #: cms/templates/import.html
 msgid "Success"
 msgstr "成功"
 
 #: cms/templates/import.html
-msgid "Your imported content has now been integrated into this library"
-msgstr ""
-
-#: cms/templates/import.html
 msgid "Your imported content has now been integrated into this course"
 msgstr "インポートしたコンテンツは、ただ今、本講座に統合されました。"
 
 #: cms/templates/import.html
-msgid "View Updated Library"
-msgstr ""
-
-#: cms/templates/import.html
 msgid "View Updated Outline"
 msgstr "更新された概要を見る"
-
-#: cms/templates/import.html
-msgid "Why import a library?"
-msgstr ""
-
-#: cms/templates/import.html
-msgid ""
-"You might want to update an existing library to a new version, or replace an"
-" existing library entirely. You might also have developed a library outside "
-"of Studio."
-msgstr ""
-
-#: cms/templates/import.html
-msgid "Note: Library content is not automatically updated in courses"
-msgstr ""
-
-#: cms/templates/import.html
-msgid ""
-"If you change and import a library that is referenced by randomized content "
-"blocks in one or more courses, those courses do not automatically use the "
-"updated content. You must manually refresh the randomized content blocks to "
-"bring them up to date with the latest library content."
-msgstr ""
 
 #: cms/templates/import.html
 msgid "Why import a course?"
@@ -16749,10 +16195,6 @@ msgid ""
 msgstr ""
 
 #: cms/templates/index.html
-msgid "Libraries"
-msgstr ""
-
-#: cms/templates/index.html
 msgid "Re-run Course"
 msgstr ""
 
@@ -16867,7 +16309,7 @@ msgstr ""
 msgid ""
 "Click Help in the upper-right corner to get more information about the "
 "{studio_name} page you are viewing. You can also use the links at the bottom"
-" of the page to access our continually updated documentation and other "
+" of the page to access our continously updated documentation and other "
 "{studio_name} resources."
 msgstr ""
 
@@ -16946,6 +16388,21 @@ msgstr ""
 msgid "Add Component"
 msgstr ""
 
+#: cms/templates/library.html cms/templates/library.html
+msgid "Library ID"
+msgstr ""
+
+#: cms/templates/library.html
+msgid "Tip:"
+msgstr ""
+
+#: cms/templates/library.html
+msgid ""
+"To add content from this library to a course that uses a Randomized Content "
+"Block, copy this ID and enter it in the Libraries field in the Randomized "
+"Content Block settings."
+msgstr ""
+
 #: cms/templates/library.html
 msgid "Adding content to your library"
 msgstr ""
@@ -16970,11 +16427,11 @@ msgstr ""
 #: cms/templates/library.html
 msgid ""
 "Use library content in courses by adding the "
-"{em_start}library_content{em_end} policy key to the Advanced Module List in "
-"the course's Advanced Settings, then adding a Randomized Content Block to "
-"your courseware. In the settings for each Randomized Content Block, select "
-"this library as the source library, and specify the number of problems to be"
-" randomly selected and displayed to each student."
+"{em_start}library_content{em_end} policy key to Advanced Settings, then "
+"adding a Randomized Content Block to your courseware. In the settings for "
+"each Randomized Content Block, enter the Library ID for each library from "
+"which you want to draw content, and specify the number of problems to be "
+"randomly selected and displayed to each student."
 msgstr ""
 
 #: cms/templates/library.html
@@ -17751,16 +17208,11 @@ msgstr ""
 msgid ""
 "After a file uploads successfully, automated processing begins. After "
 "automated processing begins for a file it is listed under Previous Uploads "
-"as {em_start}In Progress{em_end}. You can add the video to your course as "
-"soon as it has a unique video ID and the status is {em_start}Ready{em_end}. "
-"Allow 24 hours for file processing at the external video hosting sites to "
-"complete."
-msgstr ""
-
-#: cms/templates/videos_index.html
-msgid ""
-"If something goes wrong, the {em_start}Failed{em_end} status message "
-"appears. Check for problems in your original file and upload a replacement."
+"as {em_start}In Progress{em_end}. When the status is "
+"{em_start}Complete{em_end}, edX assigns a unique video ID to the video file "
+"and you can add it to your course. If something goes wrong, the "
+"{em_start}Failed{em_end} status message appears. Check for problems in the "
+"file and upload a replacement."
 msgstr ""
 
 #: cms/templates/videos_index.html
@@ -17769,14 +17221,10 @@ msgstr ""
 
 #: cms/templates/videos_index.html
 msgid ""
-"As soon as the status for a file is {em_start}Ready{em_end}, you can add "
-"that video to a component in your course. Copy the unique video ID. In "
-"another browser window, on the Course Outline page, create or locate a video"
-" component to play this video. Edit the video component to paste the ID into"
-" the Advanced {em_start}EdX Video ID{em_end} field. The video can play in "
-"the LMS as soon as its status is {em_start}Ready{em_end}, although "
-"processing may not be complete for all encodings and all video hosting "
-"sites."
+"After processing is complete for the video file, you copy its unique video "
+"ID. On the Course Outline page, you create or locate a video component to "
+"play this video. Edit the video component to paste the ID into the Advanced "
+"{em_start}EdX Video ID{em_end} field."
 msgstr ""
 
 #: cms/templates/visibility_editor.html
@@ -17905,6 +17353,10 @@ msgstr "お問い合わせ"
 msgid "Current Course:"
 msgstr "学習中の講座："
 
+#: cms/templates/widgets/header.html cms/templates/widgets/header.html
+msgid "Navigation for {course_name}"
+msgstr ""
+
 #: cms/templates/widgets/header.html
 msgid "Outline"
 msgstr "アウトライン"
@@ -17921,11 +17373,11 @@ msgstr "スケジュールと詳細"
 msgid "Checklists"
 msgstr "チェックリスト"
 
-#: cms/templates/widgets/header.html cms/templates/widgets/header.html
+#: cms/templates/widgets/header.html
 msgid "Import"
 msgstr "インポート"
 
-#: cms/templates/widgets/header.html cms/templates/widgets/header.html
+#: cms/templates/widgets/header.html
 msgid "Export"
 msgstr "エクスポート"
 
@@ -17933,13 +17385,13 @@ msgstr "エクスポート"
 msgid "Current Library:"
 msgstr ""
 
-#: cms/templates/widgets/header.html cms/templates/widgets/header.html
-msgid "Account"
+#: cms/templates/widgets/header.html
+msgid "Library"
 msgstr ""
 
-#: cms/templates/widgets/header.html cms/templates/widgets/header.html
-msgid "Account Navigation"
-msgstr ""
+#: cms/templates/widgets/header.html
+msgid "Help &amp; Account Navigation"
+msgstr "ヘルプとアカウント"
 
 #: cms/templates/widgets/header.html cms/templates/widgets/header.html
 msgid "Contextual Online Help"
@@ -17952,6 +17404,10 @@ msgstr "サインインしています："
 #: cms/templates/widgets/header.html
 msgid "Sign Out"
 msgstr "サインアウト"
+
+#: cms/templates/widgets/header.html
+msgid "You're not currently signed in"
+msgstr "サインインしていません"
 
 #: cms/templates/widgets/metadata-edit.html
 msgid "Launch Latex Source Compiler"

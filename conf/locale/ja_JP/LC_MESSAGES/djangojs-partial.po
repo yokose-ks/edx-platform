@@ -14,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2015-03-16 14:10+0000\n"
-"PO-Revision-Date: 2015-03-16 01:45+0000\n"
-"Last-Translator: h_yoshida <h_yoshida@matsumo-sys.com>\n"
+"POT-Creation-Date: 2015-02-26 16:07+0000\n"
+"PO-Revision-Date: 2015-02-26 16:08+0000\n"
+"Last-Translator: Sarina Canelake <sarina@edx.org>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgstr "OK"
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: cms/static/coffee/src/views/tabs.js:169
-#: cms/static/js/factories/export.js:50
+#: cms/static/js/factories/export.js:41
 #: cms/static/js/factories/manage_users.js:151
 #: cms/static/js/factories/manage_users_lib.js:132
 #: cms/static/js/views/asset.js:69
@@ -1510,24 +1510,24 @@ msgstr "正解"
 #: common/lib/xmodule/xmodule/js/src/problem/edit.js:15
 #: common/lib/xmodule/xmodule/js/src/problem/edit.js:17
 msgid "answer"
-msgstr "解答"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/problem/edit.js:23
 msgid "Short explanation"
-msgstr "概略"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/problem/edit.js:103
 msgid ""
 "If you use the Advanced Editor, this problem will be converted to XML and you will not be able to return to the Simple Editor Interface.\n"
 "\n"
 "Proceed to the Advanced Editor and convert this problem to XML?"
-msgstr "アドバンスドエディタを使用すると問題はXMLに変換されシンプルエディタに戻ることはできません。\n\nアドバンスドエディタに進んでこの問題をXMLに変換しますか？"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/sequence/display.js:174
 msgid ""
 "Sequence error! Cannot navigate to %(tab_name)s in the current "
 "SequenceModule. Please contact the course staff."
-msgstr "シーケンスエラー！このシーケンスモジュールでは「%(tab_name)s」タブを操作することが出来ません。コーススタッフに問い合わせください。"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/js/src/video/00_i18n.js:14
 #: common/lib/xmodule/xmodule/js/src/video/04_video_control.js:241
@@ -1663,11 +1663,11 @@ msgstr "キャプションをオフにする"
 
 #: common/lib/xmodule/xmodule/public/js/library_content_edit.js:18
 msgid "Updating with latest library content"
-msgstr "最新のライブラリコンテンツで更新中"
+msgstr ""
 
 #: common/lib/xmodule/xmodule/public/js/split_test_author_view.js:11
 msgid "Creating missing groups"
-msgstr "足りないグループを作成中"
+msgstr ""
 
 #: common/static/coffee/src/discussion/discussion_module_view.js:86
 #: common/static/coffee/src/discussion/discussion_module_view.js:109
@@ -1807,7 +1807,7 @@ msgstr[0] "%(unread_count)s の新しいコメント"
 
 #: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:360
 msgid "Current conversation"
-msgstr "現在の会話"
+msgstr ""
 
 #: common/static/coffee/src/discussion/views/discussion_thread_list_view.js:599
 #: lms/static/js/edxnotes/views/tabs/search_results.js:47
@@ -2392,185 +2392,168 @@ msgstr "この講座のメール送信履歴を取得する際にエラーが発
 msgid "There was an error obtaining email content history for this course."
 msgstr "この講座のemailコンテンツ履歴の取得にエラーが発生しました。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:75
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:100
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:137
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:178
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:214
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:244
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:276
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:337
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:74
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:99
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:136
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:177
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:213
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:243
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:275
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:306
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:338
 #: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:29
 #: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:82
-#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:181
+#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:135
+#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:189
 msgid "Please enter a student email address or username."
 msgstr "受講者のメールアドレスかユーザー名を入力してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:77
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:76
 msgid ""
 "Error getting student progress url for '<%= student_id %>'. Make sure that "
 "the student identifier is spelled correctly."
 msgstr "受講者'<%= student_id %>'の進捗URLを取得する際のエラー。受講者の識別子のスペルが正しいか確認してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:103
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:140
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:181
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:217
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:395
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:433
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:473
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:102
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:139
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:180
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:216
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:364
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:402
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:442
 msgid "Please enter a problem location."
 msgstr "問題のロケーションを入力してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:110
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:109
 msgid ""
 "Success! Problem attempts reset for problem '<%= problem_id %>' and student "
 "'<%= student_id %>'."
 msgstr "問題 '<%= problem_id %>' と受講者 '<%= student_id %>' に対する問題のリセットに成功しました。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:111
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:110
 msgid ""
 "Error resetting problem attempts for problem '<%= problem_id %>' and student"
 " '<%= student_id %>'. Make sure that the problem and student identifiers are"
 " complete and correct."
 msgstr "問題'<%= problem_id %>'と受講者'<%= student_id %>'に関する試行をリセットする再のエラー。問題と受講者の識別子が正しいか確認してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:142
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:141
 msgid ""
 "Delete student '<%= student_id %>'s state on problem '<%= problem_id %>'?"
 msgstr "受講者 '<%= student_id %>' の問題 '<%= problem_id %>' のステータスを削除しますか？"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:153
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:152
 msgid ""
 "Error deleting student '<%= student_id %>'s state on problem '<%= problem_id"
 " %>'. Make sure that the problem and student identifiers are complete and "
 "correct."
 msgstr "問題'<%= problem_id %>'についての、受講者'<%= student_id %>'の状態を削除する再のエラー。問題と受講者の識別子が正しいか確認してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:163
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:162
 msgid "Module state successfully deleted."
 msgstr "モジュールの状態の削除に成功しました。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:187
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:186
 msgid ""
 "Started rescore problem task for problem '<%= problem_id %>' and student "
 "'<%= student_id %>'. Click the 'Show Background Task History for Student' "
 "button to see the status of the task."
 msgstr "問題 '<%= problem_id %>' と受講者 '<%= student_id %>' の問題再採点タスクが開始されました。タスクの詳細を見るには「バックグラウンドで実施される学生向けのタスク履歴を表示」をクリックしてください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:192
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:191
 msgid ""
 "Error starting a task to rescore problem '<%= problem_id %>' for student "
 "'<%= student_id %>'. Make sure that the the problem and student identifiers "
 "are complete and correct."
 msgstr "受講者'<%= student_id %>'についての問題'<%= problem_id %>'を再採点するタスクを開始する際のエラー。問題と受講者の識別子が正しいか確認してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:223
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:222
 msgid ""
 "Error getting task history for problem '<%= problem_id %>' and student '<%= "
 "student_id %>'. Make sure that the problem and student identifiers are "
 "complete and correct."
 msgstr "問題'<%= problem_id %>'と受講者'<%= student_id %>'に関するタスクのヒストリーを取得する際のエラー。問題と受講者の識別子が正しいか確認してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:256
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:255
 #: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:31
 msgid "Entrance exam attempts is being reset for student '{student_id}'."
-msgstr "受講生'{student_id}'の入学試験試行回数をリセットしています。"
+msgstr ""
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:264
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:263
 #: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:72
 msgid ""
 "Error resetting entrance exam attempts for student '{student_id}'. Make sure"
 " student identifier is correct."
-msgstr "受講生'{student_id}'の入学試験試行回数をリセット中にエラーが発生しました。受講者の識別子が正しいか確認してください。"
+msgstr ""
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:287
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:286
 msgid ""
 "Started entrance exam rescore task for student '{student_id}'. Click the "
 "'Show Background Task History for Student' button to see the status of the "
 "task."
-msgstr "受講者 '{student_id}' の入学試験再採点タスクが開始されました。タスクの詳細を見るには「バックグラウンドで実施される学生向けのタスク履歴を表示」をクリックしてください。"
+msgstr ""
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:295
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:294
 msgid ""
 "Error starting a task to rescore entrance exam for student '{student_id}'. "
 "Make sure that entrance exam has problems in it and student identifier is "
 "correct."
-msgstr "受講者'{student_id}'の入学試験再採点タスクを開始する際のエラー。入学試験に問題文があり受講者の識別子が正しいか確認してください。"
+msgstr ""
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:307
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:369
-#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:135
-#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:235
-msgid "Enter a student's username or email address."
-msgstr "受講者のメールアドレスかユーザー名を入力してください。"
-
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:309
-msgid ""
-"Do you want to allow this student ('{student_id}') to skip the entrance "
-"exam?"
-msgstr "受講者('{student_id}')が入学試験をスキップすることを許可しますか？"
-
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:327
-msgid ""
-"An error occurred. Make sure that the student's username or email address is"
-" correct and try again."
-msgstr "エラーが発生しました。受講者のユーザー名またはメールアドレスが正しいか確認して再度試してください。"
-
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:349
-#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:183
-#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:237
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:318
+#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:137
+#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:191
 msgid "Entrance exam state is being deleted for student '{student_id}'."
-msgstr "受講生'{student_id}'の入学試験状況を削除しています。"
+msgstr ""
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:357
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:326
 msgid ""
 "Error deleting entrance exam state for student '{student_id}'. Make sure "
 "student identifier is correct."
-msgstr "受講生'{student_id}'の入学試験状況の削除中にエラーが発生しました。受講者IDが正しいか確認してください。"
+msgstr ""
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:383
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:352
 msgid ""
 "Error getting entrance exam task history for student '{student_id}'. Make "
 "sure student identifier is correct."
-msgstr "受講生'{student_id}'の入学試験タスク履歴取得中にエラーが発生しました。受講者IDが正しいか確認してください。"
+msgstr ""
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:397
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:366
 msgid "Reset attempts for all students on problem '<%= problem_id %>'?"
 msgstr "問題 '<%= problem_id %>' に対するすべての受講者の試行のリセットをしますか？"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:406
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:375
 msgid ""
 "Successfully started task to reset attempts for problem '<%= problem_id %>'."
 " Click the 'Show Background Task History for Problem' button to see the "
 "status of the task."
 msgstr "問題 '<%= problem_id %>' に対する試行のリセットのタスクを開始しました。タスクの詳細を見るには「バックグラウンドで実施される学生向けのタスク履歴を表示」をクリックしてください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:410
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:379
 msgid ""
 "Error starting a task to reset attempts for all students on problem '<%= "
 "problem_id %>'. Make sure that the problem identifier is complete and "
 "correct."
 msgstr "'<%= problem_id %>'の問題に関する試行をリセットするタスクを開始する際のエラー。問題の識別子が正しいか確認してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:435
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:404
 msgid "Rescore problem '<%= problem_id %>' for all students?"
 msgstr "すべての受講者に対する問題 '<%= problem_id %>' の再採点を行いますか？"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:444
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:413
 msgid ""
 "Successfully started task to rescore problem '<%= problem_id %>' for all "
 "students. Click the 'Show Background Task History for Problem' button to see"
 " the status of the task."
 msgstr "問題 '<%= problem_id %>' に対する再採点のタスクを開始しました。タスクの詳細を見るには「バックグラウンドで実施される学生向けのタスク履歴を表示」をクリックしてください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:448
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:417
 msgid ""
 "Error starting a task to rescore problem '<%= problem_id %>'. Make sure that"
 " the problem identifier is complete and correct."
 msgstr "'<%= problem_id %>'の問題を再採点するタスクを開始する際のエラー。問題の識別子が正しいか確認してください。"
 
-#: lms/static/coffee/src/instructor_dashboard/student_admin.js:483
+#: lms/static/coffee/src/instructor_dashboard/student_admin.js:452
 msgid "Error listing task history for this student and problem."
 msgstr "この受講者と問題に対するタスク履歴のリスト表示でエラーが発生しました。"
 
@@ -2900,59 +2883,59 @@ msgstr "確認メールが送信されました。メール文中にある変更
 
 #: lms/static/js/edxnotes/plugins/accessibility.js:52
 msgid "Focus grabber"
-msgstr "フォーカスグラバー"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/search_box.js:12
 #: lms/static/js/edxnotes/views/toggle_notes_factory.js:12
 msgid ""
 "An error has occurred. Make sure that you are connected to the Internet, and"
 " then try refreshing the page."
-msgstr "エラーが発生しました。インターネットに接続されていることを確認してページを再読込してください。"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/search_box.js:14
 msgid ""
 "Please enter a term in the %(anchor_start)s search field%(anchor_end)s."
-msgstr "%(anchor_start)s 検索フィールド%(anchor_end)sに語句を入力してください。"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/tab_item.js:25
 msgid "Current tab"
-msgstr "現在のタブ"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/toggle_notes_factory.js:64
 msgid "Hide notes"
-msgstr "ノートを隠す"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/toggle_notes_factory.js:65
 msgid "Notes visible"
-msgstr "ノート表示中"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/toggle_notes_factory.js:71
 msgid "Show notes"
-msgstr "ノートを表示する"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/toggle_notes_factory.js:72
 msgid "Notes hidden"
-msgstr "ノート非表示"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/tabs/course_structure.js:48
 msgid "Location in Course"
-msgstr "講座中の場所"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/tabs/recent_activity.js:24
 msgid "Recent Activity"
-msgstr "直前の活動"
+msgstr ""
 
 #: lms/static/js/edxnotes/views/tabs/search_results.js:33
 msgid "No results found for \"%(query_string)s\". Please try searching again."
-msgstr "\"%(query_string)s\"が見つかりません。検索しなおしてください。"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_editor.js:49
 msgid "Selected tab"
-msgstr "選択されたタブ"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_editor.js:59
 msgid "Saved cohort"
-msgstr "保存された集団"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_editor.js:97
 msgid "Error adding students."
@@ -2960,12 +2943,12 @@ msgstr "受講者の追加でエラーが発生。"
 
 #: lms/static/js/groups/views/cohort_editor.js:100
 msgid "Enter a username or email."
-msgstr "ユーザー名またはメールアドレスを入力してください。"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_editor.js:150
 msgid "{numUsersAdded} student has been added to this cohort"
 msgid_plural "{numUsersAdded} students have been added to this cohort"
-msgstr[0] "{numUsersAdded}名の受講者がこのユーザー群に追加されました。"
+msgstr[0] ""
 
 #: lms/static/js/groups/views/cohort_editor.js:170
 msgid "{numMoved} student was removed from {oldCohort}"
@@ -2975,7 +2958,7 @@ msgstr[0] "{numMoved}名の受講者が{oldCohort}から削除されました。
 #: lms/static/js/groups/views/cohort_editor.js:179
 msgid "{numPresent} student was already in the cohort"
 msgid_plural "{numPresent} students were already in the cohort"
-msgstr[0] "{numPresent}名の受講者が既にこのユーザー群に属しています。"
+msgstr[0] ""
 
 #: lms/static/js/groups/views/cohort_editor.js:209
 msgid "Unknown user: {user}"
@@ -2992,45 +2975,45 @@ msgstr "全てのエラーを見る"
 
 #: lms/static/js/groups/views/cohort_form.js:94
 msgid "You must specify a name for the cohort"
-msgstr "ユーザー群の名前を指定する必要があります"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_form.js:98
 msgid "You did not select a content group"
-msgstr "コンテンツグループが選択されていません"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_form.js:101
 msgid "The selected content group does not exist"
-msgstr "選択されたコンテンツグループは存在しません"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_form.js:126
 msgid "The cohort cannot be saved"
-msgstr "ユーザー群が保存できませんでした"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_form.js:126
 msgid "The cohort cannot be added"
-msgstr "ユーザー群が追加できませんでした"
+msgstr ""
 
 #: lms/static/js/groups/views/cohort_form.js:146
 msgid "We've encountered an error. Refresh your browser and then try again."
-msgstr "エラーが発生しました。ブラウザにて画面を更新し、改めてお試しください。"
+msgstr ""
 
 #: lms/static/js/groups/views/cohorts.js:81
 msgid "You currently have no cohorts configured"
-msgstr "ユーザー群は設定されていません"
+msgstr ""
 
 #: lms/static/js/groups/views/cohorts.js:82
 msgid "Add Cohort"
-msgstr "ユーザー群を追加"
+msgstr ""
 
 #: lms/static/js/groups/views/cohorts.js:190
 msgid ""
 "The {cohortGroupName} cohort has been created. You can manually add students"
 " to this cohort below."
-msgstr "ユーザー群 {cohortGroupName} が作成されました。このユーザー群には手作業で受講者を追加できます。"
+msgstr ""
 
 #: lms/static/js/groups/views/cohorts.js:220
 msgid "Assign students to cohorts by uploading a CSV file."
-msgstr "ユーザー群に受講者をCSVファイルで割り当てます。"
+msgstr ""
 
 #: lms/static/js/groups/views/cohorts.js:221
 msgid "Choose a .csv file"
@@ -3047,38 +3030,30 @@ msgstr "ファイルをアップロードして受講者を紐づけます。"
 #: lms/static/js/groups/views/cohorts.js:228
 msgid ""
 "Your file '{file}' has been uploaded. Allow a few minutes for processing."
-msgstr "'{file}' はアップロードされました。処理に数分かかります。"
-
-#: lms/static/js/instructor_dashboard/certificates.js:19
-msgid "Allow students to generate certificates for this course?"
-msgstr "受講者にこの講座の証明書を生成することを許可しますか？"
-
-#: lms/static/js/instructor_dashboard/certificates.js:21
-msgid "Prevent students from generating certificates in this course?"
-msgstr "受講者にこの講座の証明書を生成することを禁止しますか？"
+msgstr ""
 
 #: lms/static/js/search/views/search_list_view.js:64
 #, c-format
 msgid "%s result"
 msgid_plural "%s results"
-msgstr[0] "結果 %s"
+msgstr[0] ""
 
 #: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:84
 msgid "Started entrance exam rescore task for student '{student_id}'."
-msgstr "受講生'{student_id}'の入学試験再採点タスクを開始しました。"
+msgstr ""
 
 #: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:124
 msgid ""
 "Error starting a task to rescore entrance exam for student '{student_id}'."
-msgstr "受講生'{student_id}'の入学試験再採点タスクを開始する際にエラーが発生しました。"
+msgstr ""
 
-#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:224
+#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:178
 msgid "Error deleting entrance exam state for student '{student_id}'. "
-msgstr "受講生'{student_id}'の入学試験状況の削除中にエラーが発生しました。"
+msgstr ""
 
-#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:288
+#: lms/static/js/spec/instructor_dashboard/student_admin_spec.js:242
 msgid "Error getting entrance exam task history for student '{student_id}'. "
-msgstr "受講生'{student_id}'の入学試験履歴の取得中にエラーが発生しました。"
+msgstr ""
 
 #: lms/static/js/student_account/account.js:47
 #: lms/static/js/student_profile/profile.js:9
@@ -3125,15 +3100,15 @@ msgstr "保存済"
 
 #: lms/static/js/verify_student/views/image_input_view.js:91
 msgid "Image Upload Error"
-msgstr "画像アップロードエラー"
+msgstr ""
 
 #: lms/static/js/verify_student/views/image_input_view.js:92
 msgid "Please verify that you have uploaded a valid image (PNG and JPEG)."
-msgstr "有効な画像ファイル(PNGかJPEG)であることを確認してください。"
+msgstr ""
 
 #: lms/static/js/verify_student/views/make_payment_step_view.js:138
 msgid "An error has occurred. Please try again."
-msgstr "エラーが起きました。再度、お試しください。"
+msgstr ""
 
 #: lms/static/js/verify_student/views/make_payment_step_view.js:145
 msgid "Could not submit order"
@@ -3145,7 +3120,7 @@ msgstr "支払い情報を受信できません"
 
 #: lms/static/js/verify_student/views/review_photos_step_view.js:69
 msgid "An error has occurred. Please try again later."
-msgstr "エラーが発生しました。時間をおいてやり直してください。"
+msgstr ""
 
 #: lms/static/js/verify_student/views/review_photos_step_view.js:79
 msgid "Could not submit photos"
@@ -3153,17 +3128,17 @@ msgstr "写真を送信できません"
 
 #: lms/static/js/verify_student/views/step_view.js:49
 msgid "An error has occurred. Please try reloading the page."
-msgstr "エラーが発生しました。ページを再読み込みしてください。"
+msgstr ""
 
 #: lms/static/js/verify_student/views/webcam_photo_view.js:98
 msgid "Video Capture Error"
-msgstr "ビデオキャプチャエラー"
+msgstr ""
 
 #: lms/static/js/verify_student/views/webcam_photo_view.js:99
 msgid ""
 "Please verify that your webcam is connected and that you have allowed your "
 "browser to access it."
-msgstr "Webカメラが接続されているか確認し、ブラウザからのアクセスが許可されていることを確認してください。"
+msgstr ""
 
 #: lms/static/js/verify_student/views/webcam_photo_view.js:191
 msgid "No Webcam Detected"

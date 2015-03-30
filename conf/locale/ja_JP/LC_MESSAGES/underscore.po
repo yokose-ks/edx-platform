@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2015-03-16 14:09+0000\n"
+"POT-Creation-Date: 2015-02-26 16:06+0000\n"
 "PO-Revision-Date: 2015-02-20 21:40+0000\n"
 "Last-Translator: Sarina Canelake <sarina@edx.org>\n"
 "Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/edx-platform/language/ja_JP/)\n"
@@ -44,8 +44,8 @@ msgid "Save"
 msgstr "一時保存"
 
 #: cms/templates/js/course-outline.underscore:47
-#: cms/templates/js/course-outline.underscore:159
-#: cms/templates/js/course-outline.underscore:177
+#: cms/templates/js/course-outline.underscore:148
+#: cms/templates/js/course-outline.underscore:165
 #: cms/templates/js/list.underscore:5 cms/templates/js/list.underscore:12
 #: cms/templates/js/publish-xblock.underscore:51
 #: cms/templates/js/publish-xblock.underscore:73
@@ -122,7 +122,6 @@ msgid "There was an error, try searching again."
 msgstr ""
 
 #: lms/templates/courseware_search/search_item.underscore:4
-#: lms/templates/courseware_search/search_item_seq.underscore:4
 msgid "View"
 msgstr "見る"
 
@@ -636,7 +635,7 @@ msgid "Thanks for returning to verify your ID in: %(courseName)s"
 msgstr ""
 
 #: lms/templates/verify_student/intro_step.underscore:15
-#: lms/templates/verify_student/make_payment_step.underscore:31
+#: lms/templates/verify_student/make_payment_step.underscore:109
 msgid ""
 "You need to activate your account before you can enroll in courses. Check "
 "your inbox for an activation email. After you complete activation you can "
@@ -644,13 +643,13 @@ msgid ""
 msgstr ""
 
 #: lms/templates/verify_student/intro_step.underscore:27
-#: lms/templates/verify_student/make_payment_step.underscore:43
+#: lms/templates/verify_student/make_payment_step.underscore:121
 #: lms/templates/verify_student/payment_confirmation_step.underscore:87
 msgid "Activate Your Account"
 msgstr "アカウントをアクティベートする"
 
 #: lms/templates/verify_student/intro_step.underscore:34
-#: lms/templates/verify_student/make_payment_step.underscore:50
+#: lms/templates/verify_student/make_payment_step.underscore:128
 msgid "Check Your Email"
 msgstr ""
 
@@ -666,7 +665,7 @@ msgid ""
 msgstr ""
 
 #: lms/templates/verify_student/intro_step.underscore:57
-#: lms/templates/verify_student/make_payment_step.underscore:69
+#: lms/templates/verify_student/make_payment_step.underscore:147
 #: lms/templates/verify_student/payment_confirmation_step.underscore:121
 msgid "Webcam"
 msgstr "ウェブカメラ"
@@ -686,7 +685,30 @@ msgid ""
 "You can now enter your payment information and complete your enrollment."
 msgstr ""
 
-#: lms/templates/verify_student/make_payment_step.underscore:27
+#: lms/templates/verify_student/make_payment_step.underscore:29
+msgid "Choose your contribution for your Verified Track upgrade"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:31
+msgid "Enter Your Contribution Level"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:38
+#, python-format
+msgid ""
+"Please confirm your contribution for this course (min. %(minPrice)s "
+"%(currency)s)"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:82
+msgid "Your Total Contribution"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:84
+msgid "To complete your enrollment, you will need to pay:"
+msgstr ""
+
+#: lms/templates/verify_student/make_payment_step.underscore:105
 #, python-format
 msgid ""
 "You can pay now even if you don't have the following items available, but "
@@ -694,44 +716,21 @@ msgid ""
 "Certificate."
 msgstr ""
 
-#: lms/templates/verify_student/make_payment_step.underscore:33
+#: lms/templates/verify_student/make_payment_step.underscore:111
 msgid ""
 "You can pay now even if you don't have the following items available, but "
 "you will need to have these to qualify to earn a Verified Certificate."
 msgstr ""
 
-#: lms/templates/verify_student/make_payment_step.underscore:57
+#: lms/templates/verify_student/make_payment_step.underscore:135
 msgid "Government-Issued Photo ID"
 msgstr ""
 
-#: lms/templates/verify_student/make_payment_step.underscore:88
-msgid "Choose your contribution for your Verified Track upgrade"
-msgstr ""
-
-#: lms/templates/verify_student/make_payment_step.underscore:90
-msgid "Enter Your Contribution Level"
-msgstr ""
-
-#: lms/templates/verify_student/make_payment_step.underscore:97
-#, python-format
-msgid ""
-"Please confirm your contribution for this course (min. %(minPrice)s "
-"%(currency)s)"
-msgstr ""
-
-#: lms/templates/verify_student/make_payment_step.underscore:141
-msgid "Your Total Contribution"
-msgstr ""
-
-#: lms/templates/verify_student/make_payment_step.underscore:143
-msgid "To complete your enrollment, you will need to pay:"
-msgstr ""
-
-#: lms/templates/verify_student/make_payment_step.underscore:163
+#: lms/templates/verify_student/make_payment_step.underscore:164
 msgid "Next: Make payment"
 msgstr ""
 
-#: lms/templates/verify_student/make_payment_step.underscore:167
+#: lms/templates/verify_student/make_payment_step.underscore:168
 msgid "Continue to payment"
 msgstr ""
 
