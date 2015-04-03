@@ -1,8 +1,11 @@
+import unittest
+from django.conf import settings
 from django.test import TestCase
 from opaque_keys.edx.locations import SlashSeparatedCourseKey
 
 from course_global.models import CourseGlobalSetting
 
+@unittest.skipUnless(settings.ROOT_URLCONF == 'lms.urls', 'Test only valid in lms')
 class CourseGlobalSettingTest(TestCase):
     """
     Tests for the CourseGlobalSetting model.
