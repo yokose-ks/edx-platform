@@ -1,3 +1,5 @@
+import unittest
+from django.conf import settings
 from django.test import TestCase
 from django.core.management import call_command, CommandError
 
@@ -7,6 +9,7 @@ from student.models import CourseEnrollment, UserStanding
 
 from course_global.tests.factories import CourseGlobalSettingFactory
 
+@unittest.skipUnless(settings.ROOT_URLCONF == 'lms.urls', 'Test only valid in lms')
 class EnrollAllUsersTest(TestCase):
     """
     Tests for the command.

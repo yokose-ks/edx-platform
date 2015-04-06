@@ -2,6 +2,7 @@
 
 import ddt
 import unittest
+from django.conf import settings
 from django.contrib.auth.models import User
 from django.test.client import RequestFactory
 from django.conf import settings
@@ -105,12 +106,14 @@ class TestCreateAccount(TestCase):
         """
         self.base_extauth_bypass_sending_activation_email(False)
 
+    @unittest.skipUnless(settings.ROOT_URLCONF == 'lms.urls', 'Test only valid in lms')
     def test_no_global_course(self):
         response = self.client.post(self.url, self.params)
         self.assertEqual(response.status_code, 200)
         user = User.objects.get(username=self.username)
         self.assertEqual(0, student.models.CourseEnrollmentAllowed.objects.all().count())
 
+    @unittest.skipUnless(settings.ROOT_URLCONF == 'lms.urls', 'Test only valid in lms')
     def test_exists_global_course(self):
         dummy_course_id = SlashSeparatedCourseKey('a', 'b', 'c')
         CourseGlobalSettingFactory.create(course_id = dummy_course_id)
