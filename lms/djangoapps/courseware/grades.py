@@ -226,6 +226,7 @@ def _grade(student, request, course, keep_raw_scores):
                     # would be simpler
                     with manual_transaction():
                         field_data_cache = FieldDataCache([descriptor], course.id, student)
+                    student.known = False
                     return get_module_for_descriptor(student, request, descriptor, field_data_cache, course.id)
 
                 for module_descriptor in yield_dynamic_descriptor_descendents(section_descriptor, create_module):
@@ -341,6 +342,7 @@ def _progress_summary(student, request, course):
         )
         # TODO: We need the request to pass into here. If we could
         # forego that, our arguments would be simpler
+        student.known = False
         course_module = get_module_for_descriptor(student, request, course, field_data_cache, course.id)
         if not course_module:
             # This student must not have access to the course.
