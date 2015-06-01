@@ -1,20 +1,18 @@
 """
 Management command to generate a list of grades for
-all students that are enrolled in a course.
+the perticipants of dc001 (written by sunk)
 """
 from courseware import grades, courses
-from certificates.models import GeneratedCertificate
 from django.test.client import RequestFactory
 from django.core.management.base import BaseCommand, CommandError
 import os
 from opaque_keys import InvalidKeyError
 from opaque_keys.edx.keys import CourseKey
 from opaque_keys.edx.locations import SlashSeparatedCourseKey
-from django.contrib.auth.models import User
+from student.models import CourseEnrollment, User
+from certificates.models import CertificateStatuses, certificate_status_for_student
 from optparse import make_option
-import datetime
 from django.core.handlers.base import BaseHandler
-#import csv
 import unicodecsv as csv
 
 
@@ -34,21 +32,18 @@ class RequestMock(RequestFactory):
 class Command(BaseCommand):
 
     help = """
-    Generate a list of grades for all students
-    that are enrolled in a course.
+    Generate a matrix of grades for dc001
 
     CSV will include the following:
       - username
       - email
-      - grade in the certificate table if it exists
       - computed grade
-      - grade breakdown
 
     Outputs grades to a csv file.
 
     Example:
-      sudo -u www-data SERVICE_VARIANT=lms /opt/edx/bin/django-admin.py get_grades \
-        -c MITx/Chi6.00intro/A_Taste_of_Python_Programming -o /tmp/20130813-6.00x.csv \
+      sudo -u www-data SERVICE_VARIANT=lms /opt/edx/bin/django-admin.py get_grade_dc001 \
+        -o /tmp/20130813-6.00x.csv \
         --settings=lms.envs.aws --pythonpath=/opt/wwc/edx-platform
     """
 
@@ -64,68 +59,85 @@ class Command(BaseCommand):
                     default=False,
                     help='Filename for grade output'))
 
+
     def handle(self, *args, **options):
         if os.path.exists(options['output']):
             raise CommandError("File {0} already exists".format(
                 options['output']))
 
-        STATUS_INTERVAL = 100
+        STATUS_INTERVAL = 50
 
+        # ----------------generate course objects ----start----------------------------
+        # courses for scoring
+        target_course_list = [
+            u"gacco/ga002/2014_05",
+            u"gacco/ga008/2014_10",
+            u"gacco/ga023/2015_02",
+            ]
+        # course for managing
+        dcm_course_id = "gacco/ga006/2014_04"
+
+        course_key_list = []
         # parse out the course into a coursekey
-        if options['course']:
+        for course_id in target_course_list:
             try:
-                course_key = CourseKey.from_string(options['course'])
-            # if it's not a new-style course key, parse it from an old-style
-            # course key
+                course_key = CourseKey.from_string(course_id)
+            # if it's not a new-style course key, parse it from an old-style course key
             except InvalidKeyError:
-                course_key = SlashSeparatedCourseKey.from_deprecated_string(options['course'])
+                course_key = SlashSeparatedCourseKey.from_deprecated_string(course_id)
+            course_key_list.append(course_key)
 
-        print "Fetching enrolled students for {0}".format(course_key)
+        try:
+            dcm_course_key = CourseKey.from_string(dcm_course_id)
+        except InvalidKeyError:
+            dcm_course_key = SlashSeparatedCourseKey.from_deprecated_string(dcm_course_id)
+        # ----------------generate course objects ----end----------------------------
+
+
+        # list of participants
+        print "Fetching enrolled students for {0}".format(dcm_course_key)
         enrolled_students = User.objects.filter(
-            courseenrollment__course_id=course_key
+            courseenrollment__course_id=dcm_course_key
         )
-        factory = RequestMock()
-        request = factory.get('/')
 
         total = enrolled_students.count()
         print "Total enrolled: {0}".format(total)
-        course = courses.get_course_by_id(course_key)
-        total = enrolled_students.count()
-        start = datetime.datetime.now()
         rows = []
-        header = None
-        print "Fetching certificate data"
-        cert_grades = {
-            cert.user.username: cert.grade
-            for cert in list(
-                GeneratedCertificate.objects.filter(course_id=course_key).prefetch_related('user')
-            )
-        }
+
+        # output the first row (header)
+        rows.append(["email", "username"] + target_course_list + ["total"]) 
+
+
         print "Grading students"
+        factory = RequestMock()
+        request = factory.get('/')
+
         for count, student in enumerate(enrolled_students):
             count += 1
             if count % STATUS_INTERVAL == 0:
-                # Print a status update with an approximation of
-                # how much time is left based on how long the last
-                # interval took
-                diff = datetime.datetime.now() - start
-                timeleft = diff * (total - count) / STATUS_INTERVAL
-                hours, remainder = divmod(timeleft.seconds, 3600)
-                minutes, seconds = divmod(remainder, 60)
-                print "{0}/{1} completed ~{2:02}:{3:02}m remaining".format(
-                    count, total, hours, minutes)
-                start = datetime.datetime.now()
+                print "{0}/{1} completed ".format(count, total)
+
             request.user = student
-            grade = grades.grade(student, request, course)
-            if not header:
-                header = [section['label'] for section in grade[u'section_breakdown']]
-                rows.append(["email", "username", "certificate-grade", "grade"] + header)
-            percents = {section['label']: section['percent'] for section in grade[u'section_breakdown']}
-            row_percents = [percents[label] for label in header]
-            if student.username in cert_grades:
-                rows.append([student.email, student.username, cert_grades[student.username], grade['percent']] + row_percents)
-            else:
-                rows.append([student.email, student.username, "N/A", grade['percent']] + row_percents)
+            row = [student.email, student.username]
+            total_score = 0
+            for course_key in course_key_list:
+                course = courses.get_course_by_id(course_key)
+                score = 0
+                if(CourseEnrollment.is_enrolled(student, course_key)):
+                    grade = grades.grade(student, request, course)
+                    score = int(grade['percent']*100)
+                    if(score >= 90.0):
+                        score += 50
+                    cert_status = certificate_status_for_student(student, course_key)['status']
+                    if(cert_status == "downloadable"):
+                        score += 50
+                    score += 1
+                    total_score += score
+
+                row.append("{0}".format(score))
+            row.append(total_score)
+            rows.append(row)
+
         with open(options['output'], 'wb') as f:
             writer = csv.writer(f)
             writer.writerows(rows)
